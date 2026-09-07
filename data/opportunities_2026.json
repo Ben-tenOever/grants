@@ -1,0 +1,237 @@
+{
+ "generated": "2026-09-07",
+ "source": "Funding & Policy Watch dashboard, verified against primary sources",
+ "opportunities": [
+  {
+   "key": "niaid_p01",
+   "opportunity_number": "PAR-27-082",
+   "opportunity_title": "NIAID Investigator-Initiated Program Project (P01)",
+   "agency": "NIH / NIAID",
+   "close_date": "2027-01-25",
+   "estimated": false,
+   "award": "Multi-project; no stated ceiling",
+   "note": "Receipt 25 Sep 2026, then 25 Jan / 25 May thrice yearly to 2029. NIAID asks for program contact 15 weeks ahead, so January is the realistic target.",
+   "url": "https://www.grants.gov/search-results-detail/359732"
+  },
+  {
+   "key": "nhlbi_p01",
+   "opportunity_number": "PAR-24-065 (reissue expected)",
+   "opportunity_title": "NHLBI Program Project (P01)",
+   "agency": "NIH / NHLBI",
+   "close_date": "2026-09-25",
+   "estimated": false,
+   "award": "Multi-project",
+   "note": "Final receipt date on the current announcement, which expires 31 Oct 2026. Minimum three interrelated projects.",
+   "url": "https://www.grants.gov/search-results-detail/351057"
+  },
+  {
+   "key": "cdc_fluve",
+   "opportunity_number": "RFA-IP-27-026",
+   "opportunity_title": "US Flu Vaccine Effectiveness Network",
+   "agency": "CDC / NCIRD",
+   "close_date": "2026-12-31",
+   "estimated": true,
+   "award": "$75.25M total, 6 awards",
+   "note": "Forecast record; NOFO expected around 30 Oct 2026. Universities eligible.",
+   "url": "https://www.grants.gov/search-results-detail/363343"
+  },
+  {
+   "key": "cdc_peds",
+   "opportunity_number": "RFA-IP-27-035",
+   "opportunity_title": "Expanded Surveillance for Pediatric Infectious Diseases",
+   "agency": "CDC / NCIRD",
+   "close_date": "2026-12-31",
+   "estimated": true,
+   "award": "$40M total, 7 awards",
+   "note": "Forecast record. Standardised prospective active surveillance of pediatric acute respiratory illness and gastroenteritis.",
+   "url": "https://www.grants.gov/search-results-detail/363342"
+  },
+  {
+   "key": "niaid_amr",
+   "opportunity_number": "RFA-AI-27-005",
+   "opportunity_title": "Clinical Research Network on Antimicrobial Resistance (UM1)",
+   "agency": "NIH / NIAID",
+   "close_date": "2026-11-10",
+   "estimated": false,
+   "award": "$18M, 1 award",
+   "note": "Successor to the ARLG, now explicitly including fungal pathogens on CDC priority lists. Domestic entities only; clinical trial required.",
+   "url": "https://www.grants.gov/search-results-detail/361065"
+  },
+  {
+   "key": "niaid_idctn",
+   "opportunity_number": "RFA-AI-27-002",
+   "opportunity_title": "Infectious Diseases Clinical Trials Network (UM1)",
+   "agency": "NIH / NIAID",
+   "close_date": "2026-11-10",
+   "estimated": false,
+   "award": "~$10M first year, 1 award",
+   "note": "Clinical Trial Evaluation Units plus a Network Coordination Center, with an explicit remit to advance early-career investigators.",
+   "url": "https://www.grants.gov/search-results-detail/360875"
+  },
+  {
+   "key": "cdc_travel",
+   "opportunity_number": "RFA-CK-26-035",
+   "opportunity_title": "Emerging Infections Network — Travel-Associated Infectious Diseases",
+   "agency": "CDC / ERA",
+   "close_date": "2026-11-05",
+   "estimated": false,
+   "award": "$30M total, 2 awards",
+   "note": "Universities eligible. Detection speed, burden, severity, diagnostics and outcomes in international travelers, feeding sentinel detection and outbreak response.",
+   "url": "https://www.grants.gov/search-results-detail/360199"
+  },
+  {
+   "key": "barda",
+   "opportunity_number": "BAA-23-100-SOL-00004",
+   "opportunity_title": "BARDA Broad Agency Announcement",
+   "agency": "BARDA / ASPR",
+   "close_date": "2028-09-25",
+   "estimated": false,
+   "award": "Varies by AOI",
+   "note": "Standing to 2028. Three stages: pre-submission call with the AOI technical POC, then quad chart plus market research abstract and ROM, then invited full proposal. A TechWatch meeting first is strongly recommended.",
+   "url": "https://medicalcountermeasures.gov/barda/barda-baa"
+  },
+  {
+   "key": "darpa_eris",
+   "opportunity_number": "HR001126S0003 / DARPA-PS-25-05",
+   "opportunity_title": "DARPA BTO office-wide BAA and ERIS",
+   "agency": "DARPA / BTO",
+   "close_date": "2026-09-30",
+   "estimated": false,
+   "award": "Varies",
+   "note": "The office-wide BAA closes 30 Sep 2026 with no FY2027 successor yet posted; ERIS stays open to 2031 as the rolling, lower-friction channel.",
+   "url": "https://sam.gov/opp/8d403582edfd409795560247e8d229b7/view"
+  },
+  {
+   "key": "arpah_hsf",
+   "opportunity_number": "ARPA-H-SOL-24-104",
+   "opportunity_title": "ARPA-H Health Science Futures Mission Office ISO",
+   "agency": "ARPA-H",
+   "close_date": "2029-03-05",
+   "estimated": false,
+   "award": "Program-scale",
+   "note": "Rolling. Names 'revolutionary omics platforms that enable unprecedented spatial and temporal scales and resolution' as an area of interest. Solution summary and written ARPA-H feedback are mandatory before any full proposal; encouraged proposers then get 45 days.",
+   "url": "https://arpa-h.gov/explore-funding/open-funding-opportunities"
+  },
+  {
+   "key": "arpah_pho",
+   "opportunity_number": "ARPA-H-SOL-24-106",
+   "opportunity_title": "ARPA-H Proactive Health Office ISO",
+   "agency": "ARPA-H",
+   "close_date": "2029-03-05",
+   "estimated": false,
+   "award": "Program-scale",
+   "note": "Rolling. Explicitly welcomes disease-specific proposals in infectious disease under prevention, sensing and early detection.",
+   "url": "https://arpa-h.gov/explore-funding/open-funding-opportunities"
+  },
+  {
+   "key": "dtra",
+   "opportunity_number": "HDTRA1-25-S-0001",
+   "opportunity_title": "DTRA — Fundamental Research to Counter Weapons of Mass Destruction",
+   "agency": "DoD / DTRA",
+   "close_date": "2034-09-30",
+   "estimated": false,
+   "award": "Varies",
+   "note": "Standing BAA, Assistance Listing 12.351. The most natural non-DARPA DoD vehicle for host-directed antiviral and biothreat basic science.",
+   "url": "https://www.grants.gov/search-results-detail/356612"
+  },
+  {
+   "key": "niaid_r24",
+   "opportunity_number": "PAR-27-083",
+   "opportunity_title": "NIAID Resource-Related Research Projects (R24)",
+   "agency": "NIH / NIAID",
+   "close_date": "2027-01-25",
+   "estimated": false,
+   "award": "1–2 awards per year",
+   "note": "Shared resources benefiting already-funded high-priority NIAID projects. NIAID expects only 1–2 awards per year, so pre-submission program contact is essential.",
+   "url": "https://www.grants.gov/search-results-detail/359692"
+  },
+  {
+   "key": "niaid_mcm",
+   "opportunity_number": "RFA-AI-27-014",
+   "opportunity_title": "Medical Countermeasures Against Radiological/Nuclear or Chemical Threats (U01)",
+   "agency": "NIH / NIAID",
+   "close_date": "2028-10-09",
+   "estimated": false,
+   "award": "U01",
+   "note": "Standing announcement. Natural-history work, injury models, and biomarker and triage technology validation. Clinical trials not allowed.",
+   "url": "https://www.grants.gov/search-results-detail/361833"
+  },
+  {
+   "key": "gates",
+   "opportunity_number": "Grand Challenges — pathogen sequencing",
+   "opportunity_title": "Innovations in Low-Cost and Simplified Pathogen Sequencing Workflows",
+   "agency": "Gates Foundation",
+   "close_date": "2026-09-29",
+   "estimated": false,
+   "award": "Up to $800K over 36 months",
+   "note": "Targets $1–10 per-sample sample-to-data cost for routine public-health sequencing of viruses, TB, malaria and bacterial pathogens. ~15 awards across three tiers.",
+   "url": "https://gcgh.grandchallenges.org/challenge/innovations-low-cost-and-simplified-pathogen-sequencing-workflows"
+  },
+  {
+   "key": "mira",
+   "opportunity_number": "PAR-26-121",
+   "opportunity_title": "MIRA (R35) for Established Investigators",
+   "agency": "NIH / NIGMS",
+   "close_date": "2027-01-27",
+   "estimated": false,
+   "award": "Up to $750K direct/yr",
+   "note": "Single PD/PI. Requires an existing single-PI NIGMS R01-equivalent and 45% of total research effort; no other NIGMS research application may be pending simultaneously.",
+   "url": "https://www.grants.gov/search-results-detail/359862"
+  },
+  {
+   "key": "brg",
+   "opportunity_number": "PAR-27-072",
+   "opportunity_title": "Bioengineering Research Grants (R01)",
+   "agency": "NIH / NIBIB",
+   "close_date": "2029-07-05",
+   "estimated": false,
+   "award": "R01",
+   "note": "Standing. For integrating engineering and quantitative approaches with biology where the primary novelty is methodological.",
+   "url": "https://www.grants.gov/search-results-detail/360543"
+  },
+  {
+   "key": "r01",
+   "opportunity_number": "PA-25-301",
+   "opportunity_title": "NIH Parent R01 (Clinical Trial Not Allowed)",
+   "agency": "NIH",
+   "close_date": "2026-10-05",
+   "estimated": false,
+   "award": "R01",
+   "note": "New applications 5 Oct 2026; renewals, resubmissions and revisions 5 Nov 2026. Standard cycles thereafter.",
+   "url": "https://grants.nih.gov/grants/guide/pa-files/PA-25-301.html"
+  },
+  {
+   "key": "r01_dev",
+   "opportunity_number": "PAR-25-362",
+   "opportunity_title": "Early Immune System Development and Ontogeny (R01)",
+   "agency": "NIH / NICHD",
+   "close_date": "2026-10-05",
+   "estimated": false,
+   "award": "R01",
+   "note": "Mechanisms of immune development in utero, neonatally and in early childhood, including local mucosal immunity. Foreign organizations eligible.",
+   "url": "https://grants.nih.gov/grants/guide/pa-files/PAR-25-362.html"
+  },
+  {
+   "key": "r21",
+   "opportunity_number": "PA-25-304",
+   "opportunity_title": "NIH Parent R21",
+   "agency": "NIH",
+   "close_date": "2026-10-16",
+   "estimated": false,
+   "award": "$275K direct over 2 yr",
+   "note": "Two years, $275K direct total, no preliminary data required. NIAID does not accept the parent R21 in all program areas — confirm with the PO first.",
+   "url": "https://grants.nih.gov/grants/guide/pa-files/PA-25-304.html"
+  },
+  {
+   "key": "fda_baa",
+   "opportunity_number": "FDABAA-26-00123",
+   "opportunity_title": "FDA Broad Agency Announcement — Regulatory Science",
+   "agency": "FDA",
+   "close_date": "2026-09-21",
+   "estimated": false,
+   "award": "Varies",
+   "note": "Open to academia. Freestanding concept paper, then freestanding full proposal. Past the date for guaranteed FY26 consideration; the FY27 BAA is expected around Nov 2026.",
+   "url": "https://www.fda.gov/science-research/advancing-regulatory-science/regulatory-science-extramural-research-and-development-projects"
+  }
+ ]
+}

@@ -1,0 +1,1894 @@
+{
+ "generated": "2026-09-07",
+ "scope": "Cell Biology, Institute for Systems Genetics, Pathology, Biochemistry & Molecular Pharmacology, Microbiology",
+ "teams": [
+  {
+   "id": "P01",
+   "tier": "large",
+   "team_type": "multi",
+   "suggested_title": "Viral–Bacterial Synergy in the Upper Respiratory Tract: From Interferon-Driven Epithelial Reprogramming to Transmission",
+   "contact_pi": "Benjamin tenOever",
+   "scale": "Four projects plus two cores",
+   "opportunity_number": "PAR-27-082",
+   "opportunity_title": "NIAID Investigator-Initiated Program Project (P01)",
+   "agency": "NIH / NIAID",
+   "close_date": "2027-01-25",
+   "opportunity_url": "https://www.grants.gov/search-results-detail/359732",
+   "award": "Multi-project; no stated ceiling",
+   "members": [
+    "Benjamin tenOever",
+    "Jeffrey N. Weiser",
+    "Kamal M. Khanna",
+    "Mila B. Ortigoza",
+    "Alejandro Pironti",
+    "Jonas Schluter"
+   ],
+   "member_roles": [
+    {
+     "name": "Benjamin tenOever",
+     "group": "Microbiology",
+     "role": "PD/PI, Project 1"
+    },
+    {
+     "name": "Jeffrey N. Weiser",
+     "group": "ISG / Microbiology",
+     "role": "Project 2"
+    },
+    {
+     "name": "Kamal M. Khanna",
+     "group": "Microbiology",
+     "role": "Project 3"
+    },
+    {
+     "name": "Mila B. Ortigoza",
+     "group": "Microbiology",
+     "role": "Project 4"
+    },
+    {
+     "name": "Alejandro Pironti",
+     "group": "Microbiology",
+     "role": "Genomics core"
+    },
+    {
+     "name": "Jonas Schluter",
+     "group": "Microbiology",
+     "role": "Data and modeling core"
+    }
+   ],
+   "aims": [
+    {
+     "label": "Project 1",
+     "title": "Define the interferon-driven epithelial state that licenses bacterial adherence",
+     "description": "Single-cell and spatial transcriptomics of influenza-infected airway epithelium to identify the type I/III interferon-dependent programs that alter surface glycan and adhesin-receptor availability, with causality tested using microRNA-programmed recombinant viruses that restrict interferon induction to defined cell types.",
+     "responsible": "Benjamin tenOever"
+    },
+    {
+     "label": "Project 2",
+     "title": "Determine how the post-viral epithelium alters pneumococcal colonization, competition and transmission",
+     "description": "Apply established nasopharyngeal colonization and transmission models to quantify how the Project 1 epithelial states shift S. pneumoniae carriage density, within-host competition with H. influenzae and S. aureus, and animal-to-animal transmission efficiency.",
+     "responsible": "Jeffrey N. Weiser"
+    },
+    {
+     "label": "Project 3",
+     "title": "Establish which macrophage subsets gate bacterial clearance after viral injury",
+     "description": "Use NAM-DTR, CD169-DTR and IFNAR-conditional mice with TEA-seq and light-sheet imaging to test whether nerve- and airway-associated interstitial macrophages are the subset whose interferon-dependent reprogramming causes the post-influenza clearance defect.",
+     "responsible": "Kamal M. Khanna"
+    },
+    {
+     "label": "Project 4",
+     "title": "Test the mechanism in human airway tissue and a household transmission cohort",
+     "description": "Map the Project 1 signatures onto primary human airway epithelial cultures and nasal samples from an influenza household transmission cohort, relating epithelial state and macrophage phenotype to measured infectiousness and bacterial carriage.",
+     "responsible": "Mila B. Ortigoza"
+    },
+    {
+     "label": "Core A",
+     "title": "Genomics core",
+     "description": "Bacterial and viral sequencing, strain-level profiling, AMR phenotyping and comparative genomics across all four projects.",
+     "responsible": "Alejandro Pironti"
+    },
+    {
+     "label": "Core B",
+     "title": "Data and modeling core",
+     "description": "Longitudinal multi-omics integration, ecological modeling of within-host competition, and shared analysis pipelines.",
+     "responsible": "Jonas Schluter"
+    }
+   ],
+   "rationale_detailed": "NYU holds an unusually complete stack for this question inside two adjacent groups: the interferon biology, the pneumococcal colonization and transmission models, the macrophage subset genetics, and a physician-scientist running human airway and transmission cohorts. Post-influenza bacterial pneumonia sits squarely in NIAID's respiratory pathogens portfolio, and a P01 is the only mechanism that funds the whole causal chain rather than one link of it.",
+   "next_steps": "Contact the NIAID program officer now — NIAID asks for contact 15 weeks before receipt, so the January 2027 date requires an October conversation.",
+   "profile_gaps": []
+  },
+  {
+   "id": "P02",
+   "tier": "large",
+   "team_type": "multi",
+   "suggested_title": "Translational Control of Alveolar Repair after Respiratory Viral Injury",
+   "contact_pi": "Robert J. Schneider",
+   "scale": "Three projects plus an imaging and analysis core",
+   "opportunity_number": "PAR-24-065 (reissue expected)",
+   "opportunity_title": "NHLBI Program Project (P01)",
+   "agency": "NIH / NHLBI",
+   "close_date": "2026-09-25",
+   "opportunity_url": "https://www.grants.gov/search-results-detail/351057",
+   "award": "Multi-project",
+   "members": [
+    "Robert J. Schneider",
+    "Kamal M. Khanna",
+    "Michael J. Garabedian",
+    "Benjamin tenOever",
+    "Mila B. Ortigoza",
+    "David Fenyo"
+   ],
+   "member_roles": [
+    {
+     "name": "Robert J. Schneider",
+     "group": "Microbiology",
+     "role": "PD/PI, Project 1"
+    },
+    {
+     "name": "Kamal M. Khanna",
+     "group": "Microbiology",
+     "role": "Project 2"
+    },
+    {
+     "name": "Michael J. Garabedian",
+     "group": "Microbiology",
+     "role": "Project 3"
+    },
+    {
+     "name": "Benjamin tenOever",
+     "group": "Microbiology",
+     "role": "Project 1 co-investigator"
+    },
+    {
+     "name": "Mila B. Ortigoza",
+     "group": "Microbiology",
+     "role": "Human validation"
+    },
+    {
+     "name": "David Fenyo",
+     "group": "BMP / ISG",
+     "role": "Imaging and analysis core"
+    }
+   ],
+   "aims": [
+    {
+     "label": "Project 1",
+     "title": "Map selective mRNA translation during alveolar type II to type I transdifferentiation",
+     "description": "Ribosome profiling, m6A-seq and DAP5/eIF4G2 perturbation in alveolar organoids after influenza and SARS-CoV-2 injury, to identify the translationally controlled regulon gating progenitor commitment.",
+     "responsible": "Robert J. Schneider"
+    },
+    {
+     "label": "Project 2",
+     "title": "Determine how macrophage subsets set the repair versus fibrosis decision",
+     "description": "Deplete and lineage-trace interstitial versus alveolar macrophage subsets after viral injury, using spatial transcriptomics to link subset position to regions of successful re-epithelialization versus fibrotic remodeling.",
+     "responsible": "Kamal M. Khanna"
+    },
+    {
+     "label": "Project 3",
+     "title": "Test glucocorticoid and LXR signaling as a tractable lever on fibroblast–macrophage crosstalk",
+     "description": "Apply GR phosphorylation mutants and the LXRα S196A mouse to ask whether nuclear-receptor state in fibroblasts redirects macrophage phenotype toward resolution, and evaluate receptor-targeted peptoids as a pharmacological probe.",
+     "responsible": "Michael J. Garabedian"
+    },
+    {
+     "label": "Core",
+     "title": "Imaging and computational core",
+     "description": "Whole-slide and multiplexed image analysis, deep-learning quantification of repair phenotypes, and cross-project multi-omics integration.",
+     "responsible": "David Fenyo"
+    }
+   ],
+   "rationale_detailed": "NHLBI wants lung injury and repair mechanism, and this team owns an angle few others combine: selective mRNA translation as the control layer for regeneration, tested in viral injury, with the macrophage subsets that decide fibrosis versus resolution. Schneider's skeletal-muscle regeneration work transfers directly, and Garabedian's glucocorticoid work on fibroblast–macrophage crosstalk supplies the pharmacology.",
+   "next_steps": "The current announcement's final receipt date is 25 September 2026 and it expires 31 October. Unless the team is already assembled, target the reissue and use the interval to generate alveolar organoid preliminary data.",
+   "profile_gaps": []
+  },
+  {
+   "id": "P03",
+   "tier": "large",
+   "team_type": "multi",
+   "suggested_title": "NYU Langone Influenza and Respiratory Virus Vaccine Effectiveness Center",
+   "contact_pi": "Mila B. Ortigoza",
+   "scale": "Seven investigators",
+   "opportunity_number": "RFA-IP-27-026",
+   "opportunity_title": "US Flu Vaccine Effectiveness Network",
+   "agency": "CDC / NCIRD",
+   "close_date": "2026-12-31",
+   "opportunity_url": "https://www.grants.gov/search-results-detail/363343",
+   "award": "$75.25M total, 6 awards",
+   "members": [
+    "Mila B. Ortigoza",
+    "Ralf Duerr",
+    "Ramin Herati",
+    "Adam J. Ratner",
+    "Alejandro Pironti",
+    "David Fenyo",
+    "Liat Shenhav"
+   ],
+   "member_roles": [
+    {
+     "name": "Mila B. Ortigoza",
+     "group": "Microbiology",
+     "role": "Contact PI, clinical core"
+    },
+    {
+     "name": "Ralf Duerr",
+     "group": "Microbiology",
+     "role": "Immune correlates and genomic surveillance"
+    },
+    {
+     "name": "Ramin Herati",
+     "group": "Microbiology",
+     "role": "Systems immunology"
+    },
+    {
+     "name": "Adam J. Ratner",
+     "group": "Microbiology",
+     "role": "Pediatric arm"
+    },
+    {
+     "name": "Alejandro Pironti",
+     "group": "Microbiology",
+     "role": "Sequencing and bioinformatics"
+    },
+    {
+     "name": "David Fenyo",
+     "group": "BMP / ISG",
+     "role": "Statistics and integration"
+    },
+    {
+     "name": "Liat Shenhav",
+     "group": "Microbiology",
+     "role": "Longitudinal modeling"
+    }
+   ],
+   "aims": [
+    {
+     "label": "Aim 1",
+     "title": "Estimate annual influenza and respiratory virus vaccine effectiveness across the age spectrum",
+     "description": "Test-negative design cohort across NYU Langone ambulatory, emergency and inpatient sites, with pediatric and older-adult strata powered for subtype-specific estimates.",
+     "responsible": "Mila B. Ortigoza"
+    },
+    {
+     "label": "Aim 2",
+     "title": "Define the immune correlates that explain effectiveness differences",
+     "description": "Multiplex antibody binding, isotype and avidity profiling, HAI and neutralization on paired pre- and post-season sera, related to breakthrough outcomes.",
+     "responsible": "Ralf Duerr"
+    },
+    {
+     "label": "Aim 3",
+     "title": "Determine how exposure history and Tfh responses shape durability",
+     "description": "AIM assays, spectral flow and scRNA-seq on a nested subcohort, testing whether imprinting and Tfh quality predict the waning observed in Aim 1.",
+     "responsible": "Ramin Herati"
+    },
+    {
+     "label": "Aim 4",
+     "title": "Link effectiveness to circulating viral genotype",
+     "description": "Sequence all test-positive specimens with lineage and selective-adaptation analysis to identify antigenic drift driving within-season VE loss.",
+     "responsible": "Alejandro Pironti"
+    },
+    {
+     "label": "Aim 5",
+     "title": "Extend the design to the pediatric population",
+     "description": "Pediatric enrollment with age-appropriate case definitions and separate VE estimation, using existing pediatric biobanking infrastructure.",
+     "responsible": "Adam J. Ratner"
+    },
+    {
+     "label": "Aim 6",
+     "title": "Model waning and build the analytic platform",
+     "description": "Longitudinal models of correlate decay and reproducible pipelines for harmonized data submission to CDC.",
+     "responsible": "Liat Shenhav"
+    }
+   ],
+   "rationale_detailed": "The largest CDC opportunity relevant to the department. Most VE networks are epidemiology groups that outsource immunology; this one can measure effectiveness, explain it mechanistically through Tfh biology and antibody quality, sequence the circulating strains itself, and model waning longitudinally — turning a surveillance contract into a scientific programme, which is how six awards get differentiated from twenty applications.",
+   "next_steps": "Forecast only — the NOFO is expected around 30 October. Use September and October to lock the site network and demonstrate enrollment throughput, which is what CDC scores on feasibility.",
+   "profile_gaps": []
+  },
+  {
+   "id": "P04",
+   "tier": "large",
+   "team_type": "multi",
+   "suggested_title": "Prospective Active Surveillance of Pediatric Respiratory and Enteric Viral Illness with Integrated Microbiome Profiling",
+   "contact_pi": "Adam J. Ratner",
+   "scale": "Five investigators",
+   "opportunity_number": "RFA-IP-27-035",
+   "opportunity_title": "Expanded Surveillance for Pediatric Infectious Diseases",
+   "agency": "CDC / NCIRD",
+   "close_date": "2026-12-31",
+   "opportunity_url": "https://www.grants.gov/search-results-detail/363342",
+   "award": "$40M total, 7 awards",
+   "members": [
+    "Adam J. Ratner",
+    "Mila B. Ortigoza",
+    "Liat Shenhav",
+    "Ralf Duerr",
+    "Jonas Schluter"
+   ],
+   "member_roles": [
+    {
+     "name": "Adam J. Ratner",
+     "group": "Microbiology",
+     "role": "Contact PI"
+    },
+    {
+     "name": "Mila B. Ortigoza",
+     "group": "Microbiology",
+     "role": "Respiratory virology"
+    },
+    {
+     "name": "Liat Shenhav",
+     "group": "Microbiology",
+     "role": "Early-life microbiome and modeling"
+    },
+    {
+     "name": "Ralf Duerr",
+     "group": "Microbiology",
+     "role": "Viral genomics"
+    },
+    {
+     "name": "Jonas Schluter",
+     "group": "Microbiology",
+     "role": "Enteric microbiome ecology"
+    }
+   ],
+   "aims": [
+    {
+     "label": "Aim 1",
+     "title": "Establish standardized prospective active surveillance for pediatric ARI and AGE",
+     "description": "Enroll children presenting to NYU Langone pediatric emergency and inpatient services under a common case definition, with paired respiratory and stool specimens and structured outcome capture.",
+     "responsible": "Adam J. Ratner"
+    },
+    {
+     "label": "Aim 2",
+     "title": "Characterize viral etiologies and their severity gradients",
+     "description": "Multiplex molecular detection plus culture and neutralization, with severity modeled against pathogen, coinfection and age.",
+     "responsible": "Mila B. Ortigoza"
+    },
+    {
+     "label": "Aim 3",
+     "title": "Genotype circulating strains and track emergence",
+     "description": "Whole-genome sequencing of respiratory and enteric isolates with lineage tracking and phylogenetic linkage to regional and national data.",
+     "responsible": "Ralf Duerr"
+    },
+    {
+     "label": "Aim 4",
+     "title": "Test early-life microbiome trajectory as a modifier of illness severity",
+     "description": "Longitudinal tensor-factorization models of nasal and gut community trajectories, including human-milk exposure in infants, to identify colonization states preceding severe illness.",
+     "responsible": "Liat Shenhav"
+    },
+    {
+     "label": "Aim 5",
+     "title": "Model enteric community disruption and recovery after AGE",
+     "description": "Dynamical-systems modeling of post-infection recovery to define which disruption patterns predict prolonged symptoms or recurrence.",
+     "responsible": "Jonas Schluter"
+    }
+   ],
+   "rationale_detailed": "CDC is asking for standardized prospective active surveillance, and almost every applicant will propose the surveillance and stop. Adding early-life microbiome trajectory and human-milk exposure as a modifier of severity is a differentiator NYU can actually deliver, and Ratner's existing pediatric biobanking and IRB infrastructure removes the startup risk reviewers otherwise discount for.",
+   "next_steps": "Forecast only. Confirm pediatric ED and inpatient enrollment volumes now; CDC scores feasibility on demonstrated throughput, not stated intent.",
+   "profile_gaps": []
+  },
+  {
+   "id": "P05",
+   "tier": "large",
+   "team_type": "multi",
+   "suggested_title": "Clinical Research Network on Antimicrobial and Antifungal Resistance: Genomics-Guided Trial Design",
+   "contact_pi": "Bo Shopsin",
+   "scale": "Six investigators, six network components",
+   "opportunity_number": "RFA-AI-27-005",
+   "opportunity_title": "Clinical Research Network on Antimicrobial Resistance (UM1)",
+   "agency": "NIH / NIAID",
+   "close_date": "2026-11-10",
+   "opportunity_url": "https://www.grants.gov/search-results-detail/361065",
+   "award": "$18M, 1 award",
+   "members": [
+    "Bo Shopsin",
+    "Alejandro Pironti",
+    "Adam J. Ratner",
+    "Andrew J. Darwin",
+    "Jonas Schluter",
+    "David Fenyo"
+   ],
+   "member_roles": [
+    {
+     "name": "Bo Shopsin",
+     "group": "Microbiology",
+     "role": "Contact PI, laboratory core"
+    },
+    {
+     "name": "Alejandro Pironti",
+     "group": "Microbiology",
+     "role": "Genomics and prediction"
+    },
+    {
+     "name": "Adam J. Ratner",
+     "group": "Microbiology",
+     "role": "Pediatric AMR arm"
+    },
+    {
+     "name": "Andrew J. Darwin",
+     "group": "Microbiology",
+     "role": "Target biology, Pseudomonas"
+    },
+    {
+     "name": "Jonas Schluter",
+     "group": "Microbiology",
+     "role": "Microbiome endpoints"
+    },
+    {
+     "name": "David Fenyo",
+     "group": "BMP / ISG",
+     "role": "Statistics and data coordination"
+    }
+   ],
+   "aims": [
+    {
+     "label": "Component 1",
+     "title": "Scientific leadership and pivotal question selection",
+     "description": "Convene the network steering process and prioritize trials where resistance genotype plausibly changes the treatment decision, beginning with MRSA persistent bacteremia and carbapenem-resistant Enterobacterales.",
+     "responsible": "Bo Shopsin"
+    },
+    {
+     "label": "Component 2",
+     "title": "Laboratory core with genotype-to-phenotype resolution",
+     "description": "Centralized sequencing, resistance phenotyping, and phage and mobile-element characterization for all network isolates, including CDC-priority fungal pathogens.",
+     "responsible": "Bo Shopsin"
+    },
+    {
+     "label": "Component 3",
+     "title": "Machine-learning resistance and outcome prediction",
+     "description": "Build and prospectively validate models predicting resistance emergence and treatment failure from admission genomes, embedded as a companion analysis in each trial.",
+     "responsible": "Alejandro Pironti"
+    },
+    {
+     "label": "Component 4",
+     "title": "Microbiome endpoints for collateral damage",
+     "description": "Add standardized gut community sampling to trial protocols so regimens are compared on dysbiosis and resilience, not only on cure.",
+     "responsible": "Jonas Schluter"
+    },
+    {
+     "label": "Component 5",
+     "title": "Target biology for the next generation of agents",
+     "description": "Envelope proteolysis and autolysin regulation in P. aeruginosa as a source of mechanistically distinct targets feeding the network's translational pipeline.",
+     "responsible": "Andrew J. Darwin"
+    },
+    {
+     "label": "Component 6",
+     "title": "Statistics and data coordination",
+     "description": "Adaptive design, interim analysis plans, and the network data platform.",
+     "responsible": "David Fenyo"
+    }
+   ],
+   "rationale_detailed": "NIAID is asking for a four-centre network — leadership, clinical operations, laboratory, statistics. Shopsin's hospital-scale S. aureus genomic surveillance is a laboratory core that already exists at operational scale, which is the component applicants usually have to promise rather than demonstrate. The new fungal remit is coverable through the same sequencing and phenotyping pipeline.",
+   "next_steps": "Due 10 November 2026, clinical trial required, domestic entities only. The binding constraint is clinical operations — decide within two weeks whether NYU leads or joins another institution's application.",
+   "profile_gaps": []
+  },
+  {
+   "id": "P06",
+   "tier": "large",
+   "team_type": "multi",
+   "suggested_title": "Clinical Trial Evaluation Unit for Emerging and Respiratory Infections",
+   "contact_pi": "Mila B. Ortigoza",
+   "scale": "Five investigators",
+   "opportunity_number": "RFA-AI-27-002",
+   "opportunity_title": "Infectious Diseases Clinical Trials Network (UM1)",
+   "agency": "NIH / NIAID",
+   "close_date": "2026-11-10",
+   "opportunity_url": "https://www.grants.gov/search-results-detail/360875",
+   "award": "~$10M first year, 1 award",
+   "members": [
+    "Mila B. Ortigoza",
+    "Ramin Herati",
+    "Ralf Duerr",
+    "Adam J. Ratner",
+    "Bo Shopsin"
+   ],
+   "member_roles": [
+    {
+     "name": "Mila B. Ortigoza",
+     "group": "Microbiology",
+     "role": "Contact PI"
+    },
+    {
+     "name": "Ramin Herati",
+     "group": "Microbiology",
+     "role": "Immune monitoring core"
+    },
+    {
+     "name": "Ralf Duerr",
+     "group": "Microbiology",
+     "role": "Virology core"
+    },
+    {
+     "name": "Adam J. Ratner",
+     "group": "Microbiology",
+     "role": "Pediatric capacity, early-career pathway"
+    },
+    {
+     "name": "Bo Shopsin",
+     "group": "Microbiology",
+     "role": "Bacterial co-infection and AMR endpoints"
+    }
+   ],
+   "aims": [
+    {
+     "label": "Aim 1",
+     "title": "Establish a trial-ready clinical evaluation unit",
+     "description": "Protocol-agnostic screening, consent and specimen workflows across emergency, inpatient and ambulatory sites, with documented activation timelines for a novel protocol.",
+     "responsible": "Mila B. Ortigoza"
+    },
+    {
+     "label": "Aim 2",
+     "title": "Offer embedded mechanistic immune substudies to the network",
+     "description": "Standardized AIM, spectral flow, scRNA-seq and spatial immune profiling as a menu network trials can adopt without building their own capability.",
+     "responsible": "Ramin Herati"
+    },
+    {
+     "label": "Aim 3",
+     "title": "Provide centralized virologic endpoints",
+     "description": "BSL-3 culture, neutralization, viral load and sequencing with turnaround guarantees.",
+     "responsible": "Ralf Duerr"
+    },
+    {
+     "label": "Aim 4",
+     "title": "Add bacterial co-infection and resistance endpoints",
+     "description": "Standardized co-infection and resistance measurement so antiviral trials capture the bacterial complications that drive mortality.",
+     "responsible": "Bo Shopsin"
+    },
+    {
+     "label": "Aim 5",
+     "title": "Mentor early-career trial investigators",
+     "description": "A structured pathway placing junior faculty as protocol chairs with senior co-chairs, answering the NOFO's early-career remit directly.",
+     "responsible": "Adam J. Ratner"
+    }
+   ],
+   "rationale_detailed": "The NOFO carries an explicit remit to advance early-career investigators and expects trials against emerging infections. NYU can pair a physician-scientist who ran COVID-era therapeutic trials with an immune-monitoring capability that lets the unit offer mechanistic substudies to the whole network — the thing that makes a site indispensable rather than interchangeable.",
+   "next_steps": "Due 10 November 2026, clinical trial required. Confirm the LOI date with NIAID; the notice does not state one and NIAID typically sets it 30 days prior.",
+   "profile_gaps": []
+  },
+  {
+   "id": "P07",
+   "tier": "large",
+   "team_type": "multi",
+   "suggested_title": "Sentinel Detection of Travel-Associated Infections through Integrated Arboviral, Parasitic and Genomic Surveillance",
+   "contact_pi": "Ralf Duerr",
+   "scale": "Six investigators",
+   "opportunity_number": "RFA-CK-26-035",
+   "opportunity_title": "Emerging Infections Network — Travel-Associated Infectious Diseases",
+   "agency": "CDC / ERA",
+   "close_date": "2026-11-05",
+   "opportunity_url": "https://www.grants.gov/search-results-detail/360199",
+   "award": "$30M total, 2 awards",
+   "members": [
+    "Ralf Duerr",
+    "Kenneth A. Stapleford",
+    "Ana M. Rodriguez",
+    "Alejandro Pironti",
+    "Adam J. Ratner",
+    "Liat Shenhav"
+   ],
+   "member_roles": [
+    {
+     "name": "Ralf Duerr",
+     "group": "Microbiology",
+     "role": "Contact PI, genomic surveillance"
+    },
+    {
+     "name": "Kenneth A. Stapleford",
+     "group": "Microbiology",
+     "role": "Arbovirology"
+    },
+    {
+     "name": "Ana M. Rodriguez",
+     "group": "Microbiology",
+     "role": "Malaria and parasitic disease"
+    },
+    {
+     "name": "Alejandro Pironti",
+     "group": "Microbiology",
+     "role": "Metagenomics and bioinformatics"
+    },
+    {
+     "name": "Adam J. Ratner",
+     "group": "Microbiology",
+     "role": "Pediatric returning travelers"
+    },
+    {
+     "name": "Liat Shenhav",
+     "group": "Microbiology",
+     "role": "Surveillance analytics"
+    }
+   ],
+   "aims": [
+    {
+     "label": "Aim 1",
+     "title": "Establish a sentinel cohort of returning travelers with structured exposure capture",
+     "description": "Enroll febrile and syndromic returning travelers with itinerary, exposure and prophylaxis data linked to specimens, using time-to-detection as the primary surveillance metric.",
+     "responsible": "Ralf Duerr"
+    },
+    {
+     "label": "Aim 2",
+     "title": "Deploy metagenomic and targeted sequencing for threat-agnostic detection",
+     "description": "Combine mNGS with targeted panels to detect and genotype arboviral, parasitic and bacterial agents, including agents outside the current diagnostic menu.",
+     "responsible": "Alejandro Pironti"
+    },
+    {
+     "label": "Aim 3",
+     "title": "Characterize imported arboviral variants for transmission and virulence determinants",
+     "description": "Reverse genetics plus mosquito and mammalian infection models on variants recovered in Aim 2, testing whether imported lineages carry determinants of local transmission competence.",
+     "responsible": "Kenneth A. Stapleford"
+    },
+    {
+     "label": "Aim 4",
+     "title": "Define severity biomarkers for imported severe malaria",
+     "description": "Endothelial barrier, oxidative-stress and vascular profiling on imported P. falciparum cases to identify early markers of progression to cerebral malaria and severe anemia.",
+     "responsible": "Ana M. Rodriguez"
+    },
+    {
+     "label": "Aim 5",
+     "title": "Quantify pediatric burden and outcomes",
+     "description": "Separate pediatric enrollment stratum, where travel-associated febrile illness is most often misclassified.",
+     "responsible": "Adam J. Ratner"
+    }
+   ],
+   "rationale_detailed": "Travel-associated infection is where NYU's arbovirology and malaria programmes stop being adjacent and become the centre of the application. Stapleford works on precisely the chikungunya, dengue and Zika viruses that dominate returning-traveler diagnoses, Rodriguez on severe malaria, and Duerr has run genomic surveillance and variant tracking through MPXV and SARS-CoV-2. Few applicants can pair sentinel detection with reverse genetics on the imported variants themselves.",
+   "next_steps": "Due 5 November 2026. $30M across 2 awards makes this the highest expected-value CDC item on the board; a decision to lead should be made this month.",
+   "profile_gaps": []
+  },
+  {
+   "id": "P08",
+   "tier": "large",
+   "team_type": "multi",
+   "suggested_title": "Host-Directed Broad-Spectrum Antivirals Targeting Influenza RNA Metabolism (AOI 9.1)",
+   "contact_pi": "Benjamin tenOever",
+   "scale": "Six investigators",
+   "opportunity_number": "BAA-23-100-SOL-00004",
+   "opportunity_title": "BARDA Broad Agency Announcement",
+   "agency": "BARDA / ASPR",
+   "close_date": "2028-09-25",
+   "opportunity_url": "https://medicalcountermeasures.gov/barda/barda-baa",
+   "award": "Varies by AOI",
+   "members": [
+    "Benjamin tenOever",
+    "Ian J. Mohr",
+    "Joel G. Belasco",
+    "James Lee",
+    "Drew Jones",
+    "Mila B. Ortigoza"
+   ],
+   "member_roles": [
+    {
+     "name": "Benjamin tenOever",
+     "group": "Microbiology",
+     "role": "Contact PI"
+    },
+    {
+     "name": "Ian J. Mohr",
+     "group": "Microbiology",
+     "role": "Translational control and m6A"
+    },
+    {
+     "name": "Joel G. Belasco",
+     "group": "Microbiology",
+     "role": "RNA decay biochemistry"
+    },
+    {
+     "name": "James Lee",
+     "group": "Microbiology",
+     "role": "Structural biology"
+    },
+    {
+     "name": "Drew Jones",
+     "group": "BMP",
+     "role": "Metabolomics and exposure"
+    },
+    {
+     "name": "Mila B. Ortigoza",
+     "group": "Microbiology",
+     "role": "Preclinical efficacy"
+    }
+   ],
+   "aims": [
+    {
+     "label": "Aim 1",
+     "title": "Identify host RNA-metabolism nodes whose inhibition is broadly antiviral",
+     "description": "CRISPR perturbation screens across influenza A subtypes plus a paramyxovirus and a coronavirus, selecting nodes with breadth and tolerable host cost.",
+     "responsible": "Benjamin tenOever"
+    },
+    {
+     "label": "Aim 2",
+     "title": "Establish mechanism at the level of translation and RNA modification",
+     "description": "Ribosome and polysome profiling with m6A enzyme perturbation to define how candidate nodes differentially affect viral versus host message.",
+     "responsible": "Ian J. Mohr"
+    },
+    {
+     "label": "Aim 3",
+     "title": "Reconstitute and quantify the biochemical step",
+     "description": "Purified-system reconstitution and single-molecule FRET on the decay and capping steps implicated in Aim 2, giving the programme a measurable enzymatic endpoint.",
+     "responsible": "Joel G. Belasco"
+    },
+    {
+     "label": "Aim 4",
+     "title": "Determine structures of the druggable targets",
+     "description": "Cryo-EM and crystallography of prioritized complexes, delivering structures suitable for structure-guided optimization.",
+     "responsible": "James Lee"
+    },
+    {
+     "label": "Aim 5",
+     "title": "Establish exposure, metabolism and target engagement",
+     "description": "LC-MS/MS pharmacokinetics and target-engagement assays to convert hits into candidates BARDA can advance.",
+     "responsible": "Drew Jones"
+    },
+    {
+     "label": "Aim 6",
+     "title": "Demonstrate efficacy on transmission, not only titre",
+     "description": "Ferret and neonatal-mouse transmission models with infectiousness as the endpoint relevant to outbreak control.",
+     "responsible": "Mila B. Ortigoza"
+    }
+   ],
+   "rationale_detailed": "BARDA AOI 9.1 asks for broad-spectrum influenza antivirals, and host-directed agents are the only credible route to breadth against a segmented, rapidly reassorting virus. The team covers the full arc BARDA scores: target identification in RNA metabolism, biochemical reconstitution, structural validation, exposure and metabolism, and efficacy measured on transmission rather than only on titre.",
+   "next_steps": "Standing to 2028 but three-staged. Request a TechWatch meeting with the AOI 9 technical POC before writing anything; the quad chart is judged against that conversation.",
+   "profile_gaps": [
+    "Drew Jones"
+   ]
+  },
+  {
+   "id": "P09",
+   "tier": "large",
+   "team_type": "multi",
+   "suggested_title": "Macrophage-Targeted Immunomodulation to Limit Lung Injury in Severe Respiratory Infection (AOI 9.2)",
+   "contact_pi": "Kamal M. Khanna",
+   "scale": "Five investigators",
+   "opportunity_number": "BAA-23-100-SOL-00004",
+   "opportunity_title": "BARDA Broad Agency Announcement",
+   "agency": "BARDA / ASPR",
+   "close_date": "2028-09-25",
+   "opportunity_url": "https://medicalcountermeasures.gov/barda/barda-baa",
+   "award": "Varies by AOI",
+   "members": [
+    "Kamal M. Khanna",
+    "Robert J. Schneider",
+    "Michael J. Garabedian",
+    "Benjamin tenOever",
+    "Mila B. Ortigoza"
+   ],
+   "member_roles": [
+    {
+     "name": "Kamal M. Khanna",
+     "group": "Microbiology",
+     "role": "Contact PI"
+    },
+    {
+     "name": "Robert J. Schneider",
+     "group": "Microbiology",
+     "role": "Repair biology"
+    },
+    {
+     "name": "Michael J. Garabedian",
+     "group": "Microbiology",
+     "role": "Nuclear-receptor pharmacology"
+    },
+    {
+     "name": "Benjamin tenOever",
+     "group": "Microbiology",
+     "role": "Infection models"
+    },
+    {
+     "name": "Mila B. Ortigoza",
+     "group": "Microbiology",
+     "role": "Translational endpoints"
+    }
+   ],
+   "aims": [
+    {
+     "label": "Aim 1",
+     "title": "Define the macrophage state that drives injury versus resolution",
+     "description": "Single-cell multi-omics across the course of severe influenza and SARS-CoV-2 infection to identify the reprogrammable subset and its therapeutic window.",
+     "responsible": "Kamal M. Khanna"
+    },
+    {
+     "label": "Aim 2",
+     "title": "Engineer nanoparticle delivery to that subset",
+     "description": "Adapt the tumour-associated macrophage reprogramming platform to lung interstitial macrophages, with biodistribution and subset specificity as go/no-go criteria.",
+     "responsible": "Kamal M. Khanna"
+    },
+    {
+     "label": "Aim 3",
+     "title": "Identify the nuclear-receptor payload",
+     "description": "Screen glucocorticoid and LXR-directed agents, including receptor-targeted peptoids, for the ability to shift fibroblast–macrophage crosstalk toward resolution.",
+     "responsible": "Michael J. Garabedian"
+    },
+    {
+     "label": "Aim 4",
+     "title": "Confirm repair rather than suppression",
+     "description": "Translational-control readouts of alveolar progenitor commitment, to show the intervention restores re-epithelialization rather than merely blunting inflammation.",
+     "responsible": "Robert J. Schneider"
+    },
+    {
+     "label": "Aim 5",
+     "title": "Establish the window in a delayed-treatment model",
+     "description": "Treat after symptom onset in ferret and mouse models, matching the clinically realistic scenario BARDA funds against.",
+     "responsible": "Mila B. Ortigoza"
+    }
+   ],
+   "rationale_detailed": "AOI 9.2 names immunomodulators and therapeutics targeting lung repair, an unusually precise match for Khanna's nanoparticle reprogramming of tissue macrophage subsets. Pairing it with Garabedian's nuclear-receptor pharmacology and Schneider's regeneration biology gives BARDA a candidate with both a delivery vehicle and a defined repair endpoint.",
+   "next_steps": "Same three-stage process as P08. Take both to the same TechWatch conversation as a two-track programme rather than as competing asks.",
+   "profile_gaps": []
+  },
+  {
+   "id": "P10",
+   "tier": "large",
+   "team_type": "multi",
+   "suggested_title": "Cell-Type-Programmable Viral Vectors for Cargo-Agnostic Intracellular Delivery",
+   "contact_pi": "Benjamin tenOever",
+   "scale": "Five investigators across Microbiology, ISG and Pathology",
+   "opportunity_number": "HR001126S0003 / DARPA-PS-25-05",
+   "opportunity_title": "DARPA BTO office-wide BAA and ERIS",
+   "agency": "DARPA / BTO",
+   "close_date": "2026-09-30",
+   "opportunity_url": "https://sam.gov/opp/8d403582edfd409795560247e8d229b7/view",
+   "award": "Varies",
+   "members": [
+    "Benjamin tenOever",
+    "Nathaniel R. Landau",
+    "Jef D. Boeke",
+    "Ran Brosh",
+    "Daniel Meruelo"
+   ],
+   "member_roles": [
+    {
+     "name": "Benjamin tenOever",
+     "group": "Microbiology",
+     "role": "Contact PI, programmable vectors"
+    },
+    {
+     "name": "Nathaniel R. Landau",
+     "group": "Microbiology",
+     "role": "Lentiviral and AAV engineering"
+    },
+    {
+     "name": "Jef D. Boeke",
+     "group": "ISG",
+     "role": "Large DNA payload assembly"
+    },
+    {
+     "name": "Ran Brosh",
+     "group": "ISG / Pathology",
+     "role": "Genome writing and integration validation"
+    },
+    {
+     "name": "Daniel Meruelo",
+     "group": "Pathology",
+     "role": "Alphaviral vector chassis"
+    }
+   ],
+   "aims": [
+    {
+     "label": "Aim 1",
+     "title": "Extend microRNA-based logic to restrict delivery to defined cell types",
+     "description": "Build vector families whose expression is gated by endogenous microRNA signatures, using off-target delivery across tissues as the primary specificity metric.",
+     "responsible": "Benjamin tenOever"
+    },
+    {
+     "label": "Aim 2",
+     "title": "Raise the deliverable payload ceiling without losing tropism",
+     "description": "Combine assemblon-based large-construct assembly with YAV shuttling, testing protein, RNA and ribonucleoprotein cargoes.",
+     "responsible": "Jef D. Boeke"
+    },
+    {
+     "label": "Aim 3",
+     "title": "Harden the vector for production and stability",
+     "description": "Optimize lentiviral and AAV capsid and packaging for yield, purity and storage under field-relevant conditions.",
+     "responsible": "Nathaniel R. Landau"
+    },
+    {
+     "label": "Aim 4",
+     "title": "Benchmark a second, non-integrating chassis",
+     "description": "Compare alphaviral vector delivery against the lentiviral and AAV systems on the same cargo panel, to avoid a single-platform failure mode.",
+     "responsible": "Daniel Meruelo"
+    },
+    {
+     "label": "Aim 5",
+     "title": "Verify integration integrity and off-target consequences",
+     "description": "Capture-seq, PRO-seq and RNA-seq at engineered loci to establish that delivery carries no genomic cost — the criterion that usually decides transition.",
+     "responsible": "Ran Brosh"
+    }
+   ],
+   "rationale_detailed": "The natural public-competition extension of the CURES work under HERMES. It assembles the capabilities DARPA repeatedly funds together but rarely finds in one institution: microRNA-based cell-type programming, mature lentiviral and AAV vector production, large-DNA payload assembly, integration-integrity validation, and — through Meruelo's oncolytic vector work — a second, non-retroviral delivery chassis.",
+   "next_steps": "The office-wide BAA closes 30 September 2026 with no FY2027 successor posted. Either submit an abstract against HR001126S0003 now, or route through ERIS, which stays open to 2031 and is the lower-friction channel for an established lab.",
+   "profile_gaps": [
+    "Daniel Meruelo"
+   ]
+  },
+  {
+   "id": "P11",
+   "tier": "large",
+   "team_type": "multi",
+   "suggested_title": "A Spatially and Temporally Resolved Atlas of the Human Host Response to Respiratory Infection",
+   "contact_pi": "David Fenyo",
+   "scale": "Five investigators",
+   "opportunity_number": "ARPA-H-SOL-24-104",
+   "opportunity_title": "ARPA-H Health Science Futures Mission Office ISO",
+   "agency": "ARPA-H",
+   "close_date": "2029-03-05",
+   "opportunity_url": "https://arpa-h.gov/explore-funding/open-funding-opportunities",
+   "award": "Program-scale",
+   "members": [
+    "David Fenyo",
+    "Angus C. Wilson",
+    "Ramin Herati",
+    "Liat Shenhav",
+    "Benjamin tenOever"
+   ],
+   "member_roles": [
+    {
+     "name": "David Fenyo",
+     "group": "BMP / ISG",
+     "role": "Contact PI, integration and modeling"
+    },
+    {
+     "name": "Angus C. Wilson",
+     "group": "Microbiology",
+     "role": "Spatial virology"
+    },
+    {
+     "name": "Ramin Herati",
+     "group": "Microbiology",
+     "role": "Human immune cohorts"
+    },
+    {
+     "name": "Liat Shenhav",
+     "group": "Microbiology",
+     "role": "Temporal modeling"
+    },
+    {
+     "name": "Benjamin tenOever",
+     "group": "Microbiology",
+     "role": "Infection biology and causal perturbation"
+    }
+   ],
+   "aims": [
+    {
+     "label": "Aim 1",
+     "title": "Build the spatial multi-omic measurement stack for infected human tissue",
+     "description": "Combine direct RNA sequencing, precision RNA-modification mapping, spatial transcriptomics and spatial proteomics into a single registered workflow on primary human airway tissue.",
+     "responsible": "Angus C. Wilson"
+    },
+    {
+     "label": "Aim 2",
+     "title": "Integrate modalities into a common latent representation",
+     "description": "Deep-learning integration across transcriptomic, proteomic and imaging modalities, benchmarked against simulated and reference datasets.",
+     "responsible": "David Fenyo"
+    },
+    {
+     "label": "Aim 3",
+     "title": "Add the temporal axis from longitudinal human sampling",
+     "description": "Tensor-factorization and time-series models on serial samples so the atlas resolves trajectory rather than snapshot.",
+     "responsible": "Liat Shenhav"
+    },
+    {
+     "label": "Aim 4",
+     "title": "Anchor atlas coordinates in measured immune function",
+     "description": "Pair atlas positions with AIM assays, spectral flow and antibody function from the same donors so spatial states carry functional meaning.",
+     "responsible": "Ramin Herati"
+    },
+    {
+     "label": "Aim 5",
+     "title": "Validate causally with programmable viral perturbation",
+     "description": "Use microRNA-programmed recombinant viruses to perturb defined cell types and confirm the atlas predicts the resulting tissue-level change.",
+     "responsible": "Benjamin tenOever"
+    }
+   ],
+   "rationale_detailed": "The HSF ISO names 'revolutionary omics platforms that enable unprecedented spatial and temporal scales and resolution' as an area of interest — close to verbatim what this team builds. Wilson's spatial transcriptomics and proteomics of infected cells, Fenyo's proteogenomic and deep-learning integration, and Herati's human cohorts and spatial immune mapping make this a platform claim ARPA-H can evaluate, rather than a mechanism study dressed as one.",
+   "next_steps": "Rolling, but the solution summary and written ARPA-H feedback are mandatory and an encouraged proposer gets only 45 days for the full proposal. Draft the solution summary first and treat the feedback letter as the real milestone.",
+   "profile_gaps": []
+  },
+  {
+   "id": "P12",
+   "tier": "large",
+   "team_type": "multi",
+   "suggested_title": "Threat-Agnostic Host-Directed Countermeasures Against Engineered Respiratory Pathogens",
+   "contact_pi": "Benjamin tenOever",
+   "scale": "Four investigators",
+   "opportunity_number": "HDTRA1-25-S-0001",
+   "opportunity_title": "DTRA — Fundamental Research to Counter Weapons of Mass Destruction",
+   "agency": "DoD / DTRA",
+   "close_date": "2034-09-30",
+   "opportunity_url": "https://www.grants.gov/search-results-detail/356612",
+   "award": "Varies",
+   "members": [
+    "Benjamin tenOever",
+    "Kenneth A. Stapleford",
+    "James Lee",
+    "Alejandro Pironti"
+   ],
+   "member_roles": [
+    {
+     "name": "Benjamin tenOever",
+     "group": "Microbiology",
+     "role": "Contact PI"
+    },
+    {
+     "name": "Kenneth A. Stapleford",
+     "group": "Microbiology",
+     "role": "Viral evolution and emergence"
+    },
+    {
+     "name": "James Lee",
+     "group": "Microbiology",
+     "role": "Structural target validation"
+    },
+    {
+     "name": "Alejandro Pironti",
+     "group": "Microbiology",
+     "role": "Sequence-to-risk modeling"
+    }
+   ],
+   "aims": [
+    {
+     "label": "Aim 1",
+     "title": "Identify host pathways whose engagement is broadly protective across viral families",
+     "description": "Comparative perturbation across orthomyxo-, paramyxo-, corona- and alphaviruses to find pathways no single family can evade without fitness cost.",
+     "responsible": "Benjamin tenOever"
+    },
+    {
+     "label": "Aim 2",
+     "title": "Predict the escape routes an engineered agent would take",
+     "description": "Experimental evolution under host-pathway pressure to enumerate accessible escape mutations and their fitness costs.",
+     "responsible": "Kenneth A. Stapleford"
+    },
+    {
+     "label": "Aim 3",
+     "title": "Build a sequence-to-risk classifier that needs no prior knowledge of the agent",
+     "description": "Train models on genomic features predictive of host-pathway dependence, so an unknown sequence can be triaged to a countermeasure class.",
+     "responsible": "Alejandro Pironti"
+    },
+    {
+     "label": "Aim 4",
+     "title": "Validate the molecular interfaces structurally",
+     "description": "Cryo-EM of the host–pathogen complexes prioritized in Aim 1 to support downstream countermeasure design.",
+     "responsible": "James Lee"
+    }
+   ],
+   "rationale_detailed": "DTRA's standing BAA funds fundamental science against chemical and biological threats and runs to 2034, making it the lowest-friction large vehicle outside DARPA. Threat-agnostic host-directed defence is the right framing for a threat space that by definition includes uncharacterized agents, and this team can pair innate-immune mechanism with evolutionary prediction of what an engineered agent would have to overcome.",
+   "next_steps": "Rolling white papers. Given the government-wide DGOFR prohibition taking effect in November, scope this explicitly as host-directed and defensive, with no enhancement of pathogen characteristics, and state that in the white paper.",
+   "profile_gaps": []
+  },
+  {
+   "id": "P13",
+   "tier": "mid",
+   "team_type": "multi",
+   "suggested_title": "Pre-Symptomatic Detection of Respiratory Infection from Host-Response Signatures",
+   "contact_pi": "Ramin Herati",
+   "scale": "Five investigators",
+   "opportunity_number": "ARPA-H-SOL-24-106",
+   "opportunity_title": "ARPA-H Proactive Health Office ISO",
+   "agency": "ARPA-H",
+   "close_date": "2029-03-05",
+   "opportunity_url": "https://arpa-h.gov/explore-funding/open-funding-opportunities",
+   "award": "Program-scale",
+   "members": [
+    "Ramin Herati",
+    "Ralf Duerr",
+    "Liat Shenhav",
+    "Mila B. Ortigoza",
+    "David Fenyo"
+   ],
+   "member_roles": [
+    {
+     "name": "Ramin Herati",
+     "group": "Microbiology",
+     "role": "Contact PI"
+    },
+    {
+     "name": "Ralf Duerr",
+     "group": "Microbiology",
+     "role": "Multiplex assay development"
+    },
+    {
+     "name": "Liat Shenhav",
+     "group": "Microbiology",
+     "role": "Time-series machine learning"
+    },
+    {
+     "name": "Mila B. Ortigoza",
+     "group": "Microbiology",
+     "role": "Household transmission cohorts"
+    },
+    {
+     "name": "David Fenyo",
+     "group": "BMP / ISG",
+     "role": "Classifier validation"
+    }
+   ],
+   "aims": [
+    {
+     "label": "Aim 1",
+     "title": "Define the earliest host-response signature preceding symptoms",
+     "description": "Serial sampling across household transmission pairs to identify transcriptional and cellular changes detectable before symptom onset.",
+     "responsible": "Ramin Herati"
+    },
+    {
+     "label": "Aim 2",
+     "title": "Reduce the signature to a field-deployable assay",
+     "description": "Translate the signature into a multiplex protein or targeted RNA readout with a defined limit of detection and turnaround.",
+     "responsible": "Ralf Duerr"
+    },
+    {
+     "label": "Aim 3",
+     "title": "Build the temporal classifier",
+     "description": "Time-series models reporting detection latency relative to symptom onset and to first positive PCR.",
+     "responsible": "Liat Shenhav"
+    },
+    {
+     "label": "Aim 4",
+     "title": "Validate prospectively and define the operating point",
+     "description": "Held-out prospective validation with an explicit sensitivity–specificity operating point chosen for the intended use.",
+     "responsible": "David Fenyo"
+    }
+   ],
+   "rationale_detailed": "The PHO ISO explicitly welcomes disease-specific infectious disease proposals under prevention and early detection. The distinguishing claim is that detection is anchored in measured immune mechanism rather than an unexplained classifier — what separates a fundable ARPA-H detection programme from a machine-learning paper.",
+   "next_steps": "Rolling; solution summary first, then 45 days if encouraged. Keep the framing distinct from P11 — that is a measurement platform, this is a deployable capability with a detection-latency metric.",
+   "profile_gaps": []
+  },
+  {
+   "id": "P14",
+   "tier": "mid",
+   "team_type": "multi",
+   "suggested_title": "A Shared Resource for Programmable RNA Virus Reagents, Reporter Systems and Reverse Genetics",
+   "contact_pi": "Benjamin tenOever",
+   "scale": "Four investigators",
+   "opportunity_number": "PAR-27-083",
+   "opportunity_title": "NIAID Resource-Related Research Projects (R24)",
+   "agency": "NIH / NIAID",
+   "close_date": "2027-01-25",
+   "opportunity_url": "https://www.grants.gov/search-results-detail/359692",
+   "award": "1–2 awards per year",
+   "members": [
+    "Benjamin tenOever",
+    "Kenneth A. Stapleford",
+    "Nathaniel R. Landau",
+    "Ralf Duerr"
+   ],
+   "member_roles": [
+    {
+     "name": "Benjamin tenOever",
+     "group": "Microbiology",
+     "role": "Contact PI, programmable virus resource"
+    },
+    {
+     "name": "Kenneth A. Stapleford",
+     "group": "Microbiology",
+     "role": "Arbovirus reverse genetics"
+    },
+    {
+     "name": "Nathaniel R. Landau",
+     "group": "Microbiology",
+     "role": "Vector production and distribution"
+    },
+    {
+     "name": "Ralf Duerr",
+     "group": "Microbiology",
+     "role": "Reference immunological panels"
+    }
+   ],
+   "aims": [
+    {
+     "label": "Aim 1",
+     "title": "Standardize and distribute microRNA-programmed and reporter virus collections",
+     "description": "Catalogue, quality-control and distribute recombinant virus panels with documented tropism and reporter performance.",
+     "responsible": "Benjamin tenOever"
+    },
+    {
+     "label": "Aim 2",
+     "title": "Provide arbovirus reverse-genetics platforms as a service",
+     "description": "Make chikungunya, dengue and Zika infectious clone systems available with mutagenesis support for external investigators.",
+     "responsible": "Kenneth A. Stapleford"
+    },
+    {
+     "label": "Aim 3",
+     "title": "Operate centralized vector production",
+     "description": "Lentiviral and AAV production, purification and titration at distributable scale with defined release criteria.",
+     "responsible": "Nathaniel R. Landau"
+    },
+    {
+     "label": "Aim 4",
+     "title": "Maintain reference immunological panels",
+     "description": "Curated neutralization and multiplex serology panels across MPXV, SARS-CoV-2, influenza and HIV-1 for cross-study comparability.",
+     "responsible": "Ralf Duerr"
+    }
+   ],
+   "rationale_detailed": "NIAID makes only one or two R24 awards a year, which makes this low-probability per attempt but very high value. NYU has an unusually deep and genuinely distributable reagent base: microRNA-programmed and reporter viruses, arbovirus reverse-genetics platforms, lentiviral and AAV production, and BSL-3 neutralization panels. The mechanism requires the resource serve already-funded high-priority NIAID projects, which this one demonstrably would.",
+   "next_steps": "Pre-submission program contact is essential — at one to two awards a year an uninvited application is close to unfundable. Ask whether NIAID sees a gap this resource fills before committing writing time.",
+   "profile_gaps": []
+  },
+  {
+   "id": "P15",
+   "tier": "mid",
+   "team_type": "multi",
+   "suggested_title": "Synthetic Humanized Receptor Models for Predicting Emerging Virus Susceptibility",
+   "contact_pi": "Ran Brosh",
+   "scale": "Four investigators across ISG, Pathology and Microbiology",
+   "opportunity_number": "PA-25-301",
+   "opportunity_title": "NIH Parent R01 (Clinical Trial Not Allowed)",
+   "agency": "NIH",
+   "close_date": "2026-10-05",
+   "opportunity_url": "https://grants.nih.gov/grants/guide/pa-files/PA-25-301.html",
+   "award": "R01",
+   "members": [
+    "Ran Brosh",
+    "Jef D. Boeke",
+    "Benjamin tenOever",
+    "Kenneth A. Stapleford"
+   ],
+   "member_roles": [
+    {
+     "name": "Ran Brosh",
+     "group": "ISG / Pathology",
+     "role": "Contact PI, genome writing"
+    },
+    {
+     "name": "Jef D. Boeke",
+     "group": "ISG",
+     "role": "Large-locus assembly"
+    },
+    {
+     "name": "Benjamin tenOever",
+     "group": "Microbiology",
+     "role": "Respiratory virus challenge"
+    },
+    {
+     "name": "Kenneth A. Stapleford",
+     "group": "Microbiology",
+     "role": "Arboviral receptor usage"
+    }
+   ],
+   "aims": [
+    {
+     "label": "Aim 1",
+     "title": "Build a rewritable receptor locus in mouse embryonic stem cells",
+     "description": "Install landing pads at receptor loci permitting iterative replacement with human, chimeric and variant alleles, verified by capture-seq.",
+     "responsible": "Ran Brosh"
+    },
+    {
+     "label": "Aim 2",
+     "title": "Assemble allelic series spanning natural human variation",
+     "description": "Use assemblon-based assembly to construct receptor variants including regulatory context, not coding sequence alone.",
+     "responsible": "Jef D. Boeke"
+    },
+    {
+     "label": "Aim 3",
+     "title": "Test respiratory virus susceptibility across the allelic series",
+     "description": "Challenge with influenza and coronaviruses to determine which receptor variants predict tropism and disease severity.",
+     "responsible": "Benjamin tenOever"
+    },
+    {
+     "label": "Aim 4",
+     "title": "Extend to arboviral receptor usage",
+     "description": "Apply the platform to alphavirus and flavivirus entry factors to test whether receptor humanization predicts host range shifts.",
+     "responsible": "Kenneth A. Stapleford"
+    }
+   ],
+   "rationale_detailed": "Brosh has already built ACE2-humanized mouse models using the Big-IN landing-pad platform; generalizing that from one receptor to a rewritable receptor locus turns a one-off model into a susceptibility-prediction platform. Pairing genome writing with arbovirus and influenza reverse genetics in the same application is a combination that essentially no other institution can assemble internally.",
+   "next_steps": "Standard R01 cycles; new applications 5 October 2026. Confirm the DGOFR review path — this is host-side engineering rather than pathogen enhancement, but the application should say so explicitly given the November policy.",
+   "profile_gaps": []
+  },
+  {
+   "id": "P16",
+   "tier": "mid",
+   "team_type": "multi",
+   "suggested_title": "Metabolic and Translational Signatures of Tissue Injury for Radiation and Chemical Triage",
+   "contact_pi": "Richard Possemato",
+   "scale": "Five investigators across Pathology, BMP and Microbiology",
+   "opportunity_number": "RFA-AI-27-014",
+   "opportunity_title": "Medical Countermeasures Against Radiological/Nuclear or Chemical Threats (U01)",
+   "agency": "NIH / NIAID",
+   "close_date": "2028-10-09",
+   "opportunity_url": "https://www.grants.gov/search-results-detail/361833",
+   "award": "U01",
+   "members": [
+    "Richard Possemato",
+    "Drew Jones",
+    "Robert J. Schneider",
+    "Kamal M. Khanna",
+    "David Fenyo"
+   ],
+   "member_roles": [
+    {
+     "name": "Richard Possemato",
+     "group": "Pathology",
+     "role": "Contact PI, metabolic injury response"
+    },
+    {
+     "name": "Drew Jones",
+     "group": "BMP",
+     "role": "Metabolomics"
+    },
+    {
+     "name": "Robert J. Schneider",
+     "group": "Microbiology",
+     "role": "Tissue repair and translational control"
+    },
+    {
+     "name": "Kamal M. Khanna",
+     "group": "Microbiology",
+     "role": "Myeloid injury response"
+    },
+    {
+     "name": "David Fenyo",
+     "group": "BMP / ISG",
+     "role": "Classifier development"
+    }
+   ],
+   "aims": [
+    {
+     "label": "Aim 1",
+     "title": "Establish dose- and time-resolved injury models with matched sampling",
+     "description": "Generate the natural-history dataset across exposure levels with paired tissue and blood collection at defined intervals.",
+     "responsible": "Richard Possemato"
+    },
+    {
+     "label": "Aim 2",
+     "title": "Define the circulating metabolomic signature of tissue dose",
+     "description": "LC-MS/MS metabolomics on the Aim 1 series to identify blood-measurable correlates of tissue-level injury.",
+     "responsible": "Drew Jones"
+    },
+    {
+     "label": "Aim 3",
+     "title": "Determine translational-control signatures of failed repair",
+     "description": "Ribosome profiling in regenerating versus failing tissue to identify markers preceding overt injury.",
+     "responsible": "Robert J. Schneider"
+    },
+    {
+     "label": "Aim 4",
+     "title": "Characterize the myeloid response as a cellular biomarker",
+     "description": "Single-cell and spatial profiling of macrophage subsets as a candidate cellular readout of dose and prognosis.",
+     "responsible": "Kamal M. Khanna"
+    },
+    {
+     "label": "Aim 5",
+     "title": "Build and validate the triage classifier",
+     "description": "Integrate modalities into a blood-measurable classifier with held-out validation and a stated triage operating point.",
+     "responsible": "David Fenyo"
+    }
+   ],
+   "rationale_detailed": "This standing announcement funds injury models and biomarker and triage technology validation, both open to the transcriptomics- and metabolomics-heavy approaches these groups run daily. It is also the clearest route to putting Pathology's metabolism programme and BMP's metabolomics core to work alongside Microbiology's repair biology, on a mechanism with no infectious-disease competition for reviewer attention.",
+   "next_steps": "Standing to October 2028, clinical trials not allowed, domestic entities only. Lower urgency than the dated items — schedule after the November cluster clears.",
+   "profile_gaps": [
+    "Drew Jones",
+    "Richard Possemato"
+   ]
+  },
+  {
+   "id": "P17",
+   "tier": "mid",
+   "team_type": "multi",
+   "suggested_title": "A Sub-Ten-Dollar Sample-to-Data Workflow for Arboviral and Respiratory Virus Genomic Surveillance",
+   "contact_pi": "Kenneth A. Stapleford",
+   "scale": "Three investigators",
+   "opportunity_number": "Grand Challenges — pathogen sequencing",
+   "opportunity_title": "Innovations in Low-Cost and Simplified Pathogen Sequencing Workflows",
+   "agency": "Gates Foundation",
+   "close_date": "2026-09-29",
+   "opportunity_url": "https://gcgh.grandchallenges.org/challenge/innovations-low-cost-and-simplified-pathogen-sequencing-workflows",
+   "award": "Up to $800K over 36 months",
+   "members": [
+    "Kenneth A. Stapleford",
+    "Alejandro Pironti",
+    "Ralf Duerr"
+   ],
+   "member_roles": [
+    {
+     "name": "Kenneth A. Stapleford",
+     "group": "Microbiology",
+     "role": "Contact PI, virology and validation"
+    },
+    {
+     "name": "Alejandro Pironti",
+     "group": "Microbiology",
+     "role": "Bioinformatics and cost engineering"
+    },
+    {
+     "name": "Ralf Duerr",
+     "group": "Microbiology",
+     "role": "Reference panels and benchmarking"
+    }
+   ],
+   "aims": [
+    {
+     "label": "Aim 1",
+     "title": "Reduce library preparation cost without losing genome recovery",
+     "description": "Benchmark reduced-volume, pooled and amplification-light protocols against reference workflows, reporting cost per sample as an explicit endpoint.",
+     "responsible": "Kenneth A. Stapleford"
+    },
+    {
+     "label": "Aim 2",
+     "title": "Build an analysis pipeline that runs on modest hardware",
+     "description": "A containerized pipeline producing consensus genomes and lineage calls without cloud dependence or high-memory compute.",
+     "responsible": "Alejandro Pironti"
+    },
+    {
+     "label": "Aim 3",
+     "title": "Validate against characterized reference panels",
+     "description": "Benchmark sensitivity and consensus accuracy across viral loads using curated reference materials.",
+     "responsible": "Ralf Duerr"
+    }
+   ],
+   "rationale_detailed": "The call names viruses including arboviruses explicitly and targets $1–10 per-sample sample-to-data cost. This team can do the virology, the bioinformatics and the validation without subcontracting, and the tiered award structure makes a credible mid-tier ask realistic rather than a moonshot.",
+   "next_steps": "Due 29 September 2026, 11:30 am PDT — 22 days. Small enough to write in that window if the decision is made this week.",
+   "profile_gaps": []
+  },
+  {
+   "id": "P18",
+   "tier": "mid",
+   "team_type": "pair",
+   "suggested_title": "Genetically Encoded Nanoparticle Rheology to Map the Cytoplasmic Biophysics of Virus-Infected Cells",
+   "contact_pi": "Liam Holt",
+   "scale": "Two investigators",
+   "opportunity_number": "PAR-27-072",
+   "opportunity_title": "Bioengineering Research Grants (R01)",
+   "agency": "NIH / NIBIB",
+   "close_date": "2029-07-05",
+   "opportunity_url": "https://www.grants.gov/search-results-detail/360543",
+   "award": "R01",
+   "members": [
+    "Liam Holt",
+    "Angus C. Wilson"
+   ],
+   "member_roles": [
+    {
+     "name": "Liam Holt",
+     "group": "ISG",
+     "role": "Contact PI, biophysics"
+    },
+    {
+     "name": "Angus C. Wilson",
+     "group": "Microbiology",
+     "role": "Virology and imaging"
+    }
+   ],
+   "aims": [
+    {
+     "label": "Aim 1",
+     "title": "Measure crowding and diffusion across the infection time course",
+     "description": "Deploy GEM nanoparticles in cells infected with HSV and an RNA virus, using single-particle tracking to quantify mesoscale rheology as replication compartments form.",
+     "responsible": "Liam Holt"
+    },
+    {
+     "label": "Aim 2",
+     "title": "Relate biophysical state to viral compartment organization",
+     "description": "Correlate rheology with spatial transcriptomic and imaging maps of replication compartments and host RNA processing.",
+     "responsible": "Angus C. Wilson"
+    },
+    {
+     "label": "Aim 3",
+     "title": "Test whether crowding is a causal control point",
+     "description": "Perturb ribosome concentration and mTORC1 signaling to shift crowding independently of infection, and measure the consequences for replication and latency establishment.",
+     "responsible": "Liam Holt"
+    }
+   ],
+   "rationale_detailed": "The bioengineering R01 exists for cases where the primary novelty is methodological, which this is. Holt's genetically encoded multimeric nanoparticles measure crowding and diffusion in living cells; Wilson has shown that infection reprograms host biophysics and nuclear architecture. Nobody has systematically measured the mesoscale physics of an infected cell, and the pairing is small enough to move quickly.",
+   "next_steps": "Standing to 2029 on standard cycles — confirm the exact receipt dates in the full announcement, which the Grants.gov summary does not state.",
+   "profile_gaps": []
+  },
+  {
+   "id": "P19",
+   "tier": "small",
+   "team_type": "pair",
+   "suggested_title": "Mechanisms and Consequences of Noncanonical RNA 5′-End Modification",
+   "contact_pi": "Joel G. Belasco",
+   "scale": "Single PI (required by the mechanism)",
+   "opportunity_number": "PAR-26-121",
+   "opportunity_title": "MIRA (R35) for Established Investigators",
+   "agency": "NIH / NIGMS",
+   "close_date": "2027-01-27",
+   "opportunity_url": "https://www.grants.gov/search-results-detail/359862",
+   "award": "Up to $750K direct/yr",
+   "members": [
+    "Joel G. Belasco"
+   ],
+   "member_roles": [
+    {
+     "name": "Joel G. Belasco",
+     "group": "Microbiology",
+     "role": "Sole PI"
+    }
+   ],
+   "aims": [
+    {
+     "label": "Aim 1",
+     "title": "Discover the full repertoire of noncanonical RNA 5′ caps",
+     "description": "Systematic identification of 5′-end modifications across bacterial and mammalian transcriptomes using boronate gel separation, RLM-RACE and mass spectrometry.",
+     "responsible": "Joel G. Belasco"
+    },
+    {
+     "label": "Aim 2",
+     "title": "Define their biosynthetic origins and removal pathways",
+     "description": "Reconstitute capping and decapping activities in purified systems and identify the enzymes that install and remove each modification.",
+     "responsible": "Joel G. Belasco"
+    },
+    {
+     "label": "Aim 3",
+     "title": "Establish the regulatory consequences",
+     "description": "Measure how each cap alters transcript half-life and RNase E scanning using single-molecule FRET and in vivo decay kinetics under stress.",
+     "responsible": "Joel G. Belasco"
+    }
+   ],
+   "rationale_detailed": "MIRA is the right instrument for a programme whose value is a sustained mechanistic line rather than a single hypothesis, and the discovery of noncanonical Np4 and glucose caps is exactly the NIGMS-mission fundamental work the mechanism was built to protect.",
+   "next_steps": "Requires an existing single-PI NIGMS R01-equivalent and no other NIGMS application pending simultaneously — verify both, since a pending NIGMS application invalidates the submission.",
+   "profile_gaps": []
+  },
+  {
+   "id": "P20",
+   "tier": "small",
+   "team_type": "pair",
+   "suggested_title": "A Conserved Structured Element in Influenza A Segment 8 as a Programmable Control Point for Splicing",
+   "contact_pi": "Benjamin tenOever",
+   "scale": "Two investigators",
+   "opportunity_number": "PA-25-301",
+   "opportunity_title": "NIH Parent R01 (Clinical Trial Not Allowed)",
+   "agency": "NIH",
+   "close_date": "2026-10-05",
+   "opportunity_url": "https://grants.nih.gov/grants/guide/pa-files/PA-25-301.html",
+   "award": "R01",
+   "members": [
+    "Benjamin tenOever",
+    "Alexander Serganov"
+   ],
+   "member_roles": [
+    {
+     "name": "Benjamin tenOever",
+     "group": "Microbiology",
+     "role": "Contact PI, virology and RNA programming"
+    },
+    {
+     "name": "Alexander Serganov",
+     "group": "BMP",
+     "role": "RNA structural biology"
+    }
+   ],
+   "aims": [
+    {
+     "label": "Aim 1",
+     "title": "Determine the structure of the conserved segment 8 element",
+     "description": "Solve the element's structure and define the determinants of kink-turn-like geometry and L7Ae recognition.",
+     "responsible": "Alexander Serganov"
+    },
+    {
+     "label": "Aim 2",
+     "title": "Establish its function in NS splicing and viral fitness",
+     "description": "Reverse genetics with structure-disrupting and structure-preserving mutations, measuring NS1/NEP ratio, replication and interferon antagonism.",
+     "responsible": "Benjamin tenOever"
+    },
+    {
+     "label": "Aim 3",
+     "title": "Test programmable control of splicing through the element",
+     "description": "Deploy L7Ae-based effectors to retune the NS1/NEP ratio in trans, asking whether the element is a viable target for attenuation or a synthetic control layer.",
+     "responsible": "Benjamin tenOever"
+    }
+   ],
+   "rationale_detailed": "The highest-readiness R01 on this list, because the preliminary data are already being generated in-house on the segment 8 hairpin. Pairing it with Serganov supplies the structural rigour that RNA-element papers are routinely criticized for lacking, and a kink-turn-like element that L7Ae can engage is both a mechanism claim and a synthetic-control claim.",
+   "next_steps": "New applications 5 October 2026. Check this against the six-applications-per-PI-per-calendar-year cap given the other submissions on this list that name the same PI.",
+   "profile_gaps": [
+    "Alexander Serganov"
+   ]
+  },
+  {
+   "id": "P21",
+   "tier": "small",
+   "team_type": "pair",
+   "suggested_title": "Structural and Genetic Dissection of the Mycobacterial Pup–Proteasome System as a Therapeutic Target",
+   "contact_pi": "K. Heran Darwin",
+   "scale": "Two investigators",
+   "opportunity_number": "PA-25-301",
+   "opportunity_title": "NIH Parent R01 (Clinical Trial Not Allowed)",
+   "agency": "NIH",
+   "close_date": "2026-10-05",
+   "opportunity_url": "https://grants.nih.gov/grants/guide/pa-files/PA-25-301.html",
+   "award": "R01",
+   "members": [
+    "K. Heran Darwin",
+    "James Lee"
+   ],
+   "member_roles": [
+    {
+     "name": "K. Heran Darwin",
+     "group": "Microbiology",
+     "role": "Contact PI, mycobacterial genetics"
+    },
+    {
+     "name": "James Lee",
+     "group": "Microbiology",
+     "role": "Cryo-EM and structural biology"
+    }
+   ],
+   "aims": [
+    {
+     "label": "Aim 1",
+     "title": "Determine structures of PafA, Dop and Pup–substrate complexes",
+     "description": "Cryo-EM of the pupylation and depupylation machinery captured on substrate, defining recognition determinants.",
+     "responsible": "James Lee"
+    },
+    {
+     "label": "Aim 2",
+     "title": "Test structure-guided predictions genetically",
+     "description": "Introduce predicted interface mutations and measure pupylation, proteasome flux and survival under host-imposed oxidative and nitrosative stress.",
+     "responsible": "K. Heran Darwin"
+    },
+    {
+     "label": "Aim 3",
+     "title": "Establish the requirement in infection",
+     "description": "Test prioritized mutants in mouse infection to determine which interfaces are required for persistence rather than for growth.",
+     "responsible": "K. Heran Darwin"
+    }
+   ],
+   "rationale_detailed": "Darwin's programme has defined the bacterial proteasome pathway genetically and biochemically but has depended on outside collaborators for structure. Pairing her with Lee's cryo-EM inside the same department converts a long-standing collaborative bottleneck into an internal capability — a concrete change that strengthens a competing renewal.",
+   "next_steps": "Standard R01 cycles. Keep the M. tuberculosis scope clearly within permitted work under the DGOFR policy and document the institutional review in the application.",
+   "profile_gaps": []
+  },
+  {
+   "id": "P22",
+   "tier": "small",
+   "team_type": "multi",
+   "suggested_title": "Retroelement Derepression as an Endogenous Trigger of Innate Immune Activation",
+   "contact_pi": "Paolo Mita",
+   "scale": "Three investigators across BMP, ISG and Microbiology",
+   "opportunity_number": "PA-25-301",
+   "opportunity_title": "NIH Parent R01 (Clinical Trial Not Allowed)",
+   "agency": "NIH",
+   "close_date": "2026-10-05",
+   "opportunity_url": "https://grants.nih.gov/grants/guide/pa-files/PA-25-301.html",
+   "award": "R01",
+   "members": [
+    "Paolo Mita",
+    "Molly Gale Hammell",
+    "Benjamin tenOever"
+   ],
+   "member_roles": [
+    {
+     "name": "Paolo Mita",
+     "group": "BMP / ISG / Microbiology",
+     "role": "Contact PI, retroelement biology"
+    },
+    {
+     "name": "Molly Gale Hammell",
+     "group": "ISG",
+     "role": "Computational transposable-element analysis"
+    },
+    {
+     "name": "Benjamin tenOever",
+     "group": "Microbiology",
+     "role": "Innate immune sensing"
+    }
+   ],
+   "aims": [
+    {
+     "label": "Aim 1",
+     "title": "Define the conditions under which retroelement derepression produces immunostimulatory nucleic acid",
+     "description": "Quantify LINE-1 and SVA expression, reverse transcription and cytoplasmic DNA/RNA accumulation across stress, senescence and infection.",
+     "responsible": "Paolo Mita"
+    },
+    {
+     "label": "Aim 2",
+     "title": "Distinguish genuine derepression from mapping artefact",
+     "description": "Apply transposable-element-aware quantification to separate locus-specific activation from repeat-family signal, a step this field routinely gets wrong.",
+     "responsible": "Molly Gale Hammell"
+    },
+    {
+     "label": "Aim 3",
+     "title": "Determine which sensors respond and with what consequence",
+     "description": "Sensor-knockout and reporter systems to establish which pathways detect retroelement products and whether the resulting interferon response is protective or pathological.",
+     "responsible": "Benjamin tenOever"
+    }
+   ],
+   "rationale_detailed": "LINE-1 and SVA derepression generates cytoplasmic nucleic acid that the antiviral sensing machinery is built to detect, but the field has largely studied the two halves separately. This trio holds the retroelement biology, the computational transposable-element analysis, and the innate-sensing readouts — and the question bridges BMP, ISG and Microbiology in a way that reads as genuinely integrated rather than assembled.",
+   "next_steps": "Standard R01 cycles. Both Mita's and Gale Hammell's expertise profiles are empty in the current site data — confirm current scope and available preliminary data before committing.",
+   "profile_gaps": [
+    "Molly Gale Hammell",
+    "Paolo Mita"
+   ]
+  },
+  {
+   "id": "P23",
+   "tier": "small",
+   "team_type": "pair",
+   "suggested_title": "Human Milk Determinants of Early-Life Respiratory Microbiome Assembly and Mucosal Immune Development",
+   "contact_pi": "Liat Shenhav",
+   "scale": "Two investigators",
+   "opportunity_number": "PAR-25-362",
+   "opportunity_title": "Early Immune System Development and Ontogeny (R01)",
+   "agency": "NIH / NICHD",
+   "close_date": "2026-10-05",
+   "opportunity_url": "https://grants.nih.gov/grants/guide/pa-files/PAR-25-362.html",
+   "award": "R01",
+   "members": [
+    "Liat Shenhav",
+    "Adam J. Ratner"
+   ],
+   "member_roles": [
+    {
+     "name": "Liat Shenhav",
+     "group": "Microbiology",
+     "role": "Contact PI, modeling and milk composition"
+    },
+    {
+     "name": "Adam J. Ratner",
+     "group": "Microbiology",
+     "role": "Pediatric cohorts and infection outcomes"
+    }
+   ],
+   "aims": [
+    {
+     "label": "Aim 1",
+     "title": "Define how milk composition shapes nasal and gut community assembly",
+     "description": "Longitudinal multi-omics across maternal–infant pairs with source-tracking to attribute colonizers to milk, maternal and environmental sources.",
+     "responsible": "Liat Shenhav"
+    },
+    {
+     "label": "Aim 2",
+     "title": "Relate colonization trajectory to mucosal immune maturation",
+     "description": "Pair community trajectory with infant mucosal immune profiling to identify assembly states associated with competent mucosal responses.",
+     "responsible": "Adam J. Ratner"
+    },
+    {
+     "label": "Aim 3",
+     "title": "Test whether trajectory predicts respiratory infection burden",
+     "description": "Prospective follow-up for ARI incidence and severity, modeling trajectory features as predictors ahead of first infection.",
+     "responsible": "Liat Shenhav"
+    }
+   ],
+   "rationale_detailed": "The announcement asks specifically for mechanisms of immune development in early childhood including local mucosal immunity — an unusually exact fit for Shenhav's maternal–infant cohorts and human-milk work. Ratner supplies the clinical pediatric infrastructure and the infection outcomes that turn a descriptive trajectory into a mechanism with consequences.",
+   "next_steps": "New applications 5 October 2026. Foreign organizations are eligible on this announcement, which opens a clean route to an international birth-cohort collaborator if one strengthens the sampling.",
+   "profile_gaps": []
+  },
+  {
+   "id": "P24",
+   "tier": "small",
+   "team_type": "multi",
+   "suggested_title": "Direct RNA Sequencing of the Modification Landscape in Latent Herpes Simplex Virus Neurons",
+   "contact_pi": "Angus C. Wilson",
+   "scale": "Three investigators",
+   "opportunity_number": "PA-25-304",
+   "opportunity_title": "NIH Parent R21",
+   "agency": "NIH",
+   "close_date": "2026-10-16",
+   "opportunity_url": "https://grants.nih.gov/grants/guide/pa-files/PA-25-304.html",
+   "award": "$275K direct over 2 yr",
+   "members": [
+    "Angus C. Wilson",
+    "Ian J. Mohr",
+    "Esteban Mazzoni"
+   ],
+   "member_roles": [
+    {
+     "name": "Angus C. Wilson",
+     "group": "Microbiology",
+     "role": "Contact PI, direct RNA sequencing"
+    },
+    {
+     "name": "Ian J. Mohr",
+     "group": "Microbiology",
+     "role": "RNA modification enzymology and latency"
+    },
+    {
+     "name": "Esteban Mazzoni",
+     "group": "Cell Biology",
+     "role": "Directed neuronal differentiation"
+    }
+   ],
+   "aims": [
+    {
+     "label": "Aim 1",
+     "title": "Map RNA modifications on viral and host transcripts in latently infected neurons",
+     "description": "Direct RNA sequencing with custom modification-calling pipelines applied to defined human neuronal latency models.",
+     "responsible": "Angus C. Wilson"
+    },
+    {
+     "label": "Aim 2",
+     "title": "Test whether modification state gates reactivation",
+     "description": "Perturb the m6A machinery and ask whether the latency-associated modification pattern is required to restrain lytic gene expression.",
+     "responsible": "Ian J. Mohr"
+    }
+   ],
+   "rationale_detailed": "The parent R21 exists for exactly this: a high-risk question with no preliminary data required. Whether latency is maintained by a distinct RNA-modification state was not testable until direct RNA sequencing matured. Wilson and Mohr own the chemistry, the pipelines and the latency models; adding Mazzoni's directed differentiation replaces variable primary neuronal cultures with a defined, scalable human neuronal source.",
+   "next_steps": "Due 16 October 2026. NIAID does not accept the parent R21 in all program areas — confirm with the program officer first, since that is the most common avoidable rejection on this mechanism. Mazzoni's profile is empty in the site data; confirm scope.",
+   "profile_gaps": [
+    "Esteban Mazzoni"
+   ]
+  },
+  {
+   "id": "P25",
+   "tier": "small",
+   "team_type": "pair",
+   "suggested_title": "Reference Materials and Analytical Standards for Sequencing-Based Detection of Emerging Pathogens",
+   "contact_pi": "Ralf Duerr",
+   "scale": "Two investigators",
+   "opportunity_number": "FDABAA-26-00123",
+   "opportunity_title": "FDA Broad Agency Announcement — Regulatory Science",
+   "agency": "FDA",
+   "close_date": "2026-09-21",
+   "opportunity_url": "https://www.fda.gov/science-research/advancing-regulatory-science/regulatory-science-extramural-research-and-development-projects",
+   "award": "Varies",
+   "members": [
+    "Ralf Duerr",
+    "Alejandro Pironti"
+   ],
+   "member_roles": [
+    {
+     "name": "Ralf Duerr",
+     "group": "Microbiology",
+     "role": "Contact PI, viral genomics"
+    },
+    {
+     "name": "Alejandro Pironti",
+     "group": "Microbiology",
+     "role": "Bioinformatics and validation frameworks"
+    }
+   ],
+   "aims": [
+    {
+     "label": "Aim 1",
+     "title": "Construct reference materials spanning known and deliberately unrepresented pathogens",
+     "description": "Synthetic and characterized biological reference panels that let a metagenomic assay be evaluated on agents outside its training set.",
+     "responsible": "Ralf Duerr"
+    },
+    {
+     "label": "Aim 2",
+     "title": "Define analytical performance metrics for threat-agnostic detection",
+     "description": "Limit-of-detection, specificity and false-discovery frameworks appropriate to metagenomic diagnostics, delivered as an open validation protocol.",
+     "responsible": "Alejandro Pironti"
+    }
+   ],
+   "rationale_detailed": "FDA's BAA funds regulatory science rather than discovery, and the gap it repeatedly names — how to validate a sequencing-based diagnostic when the target is not yet known — is one this pair is unusually well placed to address, having run genomic surveillance and variant tracking through two real emergencies.",
+   "next_steps": "The current window closes 21 September 2026 but is past the date for guaranteed FY26 consideration. The FY27 BAA is expected around November; write the concept paper now and submit against FY27 unless the FY26 window can be met.",
+   "profile_gaps": []
+  }
+ ],
+ "department_actions": [
+  {
+   "num": "PA-25-168 / PAR-23-228",
+   "title": "NRSA T32 — parent and NIGMS predoctoral",
+   "deadline": "2026-09-25",
+   "action": "The NIGMS predoctoral T32 announcement expires 26 September, so this is the final cycle before a reissue. Decide this week whether a departmental training grant goes in.",
+   "url": "https://grants.nih.gov/grants/guide/pa-files/PA-25-168.html"
+  },
+  {
+   "num": "PAR-25-322",
+   "title": "Stephen I. Katz ESI R01 — change of research direction",
+   "deadline": "2026-09-28",
+   "action": "No preliminary data permitted; any application containing preliminary data is withdrawn. Ideal for a new faculty member pivoting into virology from an adjacent field.",
+   "url": "https://grants.nih.gov/grants/guide/pa-files/PAR-25-322.html"
+  },
+  {
+   "num": "PAR-27-032",
+   "title": "MIRA (R35) for Early Stage Investigators",
+   "deadline": "2026-10-02",
+   "action": "Single PD/PI only — multi-PI applications are rejected without review. Identify every ESI across the five groups now; this is the strongest first-award vehicle for RNA-biology and mechanism-of-infection faculty.",
+   "url": "https://www.grants.gov/search-results-detail/360593"
+  },
+  {
+   "num": "PAR-25-251 / PA-24-194",
+   "title": "NIAID K22 and Parent K99/R00",
+   "deadline": "2026-10-12",
+   "action": "K22 gives up to $249K direct/yr for two years — use it both as a recruitment instrument for incoming assistant professors and as a placement route for departing postdocs. K99 candidates need four years or less of postdoctoral experience at submission.",
+   "url": "https://grants.nih.gov/grants/guide/pa-files/PAR-25-251.html"
+  },
+  {
+   "num": "RFA-HL-26-002 / -003",
+   "title": "NHLBI Outstanding and Emerging Investigator Awards (R35)",
+   "deadline": "2027-02-19",
+   "action": "Final cycle for both, LOI 30 days prior. The Emerging award requires two NHLBI R01-equivalents including an NHLBI ESI R01 — NHLBI staff flag eligibility manually, so raise it with the program officer rather than waiting on eRA.",
+   "url": "https://grants.nih.gov/grants/guide/rfa-files/RFA-HL-26-003.html"
+  }
+ ],
+ "unmatched_faculty": [
+  "Stefan Feske",
+  "Jane Skok",
+  "Susan Smith",
+  "Michele Pagano",
+  "Pau Castel",
+  "Gregory David",
+  "Nadav Brandes",
+  "Dimitris Placantonakis",
+  "Catherine Pei-ju Lu",
+  "Hyung Don Ryoo",
+  "Andrea H. Brand",
+  "Elaine (Lyn) Wilson"
+ ]
+}
