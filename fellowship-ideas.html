@@ -27,7 +27,19 @@
 body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   margin: 0; padding: 0; background: var(--bg-light); color: var(--text-main); line-height: 1.55; }
 header { background: #ffffff; color: var(--nyu-purple); padding: 1.1rem 2rem 1rem;
-  border-bottom: 5px solid var(--nyu-purple); }
+  border-bottom: 5px solid var(--nyu-purple);
+  display: flex; align-items: center; gap: 1.15rem; flex-wrap: wrap; }
+header .brand { flex: 0 0 auto; display: flex; align-items: center; }
+header .brand img { height: 52px; width: auto; display: block; border-radius: .3rem; }
+header .brand + .titles { border-left: 1px solid var(--border-subtle); padding-left: 1.15rem; }
+header .titles { flex: 1 1 260px; min-width: 0; }
+@media (max-width: 560px) {
+  header { gap: .6rem; }
+  header .titles { flex: 1 1 100%; }
+  header .brand + .titles { border-left: 0; padding-left: 0; }
+  header .brand img { height: 40px; }
+  header h1 { font-size: 1.55rem; }
+}
 header h1 { margin: 0; font-size: 1.9rem; color: var(--nyu-purple); }
 header p { margin: .35rem 0 0; color: var(--text-soft); font-size: .95rem; }
 nav { position: sticky; top: 0; background: #faf7ff; border-bottom: 1px solid #ddd4ff;
@@ -134,14 +146,19 @@ footer { border-top: 1px solid #ddd4ff; padding: 1rem 2rem; background: #faf7ff;
 <body>
 
 <header>
-  <h1>Fellowship Project Ideas</h1>
-  <p>Starting points for postdoctoral fellowship applications, built from the research profiles of the Department of Microbiology &mdash; NYU Grossman School of Medicine</p>
+  <span class="brand"><img src="assets/nyulh-logo.png" alt="NYU Langone Health"
+    onerror="this.parentNode.remove()" /></span>
+  <span class="titles">
+    <h1>Fellowship Project Ideas</h1>
+    <p>Starting points for postdoctoral fellowship applications, built from the research profiles of the Department of Microbiology &mdash; NYU Grossman School of Medicine</p>
+  </span>
 </header>
 
 <nav>
-  <a href="./">Grant slate</a>
+  <a href="./">Faculty grants</a>
   <a href="fellowships.html">Postdoc fellowships</a>
   <a href="#top" class="here">Project ideas</a>
+  <a href="faculty-profiles.html">Faculty profiles</a>
   <a href="#pairs">Ideas needing two labs</a>
   <a href="#howto">Turning one into an application</a>
 </nav>

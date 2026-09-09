@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en" id="top">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Faculty Profiles &mdash; NYU Grossman School of Medicine</title>
+<style>
+:root {
+  --nyu-purple: #4F2C85;
+  --nyu-deep: #2a1a49;
+  --bg-light: #f5f5f7;
+  --card-bg: #ffffff;
+  --border-subtle: #e3e3ee;
+  --text-main: #222222;
+  --text-soft: #56566a;
+  --amber-bg: #fdf6e3;
+  --amber-line: #e6d3a3;
+  --amber-ink: #7a5200;
+  --red-bg: #fdeeeb;
+  --red-line: #e6bcb1;
+  --red-ink: #9a3520;
+  --green-bg: #edf6f0;
+  --green-line: #b9ddc7;
+  --green-ink: #1f6b41;
+}
+* { box-sizing: border-box; }
+body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  margin: 0; padding: 0; background: var(--bg-light); color: var(--text-main); line-height: 1.55; }
+header { background: #ffffff; color: var(--nyu-purple); padding: 1.1rem 2rem 1rem;
+  border-bottom: 5px solid var(--nyu-purple); }
+header h1 { margin: 0; font-size: 1.9rem; color: var(--nyu-purple); }
+header p { margin: .35rem 0 0; color: var(--text-soft); font-size: .95rem; }
+nav { position: sticky; top: 0; background: #faf7ff; border-bottom: 1px solid #ddd4ff;
+  padding: .45rem 2rem; display: flex; gap: 1rem; flex-wrap: wrap; z-index: 10; }
+nav a { text-decoration: none; color: var(--nyu-purple); font-size: .9rem;
+  padding: .25rem .7rem; border-radius: 999px; font-weight: 500; }
+nav a:hover { background: rgba(79,44,133,.08); }
+nav a.here { background: var(--nyu-purple); color: #fff; }
+main { max-width: 1120px; margin: 0 auto; padding: 2rem 2.25rem 3rem; }
+.card { background: var(--card-bg); border-radius: .9rem; padding: 1.3rem 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,.05); border: 1px solid var(--border-subtle); }
+h2 { margin-top: 0; color: var(--nyu-purple); }
+.section-spacer { margin-top: 1.5rem; }
+.lede { max-width: 74ch; }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: .75rem; margin-top: 1rem; }
+.stat { border: 1px solid var(--border-subtle); border-radius: .7rem; padding: .7rem .9rem; background: #faf7ff; }
+.stat .k { font-size: .72rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--text-soft); }
+.stat .v { font-size: 1.5rem; font-weight: 700; color: var(--nyu-purple); margin-top: .15rem; }
+.stat .s { font-size: .78rem; color: var(--text-soft); line-height: 1.35; }
+.filters { display: flex; flex-wrap: wrap; gap: .45rem; align-items: center; margin: 1.25rem 0 1rem; }
+.fchip { font: inherit; font-size: .85rem; cursor: pointer; background: #fff; color: var(--nyu-purple);
+  border: 1px solid var(--border-subtle); border-radius: 999px; padding: .3rem .8rem; font-weight: 500; }
+.fchip:hover { border-color: var(--nyu-purple); background: rgba(79,44,133,.05); }
+.fchip[aria-pressed="true"] { background: var(--nyu-purple); border-color: var(--nyu-purple); color: #fff; }
+.fchip .ct { opacity: .65; font-size: .75rem; margin-left: .35rem; }
+.divider { width: 1px; align-self: stretch; background: var(--border-subtle); margin: 0 .3rem; }
+input[type=search] { font: inherit; font-size: .85rem; padding: .35rem .8rem; min-width: 210px;
+  border: 1px solid var(--border-subtle); border-radius: 999px; background: #fff; color: var(--text-main); }
+.prop { margin-bottom: 1rem; }
+.phead { display: flex; flex-wrap: wrap; align-items: baseline; gap: .55rem; }
+.pid { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .82rem;
+  font-weight: 700; color: #fff; background: var(--nyu-purple); border-radius: .35rem; padding: .1rem .45rem; }
+.tierbadge { font-size: .68rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase;
+  border-radius: 999px; padding: .16rem .55rem; border: 1px solid var(--border-subtle);
+  color: var(--text-soft); background: #faf7ff; }
+.phead h3 { margin: 0; flex: 1 1 100%; font-size: 1.18rem; line-height: 1.3; color: var(--nyu-deep); }
+.phead h3 a { color: inherit; text-decoration: none; border-bottom: 1px solid #d9c9f2; }
+.phead h3 a:hover { color: var(--nyu-purple); border-bottom-color: var(--nyu-purple); }
+.oppbar { display: flex; flex-wrap: wrap; gap: .35rem; margin-top: .65rem; }
+.oppbar span, .oppbar a { font-size: .72rem; font-weight: 600; letter-spacing: .03em; text-transform: uppercase;
+  padding: .18rem .5rem; border-radius: .3rem; border: 1px solid var(--border-subtle);
+  color: var(--text-soft); background: #fbfbfd; white-space: nowrap; }
+.oppbar .odl { font-family: ui-monospace, Menlo, monospace; letter-spacing: 0; text-transform: none; }
+.oppbar .odl.hot { color: var(--red-ink); background: var(--red-bg); border-color: var(--red-line); }
+.oppbar .odl.soon { color: var(--amber-ink); background: var(--amber-bg); border-color: var(--amber-line); }
+.oppbar .visa { color: var(--green-ink); background: var(--green-bg); border-color: var(--green-line); }
+.oppbar .usonly { color: var(--red-ink); background: var(--red-bg); border-color: var(--red-line); }
+.oppbar .nom { color: var(--amber-ink); background: var(--amber-bg); border-color: var(--amber-line); }
+.onote { margin: .6rem 0 0; font-size: .82rem; color: var(--text-soft); max-width: 92ch; }
+.split { display: grid; grid-template-columns: minmax(250px, 330px) 1fr; gap: 1.6rem; margin-top: 1rem; }
+@media (max-width: 860px) { .split { grid-template-columns: 1fr; } }
+.split h4 { margin: 0 0 .5rem; font-size: .72rem; font-weight: 700; letter-spacing: .09em;
+  text-transform: uppercase; color: var(--text-soft); border-bottom: 1px solid var(--border-subtle); padding-bottom: .3rem; }
+dl.terms { margin: 0; display: grid; grid-template-columns: auto 1fr; gap: .3rem .8rem; }
+dl.terms dt { font-size: .72rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
+  color: var(--text-soft); padding-top: .12rem; white-space: nowrap; }
+dl.terms dd { margin: 0; font-size: .88rem; }
+.foot { margin-top: .95rem; padding-top: .8rem; border-top: 1px solid var(--border-subtle);
+  display: flex; flex-direction: column; gap: .5rem; }
+.foot p { margin: 0; font-size: .84rem; color: var(--text-soft); max-width: 96ch; }
+.foot strong { color: var(--text-main); }
+.gate { background: var(--amber-bg); border-left: 3px solid var(--amber-line);
+  padding: .5rem .7rem; border-radius: .3rem; }
+.gate strong { color: var(--amber-ink); }
+.flag { background: var(--red-bg); border-left: 3px solid var(--red-line);
+  padding: .5rem .7rem; border-radius: .3rem; }
+.flag strong { color: var(--red-ink); }
+table.plain { border-collapse: collapse; width: 100%; }
+table.plain th { text-align: left; font-size: .72rem; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--text-soft); border-bottom: 2px solid var(--border-subtle); padding: .4rem .6rem .4rem 0; }
+table.plain td { padding: .5rem .6rem .5rem 0; border-bottom: 1px solid var(--border-subtle);
+  font-size: .88rem; vertical-align: top; }
+table.plain tr:last-child td { border-bottom: 0; }
+table.plain td a { color: var(--nyu-purple); }
+td.nw { white-space: nowrap; width: 1%; font-family: ui-monospace, Menlo, monospace; font-size: .8rem; }
+.sub { color: var(--text-soft); font-size: .82rem; }
+.sub2 { display: block; margin-top: .15rem; font-size: .82rem; color: var(--text-soft); max-width: 76ch; }
+.tablewrap { overflow-x: auto; }
+.none { padding: 2.5rem; text-align: center; color: var(--text-soft); }
+footer { border-top: 1px solid #ddd4ff; padding: 1rem 2rem; background: #faf7ff;
+  font-size: .8rem; color: #555; text-align: center; }
+</style><style>
+header { display: flex; align-items: center; gap: 1.15rem; flex-wrap: wrap; }
+header .brand { flex: 0 0 auto; display: flex; align-items: center; }
+header .brand img { height: 52px; width: auto; display: block; border-radius: .3rem; }
+header .brand + .titles { border-left: 1px solid var(--border-subtle); padding-left: 1.15rem; }
+header .titles { flex: 1 1 260px; min-width: 0; }
+@media (max-width: 560px) {
+  header { gap: .6rem; }
+  header .titles { flex: 1 1 100%; }
+  header .brand + .titles { border-left: 0; padding-left: 0; }
+  header .brand img { height: 40px; }
+  header h1 { font-size: 1.55rem; }
+}
+.grpbadge { font-size: .68rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase;
+  border-radius: 999px; padding: .16rem .55rem; border: 1px solid #d9c9f2;
+  color: var(--nyu-purple); background: #f3edfb; }
+.spec { margin: .45rem 0 0; font-size: .88rem; font-weight: 600; color: var(--nyu-deep); }
+.syn { margin: .6rem 0 0; font-size: .89rem; color: var(--text-main); max-width: 96ch; }
+.fgrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.1rem; margin-top: 1rem; }
+.fgrid section { min-width: 0; }
+.fgrid h4 { margin: 0 0 .45rem; font-size: .72rem; font-weight: 700; letter-spacing: .09em;
+  text-transform: uppercase; color: var(--text-soft);
+  border-bottom: 1px solid var(--border-subtle); padding-bottom: .3rem; }
+.fgrid ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: .3rem; }
+.fgrid li { font-size: .83rem; color: var(--text-soft); line-height: 1.45;
+  padding-left: .8rem; position: relative; }
+.fgrid li::before { content: "\2022"; position: absolute; left: 0; color: #c3aee6; }
+.capline { font-size: .83rem; color: var(--text-soft); line-height: 1.5; }
+.gapnote { margin: .8rem 0 0; }
+.trackrow { display: flex; flex-wrap: wrap; gap: .3rem; margin-top: .55rem; }
+.trackrow span { font-size: .72rem; font-weight: 600; padding: .16rem .5rem; border-radius: .3rem;
+  border: 1px solid var(--border-subtle); color: var(--text-soft); background: #fbfbfd; }
+.loading { padding: 2.5rem; text-align: center; color: var(--text-soft); }
+</style>
+</head>
+<body>
+
+<header>
+  <span class="brand"><img src="assets/nyulh-logo.png" alt="NYU Langone Health"
+    onerror="this.parentNode.remove()" /></span>
+  <span class="titles">
+    <h1>Faculty Profiles</h1>
+  </span>
+</header>
+
+<nav>
+  <a href="./">Faculty grants</a>
+  <a href="fellowships.html">Postdoc fellowships</a>
+  <a href="#top" class="here">Faculty profiles</a>
+  <a href="./#method">Method</a>
+</nav>
+
+<main>
+
+  <section class="card">
+    <h2>The research summaries everything else is built from</h2>
+    <p class="lede">Every team on the grants page, and every research theme on the project-ideas page,
+      was assembled from the profiles below. They are reproduced here in full so the reasoning is
+      inspectable: if a proposed team looks wrong, the profile it was drawn from is the place to look
+      first. Each entry gives the lab's research summary and, where it has been supplied, the structured
+      detail the matcher actually reads &mdash; research focus, model systems, and experimental capabilities.</p>
+    <div class="stats">
+      <div class="stat"><div class="k">Faculty</div><div class="v" id="nAll">&mdash;</div>
+        <div class="s">across five groups</div></div>
+      <div class="stat"><div class="k">Full profiles</div><div class="v" id="nFull">&mdash;</div>
+        <div class="s">summary plus structured detail</div></div>
+      <div class="stat"><div class="k">Summary only</div><div class="v" id="nThin">&mdash;</div>
+        <div class="s">not readable by the matcher</div></div>
+      <div class="stat"><div class="k">Groups</div><div class="v">5</div>
+        <div class="s">Microbiology, ISG, BMP, Pathology, Cell Biology</div></div>
+    </div>
+    <div class="foot">
+      <p class="gate"><strong>What the gap actually costs.</strong> Every one of these faculty now has a
+        written research summary. What nineteen of them lack is the structured detail underneath it &mdash;
+        the keyword, model-system and capability fields the matching code reads. A lab with a summary but
+        no structured fields is legible to a person and invisible to the tool, which is why some groups are
+        thinly represented on the grants page relative to their actual size. Filter by
+        <em>Summary only</em> to see exactly who that affects.</p>
+    </div>
+  </section>
+
+  <div class="filters">
+    <button class="fchip" data-f="grp" data-v="all" aria-pressed="true">All groups</button>
+    <button class="fchip" data-f="grp" data-v="Microbiology" aria-pressed="false">Microbiology</button>
+    <button class="fchip" data-f="grp" data-v="ISG" aria-pressed="false">ISG</button>
+    <button class="fchip" data-f="grp" data-v="BMP" aria-pressed="false">Biochemistry</button>
+    <button class="fchip" data-f="grp" data-v="Pathology" aria-pressed="false">Pathology</button>
+    <button class="fchip" data-f="grp" data-v="Cell Biology" aria-pressed="false">Cell Biology</button>
+    <span class="divider"></span>
+    <button class="fchip" data-f="depth" data-v="all" aria-pressed="true">All profiles</button>
+    <button class="fchip" data-f="depth" data-v="full" aria-pressed="false">Full profile</button>
+    <button class="fchip" data-f="depth" data-v="thin" aria-pressed="false">Summary only</button>
+    <span class="divider"></span>
+    <input type="search" id="q" placeholder="Search name, technique, organism, topic" aria-label="Search faculty profiles" />
+    <span class="sub">Showing <strong id="shown">&mdash;</strong></span>
+  </div>
+
+  <div class="loading" id="loading">Loading profiles&hellip;</div>
+  <div id="list"></div>
+  <div class="none" id="empty" hidden>No profile matches those filters.</div>
+
+</main>
+
+<footer>
+  Research Funding Opportunities &middot; AI Grant and Collaboration Initiative &middot; NYU Grossman School of Medicine
+</footer>
+
+<script>
+var GROUPS = {"Microbiology":"Microbiology","ISG":"Institute for Systems Genetics",
+              "BMP":"Biochemistry &amp; Molecular Pharmacology","Pathology":"Pathology",
+              "Cell Biology":"Cell Biology"};
+
+function esc(s){
+  return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+}
+function bullets(arr){
+  if (!arr || !arr.length) return "";
+  return "<ul>" + arr.map(function(i){ return "<li>" + esc(i) + "</li>"; }).join("") + "</ul>";
+}
+
+function card(f){
+  var cols = "";
+  if (f.structured) {
+    cols += '<section><h4>Research focus</h4>' + bullets(f.keywords) + '</section>';
+    if (f.models && f.models.length)
+      cols += '<section><h4>Model systems and scope</h4>' + bullets(f.models) + '</section>';
+    if (f.capabilities && f.capabilities.length)
+      cols += '<section><h4>Experimental capabilities</h4><p class="capline">' +
+              esc(f.capabilities.join(" ")) + '</p></section>';
+    if (f.complementary && f.complementary.length)
+      cols += '<section><h4>Complementary areas</h4>' + bullets(f.complementary) + '</section>';
+  }
+  var gap = f.structured ? "" :
+    '<div class="gapnote"><p class="gate" style="margin:0"><strong>Summary only.</strong> ' +
+    'This lab has a research summary but no structured research-focus, model-system or capability ' +
+    'fields, so the matching code cannot place it on a team. Supplying those three fields is what ' +
+    'would bring this lab into the grants page.</p></div>';
+  var tracks = (f.tracks && f.tracks.length)
+    ? '<div class="trackrow">' + f.tracks.map(function(t){ return '<span>' + esc(t) + '</span>'; }).join("") + '</div>'
+    : "";
+  var hay = (f.name + " " + f.group + " " + f.affiliations.join(" ") + " " + f.specialty + " " +
+             f.synopsis + " " + (f.keywords||[]).join(" ") + " " + (f.models||[]).join(" ") + " " +
+             (f.capabilities||[]).join(" ")).toLowerCase().replace(/"/g,"");
+  return '<article class="card prop" data-grp="' + esc(f.group) + '" data-depth="' +
+         (f.structured ? "full" : "thin") + '" data-q="' + esc(hay) + '">' +
+    '<div class="phead">' +
+      '<span class="grpbadge">' + (GROUPS[f.group] || esc(f.group)) + '</span>' +
+      ((f.also && f.also.length) ? '<span class="tierbadge">also ' + esc(f.also.join(" · ")) + '</span>' : '') +
+      '<h3>' + esc(f.name) + '</h3></div>' +
+    (f.specialty ? '<p class="spec">' + esc(f.specialty) + '</p>' : '') +
+    tracks +
+    '<p class="syn">' + esc(f.synopsis) + '</p>' +
+    (cols ? '<div class="fgrid">' + cols + '</div>' : '') +
+    gap +
+  '</article>';
+}
+
+var F = [], state = {grp:"all", depth:"all", q:""};
+
+function apply(){
+  var cards = document.querySelectorAll("#list .prop"), shown = 0;
+  Array.prototype.forEach.call(cards, function(el){
+    var ok = (state.grp === "all" || el.dataset.grp === state.grp) &&
+             (state.depth === "all" || el.dataset.depth === state.depth) &&
+             (state.q === "" || el.dataset.q.indexOf(state.q) > -1);
+    el.hidden = !ok;
+    if (ok) shown++;
+  });
+  document.getElementById("shown").textContent = shown + " of " + F.length;
+  document.getElementById("empty").hidden = shown > 0;
+}
+
+function wire(){
+  Array.prototype.forEach.call(document.querySelectorAll(".fchip"), function(b){
+    b.addEventListener("click", function(){
+      var f = b.dataset.f;
+      Array.prototype.forEach.call(document.querySelectorAll('.fchip[data-f="' + f + '"]'), function(o){
+        o.setAttribute("aria-pressed", o === b ? "true" : "false");
+      });
+      state[f] = b.dataset.v;
+      apply();
+    });
+  });
+  document.getElementById("q").addEventListener("input", function(e){
+    state.q = e.target.value.toLowerCase().trim();
+    apply();
+  });
+}
+
+function render(data){
+  F = data;
+  document.getElementById("loading").hidden = true;
+  document.getElementById("list").innerHTML = F.map(card).join("");
+  document.getElementById("nAll").textContent  = F.length;
+  document.getElementById("nFull").textContent = F.filter(function(f){ return f.structured; }).length;
+  document.getElementById("nThin").textContent = F.filter(function(f){ return !f.structured; }).length;
+  wire();
+  apply();
+}
+
+fetch("data/faculty_profiles.json")
+  .then(function(r){ if (!r.ok) throw new Error(r.status); return r.json(); })
+  .then(render)
+  .catch(function(){
+    document.getElementById("loading").innerHTML =
+      "Profiles could not be loaded. This page reads <code>data/faculty_profiles.json</code> " +
+      "from the same folder, so it needs to be opened over the web rather than from a local file.";
+  });
+</script>
+
+</body>
+</html>
