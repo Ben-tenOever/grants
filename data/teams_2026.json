@@ -8,7 +8,7 @@
    "team_type": "multi",
    "suggested_title": "Viral–Bacterial Synergy in the Upper Respiratory Tract: From Interferon-Driven Epithelial Reprogramming to Transmission",
    "contact_pi": "Benjamin tenOever",
-   "scale": "Four projects plus two cores",
+   "scale": "Three projects plus two cores",
    "opportunity_number": "PAR-27-082",
    "opportunity_title": "NIAID Investigator-Initiated Program Project (P01)",
    "agency": "NIH / NIAID",
@@ -17,7 +17,6 @@
    "award": "Multi-project; no stated ceiling",
    "members": [
     "Benjamin tenOever",
-    "Jeffrey N. Weiser",
     "Kamal M. Khanna",
     "Mila B. Ortigoza",
     "Alejandro Pironti",
@@ -30,19 +29,14 @@
      "role": "PD/PI, Project 1"
     },
     {
-     "name": "Jeffrey N. Weiser",
-     "group": "ISG / Microbiology",
-     "role": "Project 2"
-    },
-    {
      "name": "Kamal M. Khanna",
      "group": "Microbiology",
-     "role": "Project 3"
+     "role": "Project 2"
     },
     {
      "name": "Mila B. Ortigoza",
      "group": "Microbiology",
-     "role": "Project 4"
+     "role": "Project 3"
     },
     {
      "name": "Alejandro Pironti",
@@ -64,18 +58,12 @@
     },
     {
      "label": "Project 2",
-     "title": "Determine how the post-viral epithelium alters pneumococcal colonization, competition and transmission",
-     "description": "Apply established nasopharyngeal colonization and transmission models to quantify how the Project 1 epithelial states shift S. pneumoniae carriage density, within-host competition with H. influenzae and S. aureus, and animal-to-animal transmission efficiency.",
-     "responsible": "Jeffrey N. Weiser"
-    },
-    {
-     "label": "Project 3",
      "title": "Establish which macrophage subsets gate bacterial clearance after viral injury",
      "description": "Use NAM-DTR, CD169-DTR and IFNAR-conditional mice with TEA-seq and light-sheet imaging to test whether nerve- and airway-associated interstitial macrophages are the subset whose interferon-dependent reprogramming causes the post-influenza clearance defect.",
      "responsible": "Kamal M. Khanna"
     },
     {
-     "label": "Project 4",
+     "label": "Project 3",
      "title": "Test the mechanism in human airway tissue and a household transmission cohort",
      "description": "Map the Project 1 signatures onto primary human airway epithelial cultures and nasal samples from an influenza household transmission cohort, relating epithelial state and macrophage phenotype to measured infectiousness and bacterial carriage.",
      "responsible": "Mila B. Ortigoza"
@@ -83,7 +71,7 @@
     {
      "label": "Core A",
      "title": "Genomics core",
-     "description": "Bacterial and viral sequencing, strain-level profiling, AMR phenotyping and comparative genomics across all four projects.",
+     "description": "Bacterial and viral sequencing, strain-level profiling, AMR phenotyping and comparative genomics across all three projects.",
      "responsible": "Alejandro Pironti"
     },
     {
@@ -93,7 +81,7 @@
      "responsible": "Jonas Schluter"
     }
    ],
-   "rationale_detailed": "NYU holds an unusually complete stack for this question inside two adjacent groups: the interferon biology, the pneumococcal colonization and transmission models, the macrophage subset genetics, and a physician-scientist running human airway and transmission cohorts. Post-influenza bacterial pneumonia sits squarely in NIAID's respiratory pathogens portfolio, and a P01 is the only mechanism that funds the whole causal chain rather than one link of it.",
+   "rationale_detailed": "NYU holds an unusually complete stack for this question inside one department: the interferon biology, the macrophage subset genetics, and a physician-scientist running human airway and transmission cohorts. Post-influenza bacterial pneumonia sits squarely in NIAID's respiratory pathogens portfolio, and a P01 is the only mechanism that funds the whole causal chain rather than one link of it.",
    "next_steps": "Contact the NIAID program officer now — NIAID asks for contact 15 weeks before receipt, so the January 2027 date requires an October conversation.",
    "profile_gaps": []
   },
