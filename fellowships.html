@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en" id="top">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Postdoctoral Fellowships &mdash; NYU Grossman School of Medicine</title>
+<style>
+:root {
+  --nyu-purple: #4F2C85;
+  --nyu-deep: #2a1a49;
+  --bg-light: #f5f5f7;
+  --card-bg: #ffffff;
+  --border-subtle: #e3e3ee;
+  --text-main: #222222;
+  --text-soft: #56566a;
+  --amber-bg: #fdf6e3;
+  --amber-line: #e6d3a3;
+  --amber-ink: #7a5200;
+  --red-bg: #fdeeeb;
+  --red-line: #e6bcb1;
+  --red-ink: #9a3520;
+  --green-bg: #edf6f0;
+  --green-line: #b9ddc7;
+  --green-ink: #1f6b41;
+}
+* { box-sizing: border-box; }
+body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  margin: 0; padding: 0; background: var(--bg-light); color: var(--text-main); line-height: 1.55; }
+header { background: #ffffff; color: var(--nyu-purple); padding: 1.1rem 2rem 1rem;
+  border-bottom: 5px solid var(--nyu-purple); }
+header h1 { margin: 0; font-size: 1.9rem; color: var(--nyu-purple); }
+header p { margin: .35rem 0 0; color: var(--text-soft); font-size: .95rem; }
+nav { position: sticky; top: 0; background: #faf7ff; border-bottom: 1px solid #ddd4ff;
+  padding: .45rem 2rem; display: flex; gap: 1rem; flex-wrap: wrap; z-index: 10; }
+nav a { text-decoration: none; color: var(--nyu-purple); font-size: .9rem;
+  padding: .25rem .7rem; border-radius: 999px; font-weight: 500; }
+nav a:hover { background: rgba(79,44,133,.08); }
+nav a.here { background: var(--nyu-purple); color: #fff; }
+main { max-width: 1120px; margin: 0 auto; padding: 2rem 2.25rem 3rem; }
+.card { background: var(--card-bg); border-radius: .9rem; padding: 1.3rem 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,.05); border: 1px solid var(--border-subtle); }
+h2 { margin-top: 0; color: var(--nyu-purple); }
+.section-spacer { margin-top: 1.5rem; }
+.lede { max-width: 74ch; }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: .75rem; margin-top: 1rem; }
+.stat { border: 1px solid var(--border-subtle); border-radius: .7rem; padding: .7rem .9rem; background: #faf7ff; }
+.stat .k { font-size: .72rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--text-soft); }
+.stat .v { font-size: 1.5rem; font-weight: 700; color: var(--nyu-purple); margin-top: .15rem; }
+.stat .s { font-size: .78rem; color: var(--text-soft); line-height: 1.35; }
+.filters { display: flex; flex-wrap: wrap; gap: .45rem; align-items: center; margin: 1.25rem 0 1rem; }
+.fchip { font: inherit; font-size: .85rem; cursor: pointer; background: #fff; color: var(--nyu-purple);
+  border: 1px solid var(--border-subtle); border-radius: 999px; padding: .3rem .8rem; font-weight: 500; }
+.fchip:hover { border-color: var(--nyu-purple); background: rgba(79,44,133,.05); }
+.fchip[aria-pressed="true"] { background: var(--nyu-purple); border-color: var(--nyu-purple); color: #fff; }
+.fchip .ct { opacity: .65; font-size: .75rem; margin-left: .35rem; }
+.divider { width: 1px; align-self: stretch; background: var(--border-subtle); margin: 0 .3rem; }
+input[type=search] { font: inherit; font-size: .85rem; padding: .35rem .8rem; min-width: 210px;
+  border: 1px solid var(--border-subtle); border-radius: 999px; background: #fff; color: var(--text-main); }
+.prop { margin-bottom: 1rem; }
+.phead { display: flex; flex-wrap: wrap; align-items: baseline; gap: .55rem; }
+.pid { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .82rem;
+  font-weight: 700; color: #fff; background: var(--nyu-purple); border-radius: .35rem; padding: .1rem .45rem; }
+.tierbadge { font-size: .68rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase;
+  border-radius: 999px; padding: .16rem .55rem; border: 1px solid var(--border-subtle);
+  color: var(--text-soft); background: #faf7ff; }
+.phead h3 { margin: 0; flex: 1 1 100%; font-size: 1.18rem; line-height: 1.3; color: var(--nyu-deep); }
+.phead h3 a { color: inherit; text-decoration: none; border-bottom: 1px solid #d9c9f2; }
+.phead h3 a:hover { color: var(--nyu-purple); border-bottom-color: var(--nyu-purple); }
+.oppbar { display: flex; flex-wrap: wrap; gap: .35rem; margin-top: .65rem; }
+.oppbar span, .oppbar a { font-size: .72rem; font-weight: 600; letter-spacing: .03em; text-transform: uppercase;
+  padding: .18rem .5rem; border-radius: .3rem; border: 1px solid var(--border-subtle);
+  color: var(--text-soft); background: #fbfbfd; white-space: nowrap; }
+.oppbar .odl { font-family: ui-monospace, Menlo, monospace; letter-spacing: 0; text-transform: none; }
+.oppbar .odl.hot { color: var(--red-ink); background: var(--red-bg); border-color: var(--red-line); }
+.oppbar .odl.soon { color: var(--amber-ink); background: var(--amber-bg); border-color: var(--amber-line); }
+.oppbar .visa { color: var(--green-ink); background: var(--green-bg); border-color: var(--green-line); }
+.oppbar .usonly { color: var(--red-ink); background: var(--red-bg); border-color: var(--red-line); }
+.oppbar .nom { color: var(--amber-ink); background: var(--amber-bg); border-color: var(--amber-line); }
+.onote { margin: .6rem 0 0; font-size: .82rem; color: var(--text-soft); max-width: 92ch; }
+.split { display: grid; grid-template-columns: minmax(250px, 330px) 1fr; gap: 1.6rem; margin-top: 1rem; }
+@media (max-width: 860px) { .split { grid-template-columns: 1fr; } }
+.split h4 { margin: 0 0 .5rem; font-size: .72rem; font-weight: 700; letter-spacing: .09em;
+  text-transform: uppercase; color: var(--text-soft); border-bottom: 1px solid var(--border-subtle); padding-bottom: .3rem; }
+dl.terms { margin: 0; display: grid; grid-template-columns: auto 1fr; gap: .3rem .8rem; }
+dl.terms dt { font-size: .72rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
+  color: var(--text-soft); padding-top: .12rem; white-space: nowrap; }
+dl.terms dd { margin: 0; font-size: .88rem; }
+.foot { margin-top: .95rem; padding-top: .8rem; border-top: 1px solid var(--border-subtle);
+  display: flex; flex-direction: column; gap: .5rem; }
+.foot p { margin: 0; font-size: .84rem; color: var(--text-soft); max-width: 96ch; }
+.foot strong { color: var(--text-main); }
+.gate { background: var(--amber-bg); border-left: 3px solid var(--amber-line);
+  padding: .5rem .7rem; border-radius: .3rem; }
+.gate strong { color: var(--amber-ink); }
+.flag { background: var(--red-bg); border-left: 3px solid var(--red-line);
+  padding: .5rem .7rem; border-radius: .3rem; }
+.flag strong { color: var(--red-ink); }
+table.plain { border-collapse: collapse; width: 100%; }
+table.plain th { text-align: left; font-size: .72rem; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--text-soft); border-bottom: 2px solid var(--border-subtle); padding: .4rem .6rem .4rem 0; }
+table.plain td { padding: .5rem .6rem .5rem 0; border-bottom: 1px solid var(--border-subtle);
+  font-size: .88rem; vertical-align: top; }
+table.plain tr:last-child td { border-bottom: 0; }
+table.plain td a { color: var(--nyu-purple); }
+td.nw { white-space: nowrap; width: 1%; font-family: ui-monospace, Menlo, monospace; font-size: .8rem; }
+.sub { color: var(--text-soft); font-size: .82rem; }
+.sub2 { display: block; margin-top: .15rem; font-size: .82rem; color: var(--text-soft); max-width: 76ch; }
+.tablewrap { overflow-x: auto; }
+.none { padding: 2.5rem; text-align: center; color: var(--text-soft); }
+footer { border-top: 1px solid #ddd4ff; padding: 1rem 2rem; background: #faf7ff;
+  font-size: .8rem; color: #555; text-align: center; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Postdoctoral Fellowships</h1>
+  <p>Annually recurring fellowships in the life sciences &mdash; a standing reference for postdocs across Cell Biology, Institute for Systems Genetics, Pathology, Biochemistry and Molecular Pharmacology, and Microbiology</p>
+</header>
+
+<nav>
+  <a href="./">Grant slate</a>
+  <a href="#top" class="here">Postdoc fellowships</a>
+  <a href="fellowship-ideas.html">Project ideas</a>
+  <a href="#dept">Through the department</a>
+  <a href="#mistaken">Not postdoc awards</a>
+  <a href="#gone">Discontinued</a>
+  <a href="#method">Method</a>
+</nav>
+
+<main>
+
+  <section class="card">
+    <h2>Every deadline recurs. Missing one costs a year.</h2>
+    <p class="lede">These fellowships run on an annual or twice-yearly cycle, so a postdoc who knows the
+      calendar can plan two years ahead rather than discovering a program three weeks after it closed.
+      Each entry carries the eligibility window, the money, the citizenship rule, and the next deadline &mdash;
+      computed live in your browser from the recurring pattern, so the dates stay right after this page
+      stops being edited. Terms were verified against primary sources on 9 September 2026.</p>
+    <div class="stats">
+      <div class="stat"><div class="k">Fellowships tracked</div><div class="v" id="nTotal">&mdash;</div>
+        <div class="s">postdoctoral, annually recurring</div></div>
+      <div class="stat"><div class="k">Open to visa holders</div><div class="v" id="nVisa">&mdash;</div>
+        <div class="s">no citizenship or residency bar</div></div>
+      <div class="stat"><div class="k">Closing in 90 days</div><div class="v" id="nSoon">&mdash;</div>
+        <div class="s">counted live in your browser</div></div>
+      <div class="stat"><div class="k">Need a nomination</div><div class="v" id="nNom">&mdash;</div>
+        <div class="s">department or institution routes them</div></div>
+    </div>
+    <div class="foot">
+      <p class="gate"><strong>The citizenship filter is the one to start with.</strong> The largest single
+        source of postdoctoral salary support in the United States &mdash; the NIH F32 &mdash; requires citizenship
+        or permanent residency, as does the NSF PRFB. A postdoc on a visa has a real but much shorter list,
+        and it is worth knowing which programs are on it before writing anything.</p>
+    </div>
+  </section>
+
+  <div class="filters">
+    <button class="fchip" data-f="field" data-v="all" aria-pressed="true">All fields</button>
+    <button class="fchip" data-f="field" data-v="open" aria-pressed="false">Open-field</button>
+    <button class="fchip" data-f="field" data-v="cancer" aria-pressed="false">Cancer &amp; immunology</button>
+    <button class="fchip" data-f="field" data-v="id" aria-pressed="false">Infectious disease</button>
+    <button class="fchip" data-f="field" data-v="disease" aria-pressed="false">Other disease areas</button>
+    <button class="fchip" data-f="field" data-v="intl" aria-pressed="false">International</button>
+    <span class="divider"></span>
+    <button class="fchip" data-f="cit" data-v="all" aria-pressed="true">Any citizenship status</button>
+    <button class="fchip" data-f="cit" data-v="visa" aria-pressed="false">Open to visa holders</button>
+    <button class="fchip" data-f="cit" data-v="us" aria-pressed="false">US citizens / PR only</button>
+    <span class="divider"></span>
+    <button class="fchip" data-f="when" data-v="all" aria-pressed="true">Any deadline</button>
+    <button class="fchip" data-f="when" data-v="90" aria-pressed="false">Next 90 days</button>
+    <span class="divider"></span>
+    <input type="search" id="q" placeholder="Search name, sponsor, topic" aria-label="Search fellowships" />
+    <span class="sub">Showing <strong id="shown">&mdash;</strong></span>
+  </div>
+
+  <div id="list"></div>
+  <div class="none" id="empty" hidden>No fellowship matches those filters.</div>
+
+  <section class="card section-spacer" id="dept">
+    <h2>The ones that come through the department</h2>
+    <p class="lede">These cannot be applied to directly. Someone has to nominate, and the nomination
+      calendar runs months ahead of the sponsor's deadline &mdash; which is how institutions quietly forfeit
+      slots they are entitled to. Each needs an internal call at the time shown.</p>
+    <div class="tablewrap">
+      <table class="plain">
+        <thead><tr><th>Program</th><th>Who nominates</th><th>Internal call</th><th class="nw">Sponsor deadline</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><strong>Charles H. Revson Senior Fellowships</strong>
+              <span class="sub2">Years 3&ndash;4 of a postdoc, restricted to about a dozen New York-metro institutions &mdash; NYU among them.
+              125% of the NIH postdoc scale plus $10,000/yr operational and $3,500/yr travel, for two years.</span></td>
+            <td>The institution, <strong>two candidates</strong></td>
+            <td>January, when the announcement circulates</td>
+            <td class="nw">Not published<br /><span class="sub">institution-internal</span></td>
+          </tr>
+          <tr>
+            <td><strong>Schmidt Science Fellows</strong>
+              <span class="sub2">Requires a deliberate pivot into a new discipline. $110,000/yr for 12&ndash;24 months,
+              placement anywhere in the world. Aimed at students finishing the PhD, not established postdocs.</span></td>
+            <td>PhD-awarding institution, which must be a Nominating Partner</td>
+            <td>February&ndash;April</td>
+            <td class="nw">Nominations mid-May<br />applications mid-July</td>
+          </tr>
+          <tr>
+            <td><strong>Simons Society of Fellows</strong>
+              <span class="sub2">$102,799/yr plus $10,000/yr research allowance, up to three years, but the work must be
+              done at a New York City institution. Candidates cannot self-nominate.</span></td>
+            <td>Any tenured faculty member &mdash; <strong>one nomination each per year</strong>, no institutional cap</td>
+            <td>July, so nominators can choose deliberately</td>
+            <td class="nw">~10 September</td>
+          </tr>
+          <tr>
+            <td><strong>Hartwell Foundation Fellowship</strong>
+              <span class="sub2">$50,000/yr for two years. There is no application: the Foundation names ten
+              Centers of Biomedical Research each year, and each institution whose nominee wins an
+              Individual Biomedical Research Award may designate one postdoc.</span></td>
+            <td>Only invited institutions, internally</td>
+            <td>Only if NYU is a current Top Ten Center</td>
+            <td class="nw">None &mdash; designation only</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="card section-spacer" id="mistaken">
+    <h2>Frequently mistaken for postdoc awards</h2>
+    <p class="lede">All of these require an independent faculty appointment, and every year postdocs spend
+      weeks on applications they were never eligible for. Worth knowing about anyway &mdash; they are the awards
+      to apply for in the first years after starting a lab.</p>
+    <div class="tablewrap">
+      <table class="plain">
+        <thead><tr><th>Award</th><th>Actually requires</th><th class="nw">Cycle</th></tr></thead>
+        <tbody>
+          <tr><td><strong>V Foundation V Scholar</strong> &mdash; $800,000 / 4 yr</td><td>Tenure-track, within 5 years of first Assistant Professor appointment. No postdoc mechanism exists. Limited submission, one nominee per institution.</td><td class="nw">~June</td></tr>
+          <tr><td><strong>Melanoma Research Alliance Young Investigator</strong> &mdash; $255,000 / 3 yr</td><td>First five years of an independent faculty appointment. Postdocs explicitly ineligible.</td><td class="nw">Sept checklist, Nov proposal</td></tr>
+          <tr><td><strong>Rita Allen Scholars</strong> &mdash; up to $550,000 / 5 yr</td><td>First three years of the tenure track, with startup and lab space committed. Their guidance says plainly that a senior postdoc should not be a candidate. One nominee per institution.</td><td class="nw">Sept LOI, Oct application</td></tr>
+          <tr><td><strong>BWF Investigators in the Pathogenesis of Infectious Disease</strong> &mdash; $505,000 / 5 yr</td><td>Assistant professors, by invitation, with a chair or dean letter. The best-fitting infectious disease award for this department &mdash; at the faculty stage.</td><td class="nw">Oct invitation, Nov application</td></tr>
+          <tr><td><strong>Mark Foundation Emerging Leader</strong> &mdash; up to $1,000,000</td><td>Independent faculty. The Fellow-to-Faculty Transition Award that used to sit below it now has no live page and appears discontinued.</td><td class="nw">Varies</td></tr>
+          <tr><td><strong>BCRF&ndash;AACR NextGen</strong> &mdash; $450,000 / 3 yr</td><td>Tenure-track Assistant Professor, no more than three years in rank. Research assistant professor and adjunct titles excluded.</td><td class="nw">Dec LOI, Apr application</td></tr>
+          <tr><td><strong>PanCAN Career Development</strong> &mdash; $250,000 / 2 yr</td><td>Junior faculty. PanCAN currently lists no postdoctoral fellowship at all.</td><td class="nw">~9 December</td></tr>
+          <tr><td><strong>Susan G. Komen Career Catalyst</strong> &mdash; $450,000 / 3 yr</td><td>Full-time faculty. Limited submission, two nominees per institution, and the institution must opt in months ahead. Komen still lists a Postdoctoral Fellowship but has no open cycle for it.</td><td class="nw">Jul LOI, Oct application</td></tr>
+          <tr><td><strong>BWF Career Awards for Medical Scientists</strong> &mdash; $700,000 / 5 yr</td><td>Physician-scientists holding an MD or MD-PhD. Not open to PhD-only postdocs.</td><td class="nw">~30 September</td></tr>
+          <tr><td><strong>Michael J. Fox &mdash; Edmond J. Safra Fellowship</strong> &mdash; $180,000 / 2 yr</td><td>Clinician-researchers training in movement disorders. MJFF has no PhD postdoctoral fellowship.</td><td class="nw">~3 December</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="card section-spacer" id="gone">
+    <h2>Discontinued, dormant, or unreachable from here</h2>
+    <p class="lede">These still appear on funding lists, university pages and older advice. They should not
+      be planned around. Several were significant sources of support for exactly the people who can least
+      afford to lose a cycle.</p>
+    <div class="foot">
+      <p class="flag"><strong>Ford Foundation Postdoctoral Fellowship (via the National Academies) &mdash; discontinued.</strong>
+        The Foundation announced it is winding the program down by 2028; the last competition for new fellows
+        was 2024, and it no longer appears on the National Academies' listing.</p>
+      <p class="flag"><strong>NSF PRFB Broadening Participation track &mdash; eliminated.</strong> Solicitation NSF&nbsp;26-504
+        replaced all three previous competitive areas with a single focus on the intersection of artificial
+        intelligence and the biological sciences. Award terms improved ($110,000/yr for 24 months, up from
+        $80,000/yr for 36), but the addressable pool is far narrower. Anyone working from NSF&nbsp;23-620 will
+        submit a non-responsive proposal.</p>
+      <p class="flag"><strong>NIH K99/R00 citizenship &mdash; unresolved and worth watching.</strong> NIAID's guidance
+        still states there is no citizenship requirement, while the NIH Grants Policy Statement describes a
+        much narrower exception limited to applicants already in permanent-residency proceedings, and STAT
+        reported in August 2026 that NIH intends to restrict eligibility to citizens and permanent residents.
+        Nothing has been finalised in the NIH Guide. A visa-holding postdoc should confirm with the target
+        Institute's program officer before building a submission around it.</p>
+      <p class="gate"><strong>Banting Postdoctoral Fellowships (Canada) &mdash; closed,</strong> and replaced by the
+        Canada Postdoctoral Research Award (CAD 70,000/yr for two years), which is listed above.</p>
+      <p class="gate"><strong>Dormant or unverifiable:</strong> NYSCF Druckenmiller Fellowships (the page still says
+        the RFA will not open); UNCF/Merck Postdoctoral Science Research Fellowship (only a decade-old page
+        remains live); amfAR Mathilde Krim Fellowships (no open cycle since March 2025); the ASM/CDC
+        Postdoctoral Research Fellowship (no live page &mdash; ASM currently offers no postdoctoral research
+        fellowship); Simons Collaboration on the Global Brain postdoctoral fellowships (page removed);
+        Simons Marine Microbial Ecology (last cycle 2024); Mark Foundation Fellow-to-Faculty; the AACR&ndash;Cancer
+        Research UK Transatlantic Fellowships (the page still advertises the 2019 cycle); and Burroughs
+        Wellcome's Postdoctoral Enrichment Program, whose page currently reads "Not Open to Applications"
+        and is absent from their deadline listing.</p>
+      <p class="gate"><strong>Not available from a US institution:</strong> Wellcome Early-Career Awards and Cancer
+        Research UK Career Development Fellowships both require a host organisation in the UK, Ireland or an
+        eligible low- and middle-income country. Wellcome's eligible list narrows further from 29 October 2026.
+        They are relocation routes, not fellowships a postdoc can hold here.</p>
+    </div>
+  </section>
+
+  <section class="card section-spacer" id="method">
+    <h2>Method and maintenance</h2>
+    <p class="lede">Every entry was checked against the sponsor's own page on 9 September 2026 rather than
+      against aggregators, which are the usual source of stale deadlines and superseded award amounts. Where
+      two sources disagreed the sponsor's page won: the Jane Coffin Childs stipend, for instance, is
+      $50,000 a year flat, not the escalating scale that circulates elsewhere.</p>
+    <div class="foot">
+      <p><strong>Deadlines are computed, not typed.</strong> Each fellowship stores its recurring pattern &mdash; a
+        fixed calendar date, or a rule such as "fourth Tuesday in September" &mdash; and the page resolves the
+        next occurrence when you load it. The dates below therefore stay correct into future cycles without
+        anyone editing this file. What will drift is the money and the eligibility fine print, so treat the
+        sponsor link as authoritative and this page as the thing that tells you a deadline is coming.</p>
+      <p><strong>What is deliberately excluded.</strong> One-off calls, programs with no verifiable current cycle,
+        awards requiring an independent faculty appointment (collected separately above), and internal
+        institutional fellowships that are really recruitment vehicles for a single university.</p>
+      <p><strong>Worth knowing separately:</strong> the <a href="https://grants.nih.gov/funding/funding-categories/lrp/extramural-lrp">NIH
+        Extramural Loan Repayment Program</a> is open to postdocs and repays up to $50,000 a year of
+        educational debt. It is not a fellowship and does not compete with one &mdash; it can be held alongside.
+        The cycle runs 1 September to 19 November each year. Citizenship or permanent residency is required.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  Department of Microbiology &middot; NYU Grossman School of Medicine &middot; terms verified 9 September 2026 &middot;
+  deadlines resolved live from each program's recurring cycle
+</footer>
+
+<script>
+/* Deadline patterns resolve forward from today, so this page does not go stale.
+   md:  fixed calendar dates, "MM-DD"
+   nth: {m: month 1-12, d: weekday 0=Sun, n: nth occurrence}                        */
+var F = [
+
+/* ---------- Open-field: federal ---------- */
+{n:"NIH Ruth L. Kirschstein NRSA Individual Postdoctoral Fellowship (F32)", s:"National Institutes of Health", f:"open",
+ md:["04-08","08-08","12-08"], pat:"Three cycles a year: 8 April, 8 August, 8 December",
+ award:"Stipend $63,480 to $77,076 by years of experience, plus $12,400/yr institutional allowance and up to $4,500/yr tuition",
+ dur:"Up to 3 years", elig:"Research or health-professional doctorate. NRSA postdoctoral support is capped at 3 years in aggregate. A named sponsor and sponsoring institution are required.",
+ cit:"us", citTxt:"US citizens, non-citizen nationals and permanent residents only",
+ u:"https://grants.nih.gov/grants/guide/pa-files/PA-25-423.html",
+ note:"The single largest source of postdoctoral salary support in the country, and closed to anyone on a visa. NOFO PA-25-423, current through May 2028."},
+
+{n:"NIH Pathway to Independence Award (K99/R00)", s:"National Institutes of Health", f:"open",
+ md:["02-12","06-12","10-12"], pat:"Three cycles a year: 12 February, 12 June, 12 October",
+ award:"K99 phase salary on the institutional scale; R00 phase up to $249,000 total costs per year",
+ dur:"1&ndash;2 years mentored, then up to 3 years independent &mdash; 5 years maximum",
+ elig:"No more than 4 years of postdoctoral research experience at the due date. Cannot have held an R01, P01, P50 or a major K award.",
+ cit:"watch", citTxt:"Citizenship rules currently unresolved &mdash; verify with your Institute",
+ u:"https://grants.nih.gov/grants/guide/pa-files/PA-24-194.html",
+ note:"Historically the major NIH mechanism with no citizenship bar, which is why it matters so much to visa-holding postdocs, and exactly why the current ambiguity is worth tracking. Separately, NOT-OD-26-021 extended eligibility windows after the FY2026 appropriations lapse &mdash; anyone near the four-year limit should read it before assuming they have aged out."},
+
+{n:"NIH MOSAIC Postdoctoral Career Transition Award (K99/R00)", s:"National Institutes of Health", f:"open",
+ md:["02-12","06-12","10-12"], pat:"Three cycles a year: 12 February, 12 June, 12 October",
+ award:"Same two-phase structure as the parent K99/R00, with an accompanying cohort programme",
+ dur:"1&ndash;2 years mentored, then up to 3 years independent",
+ elig:"For postdocs from groups underrepresented in the biomedical workforce. Announcements PAR-24-225, -226 and -227; the 2021-era PARs have expired.",
+ cit:"watch", citTxt:"Follows the K99/R00 rules &mdash; currently unresolved",
+ u:"https://www.ninds.nih.gov/funding/training-career-development/postdoctoral-fellows/mosaic-postdoctoral-career-transition-award-promote-diversity",
+ note:"Institutes apply their own programmatic priorities to MOSAIC, so a conversation with program staff before writing is worth more here than on most mechanisms."},
+
+{n:"NIH Predoctoral to Postdoctoral Transition Award (F99/K00)", s:"National Institutes of Health", f:"open",
+ md:["04-08","08-08","12-08"], pat:"Three cycles a year: 8 April, 8 August, 8 December",
+ award:"F99 phase at NRSA predoctoral rates ($29,364/yr plus tuition and allowance); K00 phase provides salary and career development support",
+ dur:"1&ndash;2 years predoctoral, then up to 3 years postdoctoral &mdash; 5 years maximum",
+ elig:"Current PhD students in the dissertation stage expecting 1&ndash;2 more years. You must not have started a postdoc or completed all degree requirements before activation.",
+ cit:"us", citTxt:"US citizens, non-citizen nationals and permanent residents only",
+ u:"https://grants.nih.gov/funding/opportunities",
+ note:"Now a parent announcement across 18 or more Institutes rather than the older single-Institute versions. Worth flagging to senior students, who are the only people who can apply."},
+
+{n:"NSF Postdoctoral Research Fellowships in Biology", s:"National Science Foundation", f:"open",
+ nth:{m:9,d:2,n:4}, pat:"Fourth Tuesday in September, annually",
+ award:"$110,000 a year &mdash; $85,000 stipend plus $25,000 research and training allowance",
+ dur:"24 continuous months",
+ elig:"No more than 15 full-time months in positions requiring the doctorate as of the deadline. Maximum two lifetime submissions.",
+ cit:"us", citTxt:"US citizens, nationals and permanent residents only",
+ u:"https://www.nsf.gov/funding/opportunities/prfb-postdoctoral-research-fellowships-biology/nsf26-504/solicitation",
+ note:"Read the current solicitation before anything else. NSF 26-504 collapsed the three previous competitive areas into a single focus on artificial intelligence and the biological sciences; proposals written to the old areas are non-responsive."},
+
+{n:"NASA Postdoctoral Program", s:"NASA, administered by ORAU", f:"open",
+ md:["03-01","07-01","11-01"], pat:"Three cycles a year: 1 March, 1 July, 1 November",
+ award:"Stipend from $70,000/yr, plus $10,000 a year for travel, relocation and roughly 85% of health insurance",
+ dur:"Renewable annually, up to 3 years",
+ elig:"Doctorate held under 5 years for Fellows, 5 years or more for Senior Fellows. You apply to a specific posted opportunity with a NASA advisor.",
+ cit:"visa", citTxt:"Citizens, permanent residents and foreign nationals eligible for J-1 status",
+ u:"https://npp.orau.org/",
+ note:"Space biology, astrobiology and Earth and environmental biology rather than biomedical work &mdash; but one of the few federal programmes that takes foreign nationals."},
+
+/* ---------- Open-field: foundations ---------- */
+{n:"Life Sciences Research Foundation Fellowship", s:"Life Sciences Research Foundation", f:"open",
+ md:["10-01"], pat:"1 October, annually",
+ award:"$85,000 a year &mdash; $79,000 salary plus $6,000 research allowance, with no indirect costs",
+ dur:"3 years",
+ elig:"Within 5 years of the PhD, MD or DVM. You cannot stay in your thesis lab. For the current cycle, applicants in HHMI Investigator labs are ineligible.",
+ cit:"visa", citTxt:"Any nationality; non-US citizens must work in a US laboratory",
+ u:"https://www.lsrf.org/apply",
+ note:"The broadest genuinely open-field fellowship on this list, with 18 to 27 awards a year and a five-year eligibility window that is far more forgiving than most. The best single target for a bench scientist who is more than a year past the PhD."},
+
+{n:"Jane Coffin Childs Fellowship", s:"Jane Coffin Childs Memorial Fund, with the Simons Foundation", f:"open",
+ md:["02-01"], pat:"1 February, annually &mdash; portal opens 1 October",
+ award:"$50,000 a year, plus $2,000/yr research allowance, $1,800 for meeting travel and $1,000 per dependent child",
+ dur:"3 years, or 2 if you already have a year of postdoctoral experience",
+ elig:"No more than one year of postdoctoral experience at application; MD applicants within three years of the degree.",
+ cit:"visa", citTxt:"Any nationality; foreign nationals must study in the United States",
+ u:"https://www.jccfund.org/fellowship-information/",
+ note:"Note the stipend: $50,000 a year flat. An escalating scale circulates on third-party sites and is wrong."},
+
+{n:"Helen Hay Whitney Foundation Research Fellowship", s:"Helen Hay Whitney Foundation", f:"open",
+ md:["06-15"], pat:"15 June, annually",
+ award:"$73,000, $75,000 and $77,000 across the three years, plus $1,500/yr research allowance and $1,500 per dependent child",
+ dur:"3 years, not extendable",
+ elig:"PhD within 2 years, or MD and MD-PhD within 4 years. No more than one year in the postdoc lab at the deadline. Academic settings only.",
+ cit:"visa", citTxt:"Any nationality; foreign nationals must work in US laboratories",
+ u:"https://hhwf.org/research-fellowship/",
+ note:"A tight early-stage window &mdash; this is one to line up before finishing the PhD, not after arriving in the lab."},
+
+{n:"Damon Runyon Fellowship Award", s:"Damon Runyon Cancer Research Foundation", f:"cancer",
+ md:["03-15","08-14"], pat:"Twice yearly: 15 March and 14 August",
+ award:"$70,000 rising to $76,000 over four years, plus $2,000/yr expenses, $1,000 per child, and up to $100,000 of medical school loan repayment",
+ dur:"4 years &mdash; the longest on this list",
+ elig:"Basic scientists must be within 18 months of the degree and have no more than a year in the sponsor's lab. Physician-scientists must have finished clinical training. You cannot hold another postdoctoral fellowship or an NIH K award.",
+ cit:"visa", citTxt:"Any nationality; non-US citizens must work at US institutions",
+ u:"https://www.damonrunyon.org/for-scientists/application-guidelines/fellowship",
+ note:"Cancer relevance is interpreted broadly enough to cover tumour virology, oncolytic viruses and RNA biology in cancer. Four years of support and the loan repayment make it the most valuable early-stage award here, and the 18-month window makes it the easiest to miss."},
+
+{n:"Damon Runyon Quantitative Biology Fellowship", s:"Damon Runyon Cancer Research Foundation", f:"cancer",
+ md:["12-01"], pat:"1 December, annually",
+ award:"$76,000, $78,000 and $80,000 across three years, plus $2,000/yr expenses, $1,000 per child and up to $100,000 loan repayment",
+ dur:"3 years",
+ elig:"PhD in mathematics, computing, physics or engineering, within 5 years of the degree and no more than 24 months in the mentors' labs. Two mentors required, one computational and one in cancer biology.",
+ cit:"visa", citTxt:"Any nationality; the work must be done in the US",
+ u:"https://www.damonrunyon.org/for-scientists/application-guidelines/quantitative",
+ note:"A five-year eligibility window against the main fellowship's eighteen months &mdash; the better route for a quantitative scientist who is no longer new."},
+
+{n:"HHMI Hanna H. Gray Fellows Program", s:"Howard Hughes Medical Institute", f:"open",
+ md:["12-15"], pat:"15 December, annually &mdash; application window opens in early November",
+ award:"Salary commensurate with experience plus a set research allowance; fellows transition into the Freeman Hrabowski Scholars programme for the faculty phase",
+ dur:"Up to 2 years of postdoctoral support",
+ elig:"No more than 7 years of postdoctoral experience, in a mentored position at an HHMI-eligible US institution, intending to start a faculty position by 2030.",
+ cit:"visa", citTxt:"Must be authorised to work in the US or eligible to obtain authorisation",
+ u:"https://www.hhmi.org/programs/hanna-h-gray-fellows",
+ note:"Applications were paused in 2025 and have reopened. The programme was restructured, so the older descriptions of an eight-year, seven-figure package no longer apply. No recommendation letters &mdash; the mentor completes a questionnaire."},
+
+{n:"Burroughs Wellcome Career Awards at the Scientific Interface", s:"Burroughs Wellcome Fund", f:"open",
+ md:["08-14"], pat:"Letter of intent mid-August; invited full applications in January",
+ award:"$560,000 over five years, spanning the postdoc and the first three faculty years",
+ dur:"5 years across both stages",
+ elig:"12 to 60 months of postdoctoral experience. PhD in mathematics, physics, chemistry, computing, statistics or engineering; biology PhDs only with quantitative credentials and prior approval from a program officer.",
+ cit:"visa", citTxt:"US and Canadian citizens, permanent residents, and temporary residents on a valid visa",
+ u:"https://www.bwfund.org/grants/career-awards-at-the-scientific-interface/",
+ note:"Unusually visa-friendly for an award of this size, and the 12-to-60-month window is the widest of any transition award here."},
+
+{n:"Simons Society of Fellows &mdash; Junior Fellows", s:"Simons Foundation", f:"open",
+ md:["09-10"], pat:"~10 September, annually",
+ award:"$102,799/yr with an automatic 3% annual rise, plus $10,000/yr research allowance and fringe",
+ dur:"Up to 3 years",
+ elig:"PhD conferred within roughly two years of the start. The research must be done at a New York City institution and you must live in the area. Cannot be combined with another fellowship or a tenure-track post.",
+ cit:"visa", citTxt:"No citizenship restriction stated",
+ nom:1, nomTxt:"Nomination required &mdash; one per nominator",
+ u:"https://www.simonsfoundation.org/simons-society-of-fellows/nominations/",
+ note:"Candidates cannot nominate themselves. Each tenured faculty member may put forward one person a year, with no institutional sign-off, so the constraint is on the nominator's attention rather than on the institution."},
+
+{n:"Charles H. Revson Senior Fellowships in Biomedical Science", s:"Charles H. Revson Foundation", f:"open",
+ md:["01-15"], pat:"Announcement circulates to participating institutions in early January",
+ award:"125% of the current NIH postdoctoral salary scale plus institutional fringe, $10,000/yr operational support and $3,500/yr travel",
+ dur:"2 years",
+ elig:"For senior postdocs entering year 3 or 4 on an established project &mdash; the opposite end of the career stage from most awards here. Restricted to about a dozen New York-metro institutions, NYU among them.",
+ cit:"visa", citTxt:"Visa holders eligible with documentation valid for the full term",
+ nom:1, nomTxt:"Nomination required &mdash; two per institution",
+ u:"https://revsonfoundation.org/our-work/biomedical-research/",
+ note:"There is no public deadline and no public application route. Everything runs through the institution, which nominates two candidates. The internal call is the thing to watch, and it comes in January."},
+
+{n:"Schmidt Science Fellows", s:"Schmidt Sciences", f:"open",
+ md:["05-15"], pat:"Institutional nominations mid-May; full applications mid-July",
+ award:"$110,000 a year",
+ dur:"12 to 24 months",
+ elig:"For people completing the PhD in the coming year, not established postdocs. The placement must be a deliberate pivot into a new discipline, in a different institution. Clinical-track, social science and economics candidates are excluded.",
+ cit:"visa", citTxt:"No citizenship restriction stated; placement may be anywhere in the world",
+ nom:1, nomTxt:"Institutional nomination required",
+ u:"https://schmidtsciencefellows.org/selection/who-can-apply/",
+ note:"A hard limited submission: the PhD-awarding institution must be a Nominating Partner and must put the candidate forward. Nobody applies to this directly."},
+
+{n:"Hope Funds for Cancer Research Postdoctoral Fellowship", s:"Hope Funds for Cancer Research", f:"cancer",
+ md:["09-24"], pat:"Abstract or letter of intent in late September; full application in late January",
+ award:"$56,000, $59,000 and $62,000 across three years, plus $1,500/yr travel",
+ dur:"3 years",
+ elig:"No more than two years in the sponsor's lab. You cannot have accepted another postdoctoral fellowship. The work must be at a US university, hospital or non-profit.",
+ cit:"visa", citTxt:"No citizenship restriction stated; US institutions only",
+ u:"https://www.hope-funds.org/grants/eligibility-and-application/",
+ note:"Restricted to hard-to-treat and rare cancers &mdash; pancreatic, lung, liver, sarcoma, oesophageal, brain, gastric, bone and ovarian, plus rare leukaemias, lymphomas and MDS."},
+
+/* ---------- Cancer and immunology ---------- */
+{n:"American Cancer Society Postdoctoral Fellowship", s:"American Cancer Society", f:"cancer",
+ md:["06-01","12-01"], pat:"Twice yearly: 1 June and 1 December",
+ award:"$66,000, $68,000 and $70,000 by year, plus $4,000/yr expenses and $1,500 extra in the final year for meetings",
+ dur:"2 or 3 years, your choice",
+ elig:"Terminal doctorate for no more than 3 years, or no more than 3 years of postdoctoral training. Faculty and staff-scientist titles are disqualifying.",
+ cit:"visa", citTxt:"US citizens or non-citizens with appropriate visa or lawful status",
+ u:"https://www.cancer.org/research/we-fund-cancer-research/apply-research-grant/grant-types/postdoctoral-fellowships.html",
+ note:"Two cycles a year and explicit acceptance of visa holders make this one of the more accessible cancer awards."},
+
+{n:"CRI Irvington Postdoctoral Fellowship", s:"Cancer Research Institute", f:"cancer",
+ md:["03-01","09-01"], pat:"Twice yearly: 1 March and 1 September",
+ award:"$74,000, $76,000 and $78,000 by year, plus $5,000/yr to the host institution",
+ dur:"3 years",
+ elig:"Fewer than 5 years of mentored research experience at activation. The sponsor must be an assistant professor or above, with one CRI fellow per sponsor per round.",
+ cit:"visa", citTxt:"No citizenship restrictions at all &mdash; and it may be held outside the US",
+ u:"https://www.cancerresearch.org/cri-irvington-postdoctoral-fellowship",
+ note:"The most permissive citizenship terms of any award on this page, and the natural target for immunology and cancer immunology. Non-profit institutions only."},
+
+{n:"Blood Cancer United Career Development Program &mdash; Fellow Award", s:"Blood Cancer United (formerly the Leukemia &amp; Lymphoma Society)", f:"cancer",
+ md:["10-15"], pat:"Eligibility stage mid-October, letter of intent 1 November, full application 15 November",
+ award:"Up to $70,000 a year, of which at least $65,000 must go to the awardee's salary, plus up to $3,600/yr for childcare",
+ dur:"3 years",
+ elig:"No more than 3 years of postdoctoral training by the award start. Graduate training in blood cancer is not required.",
+ cit:"visa", citTxt:"Citizenship rules not stated on the programme page &mdash; check the guidelines",
+ u:"https://bloodcancerunited.org/research/grants/career-development-program-cdp",
+ note:"The organisation rebranded from the Leukemia &amp; Lymphoma Society in 2025 and the old lls.org links now break, so older funding lists point nowhere."},
+
+{n:"Alex's Lemonade Stand Foundation Young Investigator Grant", s:"Alex's Lemonade Stand Foundation", f:"cancer",
+ md:["12-10"], pat:"~10 December, annually",
+ award:"Up to $60,000 a year in direct costs, with no indirect costs",
+ dur:"3 years",
+ elig:"Instructor level or below, so postdocs qualify and assistant professors do not. PhDs within 4 years of the degree, MDs and MD-PhDs within 7. At least 75% protected research time and a mentor with paediatric cancer experience.",
+ cit:"visa", citTxt:"Citizenship not required; the institution must be in the US or Canada",
+ u:"https://www.alexslemonade.org/grant-categories/young-investigator",
+ note:"Named a Young Investigator award, which makes it read like a faculty grant, but the eligibility ceiling excludes assistant professors and includes postdocs. Childhood cancer only &mdash; patients over 19 are out of scope."},
+
+{n:"AACR Fellowships", s:"American Association for Cancer Research", f:"cancer",
+ md:["11-12"], pat:"Letters of intent cluster in November and January; applications follow in March to May",
+ award:"$60,000 to $200,000 total depending on the specific fellowship",
+ dur:"1 to 2 years",
+ elig:"Must hold a postdoctoral or clinical research fellow title at the grant start. Windows vary by award: 3 years past the doctorate for the Anna D. Barker basic research fellowship, 5 for the non-small cell lung cancer fellowship. AACR membership required, which is free at the associate level.",
+ cit:"visa", citTxt:"No citizenship restrictions; the visa must cover the grant term",
+ u:"https://www.aacr.org/grants/",
+ note:"A rotating portfolio rather than one programme, so check the live grants index rather than any individual award page &mdash; several of the individual pages still serve cycle information from 2018 and 2019."},
+
+/* ---------- Infectious disease and microbiology ---------- */
+{n:"Burroughs Wellcome Fund &mdash; infectious disease portfolio", s:"Burroughs Wellcome Fund", f:"id",
+ md:["10-02"], pat:"Invitation stage early October; full applications in November",
+ award:"$505,000 over five years for Investigators in the Pathogenesis of Infectious Disease",
+ dur:"5 years",
+ elig:"Assistant professors only &mdash; this is a faculty award, listed here because it is the best-fitting infectious disease programme in the country and worth planning a career around.",
+ cit:"visa", citTxt:"Citizenship rules not stated",
+ nom:1, nomTxt:"By invitation, with an institutional letter",
+ u:"https://www.bwfund.org/grants/infectious-diseases/investigators-in-the-pathogenesis-of-infectious-disease/",
+ note:"Host-pathogen interaction from the molecular to the systemic, including colonisation and commensalism. For a postdoc, the useful move is to know it exists and to time the first faculty years against it."},
+
+/* ---------- Other disease areas ---------- */
+{n:"American Heart Association Postdoctoral Fellowship", s:"American Heart Association", f:"disease",
+ md:["08-05"], pat:"Early August, annually &mdash; portal opens mid-May",
+ award:"Stipend $63,480 to $77,076 by experience, plus $12,200/yr health insurance and $3,000/yr project support",
+ dur:"1 to 2 years, renewable for a second award to a maximum of 4",
+ elig:"No more than 5 years of research training after the doctorate, excluding clinical training. The mentor must be established and currently funded, with at most four AHA fellows at once.",
+ cit:"visa", citTxt:"The broadest visa list anywhere &mdash; citizens, permanent residents, E-3, F-1, G-4, H-1B, J-1, O-1, TN and DACA",
+ u:"https://professional.heart.org/en/research-programs/application-information/postdoctoral-fellowship",
+ note:"If a postdoc in the lab is on a visa and eligible on science, this is the first place to look. No other major programme enumerates acceptable statuses this generously."},
+
+{n:"American Diabetes Association Postdoctoral Fellowship", s:"American Diabetes Association", f:"disease",
+ md:["04-30"], pat:"Late April, annually",
+ award:"Up to $100,588 a year &mdash; stipend $72,508 to $85,588 by experience, plus $7,000 fringe and $8,000 training allowance",
+ dur:"Up to 3 years",
+ elig:"Terminal degree within 5 years and no more than 4 years of postdoctoral training at submission.",
+ cit:"visa", citTxt:"No citizenship requirement; the institution verifies US work authorisation",
+ u:"https://professional.diabetes.org/research-grants/current-funding-opportunities/postdoctoral-fellowships",
+ note:"The highest annual value of any disease-society postdoctoral fellowship here."},
+
+{n:"Breakthrough T1D Postdoctoral Fellowship", s:"Breakthrough T1D (formerly JDRF)", f:"disease",
+ md:["07-02"], pat:"Early July, annually",
+ award:"Stipend scaled to experience plus $5,500/yr research allowance; the Advanced Postdoctoral Fellowship runs to $95,000/yr",
+ dur:"3 years, renewable for 2 more; the Advanced award adds an optional transition year into a faculty post",
+ elig:"Doctorate within 5 years for the standard fellowship, 6 for the Advanced. Flexibility is given for caregiving and health interruptions. The sponsor need not be a diabetes researcher.",
+ cit:"visa", citTxt:"No citizenship restriction; domestic and foreign non-profit institutions",
+ u:"https://www.breakthrought1d.org/explore-research/funding-opportunities/",
+ note:"JDRF renamed itself Breakthrough T1D, so search under the new name &mdash; the two-tier structure of standard and advanced fellowships is unusual and worth knowing about."},
+
+{n:"Alzheimer's Association Research Fellowship for All", s:"Alzheimer's Association", f:"disease",
+ md:["08-14"], pat:"Letter of intent mid-August; full application mid-October",
+ award:"Up to $200,000 total &mdash; $180,000 research at no more than $100,000/yr, plus a $20,000 dissemination stipend",
+ dur:"2 to 3 years",
+ elig:"Within 10 years of the terminal degree at the letter of intent, and not holding an independent faculty position at the time of award.",
+ cit:"visa", citTxt:"Open to US and international researchers",
+ u:"https://www.alz.org/research/for_researchers/grants/types-of-grants/aarfa",
+ note:"Replaces the older AARF and AARF-D mechanisms, whose pages are still live and still show 2025 dates. The ten-year window is by far the most generous here."},
+
+{n:"Cystic Fibrosis Foundation Postdoctoral Research Fellowship", s:"Cystic Fibrosis Foundation", f:"disease",
+ md:["05-12"], pat:"Mid-May, annually",
+ award:"$66,000 then $67,000 in salary and fringe, plus $9,000/yr for research and travel, with no indirect costs",
+ dur:"2 years",
+ elig:"MD, PhD or MD-PhD. No explicit years-past-degree cap, with a stated preference for early career. One postdoctoral application per person per calendar year.",
+ cit:"visa", citTxt:"Citizens, permanent residents and non-residents working in US laboratories",
+ u:"https://www.cff.org/researchers/postdoctoral-research-fellowship-award",
+ note:"A parallel Path to a Cure track funds CFTR restoration, gene editing and rare-mutation work."},
+
+{n:"Crohn's &amp; Colitis Foundation Research Fellowship Award", s:"Crohn's &amp; Colitis Foundation", f:"disease",
+ md:["06-02"], pat:"Pre-application in early June; invited full proposal in late July",
+ award:"Up to $70,000 a year &mdash; salary to $50,000, fringe to $12,500, and $7,500 in project costs",
+ dur:"1 to 3 years",
+ elig:"PhDs need at least a year of postdoctoral IBD research; MDs need two years post-degree including one in IBD. Beyond 5 years (PhD) or 7 (MD) you must justify the continued need for development.",
+ cit:"visa", citTxt:"Citizenship unrestricted; legal work status and a US institution required",
+ u:"https://www.crohnscolitisfoundation.org/research/grants-fellowships/research-fellowship-awards",
+ note:"Mucosal immunology and microbiome work sits squarely in scope, which makes this more relevant to a microbiology department than the name suggests."},
+
+{n:"National MS Society Postdoctoral Fellowship", s:"National Multiple Sclerosis Society", f:"disease",
+ md:["08-05"], pat:"August deadline, preceded by a pre-application",
+ award:"Stipend scale &mdash; the figures in the Society's brochure appear outdated, so confirm before relying on them",
+ dur:"Up to 3 years",
+ elig:"Between zero and 36 months of prior postdoctoral training, with longer considered case by case. The mentor and institution must be arranged before applying, and a phone interview is part of review.",
+ cit:"visa", citTxt:"Citizenship required only for training outside the US &mdash; non-citizens may train at US institutions",
+ u:"https://www.nationalmssociety.org/for-professionals/for-researchers/research-funding-opportunities/applications-deadlines",
+ note:"Neuroimmunology is well within scope. Confirm the current deadline directly &mdash; the Society's funding pages render dynamically and are hard to read reliably."},
+
+{n:"MDA Development Grant", s:"Muscular Dystrophy Association", f:"disease",
+ md:["02-01"], pat:"Letter of intent 1 February; full application 1 April",
+ award:"Up to $90,000 a year",
+ dur:"3 years",
+ elig:"Postdoctoral researchers working under a senior investigator at a US institution. Years-past-degree and citizenship rules are not stated on the programme page.",
+ cit:"visa", citTxt:"Not stated &mdash; confirm with the Association",
+ u:"https://www.mda.org/science/funding-opportunities",
+ note:"Neuromuscular disease research."},
+
+{n:"Arthritis National Research Foundation grants", s:"Arthritis National Research Foundation", f:"disease",
+ md:["01-08"], pat:"Applications open 1 October and close 8 January",
+ award:"$50,000 to $250,000 depending on the programme",
+ dur:"1 to 2 years",
+ elig:"Early-career researchers and postdoctoral fellows across four parallel calls, including a postdoctoral physician-scientist fellowship and a paediatric rheumatology programme.",
+ cit:"visa", citTxt:"Not stated publicly &mdash; the detailed guidelines are password-protected",
+ u:"https://curearthritis.org/research-grants/",
+ note:"Arthritis, rheumatic and autoimmune disease. The eligibility fine print is not public, so a note to the Foundation before writing is worth the time."},
+
+/* ---------- International and mobility ---------- */
+{n:"HFSP Long-Term and Cross-Disciplinary Fellowships", s:"Human Frontier Science Program", f:"intl",
+ md:["05-12"], pat:"Letter of intent in mid-May; invited full proposals in late September",
+ award:"Living allowance around $59,460 in year one for a US placement, varying by country, plus $7,200 research and travel, child allowance and up to three months of paid parental leave",
+ dur:"3 years, not renewable",
+ elig:"PhD conferred no more than three years before the full proposal deadline, with at least one lead-author paper. The host supervisor must not be a prior collaborator.",
+ cit:"mobility", citTxt:"Any nationality, but you must change country &mdash; not your country of nationality, not where you did the PhD, not anywhere you have spent over 12 months",
+ u:"https://www.hfsp.org/funding/hfsp-funding/postdoctoral-fellowships",
+ note:"Frontier interdisciplinary basic research only. Applied and clinical work, drug development, purely descriptive studies and agricultural or conservation projects are all out of scope. A non-US citizen already in the US for more than a year cannot propose a US host."},
+
+{n:"EMBO Postdoctoral Fellowships", s:"European Molecular Biology Organization", f:"intl",
+ nth:{m:1,d:5,n:4}, pat:"Twice yearly: fourth Friday in January and second Friday in July",
+ award:"Country-dependent, from around &euro;51,600 to &euro;99,600 a year, plus relocation, childcare and dependent allowances",
+ dur:"Up to 2 years",
+ elig:"PhD within the previous two years and at least one first-author paper or peer-reviewed preprint. Mobility is mandatory: not your PhD country, not a lab where you worked over six months, not with your PhD supervisor.",
+ cit:"mobility", citTxt:"Any nationality for a move to an EMBC member state; holding it in the US requires being an EMBC national who did the PhD there",
+ u:"https://www.embo.org/funding/fellowships-grants-and-career-support/postdoctoral-fellowships/",
+ note:"Two policy changes worth noting: from autumn 2026 a host lab may support only one candidate per round, and from autumn 2027 re-applications end &mdash; one proposal per researcher, ever."},
+
+{n:"Marie Sk&#322;odowska-Curie Postdoctoral Fellowships", s:"European Commission, Horizon Europe", f:"intl",
+ md:["09-09"], pat:"One call a year, opening in April and closing in early September",
+ award:"Living and mobility allowances with country correction coefficients, plus research, training and management costs and conditional family allowances",
+ dur:"1 to 2 years for European Fellowships; 2 to 3 for Global Fellowships including a mandatory return year",
+ elig:"PhD in hand at the deadline and no more than 8 years of full-time research experience since. You must not have lived or worked in the host country for more than 12 months in the preceding 3 years.",
+ cit:"mobility", citTxt:"European Fellowships open to any nationality moving to Europe; Global Fellowships restricted to EU and associated-country nationals",
+ u:"https://marie-sklodowska-curie-actions.ec.europa.eu/actions/postdoctoral-fellowships",
+ note:"The eight-year window is the most generous of any programme here, which makes this a real option for senior postdocs who have aged out of everything else &mdash; provided they are willing to move to Europe."},
+
+{n:"Humboldt Research Fellowship", s:"Alexander von Humboldt Foundation", f:"intl",
+ md:["03-15","07-15","11-15"], pat:"Three calls a year: 15 March, 15 July, 15 November",
+ award:"&euro;3,000 a month for postdocs, &euro;3,600 for experienced researchers, plus family allowances, health insurance subsidy and travel",
+ dur:"6 to 24 months, divisible into several stays across three years",
+ elig:"Doctorate within the last 4 years for the postdoctoral line, 12 for the experienced line. You must not have spent more than 90 days in Germany in the previous 18 months.",
+ cit:"mobility", citTxt:"Any non-German nationality &mdash; a visa-holding postdoc in the US applies on exactly the same terms as a citizen",
+ u:"https://www.humboldt-foundation.de/en/apply/sponsorship-programmes/humboldt-research-fellowship",
+ note:"Each call closes early once 800 applications arrive, so submitting in the first weeks matters more than it does elsewhere."},
+
+{n:"Newton International Fellowships", s:"The Royal Society", f:"intl",
+ md:["03-11"], pat:"Opens mid-January, closes mid-March",
+ award:"Up to &pound;280,000 over two years, covering salary, research expenses, relocation, visa costs and indirect costs",
+ dur:"2 years",
+ elig:"PhD in hand by the closing date and no more than 5 years of active full-time postdoctoral experience, excluding career breaks. One application per sponsor per round.",
+ cit:"mobility", citTxt:"Any nationality except UK citizens; you must be based outside the UK when you apply",
+ u:"https://royalsociety.org/grants/newton-international/",
+ note:"Being currently in the US is an advantage rather than an obstacle &mdash; the requirement is simply that you are outside the UK and not a UK citizen."},
+
+{n:"Canada Postdoctoral Research Award", s:"CIHR, NSERC and SSHRC", f:"intl",
+ md:["09-16"], pat:"Agency-specific: SSHRC in early September, CIHR mid-September, NSERC mid-October",
+ award:"CAD 70,000 a year, non-renewable",
+ dur:"24 months",
+ elig:"Doctorate completed no more than 3 years before 1 September of the application year, with extensions for parental and medical leave, caregiving, military service and displacement.",
+ cit:"mobility", citTxt:"Foreign nationals eligible only with a Canadian doctoral or postdoctoral connection",
+ u:"https://nserc-crsng.canada.ca/en/funding-opportunity/canada-postdoctoral-research-award-program",
+ note:"This replaced the Banting Postdoctoral Fellowships, which are closed. Up to 20% of awards go to international applicants."},
+
+{n:"JSPS Postdoctoral Fellowship for Research in Japan", s:"Japan Society for the Promotion of Science", f:"intl",
+ md:["04-23","08-28"], pat:"Twice yearly through the US route: late August and late April",
+ award:"&yen;362,000 a month, plus round-trip airfare, a &yen;200,000 settling-in allowance and overseas insurance",
+ dur:"12 to 24 months",
+ elig:"Doctorate obtained within 6 years of the fellowship start.",
+ cit:"us", citTxt:"Through the US route, citizens and permanent residents only &mdash; others apply via their own country's nominating authority",
+ u:"https://www.jspsusa.org/wp/fellowship/",
+ note:"A separate short-term programme covering 1 to 12 months runs on its own three-times-a-year schedule."},
+
+{n:"Fulbright US Scholar Program &mdash; postdoctoral awards", s:"US Department of State", f:"intl",
+ md:["09-15"], pat:"15 September, annually",
+ award:"Varies by country &mdash; typically a stipend with airfare and health benefits",
+ dur:"A few months to a full academic year",
+ elig:"Doctorate received roughly within 5 years before the grant begins, some awards up to 7, conferred before the award starts.",
+ cit:"us", citTxt:"US citizenship required &mdash; permanent residence is explicitly not sufficient",
+ u:"https://fulbrightscholars.org/us-scholar-awards",
+ note:"Stricter than most US programmes, since it excludes green-card holders as well as visa holders."},
+
+{n:"Pew Latin American Fellows Program", s:"The Pew Charitable Trusts", f:"intl",
+ md:["08-19"], pat:"Opens in early June, closes in mid-to-late August",
+ award:"$30,000 a year for two years of US postdoctoral work, plus $70,000 in equipment funding on returning to Latin America",
+ dur:"2 years in the US, then the return package",
+ elig:"PhD or MD within roughly five years, with a preference for applicants whose undergraduate and graduate degrees are from Latin American institutions. A US sponsor must be secured before applying, and it cannot be your PhD advisor.",
+ cit:"visa", citTxt:"Designed for Latin American scholars training in the US",
+ u:"https://www.pew.org/en/projects/pew-latin-american-fellows",
+ note:"Requires a written commitment to return and build an independent lab in Latin America. Ten fellows a year."},
+
+{n:"L'Or&eacute;al USA For Women in Science Fellowship", s:"L'Or&eacute;al USA, administered by AAAS", f:"open",
+ md:["02-13"], pat:"Mid-February, annually",
+ award:"Five fellowships a year; the per-award figure is not published on the official page",
+ dur:"1 year, with mentoring and networking",
+ elig:"Women who have completed the PhD and started a postdoctoral position by the cycle's stated date. All STEM fields.",
+ cit:"us", citTxt:"US citizens and permanent residents only",
+ u:"https://www.loreal.com/en/usa/pages/group/fwis/",
+ note:"Recent awardees span physiology, sensory biology, microbiology, biomedical engineering and developmental biology."}
+
+];
+
+/* ---------- deadline resolution ---------- */
+function pad(n){ return (n<10?"0":"")+n; }
+function nthWeekday(y, m, wd, n){            /* m 1-12, wd 0=Sun */
+  var d = new Date(y, m-1, 1), add = (wd - d.getDay() + 7) % 7;
+  return new Date(y, m-1, 1 + add + (n-1)*7);
+}
+function nextDate(f, today){
+  var cands = [], y = today.getFullYear(), i, yy;
+  for (yy = y; yy <= y+1; yy++){
+    if (f.md) for (i=0;i<f.md.length;i++){
+      cands.push(new Date(yy, +f.md[i].slice(0,2)-1, +f.md[i].slice(3,5)));
+    }
+    if (f.nth) cands.push(nthWeekday(yy, f.nth.m, f.nth.d, f.nth.n));
+  }
+  cands = cands.filter(function(d){ return d >= today; }).sort(function(a,b){ return a-b; });
+  return cands[0] || null;
+}
+var MON = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+function fmt(d){ return d.getDate() + " " + MON[d.getMonth()] + " " + d.getFullYear(); }
+
+var today = new Date(); today.setHours(0,0,0,0);
+F.forEach(function(f){
+  f._d = nextDate(f, today);
+  f._days = f._d ? Math.round((f._d - today) / 86400000) : 9999;
+});
+F.sort(function(a,b){ return a._days - b._days; });
+
+/* ---------- render ---------- */
+var CIT = {
+  visa:   {cls:"visa",   txt:"Open to visa holders"},
+  us:     {cls:"usonly", txt:"US citizens / PR only"},
+  watch:  {cls:"nom",    txt:"Citizenship rules in flux"},
+  mobility:{cls:"nom",   txt:"Requires a move abroad"}
+};
+var FIELD = {open:"Open-field", cancer:"Cancer &amp; immunology", id:"Infectious disease",
+             disease:"Disease-specific", intl:"International"};
+
+function esc(s){ return String(s); }
+function card(f, i){
+  var c = CIT[f.cit] || CIT.visa;
+  var dcls = f._days <= 30 ? "hot" : (f._days <= 90 ? "soon" : "");
+  var dtxt = f._d ? fmt(f._d) + " &middot; " + (f._days === 0 ? "today" : f._days + "d") : "rolling";
+  var bar = '<span class="odl ' + dcls + '">' + dtxt + '</span>' +
+            '<span class="' + c.cls + '">' + c.txt + '</span>' +
+            '<span>' + FIELD[f.f] + '</span>' +
+            (f.nom ? '<span class="nom">' + f.nomTxt + '</span>' : '');
+  return '<article class="card prop" data-field="' + f.f + '" data-cit="' + f.cit +
+         '" data-days="' + f._days + '" data-q="' + (f.n + " " + f.s + " " + f.note).toLowerCase().replace(/"/g,"") + '">' +
+    '<div class="phead"><span class="pid">' + pad(i+1) + '</span>' +
+      '<span class="tierbadge">' + f.s + '</span>' +
+      '<h3><a href="' + f.u + '" target="_blank" rel="noopener">' + f.n + '</a></h3></div>' +
+    '<div class="oppbar">' + bar + '</div>' +
+    '<div class="split">' +
+      '<div><h4>Terms</h4><dl class="terms">' +
+        '<dt>Award</dt><dd>' + f.award + '</dd>' +
+        '<dt>Duration</dt><dd>' + f.dur + '</dd>' +
+        '<dt>Cycle</dt><dd>' + f.pat + '</dd>' +
+      '</dl></div>' +
+      '<div><h4>Eligibility</h4><p class="onote" style="margin-top:0">' + f.elig + '</p>' +
+        '<p class="onote"><strong>Citizenship.</strong> ' + f.citTxt + '</p>' +
+        '<p class="onote">' + f.note + '</p></div>' +
+    '</div></article>';
+}
+
+document.getElementById("list").innerHTML = F.map(card).join("");
+document.getElementById("nTotal").textContent = F.length;
+document.getElementById("nVisa").textContent  = F.filter(function(f){ return f.cit === "visa"; }).length;
+document.getElementById("nSoon").textContent  = F.filter(function(f){ return f._days <= 90; }).length;
+document.getElementById("nNom").textContent   = F.filter(function(f){ return f.nom; }).length;
+
+/* ---------- filters ---------- */
+var state = {field:"all", cit:"all", when:"all", q:""};
+function apply(){
+  var cards = document.querySelectorAll("#list .prop"), shown = 0;
+  Array.prototype.forEach.call(cards, function(el){
+    var ok = (state.field === "all" || el.dataset.field === state.field) &&
+             (state.cit === "all" || el.dataset.cit === state.cit) &&
+             (state.when === "all" || +el.dataset.days <= 90) &&
+             (state.q === "" || el.dataset.q.indexOf(state.q) > -1);
+    el.hidden = !ok;
+    if (ok) shown++;
+  });
+  document.getElementById("shown").textContent = shown + " of " + F.length;
+  document.getElementById("empty").hidden = shown > 0;
+}
+Array.prototype.forEach.call(document.querySelectorAll(".fchip"), function(b){
+  b.addEventListener("click", function(){
+    var f = b.dataset.f;
+    Array.prototype.forEach.call(document.querySelectorAll('.fchip[data-f="' + f + '"]'), function(o){
+      o.setAttribute("aria-pressed", o === b ? "true" : "false");
+    });
+    state[f] = b.dataset.v;
+    apply();
+  });
+});
+document.getElementById("q").addEventListener("input", function(e){
+  state.q = e.target.value.toLowerCase().trim();
+  apply();
+});
+apply();
+</script>
+
+</body>
+</html>

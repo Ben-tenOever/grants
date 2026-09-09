@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en" id="top">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Fellowship Project Ideas &mdash; Microbiology, NYU Grossman School of Medicine</title>
+<style>
+:root {
+  --nyu-purple: #4F2C85;
+  --nyu-deep: #2a1a49;
+  --bg-light: #f5f5f7;
+  --card-bg: #ffffff;
+  --border-subtle: #e3e3ee;
+  --text-main: #222222;
+  --text-soft: #56566a;
+  --amber-bg: #fdf6e3;
+  --amber-line: #e6d3a3;
+  --amber-ink: #7a5200;
+  --red-bg: #fdeeeb;
+  --red-line: #e6bcb1;
+  --red-ink: #9a3520;
+  --green-bg: #edf6f0;
+  --green-line: #b9ddc7;
+  --green-ink: #1f6b41;
+}
+* { box-sizing: border-box; }
+body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  margin: 0; padding: 0; background: var(--bg-light); color: var(--text-main); line-height: 1.55; }
+header { background: #ffffff; color: var(--nyu-purple); padding: 1.1rem 2rem 1rem;
+  border-bottom: 5px solid var(--nyu-purple); }
+header h1 { margin: 0; font-size: 1.9rem; color: var(--nyu-purple); }
+header p { margin: .35rem 0 0; color: var(--text-soft); font-size: .95rem; }
+nav { position: sticky; top: 0; background: #faf7ff; border-bottom: 1px solid #ddd4ff;
+  padding: .45rem 2rem; display: flex; gap: 1rem; flex-wrap: wrap; z-index: 10; }
+nav a { text-decoration: none; color: var(--nyu-purple); font-size: .9rem;
+  padding: .25rem .7rem; border-radius: 999px; font-weight: 500; }
+nav a:hover { background: rgba(79,44,133,.08); }
+nav a.here { background: var(--nyu-purple); color: #fff; }
+main { max-width: 1120px; margin: 0 auto; padding: 2rem 2.25rem 3rem; }
+.card { background: var(--card-bg); border-radius: .9rem; padding: 1.3rem 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,.05); border: 1px solid var(--border-subtle); }
+h2 { margin-top: 0; color: var(--nyu-purple); }
+.section-spacer { margin-top: 1.5rem; }
+.lede { max-width: 74ch; }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: .75rem; margin-top: 1rem; }
+.stat { border: 1px solid var(--border-subtle); border-radius: .7rem; padding: .7rem .9rem; background: #faf7ff; }
+.stat .k { font-size: .72rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--text-soft); }
+.stat .v { font-size: 1.5rem; font-weight: 700; color: var(--nyu-purple); margin-top: .15rem; }
+.stat .s { font-size: .78rem; color: var(--text-soft); line-height: 1.35; }
+.filters { display: flex; flex-wrap: wrap; gap: .45rem; align-items: center; margin: 1.25rem 0 1rem; }
+.fchip { font: inherit; font-size: .85rem; cursor: pointer; background: #fff; color: var(--nyu-purple);
+  border: 1px solid var(--border-subtle); border-radius: 999px; padding: .3rem .8rem; font-weight: 500; }
+.fchip:hover { border-color: var(--nyu-purple); background: rgba(79,44,133,.05); }
+.fchip[aria-pressed="true"] { background: var(--nyu-purple); border-color: var(--nyu-purple); color: #fff; }
+.fchip .ct { opacity: .65; font-size: .75rem; margin-left: .35rem; }
+.divider { width: 1px; align-self: stretch; background: var(--border-subtle); margin: 0 .3rem; }
+input[type=search] { font: inherit; font-size: .85rem; padding: .35rem .8rem; min-width: 210px;
+  border: 1px solid var(--border-subtle); border-radius: 999px; background: #fff; color: var(--text-main); }
+.prop { margin-bottom: 1rem; }
+.phead { display: flex; flex-wrap: wrap; align-items: baseline; gap: .55rem; }
+.pid { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .82rem;
+  font-weight: 700; color: #fff; background: var(--nyu-purple); border-radius: .35rem; padding: .1rem .45rem; }
+.tierbadge { font-size: .68rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase;
+  border-radius: 999px; padding: .16rem .55rem; border: 1px solid var(--border-subtle);
+  color: var(--text-soft); background: #faf7ff; }
+.phead h3 { margin: 0; flex: 1 1 100%; font-size: 1.18rem; line-height: 1.3; color: var(--nyu-deep); }
+.phead h3 a { color: inherit; text-decoration: none; border-bottom: 1px solid #d9c9f2; }
+.phead h3 a:hover { color: var(--nyu-purple); border-bottom-color: var(--nyu-purple); }
+.oppbar { display: flex; flex-wrap: wrap; gap: .35rem; margin-top: .65rem; }
+.oppbar span, .oppbar a { font-size: .72rem; font-weight: 600; letter-spacing: .03em; text-transform: uppercase;
+  padding: .18rem .5rem; border-radius: .3rem; border: 1px solid var(--border-subtle);
+  color: var(--text-soft); background: #fbfbfd; white-space: nowrap; }
+.oppbar .odl { font-family: ui-monospace, Menlo, monospace; letter-spacing: 0; text-transform: none; }
+.oppbar .odl.hot { color: var(--red-ink); background: var(--red-bg); border-color: var(--red-line); }
+.oppbar .odl.soon { color: var(--amber-ink); background: var(--amber-bg); border-color: var(--amber-line); }
+.oppbar .visa { color: var(--green-ink); background: var(--green-bg); border-color: var(--green-line); }
+.oppbar .usonly { color: var(--red-ink); background: var(--red-bg); border-color: var(--red-line); }
+.oppbar .nom { color: var(--amber-ink); background: var(--amber-bg); border-color: var(--amber-line); }
+.onote { margin: .6rem 0 0; font-size: .82rem; color: var(--text-soft); max-width: 92ch; }
+.split { display: grid; grid-template-columns: minmax(250px, 330px) 1fr; gap: 1.6rem; margin-top: 1rem; }
+@media (max-width: 860px) { .split { grid-template-columns: 1fr; } }
+.split h4 { margin: 0 0 .5rem; font-size: .72rem; font-weight: 700; letter-spacing: .09em;
+  text-transform: uppercase; color: var(--text-soft); border-bottom: 1px solid var(--border-subtle); padding-bottom: .3rem; }
+dl.terms { margin: 0; display: grid; grid-template-columns: auto 1fr; gap: .3rem .8rem; }
+dl.terms dt { font-size: .72rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
+  color: var(--text-soft); padding-top: .12rem; white-space: nowrap; }
+dl.terms dd { margin: 0; font-size: .88rem; }
+.foot { margin-top: .95rem; padding-top: .8rem; border-top: 1px solid var(--border-subtle);
+  display: flex; flex-direction: column; gap: .5rem; }
+.foot p { margin: 0; font-size: .84rem; color: var(--text-soft); max-width: 96ch; }
+.foot strong { color: var(--text-main); }
+.gate { background: var(--amber-bg); border-left: 3px solid var(--amber-line);
+  padding: .5rem .7rem; border-radius: .3rem; }
+.gate strong { color: var(--amber-ink); }
+.flag { background: var(--red-bg); border-left: 3px solid var(--red-line);
+  padding: .5rem .7rem; border-radius: .3rem; }
+.flag strong { color: var(--red-ink); }
+table.plain { border-collapse: collapse; width: 100%; }
+table.plain th { text-align: left; font-size: .72rem; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--text-soft); border-bottom: 2px solid var(--border-subtle); padding: .4rem .6rem .4rem 0; }
+table.plain td { padding: .5rem .6rem .5rem 0; border-bottom: 1px solid var(--border-subtle);
+  font-size: .88rem; vertical-align: top; }
+table.plain tr:last-child td { border-bottom: 0; }
+table.plain td a { color: var(--nyu-purple); }
+td.nw { white-space: nowrap; width: 1%; font-family: ui-monospace, Menlo, monospace; font-size: .8rem; }
+.sub { color: var(--text-soft); font-size: .82rem; }
+.sub2 { display: block; margin-top: .15rem; font-size: .82rem; color: var(--text-soft); max-width: 76ch; }
+.tablewrap { overflow-x: auto; }
+.none { padding: 2.5rem; text-align: center; color: var(--text-soft); }
+footer { border-top: 1px solid #ddd4ff; padding: 1rem 2rem; background: #faf7ff;
+  font-size: .8rem; color: #555; text-align: center; }
+</style><style>
+.ideas { margin: .9rem 0 0; display: flex; flex-direction: column; gap: .85rem; }
+.idea { border: 1px solid var(--border-subtle); border-radius: .6rem; padding: .8rem .95rem; background: #fbfaff; }
+.idea h5 { margin: 0 0 .35rem; font-size: .97rem; line-height: 1.35; color: var(--nyu-deep); }
+.idea p { margin: 0 0 .45rem; font-size: .87rem; color: var(--text-main); max-width: 92ch; }
+.idea p.why { color: var(--text-soft); font-size: .84rem; margin-bottom: .5rem; }
+.idea p.why strong { color: var(--nyu-purple); }
+.fmatch { display: flex; flex-wrap: wrap; gap: .3rem; }
+.fmatch span { font-size: .7rem; font-weight: 600; letter-spacing: .02em; padding: .14rem .45rem;
+  border-radius: .3rem; border: 1px solid #d9c9f2; color: var(--nyu-purple); background: #f3edfb; white-space: nowrap; }
+.caps { margin: .55rem 0 0; font-size: .8rem; color: var(--text-soft); max-width: 96ch; }
+.caps strong { color: var(--text-main); font-weight: 600; }
+.here-if { margin: .1rem 0 .55rem; font-size: .9rem; color: var(--text-main); max-width: 88ch; }
+.pairs { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: .8rem; margin-top: 1rem; }
+.pair { border: 1px solid var(--border-subtle); border-radius: .6rem; padding: .8rem .95rem; background: #fbfaff; }
+.pair h5 { margin: 0 0 .3rem; font-size: .92rem; color: var(--nyu-deep); }
+.pair p { margin: 0; font-size: .85rem; color: var(--text-soft); }
+.pair .vs { font-family: ui-monospace, Menlo, monospace; font-size: .7rem; letter-spacing: .06em;
+  text-transform: uppercase; color: var(--nyu-purple); display: block; margin-bottom: .25rem; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Fellowship Project Ideas</h1>
+  <p>Starting points for postdoctoral fellowship applications, built from the research profiles of the Department of Microbiology &mdash; NYU Grossman School of Medicine</p>
+</header>
+
+<nav>
+  <a href="./">Grant slate</a>
+  <a href="fellowships.html">Postdoc fellowships</a>
+  <a href="#top" class="here">Project ideas</a>
+  <a href="#pairs">Ideas needing two labs</a>
+  <a href="#howto">Turning one into an application</a>
+</nav>
+
+<main>
+
+  <section class="card">
+    <h2>Forty-five directions, none of them assignments</h2>
+    <p class="lede">A fellowship application has to be the applicant's own idea &mdash; reviewers can tell, and
+      the strongest applications propose something the sponsor was not already doing. What follows is
+      deliberately upstream of that: research themes represented in this department, the techniques already
+      running in the building, and directions that sit adjacent to existing strengths rather than inside
+      them. Find the theme your work touches, then argue with the ideas under it. The version you disagree
+      your way into will be better than anything here.</p>
+    <div class="stats">
+      <div class="stat"><div class="k">Research themes</div><div class="v">15</div>
+        <div class="s">drawn from 20 active labs</div></div>
+      <div class="stat"><div class="k">Project directions</div><div class="v">45</div>
+        <div class="s">three per theme</div></div>
+      <div class="stat"><div class="k">Cross-lab ideas</div><div class="v">6</div>
+        <div class="s">needing two groups to work</div></div>
+      <div class="stat"><div class="k">Fellowships mapped</div><div class="v">42</div>
+        <div class="s">see the companion page</div></div>
+    </div>
+    <div class="foot">
+      <p class="gate"><strong>One time-sensitive thing worth knowing.</strong> The NSF Postdoctoral Research
+        Fellowships in Biology moved to a single focus area this cycle: the intersection of artificial
+        intelligence and the biological sciences. That is an unusually close match for the computational
+        microbiome, AMR-genomics and modelling work in this department, and the award improved to $110,000 a
+        year for 24 months. It closes on the fourth Tuesday of September. Anyone in those areas who is within
+        15 months of the doctorate should look at it this week.</p>
+      <p><strong>How the fellowship tags work.</strong> Each direction carries the fellowships whose scope and
+        eligibility actually fit it &mdash; not every award a postdoc could theoretically enter. Deadlines and
+        citizenship rules for all of them are on the <a href="fellowships.html">postdoc fellowships page</a>.</p>
+    </div>
+  </section>
+
+  <div class="filters">
+    <button class="fchip" data-f="cl" data-v="all" aria-pressed="true">All themes</button>
+    <button class="fchip" data-f="cl" data-v="virus" aria-pressed="false">Virology &amp; RNA biology</button>
+    <button class="fchip" data-f="cl" data-v="bact" aria-pressed="false">Bacterial pathogenesis</button>
+    <button class="fchip" data-f="cl" data-v="immune" aria-pressed="false">Immunology &amp; vaccines</button>
+    <button class="fchip" data-f="cl" data-v="comp" aria-pressed="false">Computational &amp; microbiome</button>
+    <button class="fchip" data-f="cl" data-v="struct" aria-pressed="false">Structural &amp; mechanistic</button>
+    <span class="divider"></span>
+    <input type="search" id="q" placeholder="Search themes, techniques, ideas" aria-label="Search project ideas" />
+    <span class="sub">Showing <strong id="shown">&mdash;</strong></span>
+  </div>
+
+  <div id="list"></div>
+  <div class="none" id="empty" hidden>No theme matches that search.</div>
+
+  <section class="card section-spacer" id="pairs">
+    <h2>Ideas that need two labs</h2>
+    <p class="lede">These do not belong to any single group, which is exactly why they tend to go unproposed.
+      Each one is a fellowship-sized question that becomes tractable when two sets of techniques already in
+      this department are put in the same room. A co-mentored fellowship application is also a genuinely
+      strong structure with reviewers, provided the two mentors write letters that agree with each other.</p>
+    <div class="pairs">
+      <div class="pair">
+        <span class="vs">Microbiome modelling &times; MRSA persistence</span>
+        <h5>Can within-host evolution be forecast from the community around the pathogen?</h5>
+        <p>Longitudinal isolate genomics tells you what a colonising strain became. Ecological modelling of the
+          surrounding community may tell you why. Pairing them asks whether the microbial context predicts which
+          coloniser turns invasive &mdash; a prediction problem with an unusually clean clinical endpoint.</p>
+      </div>
+      <div class="pair">
+        <span class="vs">Structural biology &times; envelope proteolysis</span>
+        <h5>Structures of a protease&ndash;adaptor complex caught mid-cycle</h5>
+        <p>The genetics and biochemistry of envelope protease activation are worked out; what is missing is the
+          conformational trajectory. Cryo-EM of trapped intermediates would convert a regulatory model into a
+          druggable mechanism, and the target is a WHO Priority 1 pathogen.</p>
+      </div>
+      <div class="pair">
+        <span class="vs">Macrophage biology &times; respiratory transmission</span>
+        <h5>Does the airway myeloid compartment determine who transmits?</h5>
+        <p>Transmission models measure infectiousness; myeloid genetics can remove one macrophage subset at a
+          time. The combination asks a question neither can ask alone &mdash; whether an immune cell type, not just
+          viral load, sets how much virus leaves a host.</p>
+      </div>
+      <div class="pair">
+        <span class="vs">Translational control &times; vaccine immunology</span>
+        <h5>Is antibody durability set at the level of translation?</h5>
+        <p>Translation-factor balance decides T cell lineage commitment in culture. Human vaccination cohorts
+          measure durability but rarely mechanism. Testing whether the translational state of a Tfh cell at
+          priming predicts antibody persistence a year later connects the two.</p>
+      </div>
+      <div class="pair">
+        <span class="vs">Maternal&ndash;infant microbiome &times; neonatal pathogenesis</span>
+        <h5>Where does a newborn's resistome actually come from?</h5>
+        <p>Source-tracking algorithms can quantitatively apportion microbial origin between milk, maternal gut
+          and environment. Applied to resistance genes rather than taxa, and paired with neonatal colonisation
+          models, it turns a descriptive observation into a mechanism with an intervention point.</p>
+      </div>
+      <div class="pair">
+        <span class="vs">Programmable viral vectors &times; tissue macrophages</span>
+        <h5>Interferon signalling switched off in exactly one cell type</h5>
+        <p>Cell-type-restricted vectors can deliver an immune antagonist to a single population in vivo. Applied
+          to a defined macrophage subset, it answers which cell's interferon response actually controls disease
+          outcome &mdash; a question conditional knockouts approximate but never quite isolate.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="card section-spacer" id="howto">
+    <h2>Turning one of these into an application</h2>
+    <p class="lede">The mechanics matter more than they should, and most of what sinks a first fellowship
+      application is structural rather than scientific.</p>
+    <div class="foot">
+      <p><strong>Check the clock before the science.</strong> The most valuable early-stage award here &mdash; four
+        years of salary plus loan repayment &mdash; requires basic scientists to apply within 18 months of the
+        degree and with no more than a year in the sponsor's lab. That means it is planned before the PhD ends,
+        not after arriving. Anyone already past that window should go straight to the programmes with five-year
+        eligibility, which are the more forgiving and in one case the broadest award on the list.</p>
+      <p><strong>Citizenship forks the whole list.</strong> The two largest federal sources both require citizenship
+        or permanent residency. A postdoc on a visa has a real but different list, and it is worth establishing
+        which one applies before writing a page. Two programmes stand out for having no citizenship bar at all.</p>
+      <p><strong>Propose the thing that is adjacent, not identical.</strong> Fellowship reviewers are asked whether
+        the applicant is being trained, which means the proposal should require something the applicant cannot
+        already do. A project that is a natural continuation of the thesis reads as a strong preliminary-data
+        section and a weak training plan. Every direction on this page was chosen to sit one step outside an
+        existing strength for that reason.</p>
+      <p class="gate"><strong>The sponsor letter is half the application</strong> and is the part most often left
+        to the last week. It should say specifically what the applicant will learn, from whom, and what happens
+        to the project afterwards &mdash; and for a co-mentored proposal, the two letters must describe the same
+        division of labour. Reviewers notice when they do not.</p>
+      <p><strong>Where the ideas came from.</strong> Themes and available techniques were drawn from the department's
+        own lab research profiles &mdash; the same source the grant slate uses. Two groups were left out
+        deliberately: one whose principal investigator has left the institution, and one where a fellowship
+        running three or four years would outlast the sponsoring lab. No individuals are named anywhere on this
+        page, by design: the themes are meant to be recognisable to the people working in them without reading
+        as an instruction to anyone.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  Department of Microbiology &middot; NYU Grossman School of Medicine &middot; built from departmental lab research profiles &middot;
+  companion to the <a href="fellowships.html">postdoc fellowships</a> calendar
+</footer>
+<script>
+var T = [
+
+{id:"rna-bact", cl:"virus", name:"Bacterial RNA decay, capping and the epitranscriptome",
+ hereIf:"You work on transcript stability, ribonucleases, RNA 5&prime;-end chemistry, or single-molecule RNA&ndash;protein biochemistry.",
+ caps:"RNA half-life determination in vivo and in vitro, single-molecule FRET, site-specific cleavage by deoxyribozymes, boronate gels, SEC-MALS, protein purification and enzyme assays, biochemical reconstitution of decay pathways, RNA-seq.",
+ ideas:[
+  {t:"Noncanonical RNA caps as a stress-sensing layer in a priority pathogen",
+   p:"Nucleoside-tetraphosphate and glucose caps stabilise bacterial transcripts and respond to alarmone signalling, but almost everything known about them comes from a laboratory organism. Mapping the capped transcriptome of a WHO priority pathogen across oxidative and antibiotic stress asks whether cap chemistry sets the threshold at which a population switches into tolerance.",
+   w:"Takes a fundamental discovery into a pathogen where the phenotype is antibiotic persistence, which is where both study sections and foundations currently are. The methods already exist here; only the organism changes.",
+   f:["Life Sciences Research Foundation","Jane Coffin Childs","Helen Hay Whitney","NIH F32","HFSP"]},
+  {t:"Is bacterial decapping a druggable node?",
+   p:"If a cap stabilises virulence transcripts, then the enzyme that removes it is a target whose inhibition should destabilise them. Reconstituting the capping and decapping activities from a Gram-negative pathogen and screening for small molecules that shift transcript half-life would test whether RNA turnover is addressable pharmacologically at all.",
+   w:"A genuinely new target class rather than another scaffold against an existing one, which is the argument antimicrobial programmes are looking for. Pairs naturally with structural collaborators already in the department.",
+   f:["Life Sciences Research Foundation","NIH F32","Burroughs Wellcome CASI","Damon Runyon Quantitative Biology"]},
+  {t:"Why do some transcripts survive when translation collapses?",
+   p:"Ribonuclease scanning by one-dimensional diffusion is obstructed by ribosomes and structured elements, which predicts that transcripts should be destabilised when translation stalls. Stress regulons appear to do the opposite. Single-molecule measurement of scanning on stress-regulon transcripts under translational arrest would resolve whether an additional protective mechanism exists.",
+   w:"A clean mechanistic paradox with a single-molecule readout, which is exactly the profile the classic open-field foundations fund. No disease framing required.",
+   f:["Helen Hay Whitney","Jane Coffin Childs","Life Sciences Research Foundation","NIH F32"]}
+ ]},
+
+{id:"transl", cl:"virus", name:"Translational control and RNA modification during infection and stress",
+ hereIf:"You work on ribosome profiling, m&sup6;A and other RNA marks, translation initiation factors, or how infection remodels protein synthesis.",
+ caps:"Ribosome and polysome profiling, m&sup6;A and nano-ARE RNA-seq, direct RNA sequencing with custom modification-mapping pipelines, single-cell and spatial transcriptomics, CRISPR perturbation, neuronal and organoid culture, mass spectrometry.",
+ ideas:[
+  {t:"Does the m&sup6;A setpoint decide how much interferon a tissue makes?",
+   p:"Writer and eraser enzymes tune interferon-&beta; induction during DNA sensing, but the magnitude of that effect has not been compared across cell types. If the methylation setpoint differs between epithelium, neurons and myeloid cells, it would explain why the same sensing event produces very different antiviral outputs in different tissues &mdash; and would make the interferon response tunable rather than binary.",
+   w:"Connects RNA modification to a phenotype clinicians care about, and the comparison across cell types is the kind of scope a fellowship can actually complete in three years.",
+   f:["Life Sciences Research Foundation","Jane Coffin Childs","Damon Runyon","NIH F32","CRI Irvington"]},
+  {t:"Ribosome-associated viral proteins as a convergent strategy",
+   p:"At least one herpesvirus protein binds ribosomes and sustains translation under ribosomal stress. Whether that is idiosyncratic or a recurring solution is unknown. Comparative ribosome profiling and crosslinking across unrelated virus families would establish whether viruses that must translate in a compromised cell converge on the same ribosome-binding trick.",
+   w:"Comparative framing turns a single-virus observation into a general principle, which reads as ambition rather than scope creep when the assays are identical across systems.",
+   f:["Helen Hay Whitney","Jane Coffin Childs","Life Sciences Research Foundation","HFSP"]},
+  {t:"Translation factor balance as a determinant of immune cell fate in vivo",
+   p:"Cap-dependent and non-canonical translation pathways push T cells toward regulatory or follicular helper fates in culture. Whether an acute infection retunes that balance in vivo, and whether the retuning outlasts the infection, would connect a biochemical switch to the durability of an antibody response.",
+   w:"Sits at an interface two departments already occupy and gives a translation-focused applicant a legitimate immunology training plan &mdash; which is the kind of stretch fellowship reviewers reward.",
+   f:["Damon Runyon","CRI Irvington","American Cancer Society","NIH F32","HHMI Hanna Gray"]}
+ ]},
+
+{id:"innate", cl:"virus", name:"Innate immune sensing and programmable RNA and viral systems",
+ hereIf:"You work on interferon induction and antagonism, RNA editing, small RNA pathways, reverse genetics, or engineered viral vectors.",
+ caps:"Reverse genetics for RNA viruses, rescue of recombinant and microRNA-programmed viruses, reporter virus construction, BSL-2 and BSL-3 infection, interferon signalling assays, small RNA-seq, RNA editing and structure mapping, CRISPR host&ndash;virus screens, ribosome profiling.",
+ ideas:[
+  {t:"Turn off interferon in exactly one cell type, in vivo",
+   p:"MicroRNA-detargeted vectors can restrict expression of a payload to a single cell population. Delivering a well-characterised interferon antagonist to one airway cell type at a time would establish which cell's interferon response actually controls infection outcome &mdash; a question conditional knockouts approach but never isolate, since they remove the pathway from development onward.",
+   w:"A platform this department built, applied to a question the field has argued about for two decades. The technical risk is low because the vectors exist; the intellectual payoff is high.",
+   f:["Life Sciences Research Foundation","Jane Coffin Childs","Damon Runyon","HHMI Hanna Gray","NIH F32"]},
+  {t:"Does RNA editing capacity determine which cells keep antiviral RNA interference?",
+   p:"Adenosine deaminase editing can neutralise antiviral RNA interference, implying a trade-off: cells with high editing activity may have surrendered an ancient defence. Measuring editing capacity and RNAi competence in parallel across primary human cell types would test whether that trade-off is real and where it leaves cells vulnerable.",
+   w:"An evolutionary argument with a concrete cellular measurement, which is the shape of proposal the open-field foundations were designed for.",
+   f:["Helen Hay Whitney","Jane Coffin Childs","Life Sciences Research Foundation","HFSP","EMBO"]},
+  {t:"Programmable splicing inhibitors built from archaeal RNA-binding modules",
+   p:"A small archaeal protein family blocks viral RNA splicing across a virus genus by recognising a structural motif. Re-engineering that recognition to target chosen host or viral introns would create a programmable splicing switch &mdash; useful as a research tool immediately and as an antiviral scaffold eventually.",
+   w:"Synthetic biology framing opens the quantitative and interdisciplinary awards to someone whose training is in virology, which is precisely the pivot those programmes exist to fund.",
+   f:["Burroughs Wellcome CASI","Schmidt Science Fellows","Damon Runyon Quantitative Biology","Life Sciences Research Foundation"]}
+ ]},
+
+{id:"latency", cl:"virus", name:"Herpesvirus latency, persistence and the neuronal state",
+ hereIf:"You work on latency and reactivation, neuronal infection models, chromatin during infection, or spatial multi-omics of infected tissue.",
+ caps:"Primary neuronal culture and latency/reactivation models, spatial transcriptomics and proteomics, single-cell multi-omics, chromatin and epigenetic profiling, live-cell and confocal imaging, lentiviral delivery of reporters and mutants, direct RNA sequencing.",
+ ideas:[
+  {t:"Does a neuron's stress history set its reactivation threshold?",
+   p:"Reactivation is usually studied as a response to an acute stimulus, but neurons carrying latent virus have individual histories. Single-neuron multi-omic profiling before and after a defined stressor, in cells that do and do not reactivate, would identify the state variable that predicts the outcome rather than the trigger that precedes it.",
+   w:"Reframes a well-worn question as a prediction problem, and the single-cell methods to answer it are already running here. A strong fit for programmes that reward methodological ambition.",
+   f:["Life Sciences Research Foundation","Jane Coffin Childs","Helen Hay Whitney","NIH F32","HHMI Hanna Gray"]},
+  {t:"Pharmacological control of the latency switch",
+   p:"DNA-damage signalling and growth-factor pathways both sit upstream of the decision to reactivate. Systematically pushing each with available compounds, and measuring the fraction of neurons that follow, would establish whether latency can be locked or deliberately broken &mdash; the two therapeutic strategies for a persistent virus, tested in the same system.",
+   w:"Explicitly translational without requiring a clinical collaboration, and the readout is unambiguous. Attractive to disease foundations as well as open-field programmes.",
+   f:["NIH F32","Life Sciences Research Foundation","Damon Runyon","Alzheimer's Association Research Fellowship"]},
+  {t:"Nuclear architecture as the difference between latency and productive infection",
+   p:"Infection reorganises the nucleus physically, not only transcriptionally. Whether that reorganisation is a consequence of the replication decision or part of making it is unresolved. Imaging chromatin organisation in neurons committed to each fate, with matched chromatin accessibility, would separate cause from consequence.",
+   w:"A biophysics-flavoured question inside a virology lab, which makes a credible case for interdisciplinary training programmes.",
+   f:["Helen Hay Whitney","Jane Coffin Childs","Burroughs Wellcome CASI","HFSP"]}
+ ]},
+
+{id:"resp", cl:"virus", name:"Respiratory virus transmission and the upper airway",
+ hereIf:"You work on transmission models, mucosal immunity, airway epithelium, or host determinants of infectiousness.",
+ caps:"Neonatal and adult mouse transmission models for influenza and SARS-CoV-2, primary human airway epithelial and tissue culture, sialic-acid mapping and histology, viral culture and plaque assays, immune profiling, bulk and single-cell RNA-seq, clinical cohort integration.",
+ ideas:[
+  {t:"Receptor stripping as a pan-respiratory prophylactic",
+   p:"Removing sialic acid from the upper airway suppresses shedding and blocks influenza transmission in the neonatal model. Whether the same intervention window exists for other respiratory viruses that use different entry receptors is untested &mdash; and if the effect is broader than sialic acid, the underlying mechanism is not receptor availability at all.",
+   w:"Host-directed prophylaxis is the framing pandemic-preparedness funders respond to, and a negative result for a second virus is as informative as a positive one.",
+   f:["NIH F32","Life Sciences Research Foundation","American Heart Association","Jane Coffin Childs"]},
+  {t:"What makes an individual infectious rather than merely infected?",
+   p:"Transmission models measure who transmits; almost nothing measures why. Pairing upper-airway innate profiling at the moment of peak shedding with measured onward transmission would define a molecular signature of infectiousness that is independent of viral load.",
+   w:"The distinction between infection and infectiousness is under-studied and directly actionable for isolation policy. The neonatal model is one of very few systems where the experiment is possible.",
+   f:["NIH F32","Life Sciences Research Foundation","Helen Hay Whitney","HFSP"]},
+  {t:"Why infant airways transmit differently",
+   p:"Host age changes receptor distribution, innate tone and transmission efficiency simultaneously. Disentangling which of the three dominates would say whether interventions should target the infant airway directly or the immunity delivered to it &mdash; with immediate implications for the timing of maternal versus infant vaccination.",
+   w:"Bridges to the maternal&ndash;infant microbiome work in the department and gives a clean rationale for a co-mentored application.",
+   f:["NIH F32","Life Sciences Research Foundation","Cystic Fibrosis Foundation","Alex's Lemonade Stand"]}
+ ]},
+
+{id:"vaccine", cl:"immune", name:"Vaccine immunology, antibody durability and correlates of protection",
+ hereIf:"You work on human cohorts, antibody profiling, T follicular helper biology, or immune correlates after vaccination or infection.",
+ caps:"Multiplex antibody binding, isotype and subclass profiling, neutralisation and hemagglutination inhibition, avidity assays, memory B and T cell profiling, activation-induced marker assays, single-cell RNA-seq, spatial omics, BSL-3 viral culture, longitudinal cohort monitoring, viral genome sequencing.",
+ ideas:[
+  {t:"An early cellular correlate of durable antibody",
+   p:"Durability varies enormously between individuals receiving the same vaccine, and is currently only measurable in retrospect. Pairing circulating follicular helper phenotype in the first week after vaccination with avidity maturation over the following year would test whether a single early measurement predicts who still has protective antibody twelve months later.",
+   w:"A predictive correlate is the field's stated priority and the assays are established here. The design is a cohort study a fellowship can realistically complete.",
+   f:["CRI Irvington","NIH F32","American Heart Association","Life Sciences Research Foundation","HHMI Hanna Gray"]},
+  {t:"Does exposure order set the ceiling on breadth?",
+   p:"Immune imprinting is well described for influenza and increasingly suspected for coronaviruses and orthopoxviruses. Comparing individuals who met the same antigens in different sequences would establish whether the first exposure constrains the breadth achievable later &mdash; which determines whether updated vaccines can ever fully redirect a response.",
+   w:"Directly informs vaccine strain selection policy, and the cohorts needed already exist in the department's collections.",
+   f:["CRI Irvington","NIH F32","Life Sciences Research Foundation","Jane Coffin Childs"]},
+  {t:"A pre-vaccination immune set point that is actionable",
+   p:"If baseline immune state predicts vaccine responsiveness, the useful question is whether it does so well enough to change practice for older adults or immunosuppressed patients &mdash; where a second dose or an adjuvant could be allocated by prediction rather than by category.",
+   w:"Prediction with a decision attached, rather than prediction as an end point. That distinction is what separates fundable translational immunology from descriptive cohort work.",
+   f:["CRI Irvington","American Cancer Society","NIH F32","American Heart Association"]}
+ ]},
+
+{id:"myeloid", cl:"immune", name:"Tissue macrophages across infection, fibrosis and tumours",
+ hereIf:"You work on myeloid cell subsets, tissue-resident macrophages, neuro-immune interactions, or the tumour immune microenvironment.",
+ caps:"Subset-specific depletion and conditional knockout mice, multiparametric flow cytometry, confocal and light-sheet microscopy, tissue clearing and 3D reconstruction, single-cell multi-omics including paired transcriptome, epitope and chromatin accessibility, spatial transcriptomics, cytokine profiling, in vivo infection, fibrosis and tumour models.",
+ ideas:[
+  {t:"Do nerve-associated macrophages set the threshold for disease tolerance?",
+   p:"A macrophage subset positioned along airway nerves regulates inflammation through interferon and interleukin-10 signalling. Whether it governs tolerance &mdash; surviving a given pathogen burden without pathology &mdash; rather than resistance can be tested by depleting the subset and separating pathogen load from tissue damage, which are usually confounded.",
+   w:"Disease tolerance is a concept with far more theoretical support than experimental evidence, and this department has the depletion models to supply some.",
+   f:["CRI Irvington","NIH F32","Life Sciences Research Foundation","Damon Runyon","American Heart Association"]},
+  {t:"One lineage, two tissues, opposite outcomes",
+   p:"The same macrophage population can be protective in an infected lung and permissive in a tumour. Profiling the transcriptional, metabolic and spatial cues that differ between those two contexts &mdash; in the same mouse where possible &mdash; would identify which signals are instructive rather than merely correlated with the switch.",
+   w:"Answers a question both the infection and cancer immunology communities want answered, which widens the fellowship options considerably.",
+   f:["Damon Runyon","CRI Irvington","American Cancer Society","NIH F32","Blood Cancer United"]},
+  {t:"Reprogramming tumour macrophages with targeted nanoparticles",
+   p:"Nanoparticle delivery can shift macrophage phenotype in a tumour. The open question is durability: whether reprogrammed cells revert once the particle clears, and whether the local environment re-imposes the original state. Time-resolved profiling after a single dose would establish how often such a therapy would need to be given.",
+   w:"An explicitly translational project with a clear home in the cancer fellowship portfolio, and a question that has to be answered before any clinical development.",
+   f:["Damon Runyon","American Cancer Society","CRI Irvington","Alex's Lemonade Stand","Blood Cancer United"]}
+ ]},
+
+{id:"entry", cl:"immune", name:"Viral entry, restriction factors and vectored immunoprophylaxis",
+ hereIf:"You work on entry and restriction, lentiviral or AAV vectors, engineered decoys, or dendritic cell engineering.",
+ caps:"BSL-3 culture of HIV-1 and SARS-CoV-2, lentiviral and AAV vector production and titration, Fc-fusion receptor engineering, dendritic cell transduction, neutralisation and receptor binding assays, flow cytometry, in vivo delivery and tracking in mice, viral evolution bioinformatics.",
+ ideas:[
+  {t:"Are receptor decoys genuinely escape-proof?",
+   p:"A soluble receptor decoy should be difficult to escape, because escaping it means losing the receptor. That argument has been made more often than it has been tested. Serial passage under decoy pressure, sequencing the survivors, would establish whether escape occurs and what it costs the virus in fitness.",
+   w:"A falsifiable test of the central claim behind an entire therapeutic class, and the passage experiment is cheap relative to its importance.",
+   f:["NIH F32","Life Sciences Research Foundation","Jane Coffin Childs","Damon Runyon"]},
+  {t:"Durable prophylaxis for people who cannot respond to vaccines",
+   p:"Immunocompromised patients are the population for whom vaccination reliably underperforms and for whom a vector-delivered decoy would be most valuable. Establishing the duration of expression and protection after a single administration in an immunodeficient model addresses the question that determines whether the approach is clinically viable at all.",
+   w:"A named beneficiary population and a clear go/no-go endpoint. Disease foundations fund this framing more readily than mechanism-first proposals.",
+   f:["NIH F32","Blood Cancer United","American Cancer Society","Life Sciences Research Foundation"]},
+  {t:"Engineered dendritic cells as one platform for two problems",
+   p:"The same genetic modification strategy has been applied to antiviral and antitumour immunity separately. Running both from a single engineered cell product, and asking whether the determinants of a durable response are shared, would test whether the platform generalises or whether each application needs its own optimisation.",
+   w:"Platform generality is an argument that appeals to the transition awards, which are looking for something an applicant can build an independent programme around.",
+   f:["Damon Runyon","CRI Irvington","HHMI Hanna Gray","American Cancer Society","NIH K99/R00"]}
+ ]},
+
+{id:"envelope", cl:"bact", name:"Bacterial envelope biology, proteostasis and stress adaptation",
+ hereIf:"You work on the cell envelope, bacterial proteases, peptidoglycan remodelling, proteasome biology, or mycobacterial physiology.",
+ caps:"Bacterial genetics including chromosomal manipulation and recombineering, protein purification and in vitro enzyme assays, pupylation and depupylation reconstitution, peptidoglycan hydrolase assays, co-immunoprecipitation and mass spectrometry for substrate identification, mouse infection models, collaborative cryo-EM and crystallography, RNA-seq stress profiling.",
+ ideas:[
+  {t:"Envelope proteases as antibiotic potentiators",
+   p:"Carboxyl-terminal processing proteases maintain envelope integrity by degrading specific peptidoglycan hydrolases. If that system is what allows the envelope to survive cell-wall-active antibiotics, then inhibiting it should resensitise resistant strains. Combination testing of protease-null mutants against existing antibiotics would establish whether the potentiation is real before any inhibitor exists.",
+   w:"Genetics can answer the therapeutic question years before chemistry can, and a positive result makes the case for a screening programme rather than assuming one.",
+   f:["NIH F32","Life Sciences Research Foundation","Helen Hay Whitney","Jane Coffin Childs"]},
+  {t:"Proteostasis as the switch into non-replicating persistence",
+   p:"Bacterial proteasome dynamics respond to metabolic state, and non-replicating persistence is what makes tuberculosis therapy long. Testing whether proteasome pathway activity is required to enter or maintain the persistent state &mdash; rather than merely to survive acute stress &mdash; would connect a well-characterised biochemical system to the reason treatment takes six months.",
+   w:"Shortening tuberculosis therapy is an explicit global health priority, and a mechanistic entry point is more fundable than another compound screen.",
+   f:["NIH F32","Life Sciences Research Foundation","Jane Coffin Childs","HFSP"]},
+  {t:"Redox chaperones at the host&ndash;pathogen interface",
+   p:"A redox-regulated chaperone protects the pathogen from oxidative stress, and the host delivers exactly that stress through nitric oxide. Measuring chaperone engagement inside macrophages, rather than in vitro, would establish whether the host actually applies the pressure the biochemistry anticipates.",
+   w:"Moves an elegant in vitro mechanism into infection, which is the step reviewers most often find missing in bacterial biochemistry proposals.",
+   f:["Helen Hay Whitney","Jane Coffin Childs","Life Sciences Research Foundation","NIH F32"]}
+ ]},
+
+{id:"amr", cl:"comp", name:"Antimicrobial resistance genomics, within-host evolution and persistence",
+ hereIf:"You work on pathogen population genomics, resistance mechanisms, surveillance datasets, or machine learning applied to bacterial genomes.",
+ caps:"Hospital-scale genome sequencing and surveillance analytics, population genetics and epidemiological modelling, phage and mobile element analysis, resistance phenotyping, transcriptomics, machine learning and foundation models for genomic prediction, bacterial genetics, host&ndash;pathogen assays.",
+ ideas:[
+  {t:"Exploiting the cost of resistance",
+   p:"Porin loss buys carbapenem resistance and charges virulence for it. If that trade-off is general, resistant isolates should be measurably more vulnerable to a specific arm of host defence. Systematically phenotyping resistant and susceptible clinical pairs against defined immune pressures would identify which host mechanism the resistant population has traded away.",
+   w:"Turns a descriptive trade-off into a therapeutic hypothesis, and the isolate collections needed are already banked here.",
+   f:["NIH F32","Life Sciences Research Foundation","Jane Coffin Childs","NSF PRFB"]},
+  {t:"Heritable virulence without genetic change",
+   p:"Prophage-encoded methyltransferases can reprogram virulence epigenetically, which means two isolates with identical genomes can behave differently and no sequencing pipeline would notice. Quantifying how often that occurs across a surveillance collection would establish whether genomic surveillance is systematically blind to a real fraction of phenotype.",
+   w:"A finding that would change how surveillance data are interpreted, which is a larger claim than another resistance mechanism and correspondingly more fundable.",
+   f:["NIH F32","Life Sciences Research Foundation","NSF PRFB","Damon Runyon Quantitative Biology"]},
+  {t:"Forecasting which coloniser turns invasive",
+   p:"Longitudinal within-host isolate series contain the evolutionary trajectory from colonisation to invasion. Training a model on those series to predict invasion from an early isolate &mdash; and testing it prospectively &mdash; would convert genomic surveillance from description into a clinical decision aid.",
+   w:"A machine learning problem with a real clinical endpoint and existing training data. This is the strongest fit in the department for the reoriented NSF programme.",
+   f:["NSF PRFB","Damon Runyon Quantitative Biology","Burroughs Wellcome CASI","NIH F32","Schmidt Science Fellows"]}
+ ]},
+
+{id:"neonatal", cl:"bact", name:"Neonatal and paediatric bacterial pathogenesis",
+ hereIf:"You work on colonisation, bacterial toxins, capsule biology, or paediatric infection and vaccine-preventable disease.",
+ caps:"Murine neonatal colonisation and late-onset disease models, ex vivo human epithelial and erythrocyte systems, genetic and molecular analysis of virulence determinants, clinical isolate collections and prospective surveillance, serology and cytokine analysis, resistance profiling, paediatric trial and registry infrastructure.",
+ ideas:[
+  {t:"What decides which serotype wins in the infant gut?",
+   p:"Capsule production enhances intestinal colonisation and competitive fitness, but colonisation is a competition between serotypes rather than a solo performance. Competitive colonisation experiments across the serotypes present in current surveillance would establish whether capsule type predicts the winner &mdash; and therefore which serotypes a vaccine would leave behind.",
+   w:"Vaccine escape is the question every conjugate vaccine programme eventually faces, and answering it before deployment is far more valuable than after.",
+   f:["NIH F32","Alex's Lemonade Stand","Life Sciences Research Foundation","Jane Coffin Childs"]},
+  {t:"Leukocidins as nutrient acquisition rather than weaponry",
+   p:"A leukocidin subunit binds erythrocytes and drives haemolysis, which is usually read as immune evasion but is equally consistent with iron acquisition. Separating the two functions genetically, and testing which one is required in a colonisation model, would settle what these toxins are actually for.",
+   w:"Reinterpreting a well-known virulence factor is a strong first-author story, and the genetics to do it cleanly are established.",
+   f:["Helen Hay Whitney","Jane Coffin Childs","NIH F32","Life Sciences Research Foundation"]},
+  {t:"The colonisation-to-invasion transition in late-onset disease",
+   p:"Late-onset neonatal disease follows a period of stable colonisation, which means something changes &mdash; and it may be the host rather than the pathogen. Longitudinal sampling of colonised infants who do and do not progress, paired with the colonisation model, would test whether the trigger is a shift in mucosal immunity rather than bacterial adaptation.",
+   w:"A clinically consequential question with both a model system and a cohort available in the same department.",
+   f:["NIH F32","Alex's Lemonade Stand","Life Sciences Research Foundation","Cystic Fibrosis Foundation"]}
+ ]},
+
+{id:"microbiome", cl:"comp", name:"Microbiome ecology, host&ndash;microbiota modelling and AI",
+ hereIf:"You work on metagenomics, ecological or dynamical-systems modelling, machine learning on multi-omics, or gnotobiotic community experiments.",
+ caps:"Metagenomics and metatranscriptomics, longitudinal microbiome analytics, ecological and dynamical-systems modelling, machine learning and network inference, source-tracking algorithms, multi-omics integration with clinical metadata, gnotobiotic and defined-community mice, anaerobic cultivation, host immune profiling, reproducible open-source pipelines.",
+ ideas:[
+  {t:"An immune resilience score derived from microbiome trajectory",
+   p:"Microbiome composition predicts immune reconstitution and infection risk, but composition at a single timepoint discards most of the information. Modelling the trajectory instead &mdash; rate and direction of change rather than state &mdash; would test whether dynamics predict outcomes that static composition cannot, and produce a score clinicians could act on.",
+   w:"A methodological contribution and a clinical prediction in one project, with cohorts and pipelines already in place. A direct fit for the AI-and-biology focus now driving the NSF programme.",
+   f:["NSF PRFB","Damon Runyon Quantitative Biology","Burroughs Wellcome CASI","Life Sciences Research Foundation","NIH F32"]},
+  {t:"Where a newborn's resistance genes come from",
+   p:"Source-tracking methods can quantitatively apportion microbial origin between maternal gut, milk and environment. Applying them to resistance genes rather than to taxa would establish which route dominates early resistome assembly &mdash; and therefore where an intervention would have to act.",
+   w:"Reframes an established method around a different unit of analysis, which is a clean methodological advance with an immediate public health reading.",
+   f:["NSF PRFB","Damon Runyon Quantitative Biology","Life Sciences Research Foundation","NIH F32"]},
+  {t:"Phage dynamics as a decolonisation lever",
+   p:"Phage&ndash;bacterium interactions shape community composition continuously, not only when phage is administered therapeutically. Modelling endogenous phage dynamics in longitudinal data, then testing predictions in defined communities, would establish whether resident phage can be steered to suppress a target organism without introducing anything new.",
+   w:"Combines modelling with a tractable experimental test, which is what distinguishes a computational fellowship proposal from a bioinformatics one.",
+   f:["NSF PRFB","Damon Runyon Quantitative Biology","Burroughs Wellcome CASI","HFSP","Schmidt Science Fellows"]}
+ ]},
+
+{id:"struct", cl:"struct", name:"Structural biology of transport, antigen processing and host&ndash;pathogen membranes",
+ hereIf:"You work on membrane protein structure, cryo-EM, transporters, or the structural basis of immune recognition.",
+ caps:"Cryo-electron microscopy, X-ray crystallography, membrane protein purification and reconstitution into proteoliposomes, transport and ATPase assays, crosslinking mass spectrometry, molecular dynamics simulation, site-directed mutagenesis, flow cytometry.",
+ ideas:[
+  {t:"Structures of antigen transport caught mid-cycle",
+   p:"The transporter that supplies peptides for antigen presentation selects among them, and that selection shapes what the immune system ever sees. Trapping and solving intermediate conformational states would explain the basis of the bias, and predict which peptides are systematically excluded from presentation.",
+   w:"A structural project with a direct immunological consequence, which makes it eligible for immunology fellowships as well as structural ones &mdash; a meaningfully wider list.",
+   f:["CRI Irvington","Life Sciences Research Foundation","Jane Coffin Childs","Helen Hay Whitney","NIH F32"]},
+  {t:"Bacterial ABC transporters as an under-drugged target class",
+   p:"Transporters required for secretion and virulence in priority pathogens are structurally tractable and pharmacologically neglected. Solving one in multiple conformational states, with a companion transport assay, would provide both the structural basis and the screening platform for a target nobody is currently pursuing.",
+   w:"Structure plus assay is a complete package rather than a structure looking for a use, and it pairs naturally with the envelope biology group.",
+   f:["Life Sciences Research Foundation","NIH F32","Burroughs Wellcome CASI","Jane Coffin Childs"]},
+  {t:"Membrane complexes at the point of infection",
+   p:"Host&ndash;pathogen interactions at membranes are usually inferred from genetics and rarely visualised. Reconstituting a defined host&ndash;pathogen membrane complex and determining its structure would convert an interaction map into a mechanism, and identify the interfaces worth disrupting.",
+   w:"Reconstitution is the hard part and the department already does it, which makes an ambitious structural aim credible in a three-year plan.",
+   f:["Helen Hay Whitney","Jane Coffin Childs","Life Sciences Research Foundation","HFSP","EMBO"]}
+ ]},
+
+{id:"parasite", cl:"immune", name:"Parasite pathogenesis and infection-driven vascular injury",
+ hereIf:"You work on malaria, endothelial biology, oxidative stress, autoantibodies, or post-acute infection syndromes.",
+ caps:"Plasmodium falciparum culture and mouse malaria models, endothelial barrier integrity measurement, endothelial and erythrocyte co-culture, mitochondrial and fatty acid stress analysis, xanthine oxidase activity assays, flow cytometry, coagulation and antibody measurement in plasma, RNA-seq biomarker discovery.",
+ ideas:[
+  {t:"Barrier integrity as a therapeutic endpoint",
+   p:"Blood&ndash;brain barrier disruption is the proximate cause of death in cerebral malaria, and mitochondrial stress and purinergic signalling both appear upstream of it. Testing whether blocking either preserves barrier function in the presence of ongoing parasitaemia would establish whether the pathology can be treated without first clearing the parasite.",
+   w:"Adjunctive therapy is the unmet need in severe malaria, where antiparasitic treatment is already effective and mortality remains high anyway.",
+   f:["NIH F32","Life Sciences Research Foundation","Jane Coffin Childs","American Heart Association"]},
+  {t:"Autoantibodies as a shared mechanism across acute and post-acute infection",
+   p:"Polyreactive antibodies contribute to malarial anaemia, and immunoglobulin-driven autoimmunity appears in post-acute sequelae of coronavirus infection. Whether these are the same phenomenon in two settings is testable by profiling the specificities side by side &mdash; and if they overlap, one disease becomes a model for the other.",
+   w:"Post-acute infection syndromes are heavily funded and mechanistically thin. An unexpected comparator is exactly what the area needs.",
+   f:["NIH F32","American Heart Association","Life Sciences Research Foundation","Arthritis National Research Foundation"]},
+  {t:"Biomarkers that separate cerebral malaria early enough to matter",
+   p:"Severe malaria presentations are distinguished clinically at a point when the outcome is largely determined. Vascular and transcriptional profiling at presentation, against outcome, would test whether the cerebral trajectory is identifiable before it becomes clinically obvious.",
+   w:"A triage-relevant biomarker changes practice in settings where intensive care is scarce, which is a stronger argument than incremental mechanism.",
+   f:["NIH F32","Life Sciences Research Foundation","American Heart Association","HFSP"]}
+ ]},
+
+{id:"nuclear", cl:"struct", name:"Nuclear receptor signalling and transcriptional reprogramming",
+ hereIf:"You work on nuclear receptors, chromatin accessibility, transcriptional cofactors, or ligand and peptoid design.",
+ caps:"ChIP-seq, ATAC-seq and histone modification profiling, RNA-seq, organoid culture, peptoid synthesis and receptor-targeted conjugates, protein purification, genetically engineered mouse models, xenografts, bone marrow transplantation, fibroblast&ndash;macrophage co-culture, phospho-specific and co-immunoprecipitation assays.",
+ ideas:[
+  {t:"Receptor phosphorylation as a context switch",
+   p:"The same nuclear receptor drives opposite transcriptional programmes in different tissues, and post-translational modification is the likeliest explanation. Mapping receptor phosphorylation state alongside chromatin accessibility across tissues would test whether modification predicts which programme runs &mdash; making context an editable variable rather than an unexplained one.",
+   w:"A unifying mechanism for a family of receptors already targeted clinically, which is the kind of claim that supports an independent research programme.",
+   f:["Damon Runyon","American Cancer Society","NIH F32","Life Sciences Research Foundation","NIH K99/R00"]},
+  {t:"Peptoid modulators for selectivity small molecules cannot reach",
+   p:"Cofactor interfaces are large, shallow and generally undruggable by conventional chemistry, which is why nuclear receptor drugs hit the ligand pocket and inherit its lack of selectivity. Peptoids can address such interfaces. Testing whether a peptoid targeting one cofactor interaction separates the therapeutic programme from the toxic one would validate the approach.",
+   w:"A chemical biology project inside a signalling lab, which reads as genuine interdisciplinary training to the programmes that fund exactly that.",
+   f:["Burroughs Wellcome CASI","Damon Runyon","American Cancer Society","Schmidt Science Fellows"]},
+  {t:"Fibrosis after infection at the fibroblast&ndash;macrophage interface",
+   p:"Glucocorticoid signalling shifts the balance in fibroblast&ndash;macrophage co-culture, and post-infectious fibrosis is a major cause of lasting disability after severe respiratory illness. Applying the co-culture system to cells from post-infectious fibrotic tissue would test whether the same signalling imbalance operates there.",
+   w:"Connects an established in vitro system to a consequence of infection that the department already studies, and gives a signalling-trained applicant a route into the respiratory programmes.",
+   f:["NIH F32","American Heart Association","Cystic Fibrosis Foundation","Life Sciences Research Foundation"]}
+ ]}
+
+];
+
+/* ---------- render ---------- */
+function pad2(n){ return (n<10?"0":"")+n; }
+function themeCard(t, idx){
+  var ideas = t.ideas.map(function(i){
+    return '<div class="idea">' +
+      '<h5>' + i.t + '</h5>' +
+      '<p>' + i.p + '</p>' +
+      '<p class="why"><strong>Why it is fundable.</strong> ' + i.w + '</p>' +
+      '<div class="fmatch">' + i.f.map(function(x){ return '<span>' + x + '</span>'; }).join('') + '</div>' +
+    '</div>';
+  }).join('');
+  var hay = (t.name + " " + t.hereIf + " " + t.caps + " " +
+             t.ideas.map(function(i){ return i.t + " " + i.p + " " + i.f.join(" "); }).join(" "))
+             .toLowerCase().replace(/<[^>]+>/g,"").replace(/"/g,"");
+  return '<article class="card prop" data-cl="' + t.cl + '" data-q="' + hay + '">' +
+    '<div class="phead"><span class="pid">' + pad2(idx+1) + '</span>' +
+      '<span class="tierbadge">' + CL[t.cl] + '</span>' +
+      '<span class="tierbadge">' + t.ideas.length + ' directions</span>' +
+      '<h3>' + t.name + '</h3></div>' +
+    '<p class="here-if"><strong>You are in this space if</strong> ' + t.hereIf + '</p>' +
+    '<p class="caps"><strong>Already running in the department:</strong> ' + t.caps + '</p>' +
+    '<div class="ideas">' + ideas + '</div>' +
+  '</article>';
+}
+var CL = {virus:"Virology &amp; RNA biology", bact:"Bacterial pathogenesis",
+          immune:"Immunology &amp; vaccines", comp:"Computational &amp; microbiome",
+          struct:"Structural &amp; mechanistic"};
+
+document.getElementById("list").innerHTML = T.map(themeCard).join("");
+
+var state = {cl:"all", q:""};
+function apply(){
+  var cards = document.querySelectorAll("#list .prop"), shown = 0;
+  Array.prototype.forEach.call(cards, function(el){
+    var ok = (state.cl === "all" || el.dataset.cl === state.cl) &&
+             (state.q === "" || el.dataset.q.indexOf(state.q) > -1);
+    el.hidden = !ok;
+    if (ok) shown++;
+  });
+  document.getElementById("shown").textContent = shown + " of " + T.length + " themes";
+  document.getElementById("empty").hidden = shown > 0;
+}
+Array.prototype.forEach.call(document.querySelectorAll(".fchip"), function(b){
+  b.addEventListener("click", function(){
+    var f = b.dataset.f;
+    Array.prototype.forEach.call(document.querySelectorAll('.fchip[data-f="' + f + '"]'), function(o){
+      o.setAttribute("aria-pressed", o === b ? "true" : "false");
+    });
+    state[f] = b.dataset.v;
+    apply();
+  });
+});
+document.getElementById("q").addEventListener("input", function(e){
+  state.q = e.target.value.toLowerCase().trim();
+  apply();
+});
+apply();
+</script>
+
+</body>
+</html>
