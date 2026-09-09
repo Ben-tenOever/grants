@@ -137,20 +137,28 @@ footer { border-top: 1px solid #ddd4ff; padding: 1rem 2rem; background: #faf7ff;
 <main>
 
   <section class="card">
-    <h2>Twenty-five submissions, matched to open opportunities</h2>
+    <h2>Forty-five submissions, matched to open opportunities</h2>
     <p class="lede">Each entry below pairs an open federal or foundation opportunity with a team drawn from
       faculty expertise across the five groups, and carries a working title, the specific aims, and the
-      investigator responsible for each aim. Teams are sized to the money: focused pairs at R21 and R01
-      scale, full multi-project teams above roughly one million dollars a year. Opportunities were verified
-      against primary sources on 7 September 2026.</p>
+      investigator responsible for each aim. Teams are sized to the money: single-investigator awards,
+      focused pairs at R21 and R01 scale, and full multi-project teams above roughly one million dollars
+      a year. Opportunities were verified against primary sources on 7 September 2026.</p>
+    <p class="lede" style="margin-top:.6rem;"><strong>Twenty of these are single-investigator
+      submissions</strong> &mdash; one PI each, weighted to Microbiology, added 7 September 2026. Filter
+      by <em>Single investigator</em> to see only those. Jeffrey Weiser is excluded from the slate as he
+      is retiring, and one investigator has been removed throughout after the network map recorded him as
+      departed from NYU &mdash; the five submissions that named him were rebuilt rather than simply
+      stripped.</p>
     <div class="stats">
-      <div class="stat"><div class="k">Submissions</div><div class="v">25</div>
-        <div class="s">12 large &middot; 6 mid &middot; 7 focused</div></div>
-      <div class="stat"><div class="k">Aims assigned</div><div class="v">104</div>
+      <div class="stat"><div class="k">Submissions</div><div class="v">45</div>
+        <div class="s">12 large &middot; 6 mid &middot; 7 focused &middot; 20 solo</div></div>
+      <div class="stat"><div class="k">Aims assigned</div><div class="v">163</div>
         <div class="s">each with a named owner</div></div>
-      <div class="stat"><div class="k">Faculty engaged</div><div class="v">33</div>
+      <div class="stat"><div class="k">Faculty engaged</div><div class="v">32</div>
         <div class="s">of 45 in the five groups</div></div>
-      <div class="stat"><div class="k">Opportunities</div><div class="v">21</div>
+      <div class="stat"><div class="k">Single-PI slate</div><div class="v">20</div>
+        <div class="s">20 distinct investigators</div></div>
+      <div class="stat"><div class="k">Opportunities</div><div class="v">22</div>
         <div class="s">NIH, CDC, FDA, ARPA-H, DARPA, DoD, Gates</div></div>
       <div class="stat"><div class="k">Closing in 60 days</div><div class="v" id="soon60">&mdash;</div>
         <div class="s">counted live in your browser</div></div>
@@ -158,16 +166,17 @@ footer { border-top: 1px solid #ddd4ff; padding: 1rem 2rem; background: #faf7ff;
   </section>
 
   <div class="filters">
-    <button class="fchip" data-f="tier" data-v="all" aria-pressed="true">All scales<span class="ct">25</span></button>
+    <button class="fchip" data-f="tier" data-v="all" aria-pressed="true">All scales<span class="ct">45</span></button>
     <button class="fchip" data-f="tier" data-v="large" aria-pressed="false">Large<span class="ct">12</span></button>
     <button class="fchip" data-f="tier" data-v="mid" aria-pressed="false">Mid-scale<span class="ct">6</span></button>
     <button class="fchip" data-f="tier" data-v="small" aria-pressed="false">Focused<span class="ct">7</span></button>
+    <button class="fchip" data-f="tier" data-v="solo" aria-pressed="false">Single investigator<span class="ct">20</span></button>
     <span class="divider"></span>
     <button class="fchip" data-f="group" data-v="all" aria-pressed="true">All groups</button>
-    <button class="fchip" data-f="group" data-v="Microbiology" aria-pressed="false">Microbiology<span class="ct">21</span></button><button class="fchip" data-f="group" data-v="ISG" aria-pressed="false">ISG<span class="ct">5</span></button><button class="fchip" data-f="group" data-v="BMP" aria-pressed="false">BMP<span class="ct">4</span></button><button class="fchip" data-f="group" data-v="Pathology" aria-pressed="false">Pathology<span class="ct">2</span></button><button class="fchip" data-f="group" data-v="Cell Biology" aria-pressed="false">Cell Biology<span class="ct">1</span></button>
+    <button class="fchip" data-f="group" data-v="Microbiology" aria-pressed="false">Microbiology<span class="ct">20</span></button><button class="fchip" data-f="group" data-v="ISG" aria-pressed="false">ISG<span class="ct">5</span></button><button class="fchip" data-f="group" data-v="BMP" aria-pressed="false">BMP<span class="ct">4</span></button><button class="fchip" data-f="group" data-v="Pathology" aria-pressed="false">Pathology<span class="ct">2</span></button><button class="fchip" data-f="group" data-v="Cell Biology" aria-pressed="false">Cell Biology<span class="ct">1</span></button>
     <span class="divider"></span>
     <input type="search" id="q" placeholder="Search faculty, number, topic" aria-label="Search the slate" />
-    <span class="sub">Showing <strong id="shown">25</strong> of 25</span>
+    <span class="sub">Showing <strong id="shown">45</strong> of 45</span>
   </div>
 
   
@@ -315,7 +324,7 @@ footer { border-top: 1px solid #ddd4ff; padding: 1rem 2rem; background: #faf7ff;
     
   </div>
 </article>
-<article class="card prop" data-tier="large" data-groups="Microbiology" data-q="sentinel detection of travel-associated infections through integrated arboviral, parasitic and genomic surveillance ralf duerr rfa-ck-26-035 emerging infections network — travel-associated infectious diseases cdc / era ralf duerr kenneth a. stapleford ana m. rodriguez alejandro pironti adam j. ratner liat shenhav">
+<article class="card prop" data-tier="large" data-groups="Microbiology" data-q="sentinel detection of travel-associated infections through integrated arboviral, parasitic and genomic surveillance ralf duerr rfa-ck-26-035 emerging infections network — travel-associated infectious diseases cdc / era ralf duerr ana m. rodriguez alejandro pironti adam j. ratner liat shenhav">
   <div class="phead">
     <span class="pid">P07</span>
     <span class="tierbadge tb-large">Large</span>
@@ -330,12 +339,12 @@ footer { border-top: 1px solid #ddd4ff; padding: 1rem 2rem; background: #faf7ff;
   </div>
   <p class="onote">Emerging Infections Network — Travel-Associated Infectious Diseases &mdash; Universities eligible. Detection speed, burden, severity, diagnostics and outcomes in international travelers, feeding sentinel detection and outbreak response.</p>
   <div class="split">
-    <div><h4>Team</h4><ul class="team"><li><span class="pn">Ralf Duerr</span><span class="pg">Microbiology</span><span class="pr">Contact PI, genomic surveillance</span></li><li><span class="pn">Kenneth A. Stapleford</span><span class="pg">Microbiology</span><span class="pr">Arbovirology</span></li><li><span class="pn">Ana M. Rodriguez</span><span class="pg">Microbiology</span><span class="pr">Malaria and parasitic disease</span></li><li><span class="pn">Alejandro Pironti</span><span class="pg">Microbiology</span><span class="pr">Metagenomics and bioinformatics</span></li><li><span class="pn">Adam J. Ratner</span><span class="pg">Microbiology</span><span class="pr">Pediatric returning travelers</span></li><li><span class="pn">Liat Shenhav</span><span class="pg">Microbiology</span><span class="pr">Surveillance analytics</span></li></ul></div>
-    <div><h4>Aims and ownership</h4><table class="aims"><tbody><tr><td class="al">Aim 1</td><td class="at"><strong>Establish a sentinel cohort of returning travelers with structured exposure capture</strong><span>Enroll febrile and syndromic returning travelers with itinerary, exposure and prophylaxis data linked to specimens, using time-to-detection as the primary surveillance metric.</span></td><td class="ao">Ralf Duerr</td></tr><tr><td class="al">Aim 2</td><td class="at"><strong>Deploy metagenomic and targeted sequencing for threat-agnostic detection</strong><span>Combine mNGS with targeted panels to detect and genotype arboviral, parasitic and bacterial agents, including agents outside the current diagnostic menu.</span></td><td class="ao">Alejandro Pironti</td></tr><tr><td class="al">Aim 3</td><td class="at"><strong>Characterize imported arboviral variants for transmission and virulence determinants</strong><span>Reverse genetics plus mosquito and mammalian infection models on variants recovered in Aim 2, testing whether imported lineages carry determinants of local transmission competence.</span></td><td class="ao">Kenneth A. Stapleford</td></tr><tr><td class="al">Aim 4</td><td class="at"><strong>Define severity biomarkers for imported severe malaria</strong><span>Endothelial barrier, oxidative-stress and vascular profiling on imported P. falciparum cases to identify early markers of progression to cerebral malaria and severe anemia.</span></td><td class="ao">Ana M. Rodriguez</td></tr><tr><td class="al">Aim 5</td><td class="at"><strong>Quantify pediatric burden and outcomes</strong><span>Separate pediatric enrollment stratum, where travel-associated febrile illness is most often misclassified.</span></td><td class="ao">Adam J. Ratner</td></tr></tbody></table></div>
+    <div><h4>Team</h4><ul class="team"><li><span class="pn">Ralf Duerr</span><span class="pg">Microbiology</span><span class="pr">Contact PI, genomic surveillance</span></li><li><span class="pn">Ana M. Rodriguez</span><span class="pg">Microbiology</span><span class="pr">Malaria and parasitic disease</span></li><li><span class="pn">Alejandro Pironti</span><span class="pg">Microbiology</span><span class="pr">Metagenomics and bioinformatics</span></li><li><span class="pn">Adam J. Ratner</span><span class="pg">Microbiology</span><span class="pr">Pediatric returning travelers</span></li><li><span class="pn">Liat Shenhav</span><span class="pg">Microbiology</span><span class="pr">Surveillance analytics</span></li></ul></div>
+    <div><h4>Aims and ownership</h4><table class="aims"><tbody><tr><td class="al">Aim 1</td><td class="at"><strong>Establish a sentinel cohort of returning travelers with structured exposure capture</strong><span>Enroll febrile and syndromic returning travelers with itinerary, exposure and prophylaxis data linked to specimens, using time-to-detection as the primary surveillance metric.</span></td><td class="ao">Ralf Duerr</td></tr><tr><td class="al">Aim 2</td><td class="at"><strong>Deploy metagenomic and targeted sequencing for threat-agnostic detection</strong><span>Combine mNGS with targeted panels to detect and genotype arboviral, parasitic and bacterial agents, including agents outside the current diagnostic menu.</span></td><td class="ao">Alejandro Pironti</td></tr><tr><td class="al">Aim 3</td><td class="at"><strong>Characterize imported viral variants by sequence and by neutralization</strong><span>Genotype the arboviral, respiratory and orthopoxviral agents recovered in Aim 2 and test contemporary sera against them in BSL-3, establishing whether imported lineages are antigenically distinct from what is circulating locally.</span></td><td class="ao">Ralf Duerr</td></tr><tr><td class="al">Aim 4</td><td class="at"><strong>Define severity biomarkers for imported severe malaria</strong><span>Endothelial barrier, oxidative-stress and vascular profiling on imported P. falciparum cases to identify early markers of progression to cerebral malaria and severe anemia.</span></td><td class="ao">Ana M. Rodriguez</td></tr><tr><td class="al">Aim 5</td><td class="at"><strong>Quantify pediatric burden and outcomes</strong><span>Separate pediatric enrollment stratum, where travel-associated febrile illness is most often misclassified.</span></td><td class="ao">Adam J. Ratner</td></tr></tbody></table></div>
   </div>
   <div class="foot">
-    <p><strong>Why this competes.</strong> Travel-associated infection is where NYU&#x27;s arbovirology and malaria programmes stop being adjacent and become the centre of the application. Stapleford works on precisely the chikungunya, dengue and Zika viruses that dominate returning-traveler diagnoses, Rodriguez on severe malaria, and Duerr has run genomic surveillance and variant tracking through MPXV and SARS-CoV-2. Few applicants can pair sentinel detection with reverse genetics on the imported variants themselves.</p>
-    <p class="gate"><strong>Before you write.</strong> Due 5 November 2026. $30M across 2 awards makes this the highest expected-value CDC item on the board; a decision to lead should be made this month.</p>
+    <p><strong>Why this competes.</strong> Travel-associated infection is where NYU&#x27;s genomic surveillance and parasitology programmes stop being adjacent and become the centre of the application. Duerr has run variant tracking and multiplex serology through MPXV and SARS-CoV-2, Rodriguez works on severe malaria, and Pironti brings threat-agnostic metagenomics. The differentiator is detection speed measured against confirmed diagnosis, not the breadth of the pathogen list.</p>
+    <p class="gate"><strong>Before you write.</strong> Due 5 November 2026. $30M across 2 awards makes this the highest expected-value CDC item on the board; a decision to lead should be made this month. Note the capability gap: NYU no longer has in-house arbovirus reverse genetics, so functional characterization of imported alphavirus and flavivirus variants needs a named external collaborator before submission.</p>
     
   </div>
 </article>
@@ -435,7 +444,7 @@ footer { border-top: 1px solid #ddd4ff; padding: 1rem 2rem; background: #faf7ff;
     
   </div>
 </article>
-<article class="card prop" data-tier="large" data-groups="Microbiology" data-q="threat-agnostic host-directed countermeasures against engineered respiratory pathogens benjamin tenoever hdtra1-25-s-0001 dtra — fundamental research to counter weapons of mass destruction dod / dtra benjamin tenoever kenneth a. stapleford james lee alejandro pironti">
+<article class="card prop" data-tier="large" data-groups="Microbiology" data-q="threat-agnostic host-directed countermeasures against engineered respiratory pathogens benjamin tenoever hdtra1-25-s-0001 dtra — fundamental research to counter weapons of mass destruction dod / dtra benjamin tenoever james lee alejandro pironti">
   <div class="phead">
     <span class="pid">P12</span>
     <span class="tierbadge tb-large">Large</span>
@@ -450,8 +459,8 @@ footer { border-top: 1px solid #ddd4ff; padding: 1rem 2rem; background: #faf7ff;
   </div>
   <p class="onote">DTRA — Fundamental Research to Counter Weapons of Mass Destruction &mdash; Standing BAA, Assistance Listing 12.351. The most natural non-DARPA DoD vehicle for host-directed antiviral and biothreat basic science.</p>
   <div class="split">
-    <div><h4>Team</h4><ul class="team"><li><span class="pn">Benjamin tenOever</span><span class="pg">Microbiology</span><span class="pr">Contact PI</span></li><li><span class="pn">Kenneth A. Stapleford</span><span class="pg">Microbiology</span><span class="pr">Viral evolution and emergence</span></li><li><span class="pn">James Lee</span><span class="pg">Microbiology</span><span class="pr">Structural target validation</span></li><li><span class="pn">Alejandro Pironti</span><span class="pg">Microbiology</span><span class="pr">Sequence-to-risk modeling</span></li></ul></div>
-    <div><h4>Aims and ownership</h4><table class="aims"><tbody><tr><td class="al">Aim 1</td><td class="at"><strong>Identify host pathways whose engagement is broadly protective across viral families</strong><span>Comparative perturbation across orthomyxo-, paramyxo-, corona- and alphaviruses to find pathways no single family can evade without fitness cost.</span></td><td class="ao">Benjamin tenOever</td></tr><tr><td class="al">Aim 2</td><td class="at"><strong>Predict the escape routes an engineered agent would take</strong><span>Experimental evolution under host-pathway pressure to enumerate accessible escape mutations and their fitness costs.</span></td><td class="ao">Kenneth A. Stapleford</td></tr><tr><td class="al">Aim 3</td><td class="at"><strong>Build a sequence-to-risk classifier that needs no prior knowledge of the agent</strong><span>Train models on genomic features predictive of host-pathway dependence, so an unknown sequence can be triaged to a countermeasure class.</span></td><td class="ao">Alejandro Pironti</td></tr><tr><td class="al">Aim 4</td><td class="at"><strong>Validate the molecular interfaces structurally</strong><span>Cryo-EM of the host–pathogen complexes prioritized in Aim 1 to support downstream countermeasure design.</span></td><td class="ao">James Lee</td></tr></tbody></table></div>
+    <div><h4>Team</h4><ul class="team"><li><span class="pn">Benjamin tenOever</span><span class="pg">Microbiology</span><span class="pr">Contact PI, viral evolution</span></li><li><span class="pn">James Lee</span><span class="pg">Microbiology</span><span class="pr">Structural target validation</span></li><li><span class="pn">Alejandro Pironti</span><span class="pg">Microbiology</span><span class="pr">Sequence-to-risk modeling</span></li></ul></div>
+    <div><h4>Aims and ownership</h4><table class="aims"><tbody><tr><td class="al">Aim 1</td><td class="at"><strong>Identify host pathways whose engagement is broadly protective across viral families</strong><span>Comparative perturbation across orthomyxo-, paramyxo-, corona- and alphaviruses to find pathways no single family can evade without fitness cost.</span></td><td class="ao">Benjamin tenOever</td></tr><tr><td class="al">Aim 2</td><td class="at"><strong>Predict the escape routes an engineered agent would take</strong><span>Experimental evolution of influenza and coronavirus populations under host-pathway pressure, using reverse genetics to enumerate accessible escape mutations and measure their fitness costs.</span></td><td class="ao">Benjamin tenOever</td></tr><tr><td class="al">Aim 3</td><td class="at"><strong>Build a sequence-to-risk classifier that needs no prior knowledge of the agent</strong><span>Train models on genomic features predictive of host-pathway dependence, so an unknown sequence can be triaged to a countermeasure class.</span></td><td class="ao">Alejandro Pironti</td></tr><tr><td class="al">Aim 4</td><td class="at"><strong>Validate the molecular interfaces structurally</strong><span>Cryo-EM of the host–pathogen complexes prioritized in Aim 1 to support downstream countermeasure design.</span></td><td class="ao">James Lee</td></tr></tbody></table></div>
   </div>
   <div class="foot">
     <p><strong>Why this competes.</strong> DTRA&#x27;s standing BAA funds fundamental science against chemical and biological threats and runs to 2034, making it the lowest-friction large vehicle outside DARPA. Threat-agnostic host-directed defence is the right framing for a threat space that by definition includes uncharacterized agents, and this team can pair innate-immune mechanism with evolutionary prediction of what an engineered agent would have to overcome.</p>
@@ -483,7 +492,7 @@ footer { border-top: 1px solid #ddd4ff; padding: 1rem 2rem; background: #faf7ff;
     
   </div>
 </article>
-<article class="card prop" data-tier="mid" data-groups="Microbiology" data-q="a shared resource for programmable rna virus reagents, reporter systems and reverse genetics benjamin tenoever par-27-083 niaid resource-related research projects (r24) nih / niaid benjamin tenoever kenneth a. stapleford nathaniel r. landau ralf duerr">
+<article class="card prop" data-tier="mid" data-groups="Microbiology" data-q="a shared resource for programmable rna virus reagents, reporter systems and reverse genetics benjamin tenoever par-27-083 niaid resource-related research projects (r24) nih / niaid benjamin tenoever nathaniel r. landau ralf duerr">
   <div class="phead">
     <span class="pid">P14</span>
     <span class="tierbadge tb-mid">Mid-scale</span>
@@ -498,16 +507,16 @@ footer { border-top: 1px solid #ddd4ff; padding: 1rem 2rem; background: #faf7ff;
   </div>
   <p class="onote">NIAID Resource-Related Research Projects (R24) &mdash; Shared resources benefiting already-funded high-priority NIAID projects. NIAID expects only 1–2 awards per year, so pre-submission program contact is essential.</p>
   <div class="split">
-    <div><h4>Team</h4><ul class="team"><li><span class="pn">Benjamin tenOever</span><span class="pg">Microbiology</span><span class="pr">Contact PI, programmable virus resource</span></li><li><span class="pn">Kenneth A. Stapleford</span><span class="pg">Microbiology</span><span class="pr">Arbovirus reverse genetics</span></li><li><span class="pn">Nathaniel R. Landau</span><span class="pg">Microbiology</span><span class="pr">Vector production and distribution</span></li><li><span class="pn">Ralf Duerr</span><span class="pg">Microbiology</span><span class="pr">Reference immunological panels</span></li></ul></div>
-    <div><h4>Aims and ownership</h4><table class="aims"><tbody><tr><td class="al">Aim 1</td><td class="at"><strong>Standardize and distribute microRNA-programmed and reporter virus collections</strong><span>Catalogue, quality-control and distribute recombinant virus panels with documented tropism and reporter performance.</span></td><td class="ao">Benjamin tenOever</td></tr><tr><td class="al">Aim 2</td><td class="at"><strong>Provide arbovirus reverse-genetics platforms as a service</strong><span>Make chikungunya, dengue and Zika infectious clone systems available with mutagenesis support for external investigators.</span></td><td class="ao">Kenneth A. Stapleford</td></tr><tr><td class="al">Aim 3</td><td class="at"><strong>Operate centralized vector production</strong><span>Lentiviral and AAV production, purification and titration at distributable scale with defined release criteria.</span></td><td class="ao">Nathaniel R. Landau</td></tr><tr><td class="al">Aim 4</td><td class="at"><strong>Maintain reference immunological panels</strong><span>Curated neutralization and multiplex serology panels across MPXV, SARS-CoV-2, influenza and HIV-1 for cross-study comparability.</span></td><td class="ao">Ralf Duerr</td></tr></tbody></table></div>
+    <div><h4>Team</h4><ul class="team"><li><span class="pn">Benjamin tenOever</span><span class="pg">Microbiology</span><span class="pr">Contact PI, programmable virus resource</span></li><li><span class="pn">Nathaniel R. Landau</span><span class="pg">Microbiology</span><span class="pr">Vector production and distribution</span></li><li><span class="pn">Ralf Duerr</span><span class="pg">Microbiology</span><span class="pr">Reference immunological panels</span></li></ul></div>
+    <div><h4>Aims and ownership</h4><table class="aims"><tbody><tr><td class="al">Aim 1</td><td class="at"><strong>Standardize and distribute microRNA-programmed and reporter virus collections</strong><span>Catalogue, quality-control and distribute recombinant virus panels with documented tropism and reporter performance.</span></td><td class="ao">Benjamin tenOever</td></tr><tr><td class="al">Aim 2</td><td class="at"><strong>Distribute validated host-perturbation reagents alongside the viruses</strong><span>CRISPR libraries, sensor-knockout lines and interferon-reporter cells quality-controlled against the virus panel, so external groups receive a matched host-and-virus system rather than a virus alone.</span></td><td class="ao">Benjamin tenOever</td></tr><tr><td class="al">Aim 3</td><td class="at"><strong>Operate centralized vector production</strong><span>Lentiviral and AAV production, purification and titration at distributable scale with defined release criteria.</span></td><td class="ao">Nathaniel R. Landau</td></tr><tr><td class="al">Aim 4</td><td class="at"><strong>Maintain reference immunological panels</strong><span>Curated neutralization and multiplex serology panels across MPXV, SARS-CoV-2, influenza and HIV-1 for cross-study comparability.</span></td><td class="ao">Ralf Duerr</td></tr></tbody></table></div>
   </div>
   <div class="foot">
-    <p><strong>Why this competes.</strong> NIAID makes only one or two R24 awards a year, which makes this low-probability per attempt but very high value. NYU has an unusually deep and genuinely distributable reagent base: microRNA-programmed and reporter viruses, arbovirus reverse-genetics platforms, lentiviral and AAV production, and BSL-3 neutralization panels. The mechanism requires the resource serve already-funded high-priority NIAID projects, which this one demonstrably would.</p>
+    <p><strong>Why this competes.</strong> NIAID makes only one or two R24 awards a year, which makes this low-probability per attempt but very high value. NYU has an unusually deep and genuinely distributable reagent base: microRNA-programmed and reporter viruses, matched host-perturbation reagents, lentiviral and AAV production at scale, and curated BSL-3 neutralization panels. The mechanism requires the resource serve already-funded high-priority NIAID projects, which this one demonstrably would.</p>
     <p class="gate"><strong>Before you write.</strong> Pre-submission program contact is essential — at one to two awards a year an uninvited application is close to unfundable. Ask whether NIAID sees a gap this resource fills before committing writing time.</p>
     
   </div>
 </article>
-<article class="card prop" data-tier="mid" data-groups="ISG|Microbiology" data-q="synthetic humanized receptor models for predicting emerging virus susceptibility ran brosh pa-25-301 nih parent r01 (clinical trial not allowed) nih ran brosh jef d. boeke benjamin tenoever kenneth a. stapleford">
+<article class="card prop" data-tier="mid" data-groups="ISG|Microbiology" data-q="synthetic humanized receptor models for predicting emerging virus susceptibility ran brosh pa-25-301 nih parent r01 (clinical trial not allowed) nih ran brosh jef d. boeke benjamin tenoever">
   <div class="phead">
     <span class="pid">P15</span>
     <span class="tierbadge tb-mid">Mid-scale</span>
@@ -522,11 +531,11 @@ footer { border-top: 1px solid #ddd4ff; padding: 1rem 2rem; background: #faf7ff;
   </div>
   <p class="onote">NIH Parent R01 (Clinical Trial Not Allowed) &mdash; New applications 5 Oct 2026; renewals, resubmissions and revisions 5 Nov 2026. Standard cycles thereafter.</p>
   <div class="split">
-    <div><h4>Team</h4><ul class="team"><li><span class="pn">Ran Brosh</span><span class="pg">ISG / Pathology</span><span class="pr">Contact PI, genome writing</span></li><li><span class="pn">Jef D. Boeke</span><span class="pg">ISG</span><span class="pr">Large-locus assembly</span></li><li><span class="pn">Benjamin tenOever</span><span class="pg">Microbiology</span><span class="pr">Respiratory virus challenge</span></li><li><span class="pn">Kenneth A. Stapleford</span><span class="pg">Microbiology</span><span class="pr">Arboviral receptor usage</span></li></ul></div>
-    <div><h4>Aims and ownership</h4><table class="aims"><tbody><tr><td class="al">Aim 1</td><td class="at"><strong>Build a rewritable receptor locus in mouse embryonic stem cells</strong><span>Install landing pads at receptor loci permitting iterative replacement with human, chimeric and variant alleles, verified by capture-seq.</span></td><td class="ao">Ran Brosh</td></tr><tr><td class="al">Aim 2</td><td class="at"><strong>Assemble allelic series spanning natural human variation</strong><span>Use assemblon-based assembly to construct receptor variants including regulatory context, not coding sequence alone.</span></td><td class="ao">Jef D. Boeke</td></tr><tr><td class="al">Aim 3</td><td class="at"><strong>Test respiratory virus susceptibility across the allelic series</strong><span>Challenge with influenza and coronaviruses to determine which receptor variants predict tropism and disease severity.</span></td><td class="ao">Benjamin tenOever</td></tr><tr><td class="al">Aim 4</td><td class="at"><strong>Extend to arboviral receptor usage</strong><span>Apply the platform to alphavirus and flavivirus entry factors to test whether receptor humanization predicts host range shifts.</span></td><td class="ao">Kenneth A. Stapleford</td></tr></tbody></table></div>
+    <div><h4>Team</h4><ul class="team"><li><span class="pn">Ran Brosh</span><span class="pg">ISG / Pathology</span><span class="pr">Contact PI, genome writing</span></li><li><span class="pn">Jef D. Boeke</span><span class="pg">ISG</span><span class="pr">Large-locus assembly</span></li><li><span class="pn">Benjamin tenOever</span><span class="pg">Microbiology</span><span class="pr">Respiratory virus challenge</span></li></ul></div>
+    <div><h4>Aims and ownership</h4><table class="aims"><tbody><tr><td class="al">Aim 1</td><td class="at"><strong>Build a rewritable receptor locus in mouse embryonic stem cells</strong><span>Install landing pads at receptor loci permitting iterative replacement with human, chimeric and variant alleles, verified by capture-seq.</span></td><td class="ao">Ran Brosh</td></tr><tr><td class="al">Aim 2</td><td class="at"><strong>Assemble allelic series spanning natural human variation</strong><span>Use assemblon-based assembly to construct receptor variants including regulatory context, not coding sequence alone.</span></td><td class="ao">Jef D. Boeke</td></tr><tr><td class="al">Aim 3</td><td class="at"><strong>Test respiratory virus susceptibility across the allelic series</strong><span>Challenge with influenza and coronaviruses to determine which receptor variants predict tropism and disease severity.</span></td><td class="ao">Benjamin tenOever</td></tr><tr><td class="al">Aim 4</td><td class="at"><strong>Extend the platform beyond receptors to the wider entry pathway</strong><span>Humanize the proteases and cofactors required for entry alongside the receptor itself, testing whether susceptibility is set by the receptor alone or by the full entry module.</span></td><td class="ao">Ran Brosh</td></tr></tbody></table></div>
   </div>
   <div class="foot">
-    <p><strong>Why this competes.</strong> Brosh has already built ACE2-humanized mouse models using the Big-IN landing-pad platform; generalizing that from one receptor to a rewritable receptor locus turns a one-off model into a susceptibility-prediction platform. Pairing genome writing with arbovirus and influenza reverse genetics in the same application is a combination that essentially no other institution can assemble internally.</p>
+    <p><strong>Why this competes.</strong> Brosh has already built ACE2-humanized mouse models using the Big-IN landing-pad platform; generalizing that from one receptor to a rewritable entry locus turns a one-off model into a susceptibility-prediction platform. Pairing iterative genome writing with respiratory virus reverse genetics in the same application is a combination few institutions can assemble internally.</p>
     <p class="gate"><strong>Before you write.</strong> Standard R01 cycles; new applications 5 October 2026. Confirm the DGOFR review path — this is host-side engineering rather than pathogen enhancement, but the application should say so explicitly given the November policy.</p>
     
   </div>
@@ -555,11 +564,11 @@ footer { border-top: 1px solid #ddd4ff; padding: 1rem 2rem; background: #faf7ff;
     <p class="flag"><strong>Profile gap.</strong> Drew Jones, Richard Possemato have no expertise data in the faculty index &mdash; this fit is inferred from public record and should be confirmed.</p>
   </div>
 </article>
-<article class="card prop" data-tier="mid" data-groups="Microbiology" data-q="a sub-ten-dollar sample-to-data workflow for arboviral and respiratory virus genomic surveillance kenneth a. stapleford grand challenges — pathogen sequencing innovations in low-cost and simplified pathogen sequencing workflows gates foundation kenneth a. stapleford alejandro pironti ralf duerr">
+<article class="card prop" data-tier="mid" data-groups="Microbiology" data-q="a sub-ten-dollar sample-to-data workflow for viral and bacterial pathogen surveillance alejandro pironti grand challenges — pathogen sequencing innovations in low-cost and simplified pathogen sequencing workflows gates foundation alejandro pironti bo shopsin ralf duerr">
   <div class="phead">
     <span class="pid">P17</span>
     <span class="tierbadge tb-mid">Mid-scale</span>
-    <h3>A Sub-Ten-Dollar Sample-to-Data Workflow for Arboviral and Respiratory Virus Genomic Surveillance</h3>
+    <h3>A Sub-Ten-Dollar Sample-to-Data Workflow for Viral and Bacterial Pathogen Surveillance</h3>
   </div>
   <div class="oppbar">
     <a class="onum" href="https://gcgh.grandchallenges.org/challenge/innovations-low-cost-and-simplified-pathogen-sequencing-workflows" target="_blank" rel="noopener">Grand Challenges — pathogen sequencing</a>
@@ -570,11 +579,11 @@ footer { border-top: 1px solid #ddd4ff; padding: 1rem 2rem; background: #faf7ff;
   </div>
   <p class="onote">Innovations in Low-Cost and Simplified Pathogen Sequencing Workflows &mdash; Targets $1–10 per-sample sample-to-data cost for routine public-health sequencing of viruses, TB, malaria and bacterial pathogens. ~15 awards across three tiers.</p>
   <div class="split">
-    <div><h4>Team</h4><ul class="team"><li><span class="pn">Kenneth A. Stapleford</span><span class="pg">Microbiology</span><span class="pr">Contact PI, virology and validation</span></li><li><span class="pn">Alejandro Pironti</span><span class="pg">Microbiology</span><span class="pr">Bioinformatics and cost engineering</span></li><li><span class="pn">Ralf Duerr</span><span class="pg">Microbiology</span><span class="pr">Reference panels and benchmarking</span></li></ul></div>
-    <div><h4>Aims and ownership</h4><table class="aims"><tbody><tr><td class="al">Aim 1</td><td class="at"><strong>Reduce library preparation cost without losing genome recovery</strong><span>Benchmark reduced-volume, pooled and amplification-light protocols against reference workflows, reporting cost per sample as an explicit endpoint.</span></td><td class="ao">Kenneth A. Stapleford</td></tr><tr><td class="al">Aim 2</td><td class="at"><strong>Build an analysis pipeline that runs on modest hardware</strong><span>A containerized pipeline producing consensus genomes and lineage calls without cloud dependence or high-memory compute.</span></td><td class="ao">Alejandro Pironti</td></tr><tr><td class="al">Aim 3</td><td class="at"><strong>Validate against characterized reference panels</strong><span>Benchmark sensitivity and consensus accuracy across viral loads using curated reference materials.</span></td><td class="ao">Ralf Duerr</td></tr></tbody></table></div>
+    <div><h4>Team</h4><ul class="team"><li><span class="pn">Alejandro Pironti</span><span class="pg">Microbiology</span><span class="pr">Contact PI, bioinformatics and cost engineering</span></li><li><span class="pn">Bo Shopsin</span><span class="pg">Microbiology</span><span class="pr">Hospital-scale sequencing operations</span></li><li><span class="pn">Ralf Duerr</span><span class="pg">Microbiology</span><span class="pr">Reference panels and benchmarking</span></li></ul></div>
+    <div><h4>Aims and ownership</h4><table class="aims"><tbody><tr><td class="al">Aim 1</td><td class="at"><strong>Reduce library preparation cost without losing genome recovery</strong><span>Benchmark reduced-volume, pooled and amplification-light protocols against reference workflows across viral and bacterial targets, reporting realized cost per sample as an explicit endpoint.</span></td><td class="ao">Bo Shopsin</td></tr><tr><td class="al">Aim 2</td><td class="at"><strong>Build an analysis pipeline that runs on modest hardware</strong><span>A containerized pipeline producing consensus genomes and lineage calls without cloud dependence or high-memory compute.</span></td><td class="ao">Alejandro Pironti</td></tr><tr><td class="al">Aim 3</td><td class="at"><strong>Validate against characterized reference panels</strong><span>Benchmark sensitivity and consensus accuracy across viral loads using curated reference materials.</span></td><td class="ao">Ralf Duerr</td></tr></tbody></table></div>
   </div>
   <div class="foot">
-    <p><strong>Why this competes.</strong> The call names viruses including arboviruses explicitly and targets $1–10 per-sample sample-to-data cost. This team can do the virology, the bioinformatics and the validation without subcontracting, and the tiered award structure makes a credible mid-tier ask realistic rather than a moonshot.</p>
+    <p><strong>Why this competes.</strong> The call spans viruses, TB, malaria and bacterial pathogens and targets $1–10 per-sample sample-to-data cost. Shopsin already runs hospital-scale sequencing where cost per isolate is an operational constraint rather than a hypothetical, Duerr covers the viral side, and Pironti owns the analysis. The team can do wet lab, bioinformatics and validation without subcontracting, and the tiered award structure makes a credible mid-tier ask realistic.</p>
     <p class="gate"><strong>Before you write.</strong> Due 29 September 2026, 11:30 am PDT — 22 days. Small enough to write in that window if the decision is made this week.</p>
     
   </div>
@@ -771,6 +780,486 @@ footer { border-top: 1px solid #ddd4ff; padding: 1rem 2rem; background: #faf7ff;
     
   </div>
 </article>
+<article class="card prop" data-tier="solo" data-groups="Microbiology" data-q="post-transcriptional control of gene expression in infection and cellular stress ian j. mohr par-26-121 mira (r35) for established investigators nih / nigms ian j. mohr">
+  <div class="phead">
+    <span class="pid">S01</span>
+    <span class="tierbadge tb-solo">Solo</span>
+    <h3>Post-Transcriptional Control of Gene Expression in Infection and Cellular Stress</h3>
+  </div>
+  <div class="oppbar">
+    <a class="onum" href="https://www.grants.gov/search-results-detail/359862" target="_blank" rel="noopener">PAR-26-121</a>
+    <span>NIH / NIGMS</span>
+    <span class="odl" data-d="2027-01-27">2027-01-27</span>
+    <span>Up to $750K direct/yr</span>
+    <span>Single investigator</span>
+  </div>
+  <p class="onote">MIRA (R35) for Established Investigators &mdash; Single PD/PI. Requires an existing single-PI NIGMS R01-equivalent and 45% of total research effort; no other NIGMS research application may be pending simultaneously.</p>
+  <div class="split">
+    <div><h4>Team</h4><ul class="team"><li><span class="pn">Ian J. Mohr</span><span class="pg">Microbiology</span><span class="pr">Sole PI</span></li></ul></div>
+    <div><h4>Aims and ownership</h4><table class="aims"><tbody><tr><td class="al">Aim 1</td><td class="at"><strong>Define how RNA chemical modification directs the host–virus competition for translation</strong><span>Map m6A and related marks across viral and host transcripts through infection, and test which writer, reader and eraser activities determine whose message is translated.</span></td><td class="ao">Ian J. Mohr</td></tr><tr><td class="al">Aim 2</td><td class="at"><strong>Establish the ribosome-level basis of selective translation under stress</strong><span>Ribosome and polysome profiling across stress states to identify the initiation and elongation steps that discriminate transcripts, and the signalling that sets them.</span></td><td class="ao">Ian J. Mohr</td></tr><tr><td class="al">Aim 3</td><td class="at"><strong>Determine how these mechanisms gate herpesvirus latency and reactivation in neurons</strong><span>Apply the Aims 1 and 2 readouts to neuronal latency models, testing whether translational control is a decision point rather than a consequence.</span></td><td class="ao">Ian J. Mohr</td></tr></tbody></table></div>
+  </div>
+  <div class="foot">
+    <p><strong>Why this competes.</strong> MIRA exists to fund a sustained mechanistic line rather than a single hypothesis, and the competition between host and virus for the translation apparatus is exactly that — three decades of work on protein synthesis control, m6A enzymology and ribosome biology under one programme. Consolidating multiple project grants into one award also removes the annual reapplication tax on a lab whose value is continuity.</p>
+    <p class="gate"><strong>Before you write.</strong> Single PD/PI. Requires an existing single-PI NIGMS R01-equivalent, a 45% total research effort commitment, and no other NIGMS research application pending — verify all three before committing.</p>
+    
+  </div>
+</article>
+<article class="card prop" data-tier="solo" data-groups="Microbiology" data-q="integration of proteostasis and metabolism in mycobacterium tuberculosis persistence k. heran darwin pa-25-301 nih parent r01 (clinical trial not allowed) nih k. heran darwin">
+  <div class="phead">
+    <span class="pid">S02</span>
+    <span class="tierbadge tb-solo">Solo</span>
+    <h3>Integration of Proteostasis and Metabolism in Mycobacterium tuberculosis Persistence</h3>
+  </div>
+  <div class="oppbar">
+    <a class="onum" href="https://grants.nih.gov/grants/guide/pa-files/PA-25-301.html" target="_blank" rel="noopener">PA-25-301</a>
+    <span>NIH</span>
+    <span class="odl" data-d="2026-10-05">2026-10-05</span>
+    <span>R01</span>
+    <span>Single investigator</span>
+  </div>
+  <p class="onote">NIH Parent R01 (Clinical Trial Not Allowed) &mdash; New applications 5 Oct 2026; renewals, resubmissions and revisions 5 Nov 2026. Standard cycles thereafter.</p>
+  <div class="split">
+    <div><h4>Team</h4><ul class="team"><li><span class="pn">K. Heran Darwin</span><span class="pg">Microbiology</span><span class="pr">Sole PI</span></li></ul></div>
+    <div><h4>Aims and ownership</h4><table class="aims"><tbody><tr><td class="al">Aim 1</td><td class="at"><strong>Define how CoaX couples pantothenate and coenzyme A metabolism to proteasome flux</strong><span>Genetic and biochemical dissection of the CoaX–PanB interaction, measuring how metabolic state changes pupylation and degradation rates.</span></td><td class="ao">K. Heran Darwin</td></tr><tr><td class="al">Aim 2</td><td class="at"><strong>Determine which substrates are degraded under host-imposed oxidative and nitrosative stress</strong><span>Pull-down and mass spectrometry to identify the stress-conditional pupylome, distinguishing regulated substrates from bulk turnover.</span></td><td class="ao">K. Heran Darwin</td></tr><tr><td class="al">Aim 3</td><td class="at"><strong>Test the requirement for persistence rather than growth in vivo</strong><span>Mouse infection with conditional alleles to separate the mutants that fail to establish infection from those that fail to persist under immune pressure.</span></td><td class="ao">K. Heran Darwin</td></tr></tbody></table></div>
+  </div>
+  <div class="foot">
+    <p><strong>Why this competes.</strong> The CoaX–PanB link is the most distinctive and least exploited thread in this programme: it connects the Pup–proteasome system to coenzyme A metabolism, which reframes proteostasis as a metabolic problem rather than a quality-control one. That reframing is what makes this a new R01 rather than a renewal.</p>
+    <p class="gate"><strong>Before you write.</strong> New applications 5 October 2026. Keep the M. tuberculosis scope clearly within permitted work under the DGOFR policy taking effect in November, and document the institutional review in the application.</p>
+    
+  </div>
+</article>
+<article class="card prop" data-tier="solo" data-groups="Microbiology" data-q="proteolytic control of cell envelope integrity in pseudomonas aeruginosa andrew j. darwin pa-25-301 nih parent r01 (clinical trial not allowed) nih andrew j. darwin">
+  <div class="phead">
+    <span class="pid">S03</span>
+    <span class="tierbadge tb-solo">Solo</span>
+    <h3>Proteolytic Control of Cell Envelope Integrity in Pseudomonas aeruginosa</h3>
+  </div>
+  <div class="oppbar">
+    <a class="onum" href="https://grants.nih.gov/grants/guide/pa-files/PA-25-301.html" target="_blank" rel="noopener">PA-25-301</a>
+    <span>NIH</span>
+    <span class="odl" data-d="2026-10-05">2026-10-05</span>
+    <span>R01</span>
+    <span>Single investigator</span>
+  </div>
+  <p class="onote">NIH Parent R01 (Clinical Trial Not Allowed) &mdash; New applications 5 Oct 2026; renewals, resubmissions and revisions 5 Nov 2026. Standard cycles thereafter.</p>
+  <div class="split">
+    <div><h4>Team</h4><ul class="team"><li><span class="pn">Andrew J. Darwin</span><span class="pg">Microbiology</span><span class="pr">Sole PI</span></li></ul></div>
+    <div><h4>Aims and ownership</h4><table class="aims"><tbody><tr><td class="al">Aim 1</td><td class="at"><strong>Determine how LbcA selects substrates for CtpA</strong><span>Reconstitute the protease–adaptor complex and use crosslinking and mass spectrometry to define the recognition determinants that make a peptidoglycan hydrolase a substrate.</span></td><td class="ao">Andrew J. Darwin</td></tr><tr><td class="al">Aim 2</td><td class="at"><strong>Establish how the IltA/LiiA system times lytic transglycosylase activity</strong><span>Genetic and biochemical dissection of the inhibitor–anti-inhibitor pair, testing whether it is a growth-rate sensor rather than a stress sensor.</span></td><td class="ao">Andrew J. Darwin</td></tr><tr><td class="al">Aim 3</td><td class="at"><strong>Test the consequences for envelope integrity and antibiotic susceptibility</strong><span>Measure how loss of controlled proteolysis changes cell wall architecture, β-lactam susceptibility and survival in chronic infection models.</span></td><td class="ao">Andrew J. Darwin</td></tr></tbody></table></div>
+  </div>
+  <div class="foot">
+    <p><strong>Why this competes.</strong> The LbcA·CtpA complex and the IltA/LiiA inhibitor–anti-inhibitor system are this lab&#x27;s own discoveries, and they describe a regulatory layer over autolysins that has no clean parallel in E. coli. P. aeruginosa is a WHO Priority 1 Critical pathogen, so envelope proteolysis is a target class as well as a mechanism.</p>
+    <p class="gate"><strong>Before you write.</strong> New applications 5 October 2026. The structural components depend on collaborative cryo-EM — name the collaborator and the committed time explicitly, since reviewers routinely discount unbudgeted structural promises.</p>
+    
+  </div>
+</article>
+<article class="card prop" data-tier="solo" data-groups="Microbiology" data-q="viral reprogramming of host rna processing during latency and reactivation angus c. wilson pa-25-301 nih parent r01 (clinical trial not allowed) nih angus c. wilson">
+  <div class="phead">
+    <span class="pid">S04</span>
+    <span class="tierbadge tb-solo">Solo</span>
+    <h3>Viral Reprogramming of Host RNA Processing During Latency and Reactivation</h3>
+  </div>
+  <div class="oppbar">
+    <a class="onum" href="https://grants.nih.gov/grants/guide/pa-files/PA-25-301.html" target="_blank" rel="noopener">PA-25-301</a>
+    <span>NIH</span>
+    <span class="odl" data-d="2026-10-05">2026-10-05</span>
+    <span>R01</span>
+    <span>Single investigator</span>
+  </div>
+  <p class="onote">NIH Parent R01 (Clinical Trial Not Allowed) &mdash; New applications 5 Oct 2026; renewals, resubmissions and revisions 5 Nov 2026. Standard cycles thereafter.</p>
+  <div class="split">
+    <div><h4>Team</h4><ul class="team"><li><span class="pn">Angus C. Wilson</span><span class="pg">Microbiology</span><span class="pr">Sole PI</span></li></ul></div>
+    <div><h4>Aims and ownership</h4><table class="aims"><tbody><tr><td class="al">Aim 1</td><td class="at"><strong>Map the RNA modification landscape that distinguishes latency from productive infection</strong><span>Direct RNA sequencing with precision modification mapping across neuronal latency and lytic models, at both viral and host transcripts.</span></td><td class="ao">Angus C. Wilson</td></tr><tr><td class="al">Aim 2</td><td class="at"><strong>Determine how AKT–mTORC1 and TOP2β signalling reshape host RNA processing during reactivation</strong><span>Perturb the pathways and measure splicing, modification and decay changes that precede lytic gene expression.</span></td><td class="ao">Angus C. Wilson</td></tr><tr><td class="al">Aim 3</td><td class="at"><strong>Resolve the spatial organisation of these events in infected tissue</strong><span>Spatial transcriptomics and proteomics to establish whether reactivation-competent states are spatially segregated within the ganglion.</span></td><td class="ao">Angus C. Wilson</td></tr></tbody></table></div>
+  </div>
+  <div class="foot">
+    <p><strong>Why this competes.</strong> Using viruses as instruments to expose host biology is the framing that makes this lab distinctive, and direct RNA sequencing with custom modification calling is a capability few groups can run end to end. Pairing it with spatial transcriptomics and proteomics of infected cells addresses persistence at the level where the decision is actually made.</p>
+    <p class="gate"><strong>Before you write.</strong> New applications 5 October 2026. Direct RNA modification calling is still contested methodologically — build in orthogonal validation rather than relying on the basecaller alone.</p>
+    
+  </div>
+</article>
+<article class="card prop" data-tier="solo" data-groups="Microbiology" data-q="nerve- and airway-associated interstitial macrophages in type 2 immunity and fibrosis kamal m. khanna pa-25-301 nih parent r01 (clinical trial not allowed) nih kamal m. khanna">
+  <div class="phead">
+    <span class="pid">S05</span>
+    <span class="tierbadge tb-solo">Solo</span>
+    <h3>Nerve- and Airway-Associated Interstitial Macrophages in Type 2 Immunity and Fibrosis</h3>
+  </div>
+  <div class="oppbar">
+    <a class="onum" href="https://grants.nih.gov/grants/guide/pa-files/PA-25-301.html" target="_blank" rel="noopener">PA-25-301</a>
+    <span>NIH</span>
+    <span class="odl" data-d="2026-10-05">2026-10-05</span>
+    <span>R01</span>
+    <span>Single investigator</span>
+  </div>
+  <p class="onote">NIH Parent R01 (Clinical Trial Not Allowed) &mdash; New applications 5 Oct 2026; renewals, resubmissions and revisions 5 Nov 2026. Standard cycles thereafter.</p>
+  <div class="split">
+    <div><h4>Team</h4><ul class="team"><li><span class="pn">Kamal M. Khanna</span><span class="pg">Microbiology</span><span class="pr">Sole PI</span></li></ul></div>
+    <div><h4>Aims and ownership</h4><table class="aims"><tbody><tr><td class="al">Aim 1</td><td class="at"><strong>Define how NAMs are positioned and maintained along airway nerves</strong><span>Light-sheet imaging and tissue clearing with lineage tracing to establish whether nerve association is instructive or incidental.</span></td><td class="ao">Kamal M. Khanna</td></tr><tr><td class="al">Aim 2</td><td class="at"><strong>Determine the NAM contribution to type 2 inflammation and fibrotic remodelling</strong><span>NAM-DTR depletion across allergic airway and fibrosis models with single-cell multi-omics readouts of the resulting shift.</span></td><td class="ao">Kamal M. Khanna</td></tr><tr><td class="al">Aim 3</td><td class="at"><strong>Test whether neuronal signals set the NAM transcriptional and metabolic state</strong><span>Manipulate airway innervation and neuropeptide signalling and measure the consequences for NAM identity and function.</span></td><td class="ao">Kamal M. Khanna</td></tr></tbody></table></div>
+  </div>
+  <div class="foot">
+    <p><strong>Why this competes.</strong> NAMs are this lab&#x27;s own definition of a subset, and the NAM-DTR mouse makes the loss-of-function experiment clean in a field that mostly relies on markers. Type 2 immunity, asthma and fibrosis are where the subset&#x27;s function is least understood and where the therapeutic implication is largest.</p>
+    <p class="gate"><strong>Before you write.</strong> New applications 5 October 2026. Distinguish this clearly from the respiratory-infection line so it does not read as a slice of the same programme — the neuro-immune axis is the differentiator.</p>
+    
+  </div>
+</article>
+<article class="card prop" data-tier="solo" data-groups="Microbiology" data-q="mitochondrial stress and vascular injury in severe malaria ana m. rodriguez pa-25-301 nih parent r01 (clinical trial not allowed) nih ana m. rodriguez">
+  <div class="phead">
+    <span class="pid">S06</span>
+    <span class="tierbadge tb-solo">Solo</span>
+    <h3>Mitochondrial Stress and Vascular Injury in Severe Malaria</h3>
+  </div>
+  <div class="oppbar">
+    <a class="onum" href="https://grants.nih.gov/grants/guide/pa-files/PA-25-301.html" target="_blank" rel="noopener">PA-25-301</a>
+    <span>NIH</span>
+    <span class="odl" data-d="2026-10-05">2026-10-05</span>
+    <span>R01</span>
+    <span>Single investigator</span>
+  </div>
+  <p class="onote">NIH Parent R01 (Clinical Trial Not Allowed) &mdash; New applications 5 Oct 2026; renewals, resubmissions and revisions 5 Nov 2026. Standard cycles thereafter.</p>
+  <div class="split">
+    <div><h4>Team</h4><ul class="team"><li><span class="pn">Ana M. Rodriguez</span><span class="pg">Microbiology</span><span class="pr">Sole PI</span></li></ul></div>
+    <div><h4>Aims and ownership</h4><table class="aims"><tbody><tr><td class="al">Aim 1</td><td class="at"><strong>Establish how hemozoin-derived lipids induce mitochondrial stress in brain endothelium</strong><span>xCELLigence barrier integrity and mitochondrial function assays in endothelial cultures exposed to defined hemozoin lipid fractions.</span></td><td class="ao">Ana M. Rodriguez</td></tr><tr><td class="al">Aim 2</td><td class="at"><strong>Determine which protective pathways can be engaged pharmacologically</strong><span>Test inhibition of mitochondrial stress, purinergic receptors and farnesylation for restoration of barrier function in vitro and in mouse cerebral malaria.</span></td><td class="ao">Ana M. Rodriguez</td></tr><tr><td class="al">Aim 3</td><td class="at"><strong>Identify plasma biomarkers that precede progression to severe disease</strong><span>RNA-seq and vascular profiling of patient plasma to define an early signature of endothelial injury.</span></td><td class="ao">Ana M. Rodriguez</td></tr></tbody></table></div>
+  </div>
+  <div class="foot">
+    <p><strong>Why this competes.</strong> Hemozoin lipid–mediated mitochondrial stress as a driver of blood–brain barrier disruption is a mechanism this lab defined, and it comes with tractable intervention points — purinergic receptor blockade and farnesylation inhibition — that turn a pathogenesis study into a therapeutic hypothesis. Severe malaria remains a mortality problem where host-directed options are thin.</p>
+    <p class="gate"><strong>Before you write.</strong> New applications 5 October 2026. Foreign components are prohibited on this announcement; if clinical samples come from an endemic-country partner, structure that carefully with the program officer first.</p>
+    
+  </div>
+</article>
+<article class="card prop" data-tier="solo" data-groups="Microbiology" data-q="within-host adaptation of staphylococcus aureus during persistent infection bo shopsin pa-25-301 nih parent r01 (clinical trial not allowed) nih bo shopsin">
+  <div class="phead">
+    <span class="pid">S07</span>
+    <span class="tierbadge tb-solo">Solo</span>
+    <h3>Within-Host Adaptation of Staphylococcus aureus During Persistent Infection</h3>
+  </div>
+  <div class="oppbar">
+    <a class="onum" href="https://grants.nih.gov/grants/guide/pa-files/PA-25-301.html" target="_blank" rel="noopener">PA-25-301</a>
+    <span>NIH</span>
+    <span class="odl" data-d="2026-10-05">2026-10-05</span>
+    <span>R01</span>
+    <span>Single investigator</span>
+  </div>
+  <p class="onote">NIH Parent R01 (Clinical Trial Not Allowed) &mdash; New applications 5 Oct 2026; renewals, resubmissions and revisions 5 Nov 2026. Standard cycles thereafter.</p>
+  <div class="split">
+    <div><h4>Team</h4><ul class="team"><li><span class="pn">Bo Shopsin</span><span class="pg">Microbiology</span><span class="pr">Sole PI</span></li></ul></div>
+    <div><h4>Aims and ownership</h4><table class="aims"><tbody><tr><td class="al">Aim 1</td><td class="at"><strong>Define the adaptive mutations that arise during persistent bacteraemia</strong><span>Longitudinal within-patient sequencing across persistent versus resolving cases, distinguishing recurrent adaptive targets from drift.</span></td><td class="ao">Bo Shopsin</td></tr><tr><td class="al">Aim 2</td><td class="at"><strong>Determine how those mutations change immune evasion and antibiotic tolerance</strong><span>Reconstruct isolated mutations in a common background and measure phagocyte survival, biofilm behaviour and tolerance phenotypes.</span></td><td class="ao">Bo Shopsin</td></tr><tr><td class="al">Aim 3</td><td class="at"><strong>Test whether admission genotype predicts persistence</strong><span>Prospective validation in an independent cohort, with treatment failure as the endpoint.</span></td><td class="ao">Bo Shopsin</td></tr></tbody></table></div>
+  </div>
+  <div class="foot">
+    <p><strong>Why this competes.</strong> Hospital-scale genome sequencing paired with clinical outcome is infrastructure this lab already runs at operational scale, which converts a population-genetics question into a within-patient one. Persistent MRSA bacteraemia is the clinical problem where adaptation, not initial resistance, determines whether treatment works.</p>
+    <p class="gate"><strong>Before you write.</strong> New applications 5 October 2026. Clinical-trial-not-allowed on this announcement — keep the design observational, with the interventional question reserved for the AMR network application.</p>
+    
+  </div>
+</article>
+<article class="card prop" data-tier="solo" data-groups="Microbiology" data-q="foundation models for predicting antimicrobial resistance from bacterial genomes alejandro pironti par-27-072 bioengineering research grants (r01) nih / nibib alejandro pironti">
+  <div class="phead">
+    <span class="pid">S08</span>
+    <span class="tierbadge tb-solo">Solo</span>
+    <h3>Foundation Models for Predicting Antimicrobial Resistance from Bacterial Genomes</h3>
+  </div>
+  <div class="oppbar">
+    <a class="onum" href="https://www.grants.gov/search-results-detail/360543" target="_blank" rel="noopener">PAR-27-072</a>
+    <span>NIH / NIBIB</span>
+    <span class="odl" data-d="2029-07-05">2029-07-05</span>
+    <span>R01</span>
+    <span>Single investigator</span>
+  </div>
+  <p class="onote">Bioengineering Research Grants (R01) &mdash; Standing. For integrating engineering and quantitative approaches with biology where the primary novelty is methodological.</p>
+  <div class="split">
+    <div><h4>Team</h4><ul class="team"><li><span class="pn">Alejandro Pironti</span><span class="pg">Microbiology</span><span class="pr">Sole PI</span></li></ul></div>
+    <div><h4>Aims and ownership</h4><table class="aims"><tbody><tr><td class="al">Aim 1</td><td class="at"><strong>Build genome-language models that predict resistance phenotype without a determinant catalogue</strong><span>Train on paired genome and phenotype data, benchmarking against rule-based determinant calling across species and resistance classes.</span></td><td class="ao">Alejandro Pironti</td></tr><tr><td class="al">Aim 2</td><td class="at"><strong>Extend the models to virulence and treatment-failure prediction</strong><span>Test whether the same representations carry signal for outcomes that have no curated determinant list.</span></td><td class="ao">Alejandro Pironti</td></tr><tr><td class="al">Aim 3</td><td class="at"><strong>Validate prospectively on incoming clinical isolates</strong><span>Freeze the model and score isolates as they arrive, reporting calibrated performance rather than retrospective accuracy.</span></td><td class="ao">Alejandro Pironti</td></tr></tbody></table></div>
+  </div>
+  <div class="foot">
+    <p><strong>Why this competes.</strong> The bioengineering R01 exists for work whose primary novelty is methodological, which this is: applying foundational AI models to bacterial genomes to predict resistance and virulence, rather than cataloguing known determinants. The differentiator is that the training and validation data come from a hospital sequencing programme in the same department, not from a public benchmark.</p>
+    <p class="gate"><strong>Before you write.</strong> Standing announcement to 2029; confirm the exact receipt dates in the full announcement, which the Grants.gov summary does not state. Be explicit about held-out validation — reviewers are correctly sceptical of resistance prediction that has only been cross-validated.</p>
+    
+  </div>
+</article>
+<article class="card prop" data-tier="solo" data-groups="Microbiology" data-q="ecological determinants of microbiome recovery after antibiotic perturbation jonas schluter pa-25-301 nih parent r01 (clinical trial not allowed) nih jonas schluter">
+  <div class="phead">
+    <span class="pid">S09</span>
+    <span class="tierbadge tb-solo">Solo</span>
+    <h3>Ecological Determinants of Microbiome Recovery After Antibiotic Perturbation</h3>
+  </div>
+  <div class="oppbar">
+    <a class="onum" href="https://grants.nih.gov/grants/guide/pa-files/PA-25-301.html" target="_blank" rel="noopener">PA-25-301</a>
+    <span>NIH</span>
+    <span class="odl" data-d="2026-10-05">2026-10-05</span>
+    <span>R01</span>
+    <span>Single investigator</span>
+  </div>
+  <p class="onote">NIH Parent R01 (Clinical Trial Not Allowed) &mdash; New applications 5 Oct 2026; renewals, resubmissions and revisions 5 Nov 2026. Standard cycles thereafter.</p>
+  <div class="split">
+    <div><h4>Team</h4><ul class="team"><li><span class="pn">Jonas Schluter</span><span class="pg">Microbiology</span><span class="pr">Sole PI</span></li></ul></div>
+    <div><h4>Aims and ownership</h4><table class="aims"><tbody><tr><td class="al">Aim 1</td><td class="at"><strong>Define the community states from which recovery is and is not possible</strong><span>Longitudinal metagenomics across antibiotic exposures, fitting ecological models to identify alternative stable states.</span></td><td class="ao">Jonas Schluter</td></tr><tr><td class="al">Aim 2</td><td class="at"><strong>Test the predicted recovery determinants in defined communities</strong><span>Gnotobiotic mice with defined consortia, manipulating the taxa the models identify as keystone for recovery.</span></td><td class="ao">Jonas Schluter</td></tr><tr><td class="al">Aim 3</td><td class="at"><strong>Relate recovery failure to host immune and inflammatory consequences</strong><span>Immune profiling alongside community trajectory to establish whether delayed recovery has measurable host cost.</span></td><td class="ao">Jonas Schluter</td></tr></tbody></table></div>
+  </div>
+  <div class="foot">
+    <p><strong>Why this competes.</strong> Most microbiome work describes disruption; the harder and more useful question is what determines recovery, and that is a dynamical-systems problem this lab is equipped to answer with defined-community gnotobiotic models plus longitudinal human cohorts. Resilience is also the endpoint that would let antibiotic regimens be compared on collateral damage.</p>
+    <p class="gate"><strong>Before you write.</strong> New applications 5 October 2026. This is a strong vehicle given the third-to-sixth-year review — an independent single-PI R01 is the clearest evidence of independence from collaborative programme work.</p>
+    
+  </div>
+</article>
+<article class="card prop" data-tier="solo" data-groups="Microbiology" data-q="forecasting early-life microbiome trajectories from sparse longitudinal data liat shenhav pa-25-304 nih parent r21 nih liat shenhav">
+  <div class="phead">
+    <span class="pid">S10</span>
+    <span class="tierbadge tb-solo">Solo</span>
+    <h3>Forecasting Early-Life Microbiome Trajectories from Sparse Longitudinal Data</h3>
+  </div>
+  <div class="oppbar">
+    <a class="onum" href="https://grants.nih.gov/grants/guide/pa-files/PA-25-304.html" target="_blank" rel="noopener">PA-25-304</a>
+    <span>NIH</span>
+    <span class="odl" data-d="2026-10-16">2026-10-16</span>
+    <span>$275K direct over 2 yr</span>
+    <span>Single investigator</span>
+  </div>
+  <p class="onote">NIH Parent R21 &mdash; Two years, $275K direct total, no preliminary data required. NIAID does not accept the parent R21 in all program areas — confirm with the PO first.</p>
+  <div class="split">
+    <div><h4>Team</h4><ul class="team"><li><span class="pn">Liat Shenhav</span><span class="pg">Microbiology</span><span class="pr">Sole PI</span></li></ul></div>
+    <div><h4>Aims and ownership</h4><table class="aims"><tbody><tr><td class="al">Aim 1</td><td class="at"><strong>Develop forecasting models for microbial community trajectories from sparse sampling</strong><span>Extend tensor-factorization approaches to predict community state at future timepoints from the first weeks of life, with explicit uncertainty.</span></td><td class="ao">Liat Shenhav</td></tr><tr><td class="al">Aim 2</td><td class="at"><strong>Establish the prediction horizon and what limits it</strong><span>Benchmark across existing maternal–infant cohorts to determine how far ahead trajectories remain predictable and which factors collapse the horizon.</span></td><td class="ao">Liat Shenhav</td></tr></tbody></table></div>
+  </div>
+  <div class="foot">
+    <p><strong>Why this competes.</strong> The parent R21 is built for method development with no preliminary data required, which suits a genuinely uncertain question: whether infant microbiome trajectories are predictable far enough ahead to be actionable. Tensor factorization and source-tracking methods this lab authored are the natural starting point, and a negative answer would still be informative.</p>
+    <p class="gate"><strong>Before you write.</strong> Due 16 October 2026. NIAID does not accept the parent R21 in all program areas — confirm with the program officer before writing, and consider NICHD as the assigning institute given the maternal–infant framing.</p>
+    
+  </div>
+</article>
+<article class="card prop" data-tier="solo" data-groups="Microbiology" data-q="host and viral determinants of influenza infectiousness mila b. ortigoza pa-25-301 nih parent r01 (clinical trial not allowed) nih mila b. ortigoza">
+  <div class="phead">
+    <span class="pid">S11</span>
+    <span class="tierbadge tb-solo">Solo</span>
+    <h3>Host and Viral Determinants of Influenza Infectiousness</h3>
+  </div>
+  <div class="oppbar">
+    <a class="onum" href="https://grants.nih.gov/grants/guide/pa-files/PA-25-301.html" target="_blank" rel="noopener">PA-25-301</a>
+    <span>NIH</span>
+    <span class="odl" data-d="2026-10-05">2026-10-05</span>
+    <span>R01</span>
+    <span>Single investigator</span>
+  </div>
+  <p class="onote">NIH Parent R01 (Clinical Trial Not Allowed) &mdash; New applications 5 Oct 2026; renewals, resubmissions and revisions 5 Nov 2026. Standard cycles thereafter.</p>
+  <div class="split">
+    <div><h4>Team</h4><ul class="team"><li><span class="pn">Mila B. Ortigoza</span><span class="pg">Microbiology</span><span class="pr">Sole PI</span></li></ul></div>
+    <div><h4>Aims and ownership</h4><table class="aims"><tbody><tr><td class="al">Aim 1</td><td class="at"><strong>Determine which airway states produce high infectiousness</strong><span>Quantify shed virus and transmission efficiency against epithelial state and sialic-acid receptor distribution in transmission models.</span></td><td class="ao">Mila B. Ortigoza</td></tr><tr><td class="al">Aim 2</td><td class="at"><strong>Establish the role of mucosal innate responses in limiting shedding</strong><span>Manipulate airway innate signalling and measure the consequence for infectiousness rather than for titre alone.</span></td><td class="ao">Mila B. Ortigoza</td></tr><tr><td class="al">Aim 3</td><td class="at"><strong>Test the determinants in human airway tissue and a household cohort</strong><span>Map the model-derived signatures onto primary human airway cultures and nasal samples from transmission pairs.</span></td><td class="ao">Mila B. Ortigoza</td></tr></tbody></table></div>
+  </div>
+  <div class="foot">
+    <p><strong>Why this competes.</strong> Transmission studies usually measure whether transmission happened; this asks what makes a given host infectious, which is the quantity that actually governs outbreak dynamics. The combination of neonatal and adult mouse transmission models with human airway tissue and clinical cohorts in one lab is unusual and is what makes the question answerable.</p>
+    <p class="gate"><strong>Before you write.</strong> New applications 5 October 2026. Clinical-trial-not-allowed — keep human work observational here, and route any interventional component to the NIAID clinical trial implementation mechanism instead.</p>
+    
+  </div>
+</article>
+<article class="card prop" data-tier="solo" data-groups="Microbiology" data-q="immune imprinting and the durability of orthopoxvirus immunity ralf duerr pa-25-301 nih parent r01 (clinical trial not allowed) nih ralf duerr">
+  <div class="phead">
+    <span class="pid">S12</span>
+    <span class="tierbadge tb-solo">Solo</span>
+    <h3>Immune Imprinting and the Durability of Orthopoxvirus Immunity</h3>
+  </div>
+  <div class="oppbar">
+    <a class="onum" href="https://grants.nih.gov/grants/guide/pa-files/PA-25-301.html" target="_blank" rel="noopener">PA-25-301</a>
+    <span>NIH</span>
+    <span class="odl" data-d="2026-10-05">2026-10-05</span>
+    <span>R01</span>
+    <span>Single investigator</span>
+  </div>
+  <p class="onote">NIH Parent R01 (Clinical Trial Not Allowed) &mdash; New applications 5 Oct 2026; renewals, resubmissions and revisions 5 Nov 2026. Standard cycles thereafter.</p>
+  <div class="split">
+    <div><h4>Team</h4><ul class="team"><li><span class="pn">Ralf Duerr</span><span class="pg">Microbiology</span><span class="pr">Sole PI</span></li></ul></div>
+    <div><h4>Aims and ownership</h4><table class="aims"><tbody><tr><td class="al">Aim 1</td><td class="at"><strong>Define how prior smallpox vaccination shapes the response to MVA-BN</strong><span>Multiplex binding, isotype, subclass and avidity profiling across imprinted and naive vaccinees at matched timepoints.</span></td><td class="ao">Ralf Duerr</td></tr><tr><td class="al">Aim 2</td><td class="at"><strong>Determine the durability and breadth of the resulting antibody response</strong><span>Longitudinal follow-up with neutralization against MPXV clades to test whether imprinting changes breadth as well as magnitude.</span></td><td class="ao">Ralf Duerr</td></tr><tr><td class="al">Aim 3</td><td class="at"><strong>Identify the B cell basis of the imprinting effect</strong><span>Memory B cell profiling and lineage analysis to establish whether recall of pre-existing clones limits new clone recruitment.</span></td><td class="ao">Ralf Duerr</td></tr></tbody></table></div>
+  </div>
+  <div class="foot">
+    <p><strong>Why this competes.</strong> MPXV after MVA-BN vaccination is a rare natural experiment in imprinting: a population with childhood smallpox vaccination, a population without, and a modern vaccine given to both. This lab has the multiplex serology, avidity and neutralization assays plus the cohorts, and the answer bears directly on how often boosting is actually needed.</p>
+    <p class="gate"><strong>Before you write.</strong> New applications 5 October 2026. Confirm cohort access and sample availability before writing — imprinting studies live or die on whether the pre-vaccination samples exist.</p>
+    
+  </div>
+</article>
+<article class="card prop" data-tier="solo" data-groups="Microbiology" data-q="t follicular helper regulation of antibody durability after vaccination ramin herati pa-25-301 nih parent r01 (clinical trial not allowed) nih ramin herati">
+  <div class="phead">
+    <span class="pid">S13</span>
+    <span class="tierbadge tb-solo">Solo</span>
+    <h3>T Follicular Helper Regulation of Antibody Durability After Vaccination</h3>
+  </div>
+  <div class="oppbar">
+    <a class="onum" href="https://grants.nih.gov/grants/guide/pa-files/PA-25-301.html" target="_blank" rel="noopener">PA-25-301</a>
+    <span>NIH</span>
+    <span class="odl" data-d="2026-10-05">2026-10-05</span>
+    <span>R01</span>
+    <span>Single investigator</span>
+  </div>
+  <p class="onote">NIH Parent R01 (Clinical Trial Not Allowed) &mdash; New applications 5 Oct 2026; renewals, resubmissions and revisions 5 Nov 2026. Standard cycles thereafter.</p>
+  <div class="split">
+    <div><h4>Team</h4><ul class="team"><li><span class="pn">Ramin Herati</span><span class="pg">Microbiology</span><span class="pr">Sole PI</span></li></ul></div>
+    <div><h4>Aims and ownership</h4><table class="aims"><tbody><tr><td class="al">Aim 1</td><td class="at"><strong>Determine which Tfh features at vaccination predict antibody durability</strong><span>AIM assays and single-cell profiling at the vaccination timepoint, related to antibody titre trajectory over the following year.</span></td><td class="ao">Ramin Herati</td></tr><tr><td class="al">Aim 2</td><td class="at"><strong>Establish how inflammation and infection history modify the Tfh response</strong><span>Stratify by prior exposure and inflammatory state to test whether imprinting acts through Tfh rather than through B cells.</span></td><td class="ao">Ramin Herati</td></tr><tr><td class="al">Aim 3</td><td class="at"><strong>Test the Tfh–B cell interaction directly</strong><span>Autologous co-culture to establish whether the donor Tfh phenotype is sufficient to reproduce the durability difference.</span></td><td class="ao">Ramin Herati</td></tr></tbody></table></div>
+  </div>
+  <div class="foot">
+    <p><strong>Why this competes.</strong> Why antibody responses wane at different rates in different people is still unexplained, and Tfh quality is the most credible candidate that has not been tested properly in humans. The AIM assay, spectral flow and single-cell pipeline in this lab make the longitudinal human measurement feasible where most groups substitute a mouse model.</p>
+    <p class="gate"><strong>Before you write.</strong> New applications 5 October 2026. Waning studies need long follow-up — build the timeline realistically and show the cohort retention data from prior studies.</p>
+    
+  </div>
+</article>
+<article class="card prop" data-tier="solo" data-groups="Microbiology" data-q="engineered dendritic cells and receptor decoys for antiviral immunoprophylaxis nathaniel r. landau pa-25-301 nih parent r01 (clinical trial not allowed) nih nathaniel r. landau">
+  <div class="phead">
+    <span class="pid">S14</span>
+    <span class="tierbadge tb-solo">Solo</span>
+    <h3>Engineered Dendritic Cells and Receptor Decoys for Antiviral Immunoprophylaxis</h3>
+  </div>
+  <div class="oppbar">
+    <a class="onum" href="https://grants.nih.gov/grants/guide/pa-files/PA-25-301.html" target="_blank" rel="noopener">PA-25-301</a>
+    <span>NIH</span>
+    <span class="odl" data-d="2026-10-05">2026-10-05</span>
+    <span>R01</span>
+    <span>Single investigator</span>
+  </div>
+  <p class="onote">NIH Parent R01 (Clinical Trial Not Allowed) &mdash; New applications 5 Oct 2026; renewals, resubmissions and revisions 5 Nov 2026. Standard cycles thereafter.</p>
+  <div class="split">
+    <div><h4>Team</h4><ul class="team"><li><span class="pn">Nathaniel R. Landau</span><span class="pg">Microbiology</span><span class="pr">Sole PI</span></li></ul></div>
+    <div><h4>Aims and ownership</h4><table class="aims"><tbody><tr><td class="al">Aim 1</td><td class="at"><strong>Optimise lentiviral engineering of dendritic cells for durable antigen presentation</strong><span>Compare vector designs and transduction protocols for persistence and T cell priming after adoptive transfer.</span></td><td class="ao">Nathaniel R. Landau</td></tr><tr><td class="al">Aim 2</td><td class="at"><strong>Develop soluble receptor Fc-fusion decoys with improved breadth</strong><span>Engineer and test decoys against SARS-CoV-2 variants, measuring resistance to escape relative to monoclonal antibodies.</span></td><td class="ao">Nathaniel R. Landau</td></tr><tr><td class="al">Aim 3</td><td class="at"><strong>Test AAV-delivered expression as a route to sustained protection</strong><span>Compare AAV-vectored decoy expression against repeated protein dosing in mouse challenge.</span></td><td class="ao">Nathaniel R. Landau</td></tr></tbody></table></div>
+  </div>
+  <div class="foot">
+    <p><strong>Why this competes.</strong> Lentiviral engineering of dendritic cells and soluble receptor Fc-fusion decoys are two independent routes to immunoprophylaxis from one lab, and the vector production capability means the constructs are made, purified and titred in house rather than outsourced. That vertical integration is what makes an ambitious single-PI programme credible.</p>
+    <p class="gate"><strong>Before you write.</strong> New applications 5 October 2026. BSL-3 work needs current approvals documented; note also that the DGOFR policy takes effect in November — vector engineering is host-side, but say so explicitly.</p>
+    
+  </div>
+</article>
+<article class="card prop" data-tier="solo" data-groups="Microbiology" data-q="selective mrna translation in immune cell lineage commitment robert j. schneider pa-25-301 nih parent r01 (clinical trial not allowed) nih robert j. schneider">
+  <div class="phead">
+    <span class="pid">S15</span>
+    <span class="tierbadge tb-solo">Solo</span>
+    <h3>Selective mRNA Translation in Immune Cell Lineage Commitment</h3>
+  </div>
+  <div class="oppbar">
+    <a class="onum" href="https://grants.nih.gov/grants/guide/pa-files/PA-25-301.html" target="_blank" rel="noopener">PA-25-301</a>
+    <span>NIH</span>
+    <span class="odl" data-d="2026-10-05">2026-10-05</span>
+    <span>R01</span>
+    <span>Single investigator</span>
+  </div>
+  <p class="onote">NIH Parent R01 (Clinical Trial Not Allowed) &mdash; New applications 5 Oct 2026; renewals, resubmissions and revisions 5 Nov 2026. Standard cycles thereafter.</p>
+  <div class="split">
+    <div><h4>Team</h4><ul class="team"><li><span class="pn">Robert J. Schneider</span><span class="pg">Microbiology</span><span class="pr">Sole PI</span></li></ul></div>
+    <div><h4>Aims and ownership</h4><table class="aims"><tbody><tr><td class="al">Aim 1</td><td class="at"><strong>Define the DAP5-dependent regulon during lineage commitment</strong><span>Ribosome profiling with DAP5 depletion across T cell and macrophage differentiation to identify transcripts whose translation is selectively required.</span></td><td class="ao">Robert J. Schneider</td></tr><tr><td class="al">Aim 2</td><td class="at"><strong>Determine how RNA modification directs selective translation in these cells</strong><span>m6A mapping and writer or reader perturbation to test whether modification marks the DAP5-dependent set.</span></td><td class="ao">Robert J. Schneider</td></tr><tr><td class="al">Aim 3</td><td class="at"><strong>Test the functional consequence in vivo</strong><span>Conditional DAP5 loss in immune lineages, measuring commitment and function during infection and inflammation.</span></td><td class="ao">Robert J. Schneider</td></tr></tbody></table></div>
+  </div>
+  <div class="foot">
+    <p><strong>Why this competes.</strong> DAP5/eIF4G2-dependent non-canonical translation as a determinant of T cell and macrophage lineage commitment is a mechanism this lab is best placed to establish, and it sits in the gap that transcriptomics alone cannot close. It also connects directly to the regeneration and cancer work without duplicating either.</p>
+    <p class="gate"><strong>Before you write.</strong> New applications 5 October 2026. Translation-level claims draw scrutiny about whether effects are secondary to transcription — build in the orthogonal controls up front.</p>
+    
+  </div>
+</article>
+<article class="card prop" data-tier="solo" data-groups="Microbiology" data-q="structural basis of antigen processing by the tap transporter james lee pa-25-301 nih parent r01 (clinical trial not allowed) nih james lee">
+  <div class="phead">
+    <span class="pid">S16</span>
+    <span class="tierbadge tb-solo">Solo</span>
+    <h3>Structural Basis of Antigen Processing by the TAP Transporter</h3>
+  </div>
+  <div class="oppbar">
+    <a class="onum" href="https://grants.nih.gov/grants/guide/pa-files/PA-25-301.html" target="_blank" rel="noopener">PA-25-301</a>
+    <span>NIH</span>
+    <span class="odl" data-d="2026-10-05">2026-10-05</span>
+    <span>R01</span>
+    <span>Single investigator</span>
+  </div>
+  <p class="onote">NIH Parent R01 (Clinical Trial Not Allowed) &mdash; New applications 5 Oct 2026; renewals, resubmissions and revisions 5 Nov 2026. Standard cycles thereafter.</p>
+  <div class="split">
+    <div><h4>Team</h4><ul class="team"><li><span class="pn">James Lee</span><span class="pg">Microbiology</span><span class="pr">Sole PI</span></li></ul></div>
+    <div><h4>Aims and ownership</h4><table class="aims"><tbody><tr><td class="al">Aim 1</td><td class="at"><strong>Determine structures across the TAP transport cycle</strong><span>Cryo-EM of substrate-bound, nucleotide-bound and post-hydrolysis states to define the conformational cycle.</span></td><td class="ao">James Lee</td></tr><tr><td class="al">Aim 2</td><td class="at"><strong>Establish how peptide selectivity is encoded</strong><span>Structure-guided mutagenesis with proteoliposome transport assays to map the determinants of substrate preference.</span></td><td class="ao">James Lee</td></tr><tr><td class="al">Aim 3</td><td class="at"><strong>Define how viral inhibitors subvert the cycle</strong><span>Structures of TAP bound to viral inhibitor proteins, testing whether they trap defined intermediates.</span></td><td class="ao">James Lee</td></tr></tbody></table></div>
+  </div>
+  <div class="foot">
+    <p><strong>Why this competes.</strong> TAP sits at the centre of MHC class I presentation and is the target of multiple viral immune-evasion proteins, which makes its conformational cycle both a fundamental question and a route to understanding evasion. Cryo-EM plus proteoliposome transport assays in one lab means structures come with function rather than as static snapshots.</p>
+    <p class="gate"><strong>Before you write.</strong> New applications 5 October 2026. NIGMS is the more natural assignment for the mechanism, NIAID for the immune-evasion component — discuss assignment with both before submitting.</p>
+    
+  </div>
+</article>
+<article class="card prop" data-tier="solo" data-groups="Microbiology" data-q="capsule and serotype determinants of group b streptococcus neonatal colonization adam j. ratner pa-25-301 nih parent r01 (clinical trial not allowed) nih adam j. ratner">
+  <div class="phead">
+    <span class="pid">S17</span>
+    <span class="tierbadge tb-solo">Solo</span>
+    <h3>Capsule and Serotype Determinants of Group B Streptococcus Neonatal Colonization</h3>
+  </div>
+  <div class="oppbar">
+    <a class="onum" href="https://grants.nih.gov/grants/guide/pa-files/PA-25-301.html" target="_blank" rel="noopener">PA-25-301</a>
+    <span>NIH</span>
+    <span class="odl" data-d="2026-10-05">2026-10-05</span>
+    <span>R01</span>
+    <span>Single investigator</span>
+  </div>
+  <p class="onote">NIH Parent R01 (Clinical Trial Not Allowed) &mdash; New applications 5 Oct 2026; renewals, resubmissions and revisions 5 Nov 2026. Standard cycles thereafter.</p>
+  <div class="split">
+    <div><h4>Team</h4><ul class="team"><li><span class="pn">Adam J. Ratner</span><span class="pg">Microbiology</span><span class="pr">Sole PI</span></li></ul></div>
+    <div><h4>Aims and ownership</h4><table class="aims"><tbody><tr><td class="al">Aim 1</td><td class="at"><strong>Determine how capsule type shapes neonatal intestinal colonization</strong><span>Competitive colonization of isogenic capsule-switch mutants in the neonatal mouse model.</span></td><td class="ao">Adam J. Ratner</td></tr><tr><td class="al">Aim 2</td><td class="at"><strong>Establish the host factors that permit persistence and translocation</strong><span>Manipulate mucosal immunity and epithelial barrier function to identify what converts colonization into late-onset disease.</span></td><td class="ao">Adam J. Ratner</td></tr><tr><td class="al">Aim 3</td><td class="at"><strong>Relate the mechanism to circulating clinical serotypes</strong><span>Test the fitness determinants across contemporary isolates to establish whether serotype replacement is predictable.</span></td><td class="ao">Adam J. Ratner</td></tr></tbody></table></div>
+  </div>
+  <div class="foot">
+    <p><strong>Why this competes.</strong> Late-onset GBS disease remains poorly explained by maternal screening, which points to determinants of intestinal colonization rather than acquisition. This lab has the murine neonatal colonization model and the clinical isolate collection together, which is what allows serotype fitness to be tested rather than inferred from epidemiology.</p>
+    <p class="gate"><strong>Before you write.</strong> New applications 5 October 2026. If a maternal–infant cohort component is included, confirm the IRB coverage and enrollment rate — pediatric feasibility is scored hard.</p>
+    
+  </div>
+</article>
+<article class="card prop" data-tier="solo" data-groups="Microbiology" data-q="nuclear receptor phosphorylation in the inflammation–metabolism axis michael j. garabedian pa-25-301 nih parent r01 (clinical trial not allowed) nih michael j. garabedian">
+  <div class="phead">
+    <span class="pid">S18</span>
+    <span class="tierbadge tb-solo">Solo</span>
+    <h3>Nuclear Receptor Phosphorylation in the Inflammation–Metabolism Axis</h3>
+  </div>
+  <div class="oppbar">
+    <a class="onum" href="https://grants.nih.gov/grants/guide/pa-files/PA-25-301.html" target="_blank" rel="noopener">PA-25-301</a>
+    <span>NIH</span>
+    <span class="odl" data-d="2026-10-05">2026-10-05</span>
+    <span>R01</span>
+    <span>Single investigator</span>
+  </div>
+  <p class="onote">NIH Parent R01 (Clinical Trial Not Allowed) &mdash; New applications 5 Oct 2026; renewals, resubmissions and revisions 5 Nov 2026. Standard cycles thereafter.</p>
+  <div class="split">
+    <div><h4>Team</h4><ul class="team"><li><span class="pn">Michael J. Garabedian</span><span class="pg">Microbiology</span><span class="pr">Sole PI</span></li></ul></div>
+    <div><h4>Aims and ownership</h4><table class="aims"><tbody><tr><td class="al">Aim 1</td><td class="at"><strong>Define how LXRα phosphorylation reprograms the inflammatory transcriptome</strong><span>ChIP-seq, ATAC-seq and RNA-seq in LXRα S196A macrophages to establish how one site redirects genomic occupancy.</span></td><td class="ao">Michael J. Garabedian</td></tr><tr><td class="al">Aim 2</td><td class="at"><strong>Determine the consequences for atherosclerotic plaque composition</strong><span>Bone marrow transplantation into Ldlr-null recipients with plaque and lipid phenotyping.</span></td><td class="ao">Michael J. Garabedian</td></tr><tr><td class="al">Aim 3</td><td class="at"><strong>Test whether the same phospho-code logic operates on the glucocorticoid receptor</strong><span>GR phosphorylation mutants in fibroblast–macrophage co-culture to establish generality across receptors.</span></td><td class="ao">Michael J. Garabedian</td></tr></tbody></table></div>
+  </div>
+  <div class="foot">
+    <p><strong>Why this competes.</strong> The LXRα S196A mouse is a clean genetic tool for asking whether a single phosphorylation site sets the inflammatory tone of a nuclear receptor, and this lab built it. Extending the same phospho-code logic across LXR and GR is a coherent single-investigator programme rather than three disconnected disease projects.</p>
+    <p class="gate"><strong>Before you write.</strong> New applications 5 October 2026. NHLBI and NIDDK are both plausible assignments for the cardiometabolic framing — the phospho-code mechanism is what keeps it a single programme rather than three.</p>
+    
+  </div>
+</article>
+<article class="card prop" data-tier="solo" data-groups="ISG" data-q="macromolecular crowding as a regulator of cellular biochemistry liam holt nsf 26-517 nsf bio core — core research in biological sciences nsf / bio liam holt">
+  <div class="phead">
+    <span class="pid">S19</span>
+    <span class="tierbadge tb-solo">Solo</span>
+    <h3>Macromolecular Crowding as a Regulator of Cellular Biochemistry</h3>
+  </div>
+  <div class="oppbar">
+    <a class="onum" href="https://www.nsf.gov/funding/opportunities/bio-core-core-research-biological-sciences/nsf26-517/solicitation" target="_blank" rel="noopener">NSF 26-517</a>
+    <span>NSF / BIO</span>
+    <span class="odl" data-d="2099-01-01">2099-01-01</span>
+    <span>Up to 5 years</span>
+    <span>Single investigator</span>
+  </div>
+  <p class="onote">NSF BIO Core — Core Research in Biological Sciences &mdash; Consolidates and replaces the DEB, IOS and MCB core programs. Proposals accepted anytime, no deadline; 250–300 awards anticipated from $280M.</p>
+  <div class="split">
+    <div><h4>Team</h4><ul class="team"><li><span class="pn">Liam Holt</span><span class="pg">ISG</span><span class="pr">Sole PI</span></li></ul></div>
+    <div><h4>Aims and ownership</h4><table class="aims"><tbody><tr><td class="al">Aim 1</td><td class="at"><strong>Establish how mTORC1 sets cytoplasmic crowding through ribosome concentration</strong><span>GEM particle tracking across nutrient and signalling perturbations to quantify the crowding response.</span></td><td class="ao">Liam Holt</td></tr><tr><td class="al">Aim 2</td><td class="at"><strong>Determine how crowding changes reaction rates and condensate behaviour</strong><span>In vitro and in vivo measurement of how mesoscale crowding alters phase separation thresholds and enzyme kinetics.</span></td><td class="ao">Liam Holt</td></tr><tr><td class="al">Aim 3</td><td class="at"><strong>Test whether cells regulate crowding as a controlled variable</strong><span>Perturb crowding directly under confinement and microfluidic control and ask whether cells compensate.</span></td><td class="ao">Liam Holt</td></tr></tbody></table></div>
+  </div>
+  <div class="foot">
+    <p><strong>Why this competes.</strong> NSF BIO Core is deadline-free and funds fundamental cell biology without a disease framing, which fits a programme whose subject is the physical state of the cytoplasm itself. Genetically encoded multimeric nanoparticles make crowding measurable rather than inferred, and that measurement capability is the lab&#x27;s own.</p>
+    <p class="gate"><strong>Before you write.</strong> No deadline — proposals accepted anytime, so this can be written between other commitments. NSF review rewards intellectual merit and broader impacts as separate criteria; treat the broader-impacts section as substantive rather than as boilerplate.</p>
+    
+  </div>
+</article>
+<article class="card prop" data-tier="solo" data-groups="ISG" data-q="genome writing to map regulatory element function at native loci ran brosh pa-25-301 nih parent r01 (clinical trial not allowed) nih ran brosh">
+  <div class="phead">
+    <span class="pid">S20</span>
+    <span class="tierbadge tb-solo">Solo</span>
+    <h3>Genome Writing to Map Regulatory Element Function at Native Loci</h3>
+  </div>
+  <div class="oppbar">
+    <a class="onum" href="https://grants.nih.gov/grants/guide/pa-files/PA-25-301.html" target="_blank" rel="noopener">PA-25-301</a>
+    <span>NIH</span>
+    <span class="odl" data-d="2026-10-05">2026-10-05</span>
+    <span>R01</span>
+    <span>Single investigator</span>
+  </div>
+  <p class="onote">NIH Parent R01 (Clinical Trial Not Allowed) &mdash; New applications 5 Oct 2026; renewals, resubmissions and revisions 5 Nov 2026. Standard cycles thereafter.</p>
+  <div class="split">
+    <div><h4>Team</h4><ul class="team"><li><span class="pn">Ran Brosh</span><span class="pg">ISG / Pathology</span><span class="pr">Sole PI</span></li></ul></div>
+    <div><h4>Aims and ownership</h4><table class="aims"><tbody><tr><td class="al">Aim 1</td><td class="at"><strong>Install rewritable landing pads at regulatory loci in mouse embryonic stem cells</strong><span>Extend Big-IN to additional loci with capture-seq verification of integration integrity.</span></td><td class="ao">Ran Brosh</td></tr><tr><td class="al">Aim 2</td><td class="at"><strong>Test allelic series of regulatory elements for sufficiency</strong><span>Replace native elements with designed variants and measure transcriptional output by PRO-seq and RNA-seq.</span></td><td class="ao">Ran Brosh</td></tr><tr><td class="al">Aim 3</td><td class="at"><strong>Determine how element function changes across differentiation</strong><span>Track the same allelic series through lineage differentiation to establish context dependence.</span></td><td class="ao">Ran Brosh</td></tr></tbody></table></div>
+  </div>
+  <div class="foot">
+    <p><strong>Why this competes.</strong> Big-IN landing-pad delivery makes it possible to test regulatory element function by rewriting the locus rather than deleting pieces of it, which is the difference between asking what an element is necessary for and what it is sufficient to do. The Sox2 locus control region and DHS mapping work already demonstrate the platform on a hard locus.</p>
+    <p class="gate"><strong>Before you write.</strong> New applications 5 October 2026. Brosh&#x27;s expertise profile is empty in the current site index — this fit comes from the network map and public record and should be confirmed with him directly.</p>
+    
+  </div>
+</article>
   <p class="none card" id="noneleft" hidden>No submissions match these filters.</p>
 
   <section id="actions" class="card section-spacer">
@@ -787,7 +1276,7 @@ footer { border-top: 1px solid #ddd4ff; padding: 1rem 2rem; background: #faf7ff;
       load-balancing question, not a compliment.</p>
     <div class="tablewrap"><table class="plain">
       <thead><tr><th>Investigator</th><th>Group</th><th class="rt">Submissions</th></tr></thead>
-      <tbody><tr><td>Benjamin tenOever</td><td class="sub">Microbiology</td><td class="rt">11</td></tr><tr><td>Mila B. Ortigoza</td><td class="sub">Microbiology</td><td class="rt">8</td></tr><tr><td>Ralf Duerr</td><td class="sub">Microbiology</td><td class="rt">8</td></tr><tr><td>Alejandro Pironti</td><td class="sub">Microbiology</td><td class="rt">7</td></tr><tr><td>David Fenyo</td><td class="sub">BMP / ISG</td><td class="rt">6</td></tr><tr><td>Adam J. Ratner</td><td class="sub">Microbiology</td><td class="rt">6</td></tr><tr><td>Liat Shenhav</td><td class="sub">Microbiology</td><td class="rt">6</td></tr><tr><td>Kenneth A. Stapleford</td><td class="sub">Microbiology</td><td class="rt">5</td></tr><tr><td>Kamal M. Khanna</td><td class="sub">Microbiology</td><td class="rt">4</td></tr><tr><td>Ramin Herati</td><td class="sub">Microbiology</td><td class="rt">4</td></tr><tr><td>Jonas Schluter</td><td class="sub">Microbiology</td><td class="rt">3</td></tr><tr><td>Robert J. Schneider</td><td class="sub">Microbiology</td><td class="rt">3</td></tr><tr><td>James Lee</td><td class="sub">Microbiology</td><td class="rt">3</td></tr><tr><td>Angus C. Wilson</td><td class="sub">Microbiology</td><td class="rt">3</td></tr><tr><td>Michael J. Garabedian</td><td class="sub">Microbiology</td><td class="rt">2</td></tr><tr><td>Bo Shopsin</td><td class="sub">Microbiology</td><td class="rt">2</td></tr><tr><td>Ian J. Mohr</td><td class="sub">Microbiology</td><td class="rt">2</td></tr><tr><td>Joel G. Belasco</td><td class="sub">Microbiology</td><td class="rt">2</td></tr><tr><td>Drew Jones</td><td class="sub">BMP</td><td class="rt">2</td></tr><tr><td>Nathaniel R. Landau</td><td class="sub">Microbiology</td><td class="rt">2</td></tr><tr><td>Jef D. Boeke</td><td class="sub">ISG</td><td class="rt">2</td></tr><tr><td>Ran Brosh</td><td class="sub">ISG / Pathology</td><td class="rt">2</td></tr><tr><td>Jeffrey N. Weiser</td><td class="sub">ISG / Microbiology</td><td class="rt">1</td></tr><tr><td>Andrew J. Darwin</td><td class="sub">Microbiology</td><td class="rt">1</td></tr><tr><td>Ana M. Rodriguez</td><td class="sub">Microbiology</td><td class="rt">1</td></tr><tr><td>Daniel Meruelo</td><td class="sub">Pathology</td><td class="rt">1</td></tr><tr><td>Richard Possemato</td><td class="sub">Pathology</td><td class="rt">1</td></tr><tr><td>Liam Holt</td><td class="sub">ISG</td><td class="rt">1</td></tr><tr><td>Alexander Serganov</td><td class="sub">BMP</td><td class="rt">1</td></tr><tr><td>K. Heran Darwin</td><td class="sub">Microbiology</td><td class="rt">1</td></tr><tr><td>Paolo Mita</td><td class="sub">BMP / ISG / Microbiology</td><td class="rt">1</td></tr><tr><td>Molly Gale Hammell</td><td class="sub">ISG</td><td class="rt">1</td></tr><tr><td>Esteban Mazzoni</td><td class="sub">Cell Biology</td><td class="rt">1</td></tr></tbody></table></div>
+      <tbody><tr><td>Benjamin tenOever</td><td class="sub">Microbiology</td><td class="rt">11</td></tr><tr><td>Mila B. Ortigoza</td><td class="sub">Microbiology</td><td class="rt">9</td></tr><tr><td>Ralf Duerr</td><td class="sub">Microbiology</td><td class="rt">9</td></tr><tr><td>Alejandro Pironti</td><td class="sub">Microbiology</td><td class="rt">8</td></tr><tr><td>Adam J. Ratner</td><td class="sub">Microbiology</td><td class="rt">7</td></tr><tr><td>Liat Shenhav</td><td class="sub">Microbiology</td><td class="rt">7</td></tr><tr><td>David Fenyo</td><td class="sub">BMP / ISG</td><td class="rt">6</td></tr><tr><td>Kamal M. Khanna</td><td class="sub">Microbiology</td><td class="rt">5</td></tr><tr><td>Ramin Herati</td><td class="sub">Microbiology</td><td class="rt">5</td></tr><tr><td>Jonas Schluter</td><td class="sub">Microbiology</td><td class="rt">4</td></tr><tr><td>Robert J. Schneider</td><td class="sub">Microbiology</td><td class="rt">4</td></tr><tr><td>Bo Shopsin</td><td class="sub">Microbiology</td><td class="rt">4</td></tr><tr><td>James Lee</td><td class="sub">Microbiology</td><td class="rt">4</td></tr><tr><td>Angus C. Wilson</td><td class="sub">Microbiology</td><td class="rt">4</td></tr><tr><td>Michael J. Garabedian</td><td class="sub">Microbiology</td><td class="rt">3</td></tr><tr><td>Ian J. Mohr</td><td class="sub">Microbiology</td><td class="rt">3</td></tr><tr><td>Nathaniel R. Landau</td><td class="sub">Microbiology</td><td class="rt">3</td></tr><tr><td>Ran Brosh</td><td class="sub">ISG / Pathology</td><td class="rt">3</td></tr><tr><td>Andrew J. Darwin</td><td class="sub">Microbiology</td><td class="rt">2</td></tr><tr><td>Ana M. Rodriguez</td><td class="sub">Microbiology</td><td class="rt">2</td></tr><tr><td>Joel G. Belasco</td><td class="sub">Microbiology</td><td class="rt">2</td></tr><tr><td>Drew Jones</td><td class="sub">BMP</td><td class="rt">2</td></tr><tr><td>Jef D. Boeke</td><td class="sub">ISG</td><td class="rt">2</td></tr><tr><td>Liam Holt</td><td class="sub">ISG</td><td class="rt">2</td></tr><tr><td>K. Heran Darwin</td><td class="sub">Microbiology</td><td class="rt">2</td></tr><tr><td>Jeffrey N. Weiser</td><td class="sub">ISG / Microbiology</td><td class="rt">1</td></tr><tr><td>Daniel Meruelo</td><td class="sub">Pathology</td><td class="rt">1</td></tr><tr><td>Richard Possemato</td><td class="sub">Pathology</td><td class="rt">1</td></tr><tr><td>Alexander Serganov</td><td class="sub">BMP</td><td class="rt">1</td></tr><tr><td>Paolo Mita</td><td class="sub">BMP / ISG / Microbiology</td><td class="rt">1</td></tr><tr><td>Molly Gale Hammell</td><td class="sub">ISG</td><td class="rt">1</td></tr><tr><td>Esteban Mazzoni</td><td class="sub">Cell Biology</td><td class="rt">1</td></tr></tbody></table></div>
   </section>
 
   <section id="method" class="card section-spacer">
@@ -809,6 +1298,15 @@ footer { border-top: 1px solid #ddd4ff; padding: 1rem 2rem; background: #faf7ff;
       <li><strong>The government-wide prohibition on dangerous gain-of-function research</strong>
         (NOT-OD-26-101) takes effect around November 2026, with institutional compliance required by
         January 2027. Pathogen-facing submissions should state their scope against it explicitly.</li>
+      <li><strong>The department roster the teams were built from is stale.</strong> One investigator in
+        the February 2026 galaxy-dept-sites data has since left NYU, which surfaced only on cross-checking
+        against <code>network_map_v2.md</code>. Five submissions were rebuilt as a result &mdash; P07, P12,
+        P14, P15 and P17 &mdash; with aims reassigned rather than dropped, and P17 given a new contact PI.
+        The wider lesson is that the site data needs refreshing against current departmental records before
+        the next round.</li>
+      <li><strong>One real capability went with that departure.</strong> NYU no longer has in-house
+        arbovirus reverse genetics. P07 now characterizes imported variants by sequence and neutralization
+        instead, and states that functional work needs a named external collaborator.</li>
       <li><strong>Aim ownership is a proposal, not an assignment.</strong> It shows how the work divides and
         where each investigator's contribution is load-bearing, so a conversation can start from something concrete.</li>
     </ul>
