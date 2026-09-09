@@ -16,9 +16,10 @@ Molecular Pharmacology, and Microbiology.
 
 ## 2026 slate
 
-25 submissions — 12 large multi-project teams, 6 mid-scale, 7 focused pairs —
-across 21 opportunities from NIH, CDC, FDA, ARPA-H, DARPA, DoD and the Gates
-Foundation. 104 aims, each with a named owner. Opportunities verified against
+45 submissions — 12 large multi-project teams, 6 mid-scale,
+7 focused pairs and 20 single-investigator proposals — across 22
+opportunities from NIH, NSF, CDC, FDA, ARPA-H, DARPA, DoD and the Gates
+Foundation. 163 aims, each with a named owner. Opportunities verified against
 primary sources on 7 September 2026.
 
 ## Updating
