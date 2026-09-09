@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Grant Team Slate 2026 &mdash; NYU Grossman School of Medicine</title>
+<title>Research Funding Opportunities &mdash; NYU Grossman School of Medicine</title>
 <style>
 :root {
   --nyu-purple: #4F2C85;
@@ -24,9 +24,21 @@
 body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   margin: 0; padding: 0; background: var(--bg-light); color: var(--text-main); line-height: 1.55; }
 header { background: #ffffff; color: var(--nyu-purple); padding: 1.1rem 2rem 1rem;
-  border-bottom: 5px solid var(--nyu-purple); }
+  border-bottom: 5px solid var(--nyu-purple);
+  display: flex; align-items: center; gap: 1.15rem; flex-wrap: wrap; }
+header .brand { flex: 0 0 auto; display: flex; align-items: center; }
+header .brand img { height: 52px; width: auto; display: block; border-radius: .3rem; }
+header .brand + .titles { border-left: 1px solid var(--border-subtle); padding-left: 1.15rem; }
+header .titles { flex: 1 1 260px; min-width: 0; }
 header h1 { margin: 0; font-size: 1.9rem; color: var(--nyu-purple); }
 header p { margin: .35rem 0 0; color: var(--text-soft); font-size: .95rem; }
+@media (max-width: 560px) {
+  header { gap: .6rem; }
+  header .titles { flex: 1 1 100%; }
+  header .brand + .titles { border-left: 0; padding-left: 0; }
+  header .brand img { height: 40px; }
+  header h1 { font-size: 1.55rem; }
+}
 nav { position: sticky; top: 0; background: #faf7ff; border-bottom: 1px solid #ddd4ff;
   padding: .45rem 2rem; display: flex; gap: 1rem; flex-wrap: wrap; z-index: 10; }
 nav a { text-decoration: none; color: var(--nyu-purple); font-size: .9rem;
@@ -122,15 +134,17 @@ footer { border-top: 1px solid #ddd4ff; padding: 1rem 2rem; background: #faf7ff;
 <body>
 
 <header>
-  <h1>Grant Team Slate 2026</h1>
-  <p>Cell Biology &middot; Institute for Systems Genetics &middot; Pathology &middot; Biochemistry and Molecular Pharmacology &middot; Microbiology &mdash; NYU Grossman School of Medicine</p>
+  <span class="brand"><img src="assets/nyulh-logo.png" alt="NYU Langone Health"
+    onerror="this.parentNode.remove()" /></span>
+  <span class="titles">
+    <h1>Research Funding Opportunities</h1>
+  </span>
 </header>
 
 <nav>
   <a href="#top" class="here">Slate</a>
   <a href="fellowships.html">Postdoc fellowships</a>
   <a href="fellowship-ideas.html">Project ideas</a>
-  <a href="https://ben-tenoever.github.io/grant-teams-hub/">Hub</a><a href="https://ben-tenoever.github.io/microbiology-ai-grant-tool/">Microbiology</a><a href="https://ben-tenoever.github.io/ISG-grant-teams/">ISG</a><a href="https://ben-tenoever.github.io/Pathology-grant-teams/">Pathology</a><a href="https://ben-tenoever.github.io/Cell-Biology-grant-teams/">Cell Biology</a><a href="https://ben-tenoever.github.io/Biochemistry-Molecular-Pharmacology-grant-teams/">Biochemistry</a>
   <a href="#actions">Departmental actions</a>
   <a href="#coverage">Coverage</a>
   <a href="#method">Method</a>
@@ -139,7 +153,7 @@ footer { border-top: 1px solid #ddd4ff; padding: 1rem 2rem; background: #faf7ff;
 <main>
 
   <section class="card">
-    <h2>Forty-five submissions, matched to open opportunities</h2>
+    <h2>Proposed submissions matched to open funding opportunities</h2>
     <p class="lede">Each entry below pairs an open federal or foundation opportunity with a team drawn from
       faculty expertise across the five groups, and carries a working title, the specific aims, and the
       investigator responsible for each aim. Teams are sized to the money: single-investigator awards,
@@ -1317,7 +1331,7 @@ footer { border-top: 1px solid #ddd4ff; padding: 1rem 2rem; background: #faf7ff;
 </main>
 
 <footer>
-  Grant Team Slate 2026 &middot; AI Grant and Collaboration Initiative &middot; NYU Grossman School of Medicine
+  Research Funding Opportunities &middot; AI Grant and Collaboration Initiative &middot; NYU Grossman School of Medicine
 </footer>
 
 <script>

@@ -1,4 +1,4 @@
-# Grant Team Slate
+# Research Funding Opportunities
 
 Opportunity-matched grant teams for NYU Grossman School of Medicine —
 Cell Biology, Institute for Systems Genetics, Pathology, Biochemistry and
