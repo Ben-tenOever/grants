@@ -1282,34 +1282,17 @@ footer { border-top: 1px solid #ddd4ff; padding: 1rem 2rem; background: #faf7ff;
       <li><strong>Opportunities</strong> were verified against grants.gov, grants.nih.gov, sam.gov,
         arpa-h.gov, cdc.gov, fda.gov and the funders' own pages on 7 September 2026. Two CDC items are
         forecast records, so their dates are agency projections rather than posted deadlines.</li>
-      <li><strong>Faculty expertise</strong> comes from the intake profiles in <code>data/faculty_index.json</code>.
+      <li><strong>Faculty expertise</strong> comes from the intake profiles in <code>data/faculty_profiles.json</code>, reproduced in full on the <a href="faculty-profiles.html">faculty profiles</a> page.
         Of the 45 faculty in these five groups, 26 have complete expertise profiles and 19 have a written
         research summary but none of the structured research-focus, model-system or capability fields the
-        matcher reads &mdash; legible to a person, invisible to the tool. All 45 summaries are on the
-        <a href="faculty-profiles.html">faculty profiles</a> page; filter there by <em>Summary only</em>
-        to see which labs are affected. Any team built partly on an empty profile is marked with a profile-gap note.</li>
-      <li><strong>Twelve faculty cannot be matched at all</strong> for want of structured expertise data:
-        Stefan Feske, Jane Skok, Susan Smith, Michele Pagano, Pau Castel, Gregory David, Nadav Brandes, Dimitris Placantonakis, Catherine Pei-ju Lu, Hyung Don Ryoo, Andrea H. Brand, Elaine (Lyn) Wilson. The gap falls along group lines rather than at random:
-        21 of 22 Microbiology labs have structured fields, while Biochemistry and Molecular Pharmacology
-        (6 of 6), Cell Biology (6 of 6) and Pathology (5 of 5) have none at all. That, rather than any
-        property of the science, is why this slate reads as a Microbiology document. Collecting those
-        intake fields would do more for this tool than any change to the matching code.</li>
-      <li><strong>NIH now caps applications at six per PD/PI per calendar year</strong> across all council
+        matcher reads &mdash; legible to a person, invisible to the tool. Filter that page by <em>Summary only</em> to see which labs are affected. Any team built partly on an empty profile is marked with a profile-gap note.</li>
+<li><strong>NIH now caps applications at six per PD/PI per calendar year</strong> across all council
         rounds, counting multi-PI slots (NOT-OD-25-132). Several submissions name the same contact PI, so
         the slate needs sequencing before it needs writing.</li>
       <li><strong>The government-wide prohibition on dangerous gain-of-function research</strong>
         (NOT-OD-26-101) takes effect around November 2026, with institutional compliance required by
         January 2027. Pathogen-facing submissions should state their scope against it explicitly.</li>
-      <li><strong>The department roster the teams were built from is stale.</strong> One investigator in
-        the February 2026 galaxy-dept-sites data has since left NYU, which surfaced only on cross-checking
-        against <code>network_map_v2.md</code>. Five submissions were rebuilt as a result &mdash; P07, P12,
-        P14, P15 and P17 &mdash; with aims reassigned rather than dropped, and P17 given a new contact PI.
-        The wider lesson is that the site data needs refreshing against current departmental records before
-        the next round.</li>
-      <li><strong>One real capability went with that departure.</strong> NYU no longer has in-house
-        arbovirus reverse genetics. P07 now characterizes imported variants by sequence and neutralization
-        instead, and states that functional work needs a named external collaborator.</li>
-      <li><strong>Aim ownership is a proposal, not an assignment.</strong> It shows how the work divides and
+<li><strong>Aim ownership is a proposal, not an assignment.</strong> It shows how the work divides and
         where each investigator's contribution is load-bearing, so a conversation can start from something concrete.</li>
     </ul>
   </section>
