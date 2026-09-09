@@ -232,6 +232,17 @@
    "award": "Varies",
    "note": "Open to academia. Freestanding concept paper, then freestanding full proposal. Past the date for guaranteed FY26 consideration; the FY27 BAA is expected around Nov 2026.",
    "url": "https://www.fda.gov/science-research/advancing-regulatory-science/regulatory-science-extramural-research-and-development-projects"
+  },
+  {
+   "key": "nsf_bio",
+   "opportunity_number": "NSF 26-517",
+   "opportunity_title": "NSF BIO Core — Core Research in Biological Sciences",
+   "agency": "NSF / BIO",
+   "close_date": "2099-01-01",
+   "estimated": false,
+   "award": "Up to 5 years",
+   "note": "Consolidates and replaces the DEB, IOS and MCB core programs. Proposals accepted anytime, no deadline; 250–300 awards anticipated from $280M.",
+   "url": "https://www.nsf.gov/funding/opportunities/bio-core-core-research-biological-sciences/nsf26-517/solicitation"
   }
  ]
 }
