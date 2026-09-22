@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en" id="top">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Graduate Student Fellowships &mdash; NYU Grossman School of Medicine</title>
+<style>
+:root {
+  --nyu-purple: #4F2C85;
+  --nyu-deep: #2a1a49;
+  --bg-light: #f5f5f7;
+  --card-bg: #ffffff;
+  --border-subtle: #e3e3ee;
+  --text-main: #222222;
+  --text-soft: #56566a;
+  --amber-bg: #fdf6e3;
+  --amber-line: #e6d3a3;
+  --amber-ink: #7a5200;
+  --red-bg: #fdeeeb;
+  --red-line: #e6bcb1;
+  --red-ink: #9a3520;
+  --green-bg: #edf6f0;
+  --green-line: #b9ddc7;
+  --green-ink: #1f6b41;
+}
+* { box-sizing: border-box; }
+body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  margin: 0; padding: 0; background: var(--bg-light); color: var(--text-main); line-height: 1.55; }
+header { background: #ffffff; color: var(--nyu-purple); padding: 1.1rem 2rem 1rem;
+  border-bottom: 5px solid var(--nyu-purple);
+  display: flex; align-items: center; gap: 1.15rem; flex-wrap: wrap; }
+header .brand { flex: 0 0 auto; display: flex; align-items: center; }
+header .brand img { height: 52px; width: auto; display: block; border-radius: .3rem; }
+header .brand + .titles { border-left: 1px solid var(--border-subtle); padding-left: 1.15rem; }
+header .titles { flex: 1 1 260px; min-width: 0; }
+@media (max-width: 560px) {
+  header { gap: .6rem; }
+  header .titles { flex: 1 1 100%; }
+  header .brand + .titles { border-left: 0; padding-left: 0; }
+  header .brand img { height: 40px; }
+  header h1 { font-size: 1.55rem; }
+}
+header h1 { margin: 0; font-size: 1.9rem; color: var(--nyu-purple); }
+header p { margin: .35rem 0 0; color: var(--text-soft); font-size: .95rem; }
+nav { position: sticky; top: 0; background: #faf7ff; border-bottom: 1px solid #ddd4ff;
+  padding: .45rem 2rem; display: flex; gap: 1rem; flex-wrap: wrap; z-index: 10; }
+nav a { text-decoration: none; color: var(--nyu-purple); font-size: .9rem;
+  padding: .25rem .7rem; border-radius: 999px; font-weight: 500; }
+nav a:hover { background: rgba(79,44,133,.08); }
+nav a.here { background: var(--nyu-purple); color: #fff; }
+main { max-width: 1120px; margin: 0 auto; padding: 2rem 2.25rem 3rem; }
+.card { background: var(--card-bg); border-radius: .9rem; padding: 1.3rem 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,.05); border: 1px solid var(--border-subtle); }
+h2 { margin-top: 0; color: var(--nyu-purple); }
+.section-spacer { margin-top: 1.5rem; }
+.lede { max-width: 74ch; }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: .75rem; margin-top: 1rem; }
+.stat { border: 1px solid var(--border-subtle); border-radius: .7rem; padding: .7rem .9rem; background: #faf7ff; }
+.stat .k { font-size: .72rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--text-soft); }
+.stat .v { font-size: 1.5rem; font-weight: 700; color: var(--nyu-purple); margin-top: .15rem; }
+.stat .s { font-size: .78rem; color: var(--text-soft); line-height: 1.35; }
+.filters { display: flex; flex-wrap: wrap; gap: .45rem; align-items: center; margin: 1.25rem 0 1rem; }
+.fchip { font: inherit; font-size: .85rem; cursor: pointer; background: #fff; color: var(--nyu-purple);
+  border: 1px solid var(--border-subtle); border-radius: 999px; padding: .3rem .8rem; font-weight: 500; }
+.fchip:hover { border-color: var(--nyu-purple); background: rgba(79,44,133,.05); }
+.fchip[aria-pressed="true"] { background: var(--nyu-purple); border-color: var(--nyu-purple); color: #fff; }
+.fchip .ct { opacity: .65; font-size: .75rem; margin-left: .35rem; }
+.divider { width: 1px; align-self: stretch; background: var(--border-subtle); margin: 0 .3rem; }
+input[type=search] { font: inherit; font-size: .85rem; padding: .35rem .8rem; min-width: 210px;
+  border: 1px solid var(--border-subtle); border-radius: 999px; background: #fff; color: var(--text-main); }
+.prop { margin-bottom: 1rem; }
+.phead { display: flex; flex-wrap: wrap; align-items: baseline; gap: .55rem; }
+.pid { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .82rem;
+  font-weight: 700; color: #fff; background: var(--nyu-purple); border-radius: .35rem; padding: .1rem .45rem; }
+.tierbadge { font-size: .68rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase;
+  border-radius: 999px; padding: .16rem .55rem; border: 1px solid var(--border-subtle);
+  color: var(--text-soft); background: #faf7ff; }
+.phead h3 { margin: 0; flex: 1 1 100%; font-size: 1.18rem; line-height: 1.3; color: var(--nyu-deep); }
+.phead h3 a { color: inherit; text-decoration: none; border-bottom: 1px solid #d9c9f2; }
+.phead h3 a:hover { color: var(--nyu-purple); border-bottom-color: var(--nyu-purple); }
+.oppbar { display: flex; flex-wrap: wrap; gap: .35rem; margin-top: .65rem; }
+.oppbar span, .oppbar a { font-size: .72rem; font-weight: 600; letter-spacing: .03em; text-transform: uppercase;
+  padding: .18rem .5rem; border-radius: .3rem; border: 1px solid var(--border-subtle);
+  color: var(--text-soft); background: #fbfbfd; white-space: nowrap; }
+.oppbar .odl { font-family: ui-monospace, Menlo, monospace; letter-spacing: 0; text-transform: none; }
+.oppbar .odl.hot { color: var(--red-ink); background: var(--red-bg); border-color: var(--red-line); }
+.oppbar .odl.soon { color: var(--amber-ink); background: var(--amber-bg); border-color: var(--amber-line); }
+.oppbar .visa { color: var(--green-ink); background: var(--green-bg); border-color: var(--green-line); }
+.oppbar .usonly { color: var(--red-ink); background: var(--red-bg); border-color: var(--red-line); }
+.oppbar .nom { color: var(--amber-ink); background: var(--amber-bg); border-color: var(--amber-line); }
+.onote { margin: .6rem 0 0; font-size: .82rem; color: var(--text-soft); max-width: 92ch; }
+.split { display: grid; grid-template-columns: minmax(250px, 330px) 1fr; gap: 1.6rem; margin-top: 1rem; }
+@media (max-width: 860px) { .split { grid-template-columns: 1fr; } }
+.split h4 { margin: 0 0 .5rem; font-size: .72rem; font-weight: 700; letter-spacing: .09em;
+  text-transform: uppercase; color: var(--text-soft); border-bottom: 1px solid var(--border-subtle); padding-bottom: .3rem; }
+dl.terms { margin: 0; display: grid; grid-template-columns: auto 1fr; gap: .3rem .8rem; }
+dl.terms dt { font-size: .72rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
+  color: var(--text-soft); padding-top: .12rem; white-space: nowrap; }
+dl.terms dd { margin: 0; font-size: .88rem; }
+.foot { margin-top: .95rem; padding-top: .8rem; border-top: 1px solid var(--border-subtle);
+  display: flex; flex-direction: column; gap: .5rem; }
+.foot p { margin: 0; font-size: .84rem; color: var(--text-soft); max-width: 96ch; }
+.foot strong { color: var(--text-main); }
+.gate { background: var(--amber-bg); border-left: 3px solid var(--amber-line);
+  padding: .5rem .7rem; border-radius: .3rem; }
+.gate strong { color: var(--amber-ink); }
+.flag { background: var(--red-bg); border-left: 3px solid var(--red-line);
+  padding: .5rem .7rem; border-radius: .3rem; }
+.flag strong { color: var(--red-ink); }
+table.plain { border-collapse: collapse; width: 100%; }
+table.plain th { text-align: left; font-size: .72rem; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--text-soft); border-bottom: 2px solid var(--border-subtle); padding: .4rem .6rem .4rem 0; }
+table.plain td { padding: .5rem .6rem .5rem 0; border-bottom: 1px solid var(--border-subtle);
+  font-size: .88rem; vertical-align: top; }
+table.plain tr:last-child td { border-bottom: 0; }
+table.plain td a { color: var(--nyu-purple); }
+td.nw { white-space: nowrap; width: 1%; font-family: ui-monospace, Menlo, monospace; font-size: .8rem; }
+.sub { color: var(--text-soft); font-size: .82rem; }
+.sub2 { display: block; margin-top: .15rem; font-size: .82rem; color: var(--text-soft); max-width: 76ch; }
+.tablewrap { overflow-x: auto; }
+.none { padding: 2.5rem; text-align: center; color: var(--text-soft); }
+footer { border-top: 1px solid #ddd4ff; padding: 1rem 2rem; background: #faf7ff;
+  font-size: .8rem; color: #555; text-align: center; }
+</style>
+</head>
+<body>
+
+<header>
+  <span class="brand"><img src="assets/nyulh-logo.png" alt="NYU Langone Health"
+    onerror="this.parentNode.remove()" /></span>
+  <span class="titles">
+    <h1>Graduate Student Fellowships</h1>
+  </span>
+</header>
+
+<nav>
+  <a href="./">Faculty grants</a>
+  <a href="fellowships.html">Postdoc fellowships</a>
+  <a href="#top" class="here">Grad fellowships</a>
+  <a href="grad-project-ideas.html">Project ideas</a>
+  <a href="faculty-profiles.html">Faculty profiles</a>
+  <a href="#method">Method</a>
+</nav>
+
+<main>
+
+  <section class="card">
+    <h2>Most of this list is decided in your first two years.</h2>
+    <p class="lede">That is the difference between a graduate fellowship calendar and a postdoctoral
+      one. The largest award here can be applied to exactly once, in the first year of the PhD, with a
+      deadline that falls about two months after arriving. Several others close their windows at year
+      two or year three. A student who first looks at this page in year four is reading a much shorter
+      list than a student who looks in the summer before matriculating. Each entry carries the
+      eligibility window, the money, the citizenship rule and the next deadline &mdash; computed live in your
+      browser from the recurring pattern, so the dates stay right after this page stops being edited.
+      Terms were verified against primary sources on 22 September 2026.</p>
+    <div class="stats">
+      <div class="stat"><div class="k">Fellowships tracked</div><div class="v" id="nTotal">&mdash;</div>
+        <div class="s">predoctoral, annually recurring</div></div>
+      <div class="stat"><div class="k">Open to visa holders</div><div class="v" id="nVisa">&mdash;</div>
+        <div class="s">no citizenship or residency bar</div></div>
+      <div class="stat"><div class="k">Closing in 90 days</div><div class="v" id="nSoon">&mdash;</div>
+        <div class="s">counted live in your browser</div></div>
+      <div class="stat"><div class="k">Need a nomination</div><div class="v" id="nNom">&mdash;</div>
+        <div class="s">someone else has to submit</div></div>
+    </div>
+    <div class="foot">
+      <p><strong>Looking for something to propose?</strong> The companion
+        <a href="grad-project-ideas.html">project ideas</a> page turns this list around: research themes
+        drawn from the departmental lab profiles, with project directions sized for a thesis aim and a
+        fellowship application, each tagged with the awards here that fit it.</p>
+      <p class="gate"><strong>Start with the citizenship filter, then the year-in-programme rule.</strong>
+        Every federal mechanism on this page &mdash; the F31, the F30, the F99/K00, the NSF GRFP, NDSEG, the
+        two DOE programmes &mdash; is closed to students on a visa. What is left for an international student
+        is real and worth knowing precisely: the Gilliam is the largest of them, and the disease
+        foundations are markedly more open than the government is.</p>
+      <p class="flag"><strong>Two eligibility facts that cost people a cycle.</strong> The NSF GRFP no
+        longer accepts second-year graduate students, so an enrolled PhD student realistically gets one
+        attempt, in year one &mdash; and MD/PhD students are excluded from it outright. Separately, GRFP's
+        Life Sciences scope now excludes patient-oriented, clinical, epidemiological and
+        disease- or treatment-focused research, which disqualifies a large share of biomedical projects
+        no matter what year the applicant is in. Read the excluded-subject list before the eligibility
+        rules.</p>
+    </div>
+  </section>
+
+  <div class="filters">
+    <button class="fchip" data-f="field" data-v="all" aria-pressed="true">All fields</button>
+    <button class="fchip" data-f="field" data-v="open" aria-pressed="false">Open-field</button>
+    <button class="fchip" data-f="field" data-v="disease" aria-pressed="false">Disease-specific</button>
+    <button class="fchip" data-f="field" data-v="id" aria-pressed="false">Infection &amp; immunity</button>
+    <button class="fchip" data-f="field" data-v="quant" aria-pressed="false">Computational &amp; physical</button>
+    <button class="fchip" data-f="field" data-v="intl" aria-pressed="false">International</button>
+    <span class="divider"></span>
+    <button class="fchip" data-f="cit" data-v="all" aria-pressed="true">Any citizenship status</button>
+    <button class="fchip" data-f="cit" data-v="visa" aria-pressed="false">Open to visa holders</button>
+    <button class="fchip" data-f="cit" data-v="us" aria-pressed="false">US citizens / PR only</button>
+    <span class="divider"></span>
+    <button class="fchip" data-f="when" data-v="all" aria-pressed="true">Any deadline</button>
+    <button class="fchip" data-f="when" data-v="90" aria-pressed="false">Next 90 days</button>
+    <span class="divider"></span>
+    <input type="search" id="q" placeholder="Search name, sponsor, topic" aria-label="Search fellowships" />
+    <span class="sub">Showing <strong id="shown">&mdash;</strong></span>
+  </div>
+
+  <div id="list"></div>
+  <div class="none" id="empty" hidden>No fellowship matches those filters.</div>
+
+  <section class="card section-spacer" id="early">
+    <h2>Apply before you defend</h2>
+    <p class="lede">These are postdoctoral fellowships, which is why they are usually filed under
+      "not yet". But the application happens while you are still a student, and the deadlines sit twelve
+      to eighteen months before the money starts. Treating them as postdoc business is the most common
+      way a senior student loses a year of independent salary support.</p>
+    <div class="tablewrap">
+      <table class="plain">
+        <thead><tr><th>Award</th><th>What it requires of a student</th><th class="nw">Deadline</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><strong>Life Sciences Research Foundation</strong>
+              <span class="sub2">Open-field, three years of postdoctoral support. Non-US citizens must
+              work in a US laboratory.</span></td>
+            <td>You may apply <strong>before defending</strong>, provided the degree is in hand by the award's
+              August activation, and within five years of the degree. Applicants in HHMI Investigator
+              labs are ineligible for the current cycle.</td>
+            <td class="nw">1 October<br /><span class="sub">references 1 November</span></td>
+          </tr>
+          <tr>
+            <td><strong>Jane Coffin Childs Memorial Fund</strong>
+              <span class="sub2">Any citizenship; non-US citizens must be hosted at a US institution.</span></td>
+            <td>PhD candidates are eligible so long as the degree <strong>confers before the fellowship
+              starts</strong>. No more than twelve months of postdoctoral experience.</td>
+            <td class="nw">1 February</td>
+          </tr>
+          <tr>
+            <td><strong>Schmidt Science Fellows</strong>
+              <span class="sub2">Requires a deliberate pivot into a new discipline; placement anywhere in
+              the world.</span></td>
+            <td>The defence must fall inside a stated window roughly a year wide, and <strong>your
+              PhD-awarding institution must nominate you</strong> and must itself be a nominating partner.
+              Internal competitions run about a year before the defence.</td>
+            <td class="nw">Nominations in spring<br /><span class="sub">institution-internal first</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="card section-spacer" id="dept">
+    <h2>Prizes, and the awards someone else has to submit</h2>
+    <p class="lede">These cannot be applied to directly, or cannot be applied to alone. The nomination
+      calendar runs months ahead of the sponsor's deadline, which is how departments quietly forfeit
+      slots they are entitled to. One internal call issued in early September covers the autumn cluster;
+      anything later misses the first of them.</p>
+    <div class="tablewrap">
+      <table class="plain">
+        <thead><tr><th>Award</th><th>Route</th><th>Internal call</th><th class="nw">Sponsor cycle</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><strong>Harold M. Weintraub Graduate Student Award</strong>
+              <span class="sub2">Fred Hutch. Up to twelve awardees present their thesis work at a
+              symposium; expenses are covered by the Weintraub&ndash;Groudine Fellowship. No cash prize is
+              published. For students at or near the end of the thesis.</span></td>
+            <td>Department chair or designee &mdash; <strong>one nomination per department or programme</strong></td>
+            <td>Early-to-mid September, so a committee can pick the single nominee</td>
+            <td class="nw">Opens 1 October<br />closes early December</td>
+          </tr>
+          <tr>
+            <td><strong>Regeneron Prize for Creative Innovation</strong>
+              <span class="sub2">$25,000 to each graduate winner, $5,000 to each finalist, $5,000 to the
+              winner's institution for a seminar. Judged on a forward-looking "dream project" proposal
+              rather than on completed work.</span></td>
+            <td>The institution &mdash; <strong>up to two graduate nominees</strong>, routed through the graduate
+              school rather than the department</td>
+            <td>December to February, once Regeneron's request arrives</td>
+            <td class="nw">Requests go to institutions each December</td>
+          </tr>
+          <tr>
+            <td><strong>ARCS Foundation Scholar Awards</strong>
+              <span class="sub2">Amount, duration and even the citizenship rule are set chapter by
+              chapter; there is no national figure. US citizens or permanent residents.</span></td>
+            <td>The chapter notifies the graduate division, which coordinates departmental selection.
+              <strong>Students do not apply to ARCS at all.</strong></td>
+            <td>Spring, for the following academic year</td>
+            <td class="nw">No national deadline<br /><span class="sub">chapter-specific</span></td>
+          </tr>
+          <tr>
+            <td><strong>ASCB Porter Prizes for Research Excellence</strong>
+              <span class="sub2">$3,000 for the graduate prize, $5,000 for the postdoctoral one. ASCB
+              membership required; two support letters and a meeting abstract.</span></td>
+            <td>Either &mdash; candidates may self-apply or be nominated, with identical documentation.
+              The companion <strong>Merton Bernfield Memorial Award</strong> ($1,000) works the same way but
+              requires the nominator to be a member too.</td>
+            <td>None required; letters need about four weeks</td>
+            <td class="nw">Historically end of June<br /><span class="sub">exact date not currently posted</span></td>
+          </tr>
+          <tr>
+            <td><strong>Science &amp; SciLifeLab Prize for Young Scientists</strong>
+              <span class="sub2">$30,000 grand prize, $10,000 per category, and publication of the winning
+              essay in <em>Science</em>. Molecular Medicine is the natural category for an infection or
+              immunity thesis.</span></td>
+            <td>Direct application &mdash; a 1,000-word essay on the thesis</td>
+            <td>None</td>
+            <td class="nw">Historically mid-July<br /><span class="sub">for recent graduates, not current students</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="card section-spacer" id="small">
+    <h2>Travel, technique and professional development</h2>
+    <p class="lede">Small money, low competition, and almost entirely unclaimed. Several of these are
+      effectively automatic for anyone who has already paid society dues and submitted an abstract. They
+      do not substitute for stipend support, but they are what pays for the meeting where the next
+      project starts, or the ten weeks in someone else's lab learning the method the thesis needs.</p>
+    <div class="tablewrap">
+      <table class="plain">
+        <thead><tr><th>Award</th><th>What it pays</th><th class="nw">Cycle</th></tr></thead>
+        <tbody>
+          <tr><td><strong>AAI Trainee Abstract and Poster Awards</strong>
+            <span class="sub2">Automatic consideration for every AAI trainee member submitting a
+            first-author abstract. The only action needed is paying dues before the abstract deadline &mdash;
+            the highest-yield item on this page for the effort involved.</span></td>
+            <td>Complimentary meeting registration</td><td class="nw">Abstract deadline, mid-December</td></tr>
+          <tr><td><strong>ASM Microbe travel awards</strong>
+            <span class="sub2">Student and Postdoctoral ($1,000), Richard and Mary Finkelstein ($500),
+            the six Clinical Virology awards ($1,500&ndash;$2,000), and Carlyn Halde for medical mycology from
+            Latin America and the Caribbean (up to $1,200). All require current ASM membership, an
+            unpublished abstract, and nomination letters from both the chair and the PI.</span></td>
+            <td>$500 to $2,000 plus registration</td><td class="nw">Opens mid-October<br />closes early December</td></tr>
+          <tr><td><strong>ASV Student Travel Award</strong>
+            <span class="sub2">The operative deadline is the <em>membership</em> one in early February, not the
+            award application, which is released a day later. Plant virology students are also considered
+            for the Milt Zaitlin award.</span></td>
+            <td>Annual meeting registration</td><td class="nw">Membership by early February</td></tr>
+          <tr><td><strong>GSA DeLill Nasser Award</strong>
+            <span class="sub2">Unusually flexible &mdash; it funds courses and visits to other laboratories, not
+            only conferences. Requires GSA membership in the graduate student category.</span></td>
+            <td>$1,000</td><td class="nw">Two cycles: early April and mid-September</td></tr>
+          <tr><td><strong>Keystone Symposia Scholarships</strong>
+            <span class="sub2">One award per lab per meeting year, so the choice is made internally first.
+            Requires a poster, a mentor letter and a $50 refundable abstract fee.</span></td>
+            <td>Up to $1,500</td><td class="nw">Per meeting, no society-wide date</td></tr>
+          <tr><td><strong>Carl Storm Opportunity Fellowships</strong>
+            <span class="sub2">First-time GRC attendees only. There is no student-facing application form &mdash;
+            conference chairs select recipients, so the route is for the PI to write to the chair of the
+            specific meeting.</span></td>
+            <td>Full GRC registration</td><td class="nw">Chair-selected, two months before each meeting</td></tr>
+          <tr><td><strong>Parkinson's Foundation Visiting Scholar Award</strong>
+            <span class="sub2">Technique acquisition, not thesis support: it funds a stay in another
+            laboratory, which must not be an affiliate of your own institution. PhD students in year two
+            or later, graduating no sooner than six months after the visit ends.</span></td>
+            <td>$4,000 for at least ten weeks</td><td class="nw">Opens 19 October, closes 20 January</td></tr>
+          <tr><td><strong>CF Foundation Student Traineeship</strong>
+            <span class="sub2">Directly reachable for anyone working on <em>Pseudomonas</em>, <em>Burkholderia</em>,
+            the CF airway microbiome or CF mucosal immunology, and badly underused by microbiology
+            departments. One application per lab per calendar year; open to non-US citizens.</span></td>
+            <td>$4,000</td><td class="nw">Rolling, cycle closes 16 November</td></tr>
+          <tr><td><strong>Crohn's &amp; Colitis Student Research Fellowship</strong>
+            <span class="sub2">For students <em>not yet</em> in thesis research, and the mentor may not be from
+            your current lab &mdash; a rotation-stage award, not a dissertation one.</span></td>
+            <td>$2,500 for at least ten weeks</td><td class="nw">31 March</td></tr>
+          <tr><td><strong>ASM Future Leaders Mentorship Fellowship</strong>
+            <span class="sub2">No stipend at all &mdash; a two-year structured mentorship match, and the only
+            current ASM mechanism aimed at graduate students year-round.</span></td>
+            <td>Mentorship, no funding</td><td class="nw">Applications open February, close March</td></tr>
+          <tr><td><strong>ASM History of Microbiology research travel award</strong>
+            <span class="sub2">One award a year, to fund travel to the ASM Archives at UMBC. Essentially
+            uncontested.</span></td>
+            <td>$1,500</td><td class="nw">15 January to 16 February</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="card section-spacer" id="mistaken">
+    <h2>Frequently mistaken for graduate awards</h2>
+    <p class="lede">All of these require a conferred doctorate, an independent appointment, or a degree
+      programme you are not in. They are worth knowing anyway &mdash; most are the awards to apply for in the
+      first years after the PhD, and three of them are the reason the section above this one exists.</p>
+    <div class="tablewrap">
+      <table class="plain">
+        <thead><tr><th>Award</th><th>Actually requires</th><th class="nw">Cycle</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Damon Runyon Fellowship Award</strong></td><td>A conferred degree, with the diploma or a defence letter in hand: "candidates who are pursuing a degree are not eligible" &mdash; the strictest wording of any award here. The only Damon Runyon programme below the postdoctoral level, SPARK, is for college students.</td><td class="nw">~14 August</td></tr>
+          <tr><td><strong>Helen Hay Whitney Foundation</strong></td><td>PhD within two years of the deadline, or MD within four, and no more than a year already spent in the postdoctoral lab.</td><td class="nw">~15 June</td></tr>
+          <tr><td><strong>Cancer Research Institute Irvington Fellowship</strong></td><td>A doctoral degree by activation, and fewer than five years of mentored research experience at that point.</td><td class="nw">1 March and 1 September</td></tr>
+          <tr><td><strong>HHMI Hanna H. Gray Fellows</strong></td><td>A PhD or MD already held, and a current mentored postdoctoral position. Merging with the Freeman Hrabowski Scholars into a single competition from the 2028 cycle.</td><td class="nw">Opens 3 November, closes 15 December</td></tr>
+          <tr><td><strong>NIH F32 and K99/R00</strong></td><td>The doctorate. Worth noting the asymmetry: the F32 requires citizenship or permanent residency and the K99 has no citizenship requirement at all.</td><td class="nw">Three cycles a year</td></tr>
+          <tr><td><strong>Burroughs Wellcome CASI</strong></td><td>A PhD in a quantitative discipline plus twelve to sixty months of postdoctoral work. The 2027 cycle is unposted and BWF's own pages disagree &mdash; verify before planning around it.</td><td class="nw">Unposted</td></tr>
+          <tr><td><strong>Revson, Simons Society of Fellows, Blavatnik Regional</strong></td><td>All three are postdoctoral <em>and</em> nomination-only, with self-nomination explicitly barred. Revson and Simons additionally require the work to be done in New York.</td><td class="nw">Jan / Sep / autumn</td></tr>
+          <tr><td><strong>AACR fellowships</strong></td><td>A conferred doctorate and a postdoctoral or clinical fellow appointment. Worth stating plainly: <strong>no major cancer foundation runs a predoctoral fellowship</strong> &mdash; not AACR, not Damon Runyon, not CRI. AACR's Scholar-in-Training awards are meeting travel, not research support.</td><td class="nw">Varies</td></tr>
+          <tr><td><strong>Alzheimer's Association fellowships</strong></td><td>Completed doctoral training. The AARF is closed and its replacements in the "for All" family are all postdoctoral; the Association has no predoctoral mechanism anywhere in its portfolio.</td><td class="nw">Varies</td></tr>
+          <tr><td><strong>American Lung Association Catalyst Award</strong></td><td>A doctorate plus at least a year of postdoctoral work. The RFP excludes "currently enrolled degree candidates (e.g., graduate students)" in those words.</td><td class="nw">~1 December</td></tr>
+          <tr><td><strong>MDA Development Grant &middot; ADA Postdoctoral &middot; NKF Young Investigator &middot; ALS Association &middot; Blood Cancer United</strong></td><td>All postdoctoral or faculty-level, with no predoctoral mechanism of any kind. For kidney work the predoctoral award is the ASN KidneyCure fellowship above, not anything from NKF. Note that the Leukemia &amp; Lymphoma Society is now Blood Cancer United and its old research URLs redirect.</td><td class="nw">Varies</td></tr>
+          <tr><td><strong>Keystone Early Career Investigator Travel Award</strong></td><td>An assistant professor appointment or equivalent, plus US citizenship or permanent residency. The Keystone award students can hold is the Scholarship, above.</td><td class="nw">Per meeting</td></tr>
+          <tr><td><strong>Parkinson's Foundation Summer Student Fellowship</strong></td><td>Undergraduate and medical students. PhD students use the Visiting Scholar Award instead &mdash; the two are easy to conflate.</td><td class="nw">Annual</td></tr>
+          <tr><td><strong>ASTMH Benjamin H. Kean Travel Fellowship</strong></td><td>Medical students on clinical or research electives in tropical areas. ASTMH's Young Investigator and subgroup travel awards <em>are</em> open to PhD students, with a one-award-per-year cap across all categories.</td><td class="nw">Reopens March</td></tr>
+          <tr><td><strong>IDSA G.E.R.M. Program</strong></td><td>Medical students &mdash; and the programme is currently paused while IDSA reworks it.</td><td class="nw">Paused</td></tr>
+          <tr><td><strong>NIH Loan Repayment Program</strong></td><td>A conferred doctorate. The qualifying test is debt at 20% or more of institutional base salary, which presupposes post-degree employment; a graduate student has no base salary in the required sense. Plan for it after the PhD, where it repays up to $50,000 a year.</td><td class="nw">Closes 19 November</td></tr>
+          <tr><td><strong>AAUW Selected Professions Fellowship</strong></td><td>A first master's or professional degree. PhD students use the American Doctoral Fellowship above.</td><td class="nw">~18 February</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="card section-spacer" id="gone">
+    <h2>Discontinued, dormant, or unreachable from here</h2>
+    <p class="lede">These still appear on funding lists, university pages and older advice. Several were
+      significant sources of support for exactly the students who can least afford to lose a cycle, and
+      two of them are still being recommended by advisers working from memory.</p>
+    <div class="foot">
+      <p class="flag"><strong>Ford Foundation Fellowships &mdash; all three levels discontinued, not just the
+        postdoctoral one.</strong> The final competition across predoctoral, dissertation and postdoctoral
+        tracks was 2023, with a limited set of awards in 2024 and the programme winding down by 2028. The
+        National Academies' Ford pages now return 404. The common belief that the predoctoral and
+        dissertation competitions survived the postdoctoral wind-down is wrong.</p>
+      <p class="flag"><strong>NIH F31-Diversity &mdash; expired and not reissued.</strong> PA-23-271 was archived in
+        February 2025, and when NIH reissued the fellowship family in June 2025 it published an F31, an
+        F32, an F33 and two F30s with no diversity counterpart. NIH issued no explicit discontinuation
+        notice, which is why some institute pages &mdash; NIAID's among them &mdash; still list it as available.
+        Published analysis counts 405 F31 awards affected by the 2025 terminations, two-thirds of them
+        F31-Diversity.</p>
+      <p class="flag"><strong>EPA STAR graduate fellowships &mdash; ended.</strong> The final cohort was selected under
+        the 2015 solicitation; EPA's current page states the resource is no longer available. What EPA
+        now offers graduate students is an NSF-partnered residency, not a fellowship competition.</p>
+      <p class="gate"><strong>Josephine de K&aacute;rm&aacute;n &mdash; no longer a national award.</strong> The trust moved to the
+        Pasadena Community Foundation in 2023, the amount rose to $28,000, and eligibility narrowed to
+        students at eleven named California institutions. Any list describing it as nationally open is
+        out of date, as is the old dekarman.org domain.</p>
+      <p class="gate"><strong>Microsoft Research PhD Fellowship &mdash; restructured.</strong> It is now the Microsoft
+        Research Fellowship: proposal-driven, scoped to named research challenges, open to PhD students,
+        postdocs and faculty alike, and paid as a one-time institutional gift of $17,000 to $47,000
+        depending on region rather than as multi-year stipend support.</p>
+      <p class="gate"><strong>Not national, despite appearances:</strong> the Burroughs Wellcome Graduate Diversity
+        Enrichment Program is restricted to PhD students at North Carolina institutions and pays $5,000
+        across two years; Knight-Hennessy funds only Stanford degrees; and GEM, GFSD and ARCS all require
+        your institution to be a member or partner.</p>
+      <p class="gate"><strong>AAI Careers in Immunology Fellowship Program &mdash; dormant.</strong> The most recent cohort was 2024, the programme page has been removed and now returns a 404, and it no longer appears on AAI's award deadline listing; only the recipient pages survive. Its loss removes the only immunology-specific predoctoral salary mechanism, and leaves AAI offering graduate students the two no-cost trainee meeting awards and nothing else. The AAI&ndash;Thermo Fisher Trainee Achievement Award went the same way.</p>
+      <p class="gate"><strong>Dormant or unverifiable:</strong> the Gates Millennium Scholars programme is closed, and
+        even when it ran, graduate funding was available only to continuing scholars; the UNCF/Merck
+        graduate and dissertation fellowship has had no open cycle since 2014 and no notice of
+        discontinuation; ASM's Robert D. Watkins Graduate Research Fellowship and Raymond W. Sarber Award
+        have no current cycle; the Michelson Philanthropies &amp; <em>Science</em> Prize for Immunology ended with the
+        AAAS partnership; the NVIDIA Graduate Fellowship has posted no 2027&ndash;28 cycle; the Quad Fellowship
+        lists future dates as to be announced; and Autism Speaks' Dennis Weatherstone Predoctoral
+        Fellowship has no traceable current cycle.</p>
+      <p class="gate"><strong>Not available from a US institution:</strong> the Gates Foundation concluded its
+        fellowship and internship programmes in 2021 and funds no graduate research; Wellcome requires a
+        host organisation in the UK, Ireland or an eligible low- or middle-income country, and its
+        eligible list narrows further from October 2026. Neither is a route for a student here.</p>
+    </div>
+  </section>
+
+  <section class="card section-spacer" id="method">
+    <h2>Method and maintenance</h2>
+    <p class="lede">Every entry was checked against the sponsor's own page on 22 September 2026 rather
+      than against aggregators, which are the usual source of stale deadlines and superseded award
+      amounts. Where two sources disagreed, the sponsor's page won &mdash; and where the sponsor's own pages
+      disagreed with each other, that is said here rather than quietly resolved.</p>
+    <div class="foot">
+      <p><strong>Deadlines are computed, not typed.</strong> Each award stores its recurring pattern &mdash; a
+        fixed calendar date, or a rule such as "the second Friday in November" &mdash; and the page resolves
+        the next occurrence when you load it. The dates therefore stay correct into future cycles without
+        anyone editing this file. What will drift is the money and the eligibility fine print, so treat
+        the sponsor link as authoritative and this page as the thing that tells you a deadline is coming.
+        Two programmes set their dates freshly in each solicitation rather than following a rule &mdash; the
+        NSF GRFP, which moved three weeks earlier this year, and NDSEG &mdash; so confirm those two directly.</p>
+      <p><strong>Three corrections worth stating outright.</strong> The HHMI Gilliam is <em>no longer</em>
+        nomination-routed: HHMI now runs an open competition with no institutional cap, and the student
+        and adviser apply as a pair. Ford's predoctoral and dissertation tracks ended alongside the
+        postdoctoral one rather than surviving it. And the widely repeated story that NIH restricted
+        fellowship eligibility for non-citizens in 2025 traces to a four-day typo in five reissued
+        NOFOs, corrected by NOT-OD-25-126 &mdash; a correction that ran in the <em>restrictive</em> direction. The
+        standing NRSA rule, unchanged, is citizens, non-citizen nationals and permanent residents.</p>
+      <p class="gate"><strong>Left unresolved on purpose.</strong> NSF's GRFP solicitation says "less than one
+        academic year completed" while NSF's own FAQ says "not more than one academic year" &mdash; they differ
+        exactly at the boundary a second-year applicant cares about, so verify with GRFP programme staff
+        rather than trusting either. The Burroughs Wellcome CASI 2027 cycle is unposted and four BWF pages
+        contradict one another. And the July 2026 DHS rule replacing duration of status with a fixed
+        four-year admission period for F and J students took effect on 15 September 2026 and has been
+        reported to be in litigation; international students should check its operative status before
+        planning a timeline around it.</p>
+      <p><strong>What is deliberately excluded.</strong> One-off calls, programmes with no verifiable current
+        cycle, awards requiring a conferred doctorate or an independent appointment (collected separately
+        above), institutional fellowships that are really recruitment vehicles for a single university,
+        and programmes open only to undergraduates or medical students.</p>
+      <p><strong>Three structural facts the list makes visible.</strong> There is no predoctoral cancer
+        fellowship from any of the major cancer foundations &mdash; a striking gap given how much predoctoral
+        cancer research there is. There is now effectively no immunology-specific predoctoral fellowship
+        either: with the AAI programme dormant, students in infection and immunity compete in the open-field
+        and federal pools like everyone else, which is why the filter for that category is nearly empty and
+        should be. And the disease foundations are substantially more open to international students than
+        the federal mechanisms are: every federal award here is closed to visa holders, while most of the
+        foundation awards are not.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  Department of Microbiology &middot; NYU Grossman School of Medicine &middot; terms verified 22 September 2026 &middot;
+  deadlines resolved live from each programme's recurring cycle
+</footer>
+
+<script>
+/* Deadline patterns resolve forward from today, so this page does not go stale.
+   md:  fixed calendar dates, "MM-DD"
+   nth: {m: month 1-12, d: weekday 0=Sun, n: nth occurrence}                        */
+var F = [
+
+/* ---------- Open-field: federal ---------- */
+{n:"NIH Ruth L. Kirschstein NRSA Individual Predoctoral Fellowship (F31)", s:"National Institutes of Health", f:"open",
+ md:["04-08","08-08","12-08"], pat:"Three cycles a year: 8 April, 8 August, 8 December",
+ award:"Stipend $29,364/yr, flat across all predoctoral years, plus 60% of tuition and fees capped at $16,000/yr and a $4,750/yr institutional allowance",
+ dur:"Up to 5 years of aggregate NRSA predoctoral support &mdash; but NIAID caps its own F31s at 3 years and does not renew",
+ elig:"Enrolled in a PhD or equivalent research doctorate, with a named sponsor who co-develops the application. Dual-degree students use the F30 instead.",
+ cit:"us", citTxt:"US citizens, non-citizen nationals and permanent residents &mdash; status is required by the time of award, not at submission",
+ u:"https://grants.nih.gov/grants/guide/pa-files/PA-25-422.html",
+ note:"NOFO PA-25-422, current through May 2028. The stipend is now flat: the old step increases by year in programme are gone. Note also that NIH stopped publishing NOFOs in the NIH Guide in FY2026, so Grants.gov is the single official source."},
+
+{n:"NIH NRSA Individual Predoctoral Fellowship for Dual-Degree Students (F30)", s:"National Institutes of Health", f:"open",
+ md:["04-08","08-08","12-08"], pat:"Three cycles a year: 8 April, 8 August, 8 December",
+ award:"Stipend $29,364/yr plus 60% of tuition and fees capped at the higher dual-degree ceiling of $21,000/yr, and a $4,750/yr institutional allowance",
+ dur:"Up to 6 years, with at least half the award period spent in full-time graduate research training",
+ elig:"Enrolled in a formal dual-degree programme &mdash; MD/PhD, DO/PhD, DVM/PhD and similar. Most candidates are expected to apply within 48 months of matriculating and no later than 24 months into dissertation research.",
+ cit:"us", citTxt:"US citizens, non-citizen nationals and permanent residents, by the time of award",
+ u:"https://grants.nih.gov/grants/guide/pa-files/PA-25-426.html",
+ note:"Two NOFOs exist and they are not interchangeable: PA-25-426 for institutions with an NIH-funded dual-degree training programme, which is the one an MSTP student uses, and PA-25-425 for those without. The 48-month window is the most common eligibility miss, and students who spent extra time in the MD phase often find they have aged out of it."},
+
+{n:"NIH Predoctoral to Postdoctoral Transition Award (F99/K00)", s:"National Institutes of Health", f:"open",
+ md:["04-08","08-08","12-08"], pat:"Three cycles a year: 8 April, 8 August, 8 December",
+ award:"F99 phase at the predoctoral NRSA rate with tuition and allowance; K00 phase set by the institute &mdash; NCI contributes up to $80,000/yr in salary plus fringe and up to $30,000/yr for research and career development",
+ dur:"1&ndash;2 years to finish the PhD, then up to 3 years of postdoctoral support &mdash; 5 years maximum",
+ elig:"In the dissertation stage with one to two years of work left. Dual-degree students are not eligible, and if all PhD requirements are completed before the F99 award is made, neither phase is issued.",
+ cit:"us", citTxt:"US citizens, non-citizen nationals and permanent residents &mdash; you may apply without a green card in hand",
+ u:"https://www.cancer.gov/grants-training/training/funding/f99/f99-k00-fact-sheet",
+ note:"This changed in 2026. The old institute-specific competitions required an institutional nomination and capped the number of applicants per institution; parent NOFO PA-27-037 removes both, so the internal bottleneck is gone and multiple students from one school may apply. Timing is now the only real risk &mdash; finish the PhD before the award is made and nothing is issued."},
+
+{n:"NSF Graduate Research Fellowship Program (GRFP)", s:"US National Science Foundation", f:"open",
+ md:["10-19"], pat:"Life Sciences closes 19 October 2026; the other directorates run 20&ndash;23 October. NSF sets the dates in each solicitation &mdash; they moved three weeks earlier this year",
+ award:"$37,000/yr stipend plus a $16,000/yr cost-of-education allowance paid to the institution",
+ dur:"3 years of support, used within a 5-year fellowship period",
+ elig:"Undergraduates, bachelor's holders not yet enrolled, and first-year graduate students with less than one academic year completed. Second-year students are no longer eligible, and joint professional-degree students &mdash; MD/PhD among them &mdash; are explicitly excluded.",
+ cit:"us", citTxt:"US citizens, nationals and permanent residents, as of the deadline",
+ u:"https://www.nsf.gov/funding/opportunities/grfp-nsf-graduate-research-fellowship-program/nsf26-526/solicitation",
+ note:"Read the excluded-subject list before the eligibility rules. Solicitation NSF 26-526 excludes patient-oriented, clinical, epidemiological, disease- and treatment-focused research from Life Sciences, which disqualifies a large share of biomedical projects whatever year the applicant is in. Volume is falling too: 2,500 offers in the 2026 competition against about 1,500 anticipated for 2027."},
+
+{n:"National Defense Science and Engineering Graduate Fellowship (NDSEG)", s:"US Department of Defense", f:"quant",
+ md:["10-30"], pat:"Opens in early August, closes 30 October",
+ award:"$43,200/yr ($3,600 a month), full tuition and mandatory fees, health insurance up to $1,400/yr, and $5,000 of travel and professional development across the tenure",
+ dur:"3 years",
+ elig:"Applying to, accepted at, or within the first two years of a US graduate programme, with at least three years remaining. Research must align with a DoD Broad Agency Announcement topic, and no other fellowship may be held concurrently.",
+ cit:"us", citTxt:"US citizens, dual citizens and nationals only &mdash; permanent residents are explicitly excluded",
+ u:"https://ndseg.sysplus.com/",
+ note:"Stricter on citizenship than anything else here: a permanent resident who qualifies for the GRFP, an F31 and the DOE fellowship does not qualify for this one. The legacy ndseg.org site is stale, still advertising a 2022 cycle at a lower stipend &mdash; use the current portal."},
+
+{n:"DOE Computational Science Graduate Fellowship (CSGF)", s:"US Department of Energy, administered by the Krell Institute", f:"quant",
+ md:["01-15"], pat:"Opens in October, closes in mid-January &mdash; Krell publishes the exact date each cycle",
+ award:"$45,000/yr stipend, full tuition and required fees, and a yearly professional-development allowance",
+ dur:"Up to 4 years, renewed annually",
+ elig:"Undergraduate seniors, students entering graduate school, and first-year graduate students. Second year and beyond are ineligible, as are concurrent professional doctorates including MD/PhD. A practicum at a DOE laboratory is mandatory.",
+ cit:"us", citTxt:"US citizens and lawful permanent residents only",
+ u:"https://www.krellinst.org/csgf/",
+ note:"Small and genuinely computational &mdash; the most recent incoming class was 29 students nationally. Only worth the effort for students whose work is methodological rather than descriptive, and who can leave the bench for the DOE practicum."},
+
+{n:"DOE Office of Science Graduate Student Research Program (SCGSR)", s:"US Department of Energy Office of Science", f:"quant",
+ md:["05-06","11-04"], pat:"Two cycles a year, closing in early May and early November",
+ award:"Up to $3,600 a month for living expenses at the host laboratory plus up to $3,000 of inbound and outbound travel &mdash; no tuition, no supplies, no conference travel",
+ dur:"3 to 12 consecutive months at a DOE National Laboratory, 12 months cumulative maximum",
+ elig:"A PhD candidate with coursework and qualifying exams complete and a thesis project already underway. The field must be non-medical biology, physics, chemistry, materials, mathematics or computational science, and must map to a DOE Office of Science priority research area.",
+ cit:"us", citTxt:"US citizens and lawful permanent residents only, at the time of application",
+ u:"https://science.osti.gov/wdts/scgsr",
+ note:"A supplement rather than a fellowship: it does not replace stipend support or pay tuition, and it requires physically relocating to a national laboratory. The realistic fits from a biomedical department are structural biology at the light sources, cryo-EM, bioimaging and computational genomics; clinical and disease-focused projects are scoped out."},
+
+/* ---------- Open-field: private ---------- */
+{n:"Hertz Fellowship", s:"Fannie and John Hertz Foundation", f:"open",
+ md:["10-30"], pat:"Closes at the end of October, annually",
+ award:"$38,000 nine-month stipend plus full tuition; or, coordinated with the NSF GRFP, $44,000 during Hertz-funded years and a $9,000/yr supplement during the other award's years. $5,000/yr per dependent child.",
+ dur:"Renewable annually up to 5 years",
+ elig:"First- or second-year PhD student in the year the fellowship begins, in the applied physical and biological sciences, mathematics or engineering. Standalone professional degrees are excluded, but the PhD portion of an MD/PhD is supported.",
+ cit:"us", citTxt:"US citizens and permanent residents only",
+ u:"https://www.hertzfoundation.org/hertz-fellowship/apply/",
+ note:"The stated filter is research directed at major near-term problems facing society, and purely curiosity-driven basic biology applications routinely miss it. The coordination option is the reason to apply to Hertz and the GRFP together rather than treating them as alternatives."},
+
+{n:"Paul &amp; Daisy Soros Fellowships for New Americans", s:"The Paul &amp; Daisy Soros Fellowships", f:"open",
+ md:["10-29"], pat:"Closes in late October, annually",
+ award:"Up to $25,000/yr stipend and up to $20,000/yr toward tuition &mdash; up to $90,000 in total",
+ dur:"Up to 2 years",
+ elig:"Thirty or younger at the deadline, and not yet past the second year of the graduate programme. All fields, including dual-degree students in the pre-clinical years.",
+ cit:"special", citTxt:"Immigrants and children of immigrants &mdash; naturalised citizens, green-card holders, refugees and asylees, DACA recipients, and US-born citizens both of whose parents were born abroad as non-citizens",
+ u:"https://pdsoros.org/eligibility/",
+ note:"Effectively a first- or second-year award for PhD students. The binding constraint is almost always the age ceiling rather than the academic record, so anyone who came to graduate school late should check the arithmetic before investing in the application."},
+
+{n:"HHMI Gilliam Fellowships for Advanced Study", s:"Howard Hughes Medical Institute", f:"open",
+ md:["10-27"], pat:"Opens 1 September, closes 27 October",
+ award:"$65,000/yr &mdash; a $50,000 stipend, $5,000 of discretionary professional development, and a $10,000 institutional allowance for tuition, fees and health insurance",
+ dur:"Up to 3 years, typically PhD years 3&ndash;5; Gilliam PhD fellows may later apply for four further years as a Gilliam postdoctoral fellow",
+ elig:"In the second or third year of a biological or biomedical PhD as of the deadline. The student and the thesis adviser apply as a pair: the adviser submits separate, customised materials, and a second reference who is not the adviser is also required.",
+ cit:"visa", citTxt:"Open to US citizens, permanent residents, DACA recipients and international students eligible to receive funding from their institution",
+ u:"https://www.hhmi.org/programs/gilliam-fellows",
+ note:"No longer nomination-routed &mdash; HHMI now runs an open competition with no institutional cap, and if two students from one lab apply the adviser writes two complete sets of materials. This is the largest multi-year award on the page open to an international student, which makes it the first stop for anyone the federal mechanisms exclude."},
+
+{n:"GEM Fellowship &mdash; PhD Science and Engineering", s:"The National GEM Consortium", f:"open",
+ nth:{m:11,d:5,n:2}, pat:"The second Friday in November, annually",
+ award:"At least $16,000/yr plus full tuition and fees through year 5, topped up by the member university to the level of other funded students in the department, with paid summer internships at the sponsoring employer",
+ dur:"Up to the fifth year of the doctoral programme",
+ elig:"Undergraduate seniors, post-baccalaureates and current graduate students with a 3.0 minimum. Biology and biochemistry are eligible disciplines despite the engineering branding. Applicants must also apply to at least three GEM member universities by 15 January or the department's own deadline, whichever falls first.",
+ cit:"us", citTxt:"US citizens and permanent residents at the time of application",
+ u:"https://www.gemfellowship.org/application-process/",
+ note:"The award is employer- and university-matched, so selection by the committee does not by itself guarantee placement. Applicants who submit the GEM form in November and only then begin the three university applications lose the cycle."},
+
+{n:"AAUW American Doctoral Fellowship", s:"American Association of University Women", f:"open",
+ md:["09-30"], pat:"30 September, annually",
+ award:"$25,000 stipend, paid in two equal instalments",
+ dur:"1 year",
+ elig:"Pursuing a first doctoral degree in a programme begun on or before 30 September of the award year, and not defending before 1 April of the year the fellowship ends. Applicants must identify as women. All fields, with STEM explicitly encouraged.",
+ cit:"us", citTxt:"US citizens, nationals and permanent residents",
+ u:"https://www.aauw.org/resources/programs/fellowships-grants/american-doctoral-fellowship-program/",
+ note:"The timing rule is the reverse of the dissertation fellowship this replaced: it sets a floor on when you may defend rather than requiring that you be finishing, so anyone planning an early defence is disqualified. The companion Selected Professions fellowship is for first master's and professional degrees and is not open to PhD students."},
+
+{n:"P.E.O. Scholar Awards", s:"P.E.O. International", f:"open",
+ md:["11-20"], pat:"Chapters nominate between 20 August and 20 November; once notified, the applicant has 45 days",
+ award:"Up to $25,000",
+ dur:"One-time award",
+ elig:"Women pursuing a doctoral degree, within two years of graduation and with at least one full academic year of work remaining. Dual-degree candidates must complete the whole programme inside that window.",
+ cit:"us", citTxt:"Citizens or permanent residents of the United States or Canada at the time of nomination",
+ nom:true, nomTxt:"Chapter nomination",
+ u:"https://www.peointernational.org/educational-support/scholar-awards/eligibility-and-application-process/",
+ note:"You must be nominated by a local P.E.O. chapter; applicants with no existing connection submit a form to be matched with one, and that matching takes weeks. Starting the process in November is already too late for that cycle."},
+
+{n:"Google PhD Fellowship Program", s:"Google Research", f:"quant",
+ md:["04-30"], pat:"Opens in early March, closes at the end of April for the US and Canada",
+ award:"$85,000 a year toward tuition and fees, living expenses, travel and equipment",
+ dur:"Up to 2 years in the US and Canada",
+ elig:"Students who will have completed graduate coursework by the year the fellowship begins. The realistic tracks from a biomedical department are Health Research and machine learning.",
+ cit:"visa", citTxt:"No citizenship requirement &mdash; eligibility is set by region",
+ nom:true, nomTxt:"University nomination, 4 per institution",
+ u:"https://research.google/programs-and-events/phd-fellowship/",
+ note:"Direct applications are not accepted. Universities may nominate up to four students, so the binding competition is internal and usually runs in February and March &mdash; before Google's own window closes. Computational students need to be on their department's nomination slate well before the published deadline means anything."},
+
+/* ---------- Disease-specific foundations ---------- */
+{n:"American Heart Association Predoctoral Fellowship", s:"American Heart Association", f:"disease",
+ md:["08-04"], pat:"Early August &mdash; the deadline moved forward by a month for the 2027 cycle",
+ award:"$29,364/yr stipend plus $4,550/yr toward health insurance and $2,000/yr of project support",
+ dur:"1 or 2 years",
+ elig:"Enrolled in a doctoral programme at submission. At activation you must have completed initial coursework and be able to give 80% effort to research, which means students still in coursework can apply but cannot yet activate. A mentor may hold no more than two student fellows at once.",
+ cit:"visa", citTxt:"US citizens and permanent residents, and holders of F-1, H-1B and several other visa categories",
+ u:"https://professional.heart.org/en/research-programs/aha-funding-opportunities/predoctoral-fellowship",
+ note:"The largest-dollar, broadest-eligibility disease-foundation predoctoral award in the country, and one of very few substantial awards an international PhD student can actually hold. The project needs a cardiovascular, stroke or brain-health connection, which is a real constraint rather than a formality."},
+
+{n:"PhRMA Foundation Predoctoral Fellowships &mdash; Drug Discovery and Drug Delivery", s:"PhRMA Foundation", f:"disease",
+ md:["04-15"], pat:"Letter of intent 15 April, invited full application 26 August",
+ award:"$30,000/yr plus up to $1,000/yr for conference travel or thesis expenses",
+ dur:"The applicant elects 12, 18 or 24 months",
+ elig:"At least two years of coursework complete and in thesis research at activation, with a publication or poster already to your name. Ineligible if the PhD completes before the December following the award year, and it cannot be held alongside an NIH F award.",
+ cit:"visa", citTxt:"US and non-US citizens alike, at an accredited US university",
+ u:"https://www.phrmafoundation.org/grants-fellowships/predoctoral-fellowships/",
+ note:"Only one applicant per lab may apply, so the internal choice has to be settled by February. The Foundation runs two further predoctoral fellowships on different calendars: Translational Medicine, listed separately here, and Value Assessment and Health Outcomes Research, which closes 30 October with no letter of intent."},
+
+{n:"PhRMA Foundation Predoctoral Fellowship in Translational Medicine", s:"PhRMA Foundation", f:"disease",
+ md:["05-27"], pat:"Letter of intent 27 May, invited full application 18 November",
+ award:"$30,000/yr plus up to $1,000/yr for conference travel or thesis expenses",
+ dur:"The applicant elects 12, 18 or 24 months",
+ elig:"At least two years of coursework complete and in thesis research at activation. MD/PhD students are eligible but not during required clinical coursework. Ineligible if the PhD completes before the March following the award year.",
+ cit:"visa", citTxt:"US and non-US citizens alike, at an accredited US university",
+ u:"https://www.phrmafoundation.org/grants-fellowships/predoctoral-fellowships/translational-medicine/",
+ note:"Runs about three months behind the Drug Discovery and Drug Delivery cycle. Treating the four PhRMA predoctoral fellowships as though they shared one deadline is the standard mistake, and the one-applicant-per-lab rule applies across them."},
+
+{n:"KidneyCure Pre-Doctoral Fellowship", s:"American Society of Nephrology", f:"disease",
+ md:["11-19"], pat:"Mid-to-late November, annually",
+ award:"$30,000/yr, stipend only &mdash; it may not cover fringe benefits, project costs, travel or overhead",
+ dur:"Up to 2 years",
+ elig:"A PhD student past the qualifying exam, or a year into the mentor's lab, on a kidney-directed project at 75% effort or more. MD/PhD and MSTP students are explicitly excluded. Both the student and every sponsor must be active ASN members when the cycle closes.",
+ cit:"visa", citTxt:"Any citizenship, provided the work is carried out in North or Central America or the Caribbean",
+ u:"https://www.asn-online.org/grants/fellowships/details.aspx?app=PREDOC",
+ note:"This is the kidney predoctoral award &mdash; the National Kidney Foundation runs none. The requirement that the mentor also hold ASN membership catches applicants whose PI is not a nephrologist, and it takes a few days to fix."},
+
+{n:"American Epilepsy Society Predoctoral Research Fellowship", s:"American Epilepsy Society", f:"disease",
+ md:["01-22"], pat:"Late January &mdash; the Society sets the exact date each cycle",
+ award:"Up to $30,000 over twelve months: $29,000 of stipend and benefits plus $1,000 for the Annual Meeting, with complimentary membership and registration",
+ dur:"12 months",
+ elig:"Matriculating in a full-time PhD programme in a field relevant to epilepsy research. No stated year-in-programme restriction, which makes it unusually accessible early. The mentor may not be primary mentor on another AES early-career application in the same cycle.",
+ cit:"visa", citTxt:"No citizenship requirement, but the research must be conducted in the United States",
+ u:"https://aesnet.org/research-funding/early-career/early-career/predoctoral-research-fellowships",
+ note:"The Society's programme landing page has carried a stale deadline; the guidelines PDF and the apply page are the ones to trust. Because of the mentor rule a lab can effectively field only one AES early-career applicant per cycle, so coordinate internally first."},
+
+/* ---------- Infection and immunity ---------- */
+{n:"Fogarty Global Health Program for Fellows and Scholars (LAUNCH)", s:"NIH Fogarty International Center, through seven consortia", f:"id",
+ pat:"Each consortium sets its own deadline; Fogarty publishes none centrally",
+ award:"Set by the consortium &mdash; not published centrally",
+ dur:"One year of mentored research training at a low- or middle-income-country site",
+ elig:"Explicitly includes predoctoral and pre-professional US trainees alongside US and LMIC postdoctoral fellows. You apply to a consortium rather than to Fogarty, normally naming both a US and an LMIC mentor.",
+ cit:"watch", citTxt:"Built around US and LMIC trainees; individual consortia set their own rules and some restrict to citizens and permanent residents &mdash; verify with the one you are applying to",
+ u:"https://www.fic.nih.gov/Programs/Pages/scholars-fellows-global-health.aspx",
+ note:"The only substantial global-health mechanism a US PhD student can actually hold. Treat it as seven separate programmes with seven calendars &mdash; ACHIEVE, Global Health Emerging Scholars, INSIGHT, NPGH LEADERs, HBNU, UJMT and GLOCAL &mdash; and start from the consortium your institution is affiliated with."},
+
+/* ---------- International ---------- */
+{n:"Fulbright US Student Program", s:"US Department of State", f:"intl",
+ md:["10-06"], pat:"National deadline in early October &mdash; but the campus deadline is six to eight weeks earlier",
+ award:"A monthly living stipend, health benefits and round-trip airfare; amounts are set country by country and are not published as a single figure",
+ dur:"A few months to a full academic year",
+ elig:"Enrolled students apply through their campus Fulbright Program Adviser rather than directly. You must not already hold a doctoral degree, so current PhD and MD/PhD students are eligible until the degree is conferred.",
+ cit:"us", citTxt:"US citizenship required &mdash; permanent residence is explicitly not sufficient",
+ u:"https://us.fulbrightonline.org/applicants/types-of-awards/study-research",
+ note:"The generic Open Study/Research award is a poor fit mid-PhD. The useful ones are the country-specific doctoral research awards, which carry their own sub-eligibility and change year to year. The campus deadline, not the national one, is the date that actually has to be hit."}
+
+];
+
+/* ---------- deadline resolution ---------- */
+function pad(n){ return (n<10?"0":"")+n; }
+function nthWeekday(y, m, wd, n){            /* m 1-12, wd 0=Sun */
+  var d = new Date(y, m-1, 1), add = (wd - d.getDay() + 7) % 7;
+  return new Date(y, m-1, 1 + add + (n-1)*7);
+}
+function nextDate(f, today){
+  var cands = [], y = today.getFullYear(), i, yy;
+  for (yy = y; yy <= y+1; yy++){
+    if (f.md) for (i=0;i<f.md.length;i++){
+      cands.push(new Date(yy, +f.md[i].slice(0,2)-1, +f.md[i].slice(3,5)));
+    }
+    if (f.nth) cands.push(nthWeekday(yy, f.nth.m, f.nth.d, f.nth.n));
+  }
+  cands = cands.filter(function(d){ return d >= today; }).sort(function(a,b){ return a-b; });
+  return cands[0] || null;
+}
+var MON = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+function fmt(d){ return d.getDate() + " " + MON[d.getMonth()] + " " + d.getFullYear(); }
+
+var today = new Date(); today.setHours(0,0,0,0);
+F.forEach(function(f){
+  f._d = nextDate(f, today);
+  f._days = f._d ? Math.round((f._d - today) / 86400000) : 9999;
+});
+F.sort(function(a,b){ return a._days - b._days; });
+
+/* ---------- render ---------- */
+var CIT = {
+  visa:   {cls:"visa",   txt:"Open to visa holders"},
+  us:     {cls:"usonly", txt:"US citizens / PR only"},
+  watch:  {cls:"nom",    txt:"Citizenship rules vary"},
+  special:{cls:"nom",    txt:"Special eligibility category"}
+};
+var FIELD = {open:"Open-field", disease:"Disease-specific", id:"Infection &amp; immunity",
+             quant:"Computational &amp; physical", intl:"International"};
+
+function esc(s){ return String(s); }
+function card(f, i){
+  var c = CIT[f.cit] || CIT.visa;
+  var dcls = f._days <= 30 ? "hot" : (f._days <= 90 ? "soon" : "");
+  var dtxt = f._d ? fmt(f._d) + " &middot; " + (f._days === 0 ? "today" : f._days + "d") : "rolling";
+  var bar = '<span class="odl ' + dcls + '">' + dtxt + '</span>' +
+            '<span class="' + c.cls + '">' + c.txt + '</span>' +
+            '<span>' + FIELD[f.f] + '</span>' +
+            (f.nom ? '<span class="nom">' + f.nomTxt + '</span>' : '');
+  return '<article class="card prop" data-field="' + f.f + '" data-cit="' + f.cit +
+         '" data-days="' + f._days + '" data-q="' + (f.n + " " + f.s + " " + f.note).toLowerCase().replace(/"/g,"") + '">' +
+    '<div class="phead"><span class="pid">' + pad(i+1) + '</span>' +
+      '<span class="tierbadge">' + f.s + '</span>' +
+      '<h3><a href="' + f.u + '" target="_blank" rel="noopener">' + f.n + '</a></h3></div>' +
+    '<div class="oppbar">' + bar + '</div>' +
+    '<div class="split">' +
+      '<div><h4>Terms</h4><dl class="terms">' +
+        '<dt>Award</dt><dd>' + f.award + '</dd>' +
+        '<dt>Duration</dt><dd>' + f.dur + '</dd>' +
+        '<dt>Cycle</dt><dd>' + f.pat + '</dd>' +
+      '</dl></div>' +
+      '<div><h4>Eligibility</h4><p class="onote" style="margin-top:0">' + f.elig + '</p>' +
+        '<p class="onote"><strong>Citizenship.</strong> ' + f.citTxt + '</p>' +
+        '<p class="onote">' + f.note + '</p></div>' +
+    '</div></article>';
+}
+
+document.getElementById("list").innerHTML = F.map(card).join("");
+document.getElementById("nTotal").textContent = F.length;
+document.getElementById("nVisa").textContent  = F.filter(function(f){ return f.cit === "visa"; }).length;
+document.getElementById("nSoon").textContent  = F.filter(function(f){ return f._days <= 90; }).length;
+document.getElementById("nNom").textContent   = F.filter(function(f){ return f.nom; }).length;
+
+/* ---------- filters ---------- */
+var state = {field:"all", cit:"all", when:"all", q:""};
+function apply(){
+  var cards = document.querySelectorAll("#list .prop"), shown = 0;
+  Array.prototype.forEach.call(cards, function(el){
+    var ok = (state.field === "all" || el.dataset.field === state.field) &&
+             (state.cit === "all" || el.dataset.cit === state.cit) &&
+             (state.when === "all" || +el.dataset.days <= 90) &&
+             (state.q === "" || el.dataset.q.indexOf(state.q) > -1);
+    el.hidden = !ok;
+    if (ok) shown++;
+  });
+  document.getElementById("shown").textContent = shown + " of " + F.length;
+  document.getElementById("empty").hidden = shown > 0;
+}
+Array.prototype.forEach.call(document.querySelectorAll(".fchip"), function(b){
+  b.addEventListener("click", function(){
+    var f = b.dataset.f;
+    Array.prototype.forEach.call(document.querySelectorAll('.fchip[data-f="' + f + '"]'), function(o){
+      o.setAttribute("aria-pressed", o === b ? "true" : "false");
+    });
+    state[f] = b.dataset.v;
+    apply();
+  });
+});
+document.getElementById("q").addEventListener("input", function(e){
+  state.q = e.target.value.toLowerCase().trim();
+  apply();
+});
+apply();
+</script>
+
+</body>
+</html>

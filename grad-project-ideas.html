@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en" id="top">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Graduate Project Ideas &mdash; Microbiology, NYU Grossman School of Medicine</title>
+<style>
+:root {
+  --nyu-purple: #4F2C85;
+  --nyu-deep: #2a1a49;
+  --bg-light: #f5f5f7;
+  --card-bg: #ffffff;
+  --border-subtle: #e3e3ee;
+  --text-main: #222222;
+  --text-soft: #56566a;
+  --amber-bg: #fdf6e3;
+  --amber-line: #e6d3a3;
+  --amber-ink: #7a5200;
+  --red-bg: #fdeeeb;
+  --red-line: #e6bcb1;
+  --red-ink: #9a3520;
+  --green-bg: #edf6f0;
+  --green-line: #b9ddc7;
+  --green-ink: #1f6b41;
+}
+* { box-sizing: border-box; }
+body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  margin: 0; padding: 0; background: var(--bg-light); color: var(--text-main); line-height: 1.55; }
+header { background: #ffffff; color: var(--nyu-purple); padding: 1.1rem 2rem 1rem;
+  border-bottom: 5px solid var(--nyu-purple);
+  display: flex; align-items: center; gap: 1.15rem; flex-wrap: wrap; }
+header .brand { flex: 0 0 auto; display: flex; align-items: center; }
+header .brand img { height: 52px; width: auto; display: block; border-radius: .3rem; }
+header .brand + .titles { border-left: 1px solid var(--border-subtle); padding-left: 1.15rem; }
+header .titles { flex: 1 1 260px; min-width: 0; }
+@media (max-width: 560px) {
+  header { gap: .6rem; }
+  header .titles { flex: 1 1 100%; }
+  header .brand + .titles { border-left: 0; padding-left: 0; }
+  header .brand img { height: 40px; }
+  header h1 { font-size: 1.55rem; }
+}
+header h1 { margin: 0; font-size: 1.9rem; color: var(--nyu-purple); }
+header p { margin: .35rem 0 0; color: var(--text-soft); font-size: .95rem; }
+nav { position: sticky; top: 0; background: #faf7ff; border-bottom: 1px solid #ddd4ff;
+  padding: .45rem 2rem; display: flex; gap: 1rem; flex-wrap: wrap; z-index: 10; }
+nav a { text-decoration: none; color: var(--nyu-purple); font-size: .9rem;
+  padding: .25rem .7rem; border-radius: 999px; font-weight: 500; }
+nav a:hover { background: rgba(79,44,133,.08); }
+nav a.here { background: var(--nyu-purple); color: #fff; }
+main { max-width: 1120px; margin: 0 auto; padding: 2rem 2.25rem 3rem; }
+.card { background: var(--card-bg); border-radius: .9rem; padding: 1.3rem 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,.05); border: 1px solid var(--border-subtle); }
+h2 { margin-top: 0; color: var(--nyu-purple); }
+.section-spacer { margin-top: 1.5rem; }
+.lede { max-width: 74ch; }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: .75rem; margin-top: 1rem; }
+.stat { border: 1px solid var(--border-subtle); border-radius: .7rem; padding: .7rem .9rem; background: #faf7ff; }
+.stat .k { font-size: .72rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--text-soft); }
+.stat .v { font-size: 1.5rem; font-weight: 700; color: var(--nyu-purple); margin-top: .15rem; }
+.stat .s { font-size: .78rem; color: var(--text-soft); line-height: 1.35; }
+.filters { display: flex; flex-wrap: wrap; gap: .45rem; align-items: center; margin: 1.25rem 0 1rem; }
+.fchip { font: inherit; font-size: .85rem; cursor: pointer; background: #fff; color: var(--nyu-purple);
+  border: 1px solid var(--border-subtle); border-radius: 999px; padding: .3rem .8rem; font-weight: 500; }
+.fchip:hover { border-color: var(--nyu-purple); background: rgba(79,44,133,.05); }
+.fchip[aria-pressed="true"] { background: var(--nyu-purple); border-color: var(--nyu-purple); color: #fff; }
+.fchip .ct { opacity: .65; font-size: .75rem; margin-left: .35rem; }
+.divider { width: 1px; align-self: stretch; background: var(--border-subtle); margin: 0 .3rem; }
+input[type=search] { font: inherit; font-size: .85rem; padding: .35rem .8rem; min-width: 210px;
+  border: 1px solid var(--border-subtle); border-radius: 999px; background: #fff; color: var(--text-main); }
+.prop { margin-bottom: 1rem; }
+.phead { display: flex; flex-wrap: wrap; align-items: baseline; gap: .55rem; }
+.pid { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .82rem;
+  font-weight: 700; color: #fff; background: var(--nyu-purple); border-radius: .35rem; padding: .1rem .45rem; }
+.tierbadge { font-size: .68rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase;
+  border-radius: 999px; padding: .16rem .55rem; border: 1px solid var(--border-subtle);
+  color: var(--text-soft); background: #faf7ff; }
+.phead h3 { margin: 0; flex: 1 1 100%; font-size: 1.18rem; line-height: 1.3; color: var(--nyu-deep); }
+.phead h3 a { color: inherit; text-decoration: none; border-bottom: 1px solid #d9c9f2; }
+.phead h3 a:hover { color: var(--nyu-purple); border-bottom-color: var(--nyu-purple); }
+.oppbar { display: flex; flex-wrap: wrap; gap: .35rem; margin-top: .65rem; }
+.oppbar span, .oppbar a { font-size: .72rem; font-weight: 600; letter-spacing: .03em; text-transform: uppercase;
+  padding: .18rem .5rem; border-radius: .3rem; border: 1px solid var(--border-subtle);
+  color: var(--text-soft); background: #fbfbfd; white-space: nowrap; }
+.oppbar .odl { font-family: ui-monospace, Menlo, monospace; letter-spacing: 0; text-transform: none; }
+.oppbar .odl.hot { color: var(--red-ink); background: var(--red-bg); border-color: var(--red-line); }
+.oppbar .odl.soon { color: var(--amber-ink); background: var(--amber-bg); border-color: var(--amber-line); }
+.oppbar .visa { color: var(--green-ink); background: var(--green-bg); border-color: var(--green-line); }
+.oppbar .usonly { color: var(--red-ink); background: var(--red-bg); border-color: var(--red-line); }
+.oppbar .nom { color: var(--amber-ink); background: var(--amber-bg); border-color: var(--amber-line); }
+.onote { margin: .6rem 0 0; font-size: .82rem; color: var(--text-soft); max-width: 92ch; }
+.split { display: grid; grid-template-columns: minmax(250px, 330px) 1fr; gap: 1.6rem; margin-top: 1rem; }
+@media (max-width: 860px) { .split { grid-template-columns: 1fr; } }
+.split h4 { margin: 0 0 .5rem; font-size: .72rem; font-weight: 700; letter-spacing: .09em;
+  text-transform: uppercase; color: var(--text-soft); border-bottom: 1px solid var(--border-subtle); padding-bottom: .3rem; }
+dl.terms { margin: 0; display: grid; grid-template-columns: auto 1fr; gap: .3rem .8rem; }
+dl.terms dt { font-size: .72rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
+  color: var(--text-soft); padding-top: .12rem; white-space: nowrap; }
+dl.terms dd { margin: 0; font-size: .88rem; }
+.foot { margin-top: .95rem; padding-top: .8rem; border-top: 1px solid var(--border-subtle);
+  display: flex; flex-direction: column; gap: .5rem; }
+.foot p { margin: 0; font-size: .84rem; color: var(--text-soft); max-width: 96ch; }
+.foot strong { color: var(--text-main); }
+.gate { background: var(--amber-bg); border-left: 3px solid var(--amber-line);
+  padding: .5rem .7rem; border-radius: .3rem; }
+.gate strong { color: var(--amber-ink); }
+.flag { background: var(--red-bg); border-left: 3px solid var(--red-line);
+  padding: .5rem .7rem; border-radius: .3rem; }
+.flag strong { color: var(--red-ink); }
+table.plain { border-collapse: collapse; width: 100%; }
+table.plain th { text-align: left; font-size: .72rem; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--text-soft); border-bottom: 2px solid var(--border-subtle); padding: .4rem .6rem .4rem 0; }
+table.plain td { padding: .5rem .6rem .5rem 0; border-bottom: 1px solid var(--border-subtle);
+  font-size: .88rem; vertical-align: top; }
+table.plain tr:last-child td { border-bottom: 0; }
+table.plain td a { color: var(--nyu-purple); }
+td.nw { white-space: nowrap; width: 1%; font-family: ui-monospace, Menlo, monospace; font-size: .8rem; }
+.sub { color: var(--text-soft); font-size: .82rem; }
+.sub2 { display: block; margin-top: .15rem; font-size: .82rem; color: var(--text-soft); max-width: 76ch; }
+.tablewrap { overflow-x: auto; }
+.none { padding: 2.5rem; text-align: center; color: var(--text-soft); }
+footer { border-top: 1px solid #ddd4ff; padding: 1rem 2rem; background: #faf7ff;
+  font-size: .8rem; color: #555; text-align: center; }
+</style><style>
+.ideas { margin: .9rem 0 0; display: flex; flex-direction: column; gap: .85rem; }
+.idea { border: 1px solid var(--border-subtle); border-radius: .6rem; padding: .8rem .95rem; background: #fbfaff; }
+.idea h5 { margin: 0 0 .35rem; font-size: .97rem; line-height: 1.35; color: var(--nyu-deep); }
+.idea p { margin: 0 0 .45rem; font-size: .87rem; color: var(--text-main); max-width: 92ch; }
+.idea p.why { color: var(--text-soft); font-size: .84rem; margin-bottom: .5rem; }
+.idea p.why strong { color: var(--nyu-purple); }
+.fmatch { display: flex; flex-wrap: wrap; gap: .3rem; }
+.fmatch span { font-size: .7rem; font-weight: 600; letter-spacing: .02em; padding: .14rem .45rem;
+  border-radius: .3rem; border: 1px solid #d9c9f2; color: var(--nyu-purple); background: #f3edfb; white-space: nowrap; }
+.caps { margin: .55rem 0 0; font-size: .8rem; color: var(--text-soft); max-width: 96ch; }
+.caps strong { color: var(--text-main); font-weight: 600; }
+.here-if { margin: .1rem 0 .55rem; font-size: .9rem; color: var(--text-main); max-width: 88ch; }
+.pairs { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: .8rem; margin-top: 1rem; }
+.pair { border: 1px solid var(--border-subtle); border-radius: .6rem; padding: .8rem .95rem; background: #fbfaff; }
+.pair h5 { margin: 0 0 .3rem; font-size: .92rem; color: var(--nyu-deep); }
+.pair p { margin: 0; font-size: .85rem; color: var(--text-soft); }
+.pair .vs { font-family: ui-monospace, Menlo, monospace; font-size: .7rem; letter-spacing: .06em;
+  text-transform: uppercase; color: var(--nyu-purple); display: block; margin-bottom: .25rem; }
+</style>
+</head>
+<body>
+
+<header>
+  <span class="brand"><img src="assets/nyulh-logo.png" alt="NYU Langone Health"
+    onerror="this.parentNode.remove()" /></span>
+  <span class="titles">
+    <h1>Graduate Project Ideas</h1>
+    <p>Starting points for thesis directions and predoctoral fellowship applications, built from the research profiles of the Department of Microbiology &mdash; NYU Grossman School of Medicine</p>
+  </span>
+</header>
+
+<nav>
+  <a href="./">Faculty grants</a>
+  <a href="fellowships.html">Postdoc fellowships</a>
+  <a href="grad-fellowships.html">Grad fellowships</a>
+  <a href="#top" class="here">Project ideas</a>
+  <a href="faculty-profiles.html">Faculty profiles</a>
+  <a href="#pairs">Ideas needing two labs</a>
+  <a href="#howto">Turning one into an F31</a>
+</nav>
+
+<main>
+
+  <section class="card">
+    <h2>Thirty-six directions, none of them assignments</h2>
+    <p class="lede">A thesis has to be the student's own, and so does a fellowship application &mdash; reviewers
+      can tell when a proposal was handed down, and the F31 is scored in large part on whether the work
+      will train the person writing it. What follows is deliberately upstream of both: research themes
+      represented in this department, the techniques already running in the building, and directions
+      that sit adjacent to existing strengths rather than inside them. Find the theme your rotation
+      touched, then argue with the ideas under it. The version you disagree your way into will be better
+      than anything here.</p>
+    <div class="stats">
+      <div class="stat"><div class="k">Research themes</div><div class="v">12</div>
+        <div class="s">drawn from 20 active labs</div></div>
+      <div class="stat"><div class="k">Project directions</div><div class="v">36</div>
+        <div class="s">three per theme</div></div>
+      <div class="stat"><div class="k">Cross-lab ideas</div><div class="v">6</div>
+        <div class="s">needing two groups to work</div></div>
+      <div class="stat"><div class="k">Fellowships mapped</div><div class="v">21</div>
+        <div class="s">see the companion page</div></div>
+    </div>
+    <div class="foot">
+      <p class="gate"><strong>Read this before you pick a direction, if you are in your first year.</strong>
+        The NSF GRFP is the one award here that a first-year can win and no one else can, and it now
+        excludes patient-oriented, clinical, epidemiological, and disease- or treatment-focused research
+        from its Life Sciences scope. That is not a formality &mdash; it means the same laboratory can host a
+        GRFP-eligible mechanistic project and a GRFP-ineligible translational one. Directions below that
+        can be framed for the GRFP are tagged for it; the ones that cannot are not, and the omission is
+        deliberate rather than an oversight.</p>
+      <p><strong>How the fellowship tags work.</strong> Each direction carries the awards whose scope and
+        eligibility actually fit it &mdash; not every award a graduate student could theoretically enter.
+        Deadlines, citizenship rules and year-in-programme windows for all of them are on the
+        <a href="grad-fellowships.html">graduate fellowships page</a>. Where a direction is tagged
+        <em>NIH F30</em> rather than <em>F31</em>, it is one that reads particularly well from a dual-degree
+        student; the F31 is available either way.</p>
+    </div>
+  </section>
+
+  <div class="filters">
+    <button class="fchip" data-f="cl" data-v="all" aria-pressed="true">All themes</button>
+    <button class="fchip" data-f="cl" data-v="virus" aria-pressed="false">Virology &amp; RNA biology</button>
+    <button class="fchip" data-f="cl" data-v="bact" aria-pressed="false">Bacterial &amp; parasite pathogenesis</button>
+    <button class="fchip" data-f="cl" data-v="immune" aria-pressed="false">Immunology &amp; vaccines</button>
+    <button class="fchip" data-f="cl" data-v="comp" aria-pressed="false">Computational &amp; microbiome</button>
+    <button class="fchip" data-f="cl" data-v="struct" aria-pressed="false">Structural &amp; mechanistic</button>
+    <span class="divider"></span>
+    <input type="search" id="q" placeholder="Search themes, techniques, ideas" aria-label="Search project ideas" />
+    <span class="sub">Showing <strong id="shown">&mdash;</strong></span>
+  </div>
+
+  <div id="list"></div>
+  <div class="none" id="empty" hidden>No theme matches that search.</div>
+
+  <section class="card section-spacer" id="pairs">
+    <h2>Ideas that need two labs</h2>
+    <p class="lede">These do not belong to any single group, which is exactly why they tend to go
+      unproposed. Each is a thesis-sized question that becomes tractable when two sets of techniques
+      already in this department are put in the same room. Co-mentorship is also a genuinely strong
+      structure on an F31, provided the two mentors write letters that agree with each other about who
+      teaches what &mdash; and provided the student can say which lab they will defend from.</p>
+    <div class="pairs">
+      <div class="pair">
+        <span class="vs">Microbiome modelling &times; MRSA persistence</span>
+        <h5>Does the community around a coloniser predict which one turns invasive?</h5>
+        <p>Longitudinal isolate genomics says what a colonising strain became; ecological modelling of the
+          surrounding community may say why. A thesis here starts descriptive and becomes predictive, which
+          is a structure that survives the inevitable year when the mouse work does not cooperate.</p>
+      </div>
+      <div class="pair">
+        <span class="vs">Envelope proteolysis &times; structural biology</span>
+        <h5>A protease&ndash;adaptor complex caught mid-cycle</h5>
+        <p>The genetics and biochemistry of envelope protease activation are worked out here; what is
+          missing is the conformational trajectory. Cryo-EM of trapped intermediates converts a regulatory
+          model into a druggable mechanism, in a WHO priority pathogen, and it teaches a bacterial
+          geneticist structure.</p>
+      </div>
+      <div class="pair">
+        <span class="vs">Myeloid biology &times; respiratory transmission</span>
+        <h5>Does the airway myeloid compartment decide who transmits?</h5>
+        <p>Transmission models measure infectiousness; myeloid genetics can remove one macrophage subset at
+          a time. Together they ask whether an immune cell type, not just viral load, sets how much virus
+          leaves a host &mdash; a question neither approach can reach alone.</p>
+      </div>
+      <div class="pair">
+        <span class="vs">Translational control &times; vaccine immunology</span>
+        <h5>Is antibody durability set at the level of translation?</h5>
+        <p>Translation-factor balance decides T cell lineage commitment in culture. Human vaccination
+          cohorts measure durability but rarely mechanism. Testing whether the translational state of a
+          Tfh cell at priming predicts antibody persistence a year later connects the two, and gives an
+          RNA-trained student a legitimate immunology training plan.</p>
+      </div>
+      <div class="pair">
+        <span class="vs">Milk and early-life microbiome &times; neonatal pathogenesis</span>
+        <h5>Where does a newborn's resistome actually come from?</h5>
+        <p>Source-tracking methods can apportion microbial origin between milk, maternal gut and
+          environment. Applied to resistance genes rather than taxa, and paired with neonatal colonisation
+          models, a descriptive observation becomes a mechanism with an intervention point.</p>
+      </div>
+      <div class="pair">
+        <span class="vs">Programmable viral vectors &times; tissue macrophages</span>
+        <h5>Interferon switched off in exactly one cell type</h5>
+        <p>Cell-type-restricted vectors can deliver an immune antagonist to a single population in vivo.
+          Aimed at a defined macrophage subset, this asks which cell's interferon response actually
+          controls disease outcome &mdash; something conditional knockouts approximate but never isolate,
+          because they remove the pathway from development onward.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="card section-spacer" id="howto">
+    <h2>Turning one of these into an F31</h2>
+    <p class="lede">Predoctoral applications fail structurally more often than scientifically, and the
+      structural failures are specific and avoidable. Almost none of what follows is about the science.</p>
+    <div class="foot">
+      <p><strong>The F31 is a training grant with a research plan attached, not the reverse.</strong> The
+        reviewers are asked whether this candidate, in this environment, with this sponsor, will become an
+        independent scientist. A flawless set of aims attached to a training plan that teaches nothing new
+        scores worse than good aims with a plan that names three techniques the applicant cannot yet do
+        and the person who will teach each one. Every direction on this page was chosen to sit one step
+        outside an existing strength for exactly that reason.</p>
+      <p><strong>Check the clock before the science.</strong> The single largest award a graduate student can
+        win &mdash; the NSF GRFP &mdash; accepts enrolled students only in the first year, once, with a deadline in
+        October. That means it is planned in the summer before matriculating, not after the first
+        committee meeting. The Hertz closes at year two, the Soros at year two, the Gilliam runs in years
+        two and three, and the F99/K00 wants one to two years left. Work out which windows are still open
+        before choosing what to write.</p>
+      <p class="gate"><strong>Citizenship forks the whole list.</strong> Every federal mechanism &mdash; F31, F30,
+        F99/K00, GRFP, NDSEG, both DOE programmes &mdash; is closed to students on a visa. An international
+        student's real list is shorter but not empty, and it is worth establishing which list applies
+        before writing a page. The Gilliam is the largest multi-year award open to international students,
+        and the disease foundations are substantially more open than the government is.</p>
+      <p><strong>Propose the thing that is adjacent, not identical.</strong> A proposal that is a natural
+        continuation of what the lab already publishes reads as a strong preliminary-data section and a
+        weak training plan. The most common review comment on a resubmitted F31 is not that the science
+        was wrong; it is that the candidate could already do all of it.</p>
+      <p class="gate"><strong>The sponsor statement is half the application</strong> and is the part most often
+        left to the last week. It has to say specifically what the student will learn, from whom, what the
+        lab's funding situation is, and what happens to the project if the student leaves &mdash; and for a
+        co-mentored proposal, the two statements must describe the same division of labour. Reviewers
+        notice when they do not.</p>
+      <p><strong>Where the ideas came from.</strong> Themes and available techniques were drawn from the
+        department's own lab research profiles &mdash; the same source the grant slate and the postdoctoral
+        ideas page use. Two profiles are left out, the same two the postdoctoral page omits: one lab whose
+        principal investigator has left the institution, and one where a degree running five or six years
+        would outlast the sponsoring lab. No individuals are named anywhere on this page, by design: the
+        themes are meant to be recognisable to the people working in them without reading as an
+        instruction to anyone.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  Department of Microbiology &middot; NYU Grossman School of Medicine &middot; built from departmental lab profiles &middot;
+  fellowship tags resolve to the graduate fellowships page
+</footer>
+
+<script>
+var T = [
+
+{id:"innate", cl:"virus", name:"Innate immune sensing and programmable RNA and viral systems",
+ hereIf:"You rotated on interferon induction or antagonism, RNA editing, small RNA pathways, reverse genetics, or engineered viral vectors.",
+ caps:"Reverse genetics for RNA viruses, rescue of recombinant and microRNA-programmed viruses, reporter virus construction, BSL-2 and BSL-3 infection, interferon signalling assays, small RNA-seq, RNA editing and structure mapping, CRISPR host&ndash;virus screens, ribosome profiling.",
+ ideas:[
+  {t:"Which cell type's interferon response actually decides the outcome?",
+   p:"MicroRNA-detargeted vectors can restrict a payload to one cell population. Delivering a well-characterised interferon antagonist to one airway cell type at a time, in vivo, would establish which cell's response controls infection outcome &mdash; a question conditional knockouts approach but never isolate, because they remove the pathway from development onward.",
+   w:"A single clean experimental idea that generates a thesis worth of follow-up, and it teaches vector design, in vivo infection and immunology to someone arriving with none of the three. That combination is what a training plan is supposed to look like.",
+   f:["NSF GRFP","NIH F31","HHMI Gilliam","Hertz"]},
+  {t:"Does RNA editing set the threshold for sensing self versus non-self?",
+   p:"Editing enzymes mark endogenous duplex RNA so that it is not read as foreign. Whether the density of that marking sets a quantitative threshold, and whether viruses have evolved to sit beneath it, is testable by mapping edited sites and sensor engagement across a panel of unrelated viruses in the same cell background.",
+   w:"Mechanistic, comparative and entirely basic &mdash; which means it is one of the few directions here that a first-year can frame for the GRFP without running into the excluded-subject list.",
+   f:["NSF GRFP","NIH F31","HHMI Gilliam"]},
+  {t:"Can a virus be built that reports on the host state rather than changing it?",
+   p:"Programmable viral systems are usually built to deliver something. Built instead as a read-out &mdash; a recombinant virus whose replication is gated on a specific host transcriptional state &mdash; they become an instrument for asking which cells in a tissue are actually permissive, rather than which ones are infected.",
+   w:"Tool-building projects are risky as a whole thesis and excellent as Aim 1, because the tool is a publishable deliverable even if the biology takes longer. Reviewers reward candidates who structure risk that way.",
+   f:["NIH F31","NSF GRFP","HHMI Gilliam","NIH F99/K00"]}
+ ]},
+
+{id:"transl", cl:"virus", name:"Translational control and RNA modification during infection and stress",
+ hereIf:"You work on ribosome profiling, m&sup6;A and related marks, translation initiation factors, or how infection remodels protein synthesis.",
+ caps:"Ribosome and polysome profiling, m&sup6;A and direct RNA sequencing with custom modification-mapping pipelines, single-cell and spatial transcriptomics, CRISPR perturbation, neuronal and organoid culture, mass spectrometry, RNA&ndash;protein crosslinking.",
+ ideas:[
+  {t:"Does the methylation setpoint decide how much interferon a tissue makes?",
+   p:"Writer and eraser enzymes tune interferon induction during nucleic acid sensing, but the size of that effect has not been compared across cell types. If the setpoint differs between epithelium, neurons and myeloid cells, it would explain why the same sensing event produces very different antiviral outputs in different tissues &mdash; and would make the response tunable rather than binary.",
+   w:"The comparison across cell types is exactly the scope a five-year thesis can finish, and it connects RNA chemistry to a phenotype an immunology committee member will care about.",
+   f:["NSF GRFP","NIH F31","HHMI Gilliam","AHA Predoctoral"]},
+  {t:"Is ribosome binding a convergent viral strategy or a one-off?",
+   p:"At least one herpesvirus protein binds ribosomes directly and sustains translation under ribosomal stress. Whether that is idiosyncratic or a recurring solution is unknown. Comparative ribosome profiling and crosslinking across unrelated virus families would establish whether viruses that must translate inside a compromised cell converge on the same trick.",
+   w:"Comparative framing turns a single-virus observation into a general principle, and because the assays are identical across systems it reads as ambition rather than scope creep.",
+   f:["NSF GRFP","NIH F31","NIH F99/K00"]},
+  {t:"Does translation-factor balance fix immune cell fate in vivo?",
+   p:"Cap-dependent and non-canonical translation pathways push T cells toward regulatory or follicular helper fates in culture. Whether an acute infection retunes that balance in vivo, and whether the retuning outlasts the infection, would connect a biochemical switch to the durability of an antibody response.",
+   w:"Sits at an interface two departments already occupy, which makes a co-mentored training plan easy to justify rather than something the student has to argue for.",
+   f:["NIH F31","HHMI Gilliam","NIH F30"]}
+ ]},
+
+{id:"latency", cl:"virus", name:"Latency, persistence and reactivation",
+ hereIf:"You are interested in why some infections stop rather than clear, in chromatin and signalling in infected neurons, or in the difference between latent, persistent and productive states.",
+ caps:"Neuronal culture and primary neuron infection, latency and reactivation models, chromatin and epigenetic profiling, spatial transcriptomics and proteomics of infected cells, host signalling pathway manipulation, single-cell analysis of infection state.",
+ ideas:[
+  {t:"What distinguishes a cell that will reactivate from one that will not?",
+   p:"Latency is measured as a population average, but reactivation is a single-cell event. Profiling the chromatin and signalling state of individual latently infected neurons before a reactivation stimulus, and then tracing which ones actually reactivate, would convert a population parameter into a cell-intrinsic prediction.",
+   w:"A genuinely single-cell question with a binary, unambiguous outcome &mdash; the kind of clean readout that makes a first-year's aims writable and a fifth-year's defence straightforward.",
+   f:["NSF GRFP","NIH F31","HHMI Gilliam"]},
+  {t:"Is neuronal stress signalling the reactivation switch or a consequence of it?",
+   p:"Neurotrophic signalling and DNA damage responses both correlate with reactivation. Separating cause from consequence requires driving each pathway independently, on a timescale faster than the reactivation itself, and asking which one is sufficient.",
+   w:"A causality problem with an obvious experimental logic, and it teaches neuronal culture and signalling biochemistry to a student who arrived as a virologist.",
+   f:["NIH F31","NSF GRFP","AES Predoctoral"]},
+  {t:"Does persistence in a non-neuronal tissue use the same machinery?",
+   p:"Latency mechanisms have been worked out almost entirely in neurons. Whether the same chromatin and signalling logic operates where other viruses persist &mdash; and whether persistence is one phenomenon or several that share a name &mdash; is open, and directly testable with the profiling methods already running here.",
+   w:"Comparative, mechanistic and free of any disease-treatment framing, which keeps the whole federal list open including the GRFP.",
+   f:["NSF GRFP","NIH F31","NIH F99/K00"]}
+ ]},
+
+{id:"transmission", cl:"virus", name:"Transmission, infectiousness and human respiratory virology",
+ hereIf:"You want to work on why some people infect others, on mucosal and sialic-acid receptor biology, or at the join between a clinical cohort and a mechanistic model.",
+ caps:"Respiratory virus transmission models, human cohort sampling and clinical correlates, mucosal immunology, sialic-acid receptor biology, multiplex immunoassays, antiviral evaluation, BSL-2 and BSL-3 infection.",
+ ideas:[
+  {t:"Is infectiousness a host trait, a virus trait, or a property of the pairing?",
+   p:"Transmission studies usually vary the virus. Varying the host &mdash; airway receptor composition, mucosal antibody, myeloid content &mdash; against a fixed viral inoculum asks whether infectiousness is heritable in the host rather than encoded in the pathogen, which is the version of the question public health actually needs answered.",
+   w:"An unusually clean experimental design around a question that is normally studied observationally. The tagged awards are the disease-foundation ones rather than the GRFP, because the framing is patient-oriented by construction.",
+   f:["NIH F31","AHA Predoctoral","NIH F30","Fogarty LAUNCH"]},
+  {t:"Does receptor composition in the upper airway explain age-structured susceptibility?",
+   p:"Sialic-acid linkage distribution differs with age and with prior infection, and is measurable in the same samples that yield antibody titres. Testing whether it predicts susceptibility independently of immune history would separate two explanations that are usually confounded.",
+   w:"Uses a human cohort that already exists, which is the difference between a feasible predoctoral aim and a proposal a reviewer flags as over-ambitious.",
+   f:["NIH F31","NIH F30","AHA Predoctoral"]},
+  {t:"What happens to the mucosal compartment between infections?",
+   p:"Almost everything known about mucosal immunity is measured during or shortly after infection. Sampling the same individuals through the quiet interval, and asking what decays and what does not, would establish the baseline that every correlate-of-protection study currently assumes.",
+   w:"Longitudinal human sampling is slow, which is an argument for starting it in year two of a PhD rather than in a two-year postdoc. Frame the timeline as the reason the project belongs in a predoctoral award.",
+   f:["NIH F31","NIH F30","AHA Predoctoral","PhRMA Translational Medicine"]}
+ ]},
+
+{id:"envelope", cl:"bact", name:"Cell envelope physiology, proteolysis and bacterial stress responses",
+ hereIf:"You like bacterial genetics, protein biochemistry, and systems where a clean mutant phenotype still has an unexplained mechanism behind it.",
+ caps:"Bacterial genetics including gene deletion, complementation and random mutagenesis, protein purification and in vitro enzyme assays, immunoblotting and pull-downs, envelope stress reporters, autolysin and peptidoglycan hydrolase assays, collaborative cryo-EM and crystallography.",
+ ideas:[
+  {t:"What is the signal that actually activates envelope proteolysis?",
+   p:"The protease and its adaptor are characterised, the substrates are known, and the regulatory logic is worked out &mdash; but what the system senses is not. Screening for conditions and mutants that activate the complex in the absence of its usual trigger would identify the input rather than the output.",
+   w:"A well-posed mechanistic gap in a system where every tool already exists in the lab, which is the most reliable structure there is for a predoctoral aim that finishes on time.",
+   f:["NSF GRFP","NIH F31","HHMI Gilliam"]},
+  {t:"Do inhibitor&ndash;anti-inhibitor pairs set a timer or a threshold?",
+   p:"Systems that control lytic enzymes through paired inhibitors and anti-inhibitors could be implementing either a switch with a threshold or a delay with a clock. Distinguishing them requires measuring the response to graded and to pulsed signals, which is a biochemistry problem before it is a genetics one.",
+   w:"Quantitative framing of a genetics question, which makes the same project legible to a molecular biology study section and to a quantitative one &mdash; useful, since the two fund different awards.",
+   f:["NSF GRFP","NIH F31","DOE CSGF"]},
+  {t:"Is envelope proteolysis a target whose inhibition kills or only weakens?",
+   p:"Reconstituting the protease complex and screening for small molecules that block it would test whether inhibition is bactericidal, merely sensitising, or irrelevant in vivo &mdash; a distinction usually assumed rather than measured, in an organism on the WHO priority list.",
+   w:"A new target class rather than another scaffold against an old one, which is the argument antimicrobial programmes are built around. Pairs naturally with the structural biology already in the building.",
+   f:["NIH F31","PhRMA Drug Discovery","NIH F30"]}
+ ]},
+
+{id:"proteostasis", cl:"bact", name:"Bacterial proteostasis and post-translational control in mycobacteria",
+ hereIf:"You work on protein degradation, redox biology, or the biochemistry of how a pathogen survives inside a host cell.",
+ caps:"Mycobacterial genetics, reconstitution of pupylation and depupylation, protein purification and enzyme assays, substrate identification by pull-down and proteomics, redox-regulated chaperone assays, mouse infection models.",
+ ideas:[
+  {t:"Which substrates matter, and which are just tagged?",
+   p:"The degradation system has many identified substrates and a strong survival phenotype, but the link between the two is largely assumed. Making the tagging site non-modifiable one substrate at a time, and asking which single change reproduces the survival defect, converts a list into a mechanism.",
+   w:"Systematic, decidable, and built entirely from methods the lab runs weekly. It also teaches mouse infection to a biochemist, which is a training plan a reviewer can score.",
+   f:["NSF GRFP","NIH F31","HHMI Gilliam"]},
+  {t:"Is proteostasis the point of contact between metabolism and oxidative stress?",
+   p:"Degradation machinery and central metabolic enzymes are linked in this organism, but whether the degradation system is reading the metabolic state or setting it is unresolved. Perturbing each independently, with metabolite measurement as the readout, would settle the direction of the arrow.",
+   w:"The direction-of-causality framing is what separates a descriptive aim from a mechanistic one, and reviewers of predoctoral applications are specifically trained to look for it.",
+   f:["NSF GRFP","NIH F31","NIH F99/K00"]},
+  {t:"Does the host impose the redox conditions the system evolved for?",
+   p:"Redox-regulated chaperones are studied under defined conditions in vitro. Measuring the actual redox environment the bacterium experiences inside a macrophage, and then reproducing it, would test whether the in vitro conditions everyone uses are the relevant ones.",
+   w:"A methods-development aim with a clear biological payoff, and one that puts a student in contact with the myeloid biology running elsewhere in the department.",
+   f:["NIH F31","NSF GRFP","HHMI Gilliam"]}
+ ]},
+
+{id:"amr", cl:"bact", name:"Colonisation, within-host adaptation and antimicrobial resistance",
+ hereIf:"You are interested in why a carried organism becomes an infection, in isolate genomics, or in resistance as an evolutionary process rather than a marker.",
+ caps:"Clinical isolate collections and population genetics, whole-genome sequencing and comparative genomics, quorum sensing and virulence assays, colonisation models, machine learning for resistance and virulence prediction, neonatal and paediatric infection models.",
+ ideas:[
+  {t:"Which within-host mutations are adaptive and which are hitchhiking?",
+   p:"Longitudinal isolates from a single carrier accumulate changes, and the ones that recur across patients are usually called adaptive. Reconstructing candidate mutations individually in a clean background and competing them in a colonisation model would test that inference directly rather than inferring it from parallelism.",
+   w:"Takes a genomics observation the lab already owns and turns it into experimental genetics &mdash; which is exactly the pivot that makes a computational student's training plan credible.",
+   f:["NSF GRFP","NIH F31","HHMI Gilliam","Google PhD Fellowship"]},
+  {t:"Does resistance acquisition cost anything the host can exploit?",
+   p:"Fitness costs of resistance are usually measured in broth. Measuring them during colonisation, in the presence of an immune response, asks whether resistant lineages are vulnerable in a way that could be targeted without a new antibiotic.",
+   w:"A therapeutically suggestive result from an entirely mechanistic experiment. Frame the aims around the evolutionary question and the translational reading follows without the proposal becoming treatment-focused.",
+   f:["NIH F31","PhRMA Drug Discovery","NSF GRFP"]},
+  {t:"Is neonatal colonisation a different process or the same one earlier?",
+   p:"Colonisation in the first weeks of life happens in a host with a different immune repertoire, a different microbiota and a different epithelium. Whether the determinants that matter in adults matter at all in neonates is testable with the same isolates and the same models, run in parallel.",
+   w:"A comparison rather than a new system, which keeps the project finishable, and it connects to the early-life microbiome work already here.",
+   f:["NIH F31","NIH F30","CF Foundation Traineeship","AHA Predoctoral"]}
+ ]},
+
+{id:"malaria", cl:"bact", name:"Parasite pathogenesis and host vascular biology",
+ hereIf:"You want to work on how a parasite damages tissue rather than on the parasite itself &mdash; vascular biology, mitochondrial stress, or biomarkers with a mechanism behind them.",
+ caps:"<em>Plasmodium</em> culture and infection models, blood&ndash;brain barrier and endothelial assays, mitochondrial stress and oxidative-damage measurement, purinergic and farnesylation pathway pharmacology, RNA-seq and vascular profiling, biomarker discovery.",
+ ideas:[
+  {t:"Is barrier disruption driven by the parasite or by the host's response to its debris?",
+   p:"Parasite-derived material and the host inflammatory response both correlate with barrier failure. Applying purified parasite products to endothelium in the absence of immune cells, and then adding them back one population at a time, separates two mechanisms that are confounded in every animal model.",
+   w:"A reductionist design aimed at a question normally addressed only in vivo, and the endothelial work is learnable inside one year.",
+   f:["NIH F31","AHA Predoctoral","NSF GRFP"]},
+  {t:"Does mitochondrial stress in endothelium explain the severity gradient?",
+   p:"Lipid-mediated mitochondrial stress is an established mechanism and severity is an established clinical gradient, but the two have not been linked quantitatively. Measuring mitochondrial function in the vessels of animals across that gradient would test whether it is the variable that tracks outcome.",
+   w:"Quantitative, mechanistic, and it produces the dose&ndash;response relationship that any downstream intervention argument depends on.",
+   f:["NIH F31","AHA Predoctoral","NIH F30"]},
+  {t:"Can protection be uncoupled from parasite clearance?",
+   p:"If the damage is host-side, then blocking the damage pathway should protect without changing parasite burden. That is a sharp, falsifiable prediction, and the pharmacology to test it &mdash; purinergic and farnesylation inhibitors &mdash; is already in use in the lab.",
+   w:"A single decisive experiment at the centre of the thesis, with a clear negative result that is still publishable. Committees like proposals that can fail informatively.",
+   f:["NIH F31","AHA Predoctoral","PhRMA Translational Medicine","Fogarty LAUNCH"]}
+ ]},
+
+{id:"myeloid", cl:"immune", name:"Tissue myeloid cells and the immunology of respiratory infection",
+ hereIf:"You want to work on macrophage subsets in tissue, on why inflammation resolves, or on immunity in the lung specifically rather than in the spleen.",
+ caps:"Tissue myeloid subset identification and sorting, subset-specific depletion and conditional genetics, respiratory virus and systemic bacterial infection models, type 2 immunity and fibrosis models, tumour-associated macrophage work, nanoparticle reprogramming, imaging.",
+ ideas:[
+  {t:"Which subset ends the inflammation, and is that the same one that started it?",
+   p:"Resolution is usually attributed to a change of state in the same cells that drove inflammation. Whether it is instead a distinct, later-recruited subset is answerable by depleting each population at defined times after infection rather than at the start.",
+   w:"Timed depletion is a simple idea that almost nobody does, because it requires committing to a time course. That makes it a good thesis: unglamorous, decidable, and the result is the same either way.",
+   f:["NSF GRFP","NIH F31","HHMI Gilliam"]},
+  {t:"Do nerve-associated macrophages sense the pathogen or the tissue damage?",
+   p:"Anatomically defined myeloid subsets sit where they could be responding to either. Separating the two requires a sterile injury that mimics the damage without the pathogen, run alongside an infection that is controlled before damage occurs.",
+   w:"A comparison of two perturbations rather than a new model system, which is how a student gets an answer inside a PhD rather than a description.",
+   f:["NSF GRFP","NIH F31","HHMI Gilliam"]},
+  {t:"Is the tumour macrophage programme a corrupted resolution programme?",
+   p:"Tumour-associated macrophages and resolving macrophages share markers and are usually described independently. Profiling both in the same animal, and testing whether a reprogramming strategy developed for one works on the other, would ask whether they are the same state reached by different routes.",
+   w:"Connects infection immunology to tumour immunology using techniques the lab runs for both, which gives a student two committee constituencies and two funding routes.",
+   f:["NIH F31","HHMI Gilliam","NIH F99/K00"]}
+ ]},
+
+{id:"vaccine", cl:"immune", name:"Human vaccine immunology and the durability of antibody responses",
+ hereIf:"You are drawn to human samples, systems immunology, or the question of why two people given the same vaccine end up in different places a year later.",
+ caps:"Human vaccination and infection cohorts, Tfh and CD4 T cell analysis, multiplex and avidity immunoassays, single-cell and spatial multi-omics, comparative vaccine- versus infection-induced immunity, immune-imprinting analysis, viral evolution and escape mapping.",
+ ideas:[
+  {t:"Is imprinting a property of the repertoire or of the germinal centre?",
+   p:"Prior exposure constrains the response to a new antigen, but whether the constraint lies in which B cells exist or in which ones are allowed to enter and persist in the germinal centre is unresolved. Paired repertoire and Tfh analysis in the same individuals across a vaccination series can separate the two.",
+   w:"Human, mechanistic and answerable with existing cohorts &mdash; and the analysis skills it teaches are the ones that make a graduate transferable to any immunology lab afterwards.",
+   f:["NIH F31","NIH F30","AHA Predoctoral"]},
+  {t:"Does avidity maturation continue after the antibody titre stops changing?",
+   p:"Durability is almost always reported as titre. If avidity keeps improving while titre plateaus, then the standard measure is missing the part of the response that matters for protection &mdash; a possibility that is directly measurable in banked longitudinal samples.",
+   w:"A measurement-reframing project: low risk, high generality, and it produces a methods paper plus a biology paper from the same dataset.",
+   f:["NIH F31","NIH F30","AHA Predoctoral"]},
+  {t:"Can escape be predicted from the shape of the response rather than the sequence?",
+   p:"Escape prediction is normally a sequence problem. Asking instead whether the breadth and focus of an individual's response predicts which variants will escape it turns a virology question into an immunology one, with the same cohorts on both sides.",
+   w:"A genuinely interdisciplinary aim, and the computational half is substantial enough to justify a quantitative training plan and the awards that go with one.",
+   f:["NIH F31","Google PhD Fellowship","NIH F99/K00"]}
+ ]},
+
+{id:"microbiome", cl:"comp", name:"Microbiome ecology, early life, and learning from longitudinal data",
+ hereIf:"You came in with mathematics, statistics or computer science and want a biological question, or you have microbiome data and suspect the standard analysis is throwing most of it away.",
+ caps:"Metagenomics and multi-omics integration, ecological and dynamical-systems modelling, machine learning and network inference, tensor factorisation and dimensionality reduction, longitudinal and time-series modelling, milk and infant cohort data, phage&ndash;bacterium interaction analysis.",
+ ideas:[
+  {t:"Does the order of colonisation matter as much as the membership?",
+   p:"Community composition is modelled as a state; arrival order is rarely modelled at all. Testing whether sequence of colonisation predicts the eventual community better than membership does, in cohorts where sampling is dense enough to see it, asks whether ecology's priority-effect literature applies to the infant gut.",
+   w:"A theory-driven question with an existing dataset, which is the fastest route from a first-year rotation to a fellowship aim. Entirely basic in framing, so the GRFP stays open.",
+   f:["NSF GRFP","NIH F31","Google PhD Fellowship","HHMI Gilliam"]},
+  {t:"What does milk actually select for?",
+   p:"Milk components correlate with infant community structure, but correlation across mother&ndash;infant pairs cannot distinguish selection from inheritance. Source-tracking combined with in vitro selection on defined milk fractions would separate what is transmitted from what is favoured.",
+   w:"Combines a computational method with a small, tractable wet-lab component &mdash; the standard way a quantitative student builds a training plan that a biology study section will fund.",
+   f:["NSF GRFP","NIH F31","HHMI Gilliam"]},
+  {t:"Can phage dynamics be predicted well enough to be used?",
+   p:"Phage&ndash;bacterium dynamics are usually described retrospectively. Building a model that forecasts them in a held-out time series, and then testing the forecast against a manipulated community, is the difference between fitting and predicting.",
+   w:"Prediction with a held-out test is a standard a methods-oriented committee will respect, and a failed forecast is itself a finding. Strong fit for the computational awards as well as the F31.",
+   f:["NSF GRFP","Google PhD Fellowship","DOE CSGF","NIH F31"]}
+ ]},
+
+{id:"structure", cl:"struct", name:"Structural biology of membrane transport in infection and immunity",
+ hereIf:"You want to see the mechanism rather than infer it, and you are willing to spend two years learning to before you get an answer.",
+ caps:"Cryo-EM of membrane proteins, biophysical analysis of transport systems, antigen-processing transporter biochemistry, bacterial ABC transporter reconstitution, substrate-recognition and conformational-dynamics assays, protein purification at scale.",
+ ideas:[
+  {t:"How does an antigen transporter decide what to move?",
+   p:"Substrate selectivity in antigen processing is described in terms of preferences rather than structures. Capturing the transporter with different substrates bound, and relating occupancy to transport rate, would convert a statistical preference into a physical mechanism with consequences for which epitopes are ever presented.",
+   w:"Immunology that is genuinely structural, which means it can be sponsored from either side and gives the student a defensible claim to both fields at the end.",
+   f:["NIH F31","NSF GRFP","HHMI Gilliam"]},
+  {t:"Do bacterial secretion transporters share a conformational cycle with their host counterparts?",
+   p:"Structurally related transporters on both sides of an infection are usually studied by different communities. Solving them under matched conditions and comparing the cycles directly asks whether the similarity is ancestral or convergent &mdash; and whether an inhibitor of one would touch the other.",
+   w:"A comparative structural project with a built-in specificity question, which is the form of the argument any antimicrobial development effort eventually has to make.",
+   f:["NSF GRFP","NIH F31","PhRMA Drug Discovery"]},
+  {t:"What does the energy-coupling step actually cost?",
+   p:"Transport stoichiometry is often assumed from homology. Measuring it directly, for a transporter where the substrate matters for virulence, tests whether the system is operating near its thermodynamic limit &mdash; which would explain why it is so tightly regulated.",
+   w:"Quantitative biophysics with an infection-biology motivation. It is a small, complete question, and small complete questions are what get finished before a thesis committee loses patience.",
+   f:["NSF GRFP","NIH F31","Hertz","DOE CSGF"]}
+ ]}
+
+];
+
+function pad2(n){ return (n<10?"0":"")+n; }
+function themeCard(t, idx){
+  var ideas = t.ideas.map(function(i){
+    return '<div class="idea">' +
+      '<h5>' + i.t + '</h5>' +
+      '<p>' + i.p + '</p>' +
+      '<p class="why"><strong>Why it works as a training plan.</strong> ' + i.w + '</p>' +
+      '<div class="fmatch">' + i.f.map(function(x){ return '<span>' + x + '</span>'; }).join('') + '</div>' +
+    '</div>';
+  }).join('');
+  var hay = (t.name + " " + t.hereIf + " " + t.caps + " " +
+             t.ideas.map(function(i){ return i.t + " " + i.p + " " + i.f.join(" "); }).join(" "))
+             .toLowerCase().replace(/<[^>]+>/g,"").replace(/"/g,"");
+  return '<article class="card prop" data-cl="' + t.cl + '" data-q="' + hay + '">' +
+    '<div class="phead"><span class="pid">' + pad2(idx+1) + '</span>' +
+      '<span class="tierbadge">' + CL[t.cl] + '</span>' +
+      '<span class="tierbadge">' + t.ideas.length + ' directions</span>' +
+      '<h3>' + t.name + '</h3></div>' +
+    '<p class="here-if"><strong>You are in this space if</strong> ' + t.hereIf + '</p>' +
+    '<p class="caps"><strong>Already running in the department:</strong> ' + t.caps + '</p>' +
+    '<div class="ideas">' + ideas + '</div>' +
+  '</article>';
+}
+var CL = {virus:"Virology &amp; RNA biology", bact:"Bacterial &amp; parasite pathogenesis",
+          immune:"Immunology &amp; vaccines", comp:"Computational &amp; microbiome",
+          struct:"Structural &amp; mechanistic"};
+
+document.getElementById("list").innerHTML = T.map(themeCard).join("");
+
+var state = {cl:"all", q:""};
+function apply(){
+  var cards = document.querySelectorAll("#list .prop"), shown = 0;
+  Array.prototype.forEach.call(cards, function(el){
+    var ok = (state.cl === "all" || el.dataset.cl === state.cl) &&
+             (state.q === "" || el.dataset.q.indexOf(state.q) > -1);
+    el.hidden = !ok;
+    if (ok) shown++;
+  });
+  document.getElementById("shown").textContent = shown + " of " + T.length + " themes";
+  document.getElementById("empty").hidden = shown > 0;
+}
+Array.prototype.forEach.call(document.querySelectorAll(".fchip"), function(b){
+  b.addEventListener("click", function(){
+    var f = b.dataset.f;
+    Array.prototype.forEach.call(document.querySelectorAll('.fchip[data-f="' + f + '"]'), function(o){
+      o.setAttribute("aria-pressed", o === b ? "true" : "false");
+    });
+    state[f] = b.dataset.v;
+    apply();
+  });
+});
+document.getElementById("q").addEventListener("input", function(e){
+  state.q = e.target.value.toLowerCase().trim();
+  apply();
+});
+apply();
+</script>
+
+</body>
+</html>
