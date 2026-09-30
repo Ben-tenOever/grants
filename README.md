@@ -16,11 +16,17 @@ Molecular Pharmacology, and Microbiology.
 
 ## 2026 slate
 
-44 submissions — 11 large multi-project teams, 6 mid-scale,
-7 focused pairs and 20 single-investigator proposals — across 21
+50 submissions — 12 large multi-project teams, 8 mid-scale,
+8 focused pairs and 22 single-investigator proposals — across 27
 opportunities from NIH, NSF, CDC, FDA, ARPA-H, DARPA, DoD and the Gates
-Foundation. 157 aims, each with a named owner. Opportunities verified against
-primary sources on 7 September 2026.
+Foundation. 176 aims, each with a named owner. Opportunities verified against
+primary sources on 7 September 2026 and refreshed against grants.gov on
+30 September 2026.
+
+The page also carries an HHMI section covering all five HHMI competitions by
+career stage. The two faculty programmes, Freeman Hrabowski Scholars and
+HHMI Investigator, are documented there in full; the postdoctoral and graduate
+awards are cross-linked to the fellowship pages.
 
 ## Updating
 

@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-07",
+ "generated": "2026-09-30",
  "scope": "Cell Biology, Institute for Systems Genetics, Pathology, Biochemistry & Molecular Pharmacology, Microbiology",
  "teams": [
   {
@@ -2653,6 +2653,362 @@
    "rationale_detailed": "Big-IN landing-pad delivery makes it possible to test regulatory element function by rewriting the locus rather than deleting pieces of it, which is the difference between asking what an element is necessary for and what it is sufficient to do. The Sox2 locus control region and DHS mapping work already demonstrate the platform on a hard locus.",
    "next_steps": "New applications 5 October 2026. Brosh's expertise profile is empty in the current site index — this fit comes from the network map and public record and should be confirmed with him directly.",
    "profile_gaps": []
+  },
+  {
+   "id": "P26",
+   "tier": "mid",
+   "team_type": "multi",
+   "suggested_title": "A Single Assay for Respiratory Coinfection and Resistance Genotype, Developed with an Industry Partner",
+   "contact_pi": "Alejandro Pironti",
+   "scale": "Four investigators plus an industry partner",
+   "opportunity_number": "RFA-AI-28-017",
+   "opportunity_title": "Partnerships for Advancing Development of Diagnostics for Infectious Diseases",
+   "agency": "NIH / NIAID",
+   "close_date": "2027-10-14",
+   "opportunity_url": "https://www.grants.gov/search-results-detail/363944",
+   "award": "About $10M total; 10 awards expected",
+   "members": [
+    "Alejandro Pironti",
+    "Mila B. Ortigoza",
+    "Bo Shopsin",
+    "Ralf Duerr"
+   ],
+   "member_roles": [
+    {
+     "name": "Alejandro Pironti",
+     "group": "Microbiology",
+     "role": "Contact PI, genomics and assay design"
+    },
+    {
+     "name": "Mila B. Ortigoza",
+     "group": "Microbiology",
+     "role": "Clinical validation"
+    },
+    {
+     "name": "Bo Shopsin",
+     "group": "Microbiology",
+     "role": "Antimicrobial resistance and clinical microbiology"
+    },
+    {
+     "name": "Ralf Duerr",
+     "group": "Microbiology",
+     "role": "Viral detection and serology"
+    }
+   ],
+   "aims": [
+    {
+     "label": "Aim 1",
+     "title": "Lock the assay chemistry and the panel it reports",
+     "description": "Fix the target set for the common respiratory viruses alongside the bacterial species and resistance determinants that change management, and freeze the wet-lab protocol with the industry partner so the analytical validation runs on a stable design.",
+     "responsible": "Alejandro Pironti"
+    },
+    {
+     "label": "Aim 2",
+     "title": "Establish analytical sensitivity, specificity and limits of detection",
+     "description": "Run contrived and banked specimens across the reportable range, with dilution series for each target and an explicit interference panel, to produce the analytical package a submission requires.",
+     "responsible": "Bo Shopsin"
+    },
+    {
+     "label": "Aim 3",
+     "title": "Measure clinical performance against standard of care and test whether it changes decisions",
+     "description": "Prospective paired testing on adult and pediatric respiratory specimens with the current clinical workflow as comparator, reporting concordance and the proportion of cases in which the result would have altered antimicrobial choice.",
+     "responsible": "Mila B. Ortigoza"
+    }
+   ],
+   "rationale_detailed": "NIAID is asking for a diagnostic that already has proof of concept and an industrial partner to carry it forward, which is a different application from a discovery grant. The departmental genomics operation already runs clinical-grade sequencing and resistance calling at volume, and the clinical infectious diseases faculty supply the specimens and the endpoint that matters, which is whether the result changes what the clinician does.",
+   "next_steps": "Nothing can be written until an industrial partner signs on, and that negotiation, with the associated intellectual property terms through the technology transfer office, is a matter of months rather than weeks. Start it now and confirm with the NIAID program officer that the proposed panel counts as proof of concept.",
+   "profile_gaps": []
+  },
+  {
+   "id": "P27",
+   "tier": "mid",
+   "team_type": "multi",
+   "suggested_title": "Innate Initiation of Islet Autoimmunity: Interferon-Driven Antigen Exposure and Macrophage Licensing",
+   "contact_pi": "Kamal M. Khanna",
+   "scale": "Four investigators; an islet collaborator still needed",
+   "opportunity_number": "RFA-AI-28-029",
+   "opportunity_title": "Role of the Innate Immune System in the Pathogenesis of Type 1 Diabetes",
+   "agency": "NIH / NIAID",
+   "close_date": "2027-10-13",
+   "opportunity_url": "https://www.grants.gov/search-results-detail/363943",
+   "award": "About $15M total; 7 awards expected",
+   "members": [
+    "Kamal M. Khanna",
+    "Stefan Feske",
+    "Ramin Herati",
+    "Jonas Schluter"
+   ],
+   "member_roles": [
+    {
+     "name": "Kamal M. Khanna",
+     "group": "Microbiology",
+     "role": "Contact PI, myeloid and tissue immunity"
+    },
+    {
+     "name": "Stefan Feske",
+     "group": "Pathology",
+     "role": "Lymphocyte signaling"
+    },
+    {
+     "name": "Ramin Herati",
+     "group": "Microbiology",
+     "role": "Human immunology"
+    },
+    {
+     "name": "Jonas Schluter",
+     "group": "Microbiology",
+     "role": "Modeling and inference"
+    }
+   ],
+   "aims": [
+    {
+     "label": "Aim 1",
+     "title": "Map the myeloid populations resident in and around the islet before infiltration",
+     "description": "Imaging and single-cell profiling across the window that precedes overt insulitis, to establish which macrophage and dendritic cell states are present before the adaptive response arrives rather than after it.",
+     "responsible": "Kamal M. Khanna"
+    },
+    {
+     "label": "Aim 2",
+     "title": "Test whether an interferon-driven state is what makes beta-cell antigen visible",
+     "description": "Restrict interferon induction and response to defined cell types and ask whether antigen presentation to islet-reactive cells rises or falls, separating a bystander association from a required step.",
+     "responsible": "Kamal M. Khanna"
+    },
+    {
+     "label": "Aim 3",
+     "title": "Determine which innate signals are required for the autoreactive cells to become activated",
+     "description": "Couple the calcium and signaling requirements of the responding lymphocytes to the innate states defined above, so that the licensing step is described in terms of a pathway that could be blocked.",
+     "responsible": "Stefan Feske"
+    },
+    {
+     "label": "Aim 4",
+     "title": "Anchor the mouse findings in human samples and build the inferred sequence of events",
+     "description": "Apply the signatures from Aims 1 to 3 to human at-risk cohort samples and fit an ordering model, producing a testable claim about which innate event comes first.",
+     "responsible": "Jonas Schluter"
+    }
+   ],
+   "rationale_detailed": "The congressional Type 1 diabetes funds are looking for innate mechanism tied to disease initiation, and the departmental strength is precisely in resolving which cell type senses what and when. The cell-type-restricted interferon tools and the tissue imaging that the group already runs address the initiation question directly rather than describing the infiltrate after the fact.",
+   "next_steps": "This team has no islet biologist and no access to at-risk human cohort material, and neither gap can be papered over in the application. Identify a diabetes collaborator inside NYU and a cohort source before any writing starts, and confirm with the program officer that a mechanism-first proposal is in scope.",
+   "profile_gaps": [
+    "Stefan Feske has no expertise text in the site index, so his role here is drawn from the public record and should be confirmed with him."
+   ]
+  },
+  {
+   "id": "P28",
+   "tier": "small",
+   "team_type": "pair",
+   "suggested_title": "Pre-Clinical Immune Trajectories Preceding Autoimmune Flare in Deeply Sampled Human Cohorts",
+   "contact_pi": "Ramin Herati",
+   "scale": "Focused pair",
+   "opportunity_number": "RFA-AI-28-011",
+   "opportunity_title": "Immune Drivers of Autoimmune Disease (IDAD) Network",
+   "agency": "NIH / NIAID",
+   "close_date": "2027-06-11",
+   "opportunity_url": "https://www.grants.gov/search-results-detail/363942",
+   "award": "About $3.6M total",
+   "members": [
+    "Ramin Herati",
+    "Stefan Feske"
+   ],
+   "member_roles": [
+    {
+     "name": "Ramin Herati",
+     "group": "Microbiology",
+     "role": "Contact PI, human systems immunology"
+    },
+    {
+     "name": "Stefan Feske",
+     "group": "Pathology",
+     "role": "Lymphocyte signaling and mechanism"
+    }
+   ],
+   "aims": [
+    {
+     "label": "Aim 1",
+     "title": "Define the cellular states that shift in the months before a flare",
+     "description": "Longitudinal single-cell and repertoire profiling on banked serial samples, analyzed against the flare date rather than the draw date, so that the question is what changes first.",
+     "responsible": "Ramin Herati"
+    },
+    {
+     "label": "Aim 2",
+     "title": "Test whether the candidate states carry a signaling defect that is measurable ex vivo",
+     "description": "Take the populations that move in Aim 1 and interrogate their activation thresholds directly, converting a correlative signature into a functional assay that could be run prospectively.",
+     "responsible": "Stefan Feske"
+    }
+   ],
+   "rationale_detailed": "The IDAD network wants the earliest human steps, which is a sampling and analysis problem before it is an immunology problem. The pairing works because one side runs deep longitudinal human profiling and the other can take any population the profiling nominates and ask whether it actually signals differently, which is the step that usually separates a funded IDAD application from a descriptive one.",
+   "next_steps": "Confirm which serial cohort is accessible and whether its consent permits this use, since the network expects existing well-characterized samples rather than a new collection. A two-investigator application is at the small end for this network, so ask the program officer whether it is better submitted alone or attached to an existing network site.",
+   "profile_gaps": [
+    "Stefan Feske has no expertise text in the site index, so his role here is drawn from the public record and should be confirmed with him."
+   ]
+  },
+  {
+   "id": "P29",
+   "tier": "large",
+   "team_type": "multi",
+   "suggested_title": "Programmable RNA Circuits for Cell-Autonomous Detection of and Response to Biological Threat",
+   "contact_pi": "Benjamin tenOever",
+   "scale": "Four laboratories over five years",
+   "opportunity_number": "W911NF26S1000",
+   "opportunity_title": "FY 2027 Multidisciplinary University Research Initiative (MURI)",
+   "agency": "DoD / ARO, ONR, AFOSR",
+   "close_date": "2027-04-09",
+   "opportunity_url": "https://www.grants.gov/search-results-detail/363905",
+   "award": "Up to $7.5M over five years",
+   "members": [
+    "Benjamin tenOever",
+    "Liam Holt",
+    "Jef D. Boeke",
+    "David Fenyo"
+   ],
+   "member_roles": [
+    {
+     "name": "Benjamin tenOever",
+     "group": "Microbiology",
+     "role": "Contact PI, RNA circuit design and viral vectors"
+    },
+    {
+     "name": "Liam Holt",
+     "group": "ISG",
+     "role": "Biophysics of the intracellular environment"
+    },
+    {
+     "name": "Jef D. Boeke",
+     "group": "ISG",
+     "role": "Synthetic genome engineering"
+    },
+    {
+     "name": "David Fenyo",
+     "group": "BMP / ISG",
+     "role": "Computation and measurement"
+    }
+   ],
+   "aims": [
+    {
+     "label": "Thrust 1",
+     "title": "Build RNA circuits that read cell state and gate an output on it",
+     "description": "Extend microRNA-responsive and RNA-only designs so that expression of a payload is conditional on a defined combination of intracellular signals rather than on delivery alone.",
+     "responsible": "Benjamin tenOever"
+    },
+    {
+     "label": "Thrust 2",
+     "title": "Establish how the physical state of the cytoplasm sets circuit behavior",
+     "description": "Measure how crowding and condensate formation change the kinetics of the circuits in Thrust 1, since a design tuned in dilute conditions will not behave the same way in a stressed cell.",
+     "responsible": "Liam Holt"
+    },
+    {
+     "label": "Thrust 3",
+     "title": "Write the circuits into stable genomic context",
+     "description": "Use synthetic genome assembly to place validated circuits at defined loci with controlled copy number, so that behavior is reproducible across cell generations.",
+     "responsible": "Jef D. Boeke"
+    },
+    {
+     "label": "Thrust 4",
+     "title": "Model the design space and close the loop on measurement",
+     "description": "Build the quantitative framework that predicts circuit output from state inputs, fit it to the data from the other thrusts, and use it to choose the next designs rather than enumerating them.",
+     "responsible": "David Fenyo"
+    }
+   ],
+   "rationale_detailed": "MURI funds work that needs several disciplines at once and would not happen in a single laboratory, which describes this combination fairly. RNA circuit design, the physical chemistry of the compartment the circuit runs in, genome-scale writing and the quantitative framework are four genuinely different skills, and the departmental groups here are strong in each.",
+   "next_steps": "MURI awards are made only against the published topic list, so the first action is to read the FY27 topics and confirm that one of them actually covers this. If none does, the work should go to a different mechanism rather than be bent to fit. A white paper stage precedes the full proposal and its date is earlier than the April deadline shown here.",
+   "profile_gaps": [
+    "Jef D. Boeke and David Fenyo have thin or absent expertise text in the site index; their roles here come from the public record."
+   ]
+  },
+  {
+   "id": "S21",
+   "tier": "solo",
+   "team_type": "pair",
+   "suggested_title": "Inferring the Rules that Govern Microbial Community Resilience under Host Stress",
+   "contact_pi": "Liat Shenhav",
+   "scale": "Single investigator",
+   "opportunity_number": "FA955026S0003",
+   "opportunity_title": "Air Force FY 2027 Young Investigator Program",
+   "agency": "DoD / AFOSR",
+   "close_date": "2026-12-04",
+   "opportunity_url": "https://www.grants.gov/search-results-detail/363829",
+   "award": "$150K to $450K over three years",
+   "members": [
+    "Liat Shenhav"
+   ],
+   "member_roles": [
+    {
+     "name": "Liat Shenhav",
+     "group": "Microbiology",
+     "role": "Sole PI"
+    }
+   ],
+   "aims": [
+    {
+     "label": "Aim 1",
+     "title": "Build the statistical framework that separates resilience from resistance in community time series",
+     "description": "Formalize recovery trajectory as a measurable quantity in longitudinal community data, distinguishing communities that do not move from communities that move and return.",
+     "responsible": "Liat Shenhav"
+    },
+    {
+     "label": "Aim 2",
+     "title": "Test the framework against perturbation series where the disturbance is known",
+     "description": "Apply it to datasets with documented interventions so that the inferred parameters can be checked against a real perturbation rather than a suspected one.",
+     "responsible": "Liat Shenhav"
+    },
+    {
+     "label": "Aim 3",
+     "title": "Identify which community features predict recovery",
+     "description": "Ask which compositional and functional features at baseline predict the recovery trajectory, producing a prospectively testable predictor rather than a retrospective description.",
+     "responsible": "Liat Shenhav"
+    }
+   ],
+   "rationale_detailed": "The Young Investigator Program funds a single early-career scientist on the strength of the idea and the trajectory, and an inference framework of this kind is exactly the sort of foundational work it supports. The approach is method-first, which suits a programme that weights novelty over immediate application.",
+   "next_steps": "Eligibility turns on a fixed PhD-date window, so confirm that against the announcement before investing any writing time. Then identify the AFOSR portfolio area and programme officer this would sit under, because an application with no home in the portfolio does not get funded however good it is.",
+   "profile_gaps": []
+  },
+  {
+   "id": "S22",
+   "tier": "solo",
+   "team_type": "pair",
+   "suggested_title": "Absolute Quantification of Metabolites from Low-Input Primary Cell Populations",
+   "contact_pi": "Drew Jones",
+   "scale": "Single investigator",
+   "opportunity_number": "PAR-29-005",
+   "opportunity_title": "NIGMS Technology Development Program",
+   "agency": "NIH / NIGMS",
+   "close_date": "2028-02-05",
+   "opportunity_url": "https://www.grants.gov/search-results-detail/363876",
+   "award": "R21 and R01 tracks",
+   "members": [
+    "Drew Jones"
+   ],
+   "member_roles": [
+    {
+     "name": "Drew Jones",
+     "group": "BMP",
+     "role": "Sole PI"
+    }
+   ],
+   "aims": [
+    {
+     "label": "Aim 1",
+     "title": "Push the input requirement down while keeping absolute quantification",
+     "description": "Re-engineer sample handling and internal standard addition so that concentrations, not ratios, can be reported from cell numbers achievable by sorting from primary tissue.",
+     "responsible": "Drew Jones"
+    },
+    {
+     "label": "Aim 2",
+     "title": "Characterize and bound the losses introduced at each step",
+     "description": "Quantify recovery and matrix effects across the workflow so that the reported uncertainty is measured rather than assumed, which is what makes a platform usable by others.",
+     "responsible": "Drew Jones"
+    },
+    {
+     "label": "Aim 3",
+     "title": "Demonstrate reproducibility across operators and instruments",
+     "description": "Run the same samples across sites and instruments to establish the transferability that separates a laboratory method from a technology.",
+     "responsible": "Drew Jones"
+    }
+   ],
+   "rationale_detailed": "NIGMS reviews this programme on innovation rather than feasibility and explicitly excludes biological hypotheses, which suits a core-facility method development proposal that would be penalized under a standard R01 for having no biological question. Low-input absolute quantification is a real and widely felt limitation.",
+   "next_steps": "The announcement forbids biological aims, so the draft must be checked line by line for hypothesis language that would make it non-responsive. Decide between the R21 and R01 tracks with the NIGMS programme officer before drafting.",
+   "profile_gaps": [
+    "Drew Jones has no expertise text in the site index; this fit comes from the public record and should be confirmed with him."
+   ]
   }
  ],
  "department_actions": [

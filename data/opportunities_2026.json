@@ -1,6 +1,6 @@
 {
- "generated": "2026-09-07",
- "source": "Funding & Policy Watch dashboard, verified against primary sources",
+ "generated": "2026-09-30",
+ "source": "Funding & Policy Watch dashboard plus a grants.gov sweep on 30 September 2026, verified against primary sources",
  "opportunities": [
   {
    "key": "niaid_p01",
@@ -232,6 +232,72 @@
    "award": "Up to 5 years",
    "note": "Consolidates and replaces the DEB, IOS and MCB core programs. Proposals accepted anytime, no deadline; 250–300 awards anticipated from $280M.",
    "url": "https://www.nsf.gov/funding/opportunities/bio-core-core-research-biological-sciences/nsf26-517/solicitation"
+  },
+  {
+   "key": "niaid_dx",
+   "agency": "NIH / NIAID",
+   "opportunity_number": "RFA-AI-28-017",
+   "opportunity_title": "Partnerships for Advancing Development of Diagnostics for Infectious Diseases",
+   "close_date": "2027-10-14",
+   "award": "About $10M total; 10 awards expected",
+   "estimated": false,
+   "note": "Posted 24 Sep 2026. Requires at least one industrial partner and a diagnostic that already has proof of concept, so the partner agreement is the long pole.",
+   "url": "https://www.grants.gov/search-results-detail/363944"
+  },
+  {
+   "key": "niaid_t1d_innate",
+   "agency": "NIH / NIAID",
+   "opportunity_number": "RFA-AI-28-029",
+   "opportunity_title": "Role of the Innate Immune System in the Pathogenesis of Type 1 Diabetes",
+   "close_date": "2027-10-13",
+   "award": "About $15M total; 7 awards expected",
+   "estimated": false,
+   "note": "Posted 24 Sep 2026. Funded from the Special Statutory Funding Program for Type 1 Diabetes Research, so the innate mechanism has to be tied to islet autoimmunity rather than studied on its own.",
+   "url": "https://www.grants.gov/search-results-detail/363943"
+  },
+  {
+   "key": "niaid_idad",
+   "agency": "NIH / NIAID",
+   "opportunity_number": "RFA-AI-28-011",
+   "opportunity_title": "Immune Drivers of Autoimmune Disease (IDAD) Network",
+   "close_date": "2027-06-11",
+   "award": "About $3.6M total",
+   "estimated": false,
+   "note": "Posted 24 Sep 2026. Continuation of the IDAD network, focused on the earliest human triggers of autoimmunity and of flare.",
+   "url": "https://www.grants.gov/search-results-detail/363942"
+  },
+  {
+   "key": "muri27",
+   "agency": "DoD / ARO, ONR, AFOSR",
+   "opportunity_number": "W911NF26S1000",
+   "opportunity_title": "FY 2027 Multidisciplinary University Research Initiative (MURI)",
+   "close_date": "2027-04-09",
+   "award": "Up to $7.5M over five years",
+   "estimated": false,
+   "note": "Posted 21 Sep 2026; companion announcements from ONR (N0001426SF002) and AFOSR. Awards are made only against the published topic list, and a white paper precedes the full proposal.",
+   "url": "https://www.grants.gov/search-results-detail/363905"
+  },
+  {
+   "key": "afosr_yip27",
+   "agency": "DoD / AFOSR",
+   "opportunity_number": "FA955026S0003",
+   "opportunity_title": "Air Force FY 2027 Young Investigator Program",
+   "close_date": "2026-12-04",
+   "award": "$150K to $450K; about 50 awards",
+   "estimated": false,
+   "note": "Posted 8 Sep 2026. Early-career only, with a fixed PhD-date window, and the work must map onto an AFOSR portfolio area.",
+   "url": "https://www.grants.gov/search-results-detail/363829"
+  },
+  {
+   "key": "nigms_tech",
+   "agency": "NIH / NIGMS",
+   "opportunity_number": "PAR-29-005",
+   "opportunity_title": "NIGMS Technology Development Program",
+   "close_date": "2028-02-05",
+   "award": "R21 and R01 tracks",
+   "estimated": false,
+   "note": "Posted 16 Sep 2026, open through Feb 2028 on standard cycles. Reviewed on innovation rather than feasibility, and applications must not carry biological hypotheses or biomedical aims.",
+   "url": "https://www.grants.gov/search-results-detail/363876"
   }
  ]
 }
